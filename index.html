@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>词汇抽屉 · Word Drawer</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1B2A4A">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="词汇抽屉">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #1B2A4A;
+    --ink-deep: #121D33;
+    --paper: #FAF6EC;
+    --paper-shadow: #E7DFC7;
+    --brass: #B8892B;
+    --brass-light: #D9B65C;
+    --text-dark: #2A2620;
+    --text-muted: #6B6455;
+    --text-light: #F4EFE0;
+    --coral: #B5432A;
+    --coral-light: #D97757;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+
+  .field {
+    background:
+      radial-gradient(ellipse at 20% -10%, rgba(217,182,92,0.12), transparent 55%),
+      radial-gradient(ellipse at 90% 0%, rgba(181,67,42,0.08), transparent 45%),
+      var(--ink);
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+
+  header {
+    padding: 56px 24px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(244,239,224,0.12);
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brass-light);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  header p.sub {
+    color: rgba(244,239,224,0.65);
+    font-size: 15px;
+    max-width: 460px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .storage-banner {
+    max-width: 760px;
+    margin: 18px auto 0;
+    margin-left: max(20px, calc((100% - 760px) / 2));
+    margin-right: max(20px, calc((100% - 760px) / 2));
+    padding: 12px 18px;
+    background: rgba(217,182,92,0.12);
+    border: 1px solid rgba(217,182,92,0.35);
+    border-radius: 10px;
+    color: var(--brass-light);
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .linked-file-banner {
+    max-width: 760px;
+    margin: 18px auto 0;
+    margin-left: max(20px, calc((100% - 760px) / 2));
+    margin-right: max(20px, calc((100% - 760px) / 2));
+    padding: 10px 16px;
+    background: rgba(62,107,140,0.14);
+    border: 1px solid rgba(62,107,140,0.4);
+    border-radius: 10px;
+    color: #8FB8D9;
+    font-size: 13px;
+    line-height: 1.5;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .linked-file-banner .linked-file-name { color: var(--brass-light); }
+  .linked-file-banner button { flex-shrink: 0; padding: 6px 14px; font-size: 12.5px; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .add-panel {
+    background: var(--paper);
+    color: var(--text-dark);
+    border-radius: 14px;
+    margin-top: -28px;
+    padding: 26px 26px 22px;
+    box-shadow: 0 20px 40px -18px rgba(0,0,0,0.55);
+    position: relative;
+    z-index: 5;
+  }
+
+  /* When the offline-mode banner is showing, the add-panel's overlap trick
+     (designed to sit on top of the header) would otherwise cover the banner
+     instead. Cancel the overlap in that state so the banner stays fully visible. */
+  .banner-visible .add-panel {
+    margin-top: 20px;
+  }
+
+  .add-panel h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .field-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .field-row label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+  }
+
+  input[type=text], input[type=date], textarea {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    padding: 11px 13px;
+    border-radius: 8px;
+    border: 1.5px solid var(--paper-shadow);
+    background: #fff;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.15s;
+    resize: vertical;
+    width: 100%;
+  }
+
+  input[type=text]:focus, input[type=date]:focus, textarea:focus {
+    border-color: var(--brass);
+  }
+
+  textarea { min-height: 52px; font-family: 'Inter', sans-serif; }
+
+  .add-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .status-msg {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    min-height: 18px;
+  }
+  .status-msg.err { color: var(--coral); }
+  .status-msg.ok { color: #4a7a4a; }
+
+  button.primary {
+    background: var(--ink);
+    color: var(--text-light);
+    border: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.12s, background 0.15s;
+    white-space: nowrap;
+  }
+  button.primary:hover { background: var(--ink-deep); transform: translateY(-1px); }
+  button.primary:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+  button.ghost {
+    background: transparent;
+    border: 1.5px solid rgba(244,239,224,0.3);
+    color: var(--text-light);
+    padding: 9px 16px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+  }
+  button.ghost:hover { border-color: var(--brass-light); background: rgba(217,182,92,0.08); }
+  button.ghost.quiz-btn { border-color: var(--brass); color: var(--brass-light); }
+  button.ghost.active { border-color: var(--brass); background: rgba(217,182,92,0.18); color: var(--brass-light); }
+
+  .badge {
+    background: var(--coral);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0 14px;
+  }
+
+  .rate-controls-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: auto;
+  }
+  .rate-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(250,246,236,0.08);
+    border: 1px solid rgba(244,239,224,0.18);
+    border-radius: 8px;
+    padding: 7px 12px;
+  }
+  .rate-control label {
+    font-size: 13px;
+    color: rgba(244,239,224,0.75);
+    white-space: nowrap;
+  }
+  .rate-control select {
+    background: var(--ink);
+    color: var(--text-light);
+    border: 1px solid rgba(244,239,224,0.25);
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    padding: 4px 6px;
+    cursor: pointer;
+    max-width: 160px;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .search-row {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(250,246,236,0.08);
+    border: 1px solid rgba(244,239,224,0.18);
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
+  .search-row svg { flex-shrink: 0; opacity: 0.6; }
+  .search-row input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    padding: 0;
+  }
+  .search-row input::placeholder { color: rgba(244,239,224,0.4); }
+
+  .date-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(250,246,236,0.08);
+    border: 1px solid rgba(244,239,224,0.18);
+    border-radius: 10px;
+    padding: 6px 10px 6px 14px;
+  }
+  .date-filter-row svg { opacity: 0.6; flex-shrink: 0; }
+  .date-filter-row input[type=date] {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 4px 2px;
+    width: 140px;
+    color-scheme: dark;
+  }
+  .date-clear {
+    background: none;
+    border: none;
+    color: rgba(244,239,224,0.5);
+    cursor: pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+    display: none;
+  }
+  .date-clear.show { display: inline-block; }
+  .date-clear:hover { color: var(--coral-light); }
+
+  .count-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: rgba(244,239,224,0.45);
+    margin: 0 0 18px 4px;
+    letter-spacing: 0.02em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--paper);
+    color: var(--text-dark);
+    border-radius: 4px 10px 10px 10px;
+    padding: 20px 22px 18px 54px;
+    position: relative;
+    box-shadow: 0 10px 22px -14px rgba(0,0,0,0.6);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .card:hover {
+    transform: rotate(0deg) translateY(-2px) !important;
+    box-shadow: 0 16px 30px -14px rgba(0,0,0,0.65);
+  }
+
+  .tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 16px;
+  }
+  .tab span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(255,255,255,0.92);
+    text-transform: uppercase;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .word {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .phonetic {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .phonetic.missing { font-style: italic; opacity: 0.55; }
+
+  .accent-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--brass);
+    border: 1px solid var(--brass);
+    border-radius: 10px;
+    padding: 1px 6px;
+  }
+
+  .icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    transition: background 0.15s, transform 0.1s;
+  }
+  .icon-btn:hover { background: rgba(27,42,74,0.08); }
+  .icon-btn:active { transform: scale(0.92); }
+  .icon-btn.playing { color: var(--brass); }
+
+  .meaning-toggle {
+    background: none;
+    border: 1px dashed var(--paper-shadow);
+    color: var(--text-muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .meaning-toggle:hover { border-color: var(--brass); color: var(--brass); }
+
+  .meaning-box {
+    margin-top: 8px;
+    font-size: 15px;
+    color: var(--ink);
+    background: rgba(184,137,43,0.08);
+    border-left: 3px solid var(--brass);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .meaning-box .meaning-text { flex: 1; }
+  .meaning-edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--brass);
+    opacity: 0.7;
+    padding: 2px;
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+  .meaning-edit-icon:hover { opacity: 1; }
+  .meaning-edit-row {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .meaning-edit-row input {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .meaning-edit-row button {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .meaning-save-btn { background: var(--brass); color: #fff; }
+  .meaning-save-btn:hover { background: #a17722; }
+  .meaning-cancel-btn { background: none; color: var(--text-muted); }
+
+  .review-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .review-tag.due { background: rgba(181,67,42,0.12); color: var(--coral); }
+  .review-tag.upcoming { background: rgba(27,42,74,0.06); color: var(--text-muted); }
+  .review-tag.done { background: rgba(61,122,107,0.12); color: #3D7A6B; }
+
+  .learned-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    padding: 2px 9px;
+    border-radius: 10px;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    transition: filter 0.15s, transform 0.1s;
+  }
+  .learned-tag:hover { filter: brightness(1.1); }
+  .learned-tag:active { transform: scale(0.96); }
+  .learned-tag.is-learned { background: rgba(61,122,107,0.15); color: #3D7A6B; }
+  .learned-tag.is-unlearned { background: rgba(184,137,43,0.15); color: var(--brass); }
+
+  .learn-today-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 5px 13px;
+    border-radius: 20px;
+    border: none;
+    background: #3D7A6B;
+    color: #fff;
+    cursor: pointer;
+    transition: filter 0.15s, transform 0.1s;
+  }
+  .learn-today-btn:hover { filter: brightness(1.1); }
+  .learn-today-btn:active { transform: scale(0.95); }
+
+  .sentences-section {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--paper-shadow);
+  }
+  .sentences-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+  }
+
+  .sentence-item {
+    margin-bottom: 8px;
+  }
+  .sentence-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .sentence-text {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #4a453a;
+    flex: 1;
+    padding-top: 6px;
+  }
+  .sentence-text.clickable {
+    cursor: pointer;
+    border-bottom: 1px dashed rgba(74,69,58,0.3);
+    display: inline;
+  }
+  .sentence-text.clickable:hover { color: var(--brass); border-bottom-color: var(--brass); }
+  .translation-toggle {
+    background: none;
+    border: none;
+    cursor: default;
+    color: rgba(42,38,32,0.35);
+    font-size: 12px;
+    padding: 6px 4px;
+    flex-shrink: 0;
+    opacity: 0.6;
+  }
+  .translation-box {
+    margin: 2px 0 0 23px;
+    font-size: 13.5px;
+    color: var(--brass);
+    background: rgba(184,137,43,0.07);
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  .sentence-del {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(42,38,32,0.25);
+    font-size: 15px;
+    padding: 6px 4px;
+    transition: color 0.15s;
+    flex-shrink: 0;
+  }
+  .sentence-del:hover { color: var(--coral); }
+
+  .add-sentence-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .add-sentence-row input {
+    font-size: 13.5px;
+    padding: 8px 10px;
+  }
+  .add-sentence-row .add-sentence-submit {
+    align-self: flex-end;
+    background: var(--brass);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .add-sentence-row .add-sentence-submit:hover { background: #a17722; }
+
+  .card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .date-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: rgba(42,38,32,0.4);
+  }
+  .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(42,38,32,0.3);
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    padding: 4px 6px;
+    transition: color 0.15s;
+  }
+  .delete-btn:hover { color: var(--coral); }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: rgba(244,239,224,0.5);
+  }
+  .empty-state .big {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    color: rgba(244,239,224,0.8);
+    margin-bottom: 8px;
+  }
+
+  /* --- Quiz overlay --- */
+  .quiz-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10,15,28,0.82);
+    backdrop-filter: blur(3px);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .quiz-overlay.show { display: flex; }
+
+  .quiz-card {
+    background: var(--paper);
+    color: var(--text-dark);
+    border-radius: 16px;
+    max-width: 440px;
+    width: 100%;
+    padding: 30px 28px 26px;
+    position: relative;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+
+  .quiz-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: rgba(42,38,32,0.4);
+    cursor: pointer;
+  }
+  .quiz-close:hover { color: var(--coral); }
+
+  .quiz-progress {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .quiz-stage-tag {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--brass);
+    border: 1px solid var(--brass);
+    border-radius: 10px;
+    padding: 2px 9px;
+    margin-bottom: 18px;
+  }
+
+  .quiz-word-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .quiz-word {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 34px;
+  }
+  .quiz-phonetic {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 22px;
+  }
+
+  .quiz-reveal-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 9px;
+    border: 1.5px dashed var(--paper-shadow);
+    background: transparent;
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s;
+    margin-top: 8px;
+  }
+  .quiz-reveal-btn:hover { border-color: var(--brass); color: var(--brass); }
+
+  .quiz-answer {
+    margin-top: 16px;
+    animation: fadeIn 0.25s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: translateY(0);} }
+
+  .quiz-meaning {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    background: rgba(184,137,43,0.1);
+    border-left: 3px solid var(--brass);
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 12px;
+  }
+  .quiz-sentence {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a453a;
+    margin-bottom: 6px;
+    padding-left: 4px;
+    border-left: 2px solid var(--paper-shadow);
+  }
+
+  .quiz-choices {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+  }
+  .quiz-choices button {
+    flex: 1;
+    padding: 13px;
+    border-radius: 9px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14.5px;
+    cursor: pointer;
+    transition: transform 0.12s, filter 0.15s;
+  }
+  .quiz-choices button:hover { filter: brightness(1.08); transform: translateY(-1px); }
+  .btn-remember { background: #3D7A6B; color: #fff; }
+  .btn-forget { background: var(--coral); color: #fff; }
+
+  .quiz-done {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .quiz-done .big {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .quiz-done p { color: var(--text-muted); margin-bottom: 20px; }
+
+  /* --- Celebration (learn-today confetti) --- */
+  .celebrate-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10,15,28,0.35);
+    cursor: pointer;
+  }
+  .celebrate-overlay.show { display: flex; }
+
+  .celebrate-particles {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .confetti-particle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: confettiBurst;
+    animation-timing-function: cubic-bezier(.2,.8,.2,1);
+    animation-fill-mode: forwards;
+  }
+  @keyframes confettiBurst {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    100% { transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(0.3); opacity: 0; }
+  }
+
+  .celebrate-message {
+    position: relative;
+    z-index: 2;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 18px;
+    padding: 32px 40px;
+    text-align: center;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+    animation: celebratePop 0.4s cubic-bezier(.34,1.56,.64,1);
+  }
+  @keyframes celebratePop {
+    0% { transform: scale(0.6); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .celebrate-emoji { font-size: 42px; margin-bottom: 6px; }
+  .celebrate-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .celebrate-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  .celebrate-count span {
+    color: var(--brass);
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .confetti-particle, .celebrate-message { animation: none !important; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card, button, .icon-btn { transition: none !important; }
+  }
+
+  @media (max-width: 520px) {
+    .card { padding: 18px 16px 16px 48px; }
+    h1 { font-size: 30px; }
+    .two-col { grid-template-columns: 1fr; }
+    .toolbar { justify-content: stretch; }
+    .toolbar button { flex: 1; justify-content: center; }
+    .filters { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="field">
+  <header>
+    <div class="eyebrow">MY DAILY VOCABULARY</div>
+    <h1>词汇抽屉</h1>
+    <p class="sub">像整理卡片索引一样，记下今天学到的每一个词 —— 中文含义默认隐藏，例句默认显示中文翻译（英文原句点开才看），点「今天已学习」后，从那天起第 2 / 7 / 15 天自动安排复习测验。</p>
+  </header>
+
+  <div class="storage-banner" id="storage-banner" style="display:none;">
+    ⚠️ 当前数据保存在这个浏览器的本地存储中（不是 Claude 的云端存储），换设备、换浏览器或清除浏览数据都会丢失记录 —— 建议做完当天的记录后，点一下下面的「保存」把数据存到你自己的文件里。
+  </div>
+
+  <div class="linked-file-banner" id="linked-file-banner" style="display:none;">
+    <span>🔗 检测到已关联的本地文件「<strong class="linked-file-name"></strong>」，点击读取最新数据</span>
+    <button class="ghost" id="linked-file-sync-btn">立即同步</button>
+  </div>
+
+  <main>
+    <div class="add-panel">
+      <h2>📇 添加新词</h2>
+      <div class="two-col">
+        <div class="field-row">
+          <label for="word-input">单词</label>
+          <input type="text" id="word-input" placeholder="e.g. ephemeral" autocomplete="off">
+        </div>
+        <div class="field-row">
+          <label for="meaning-input">中文含义（默认隐藏）</label>
+          <input type="text" id="meaning-input" placeholder="e.g. 短暂的" autocomplete="off">
+        </div>
+      </div>
+      <div class="field-row">
+        <label for="sentence-input">例句（可选，之后还能继续添加）</label>
+        <textarea id="sentence-input" placeholder="写一个包含这个单词的句子…"></textarea>
+      </div>
+      <div class="field-row">
+        <label for="sentence-translation-input">例句中文翻译（可选，默认隐藏）</label>
+        <input type="text" id="sentence-translation-input" placeholder="这句例句的中文意思…" autocomplete="off">
+      </div>
+      <div class="add-actions">
+        <span class="status-msg" id="status-msg"></span>
+        <button class="primary" id="add-btn">添加到抽屉</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="rate-controls-group">
+        <div class="rate-control">
+          <label for="rate-select">🔊 语速</label>
+          <select id="rate-select">
+            <option value="0.75">0.75x（慢速）</option>
+            <option value="0.9">0.9x</option>
+            <option value="1">1x（正常）</option>
+          </select>
+        </div>
+        <div class="rate-control">
+          <label for="voice-select">🎙 发音音色</label>
+          <select id="voice-select">
+            <option value="">自动选择</option>
+          </select>
+        </div>
+      </div>
+      <button class="ghost quiz-btn" id="quiz-btn">
+        🧠 今日测验 <span class="badge" id="quiz-badge" style="display:none;">0</span>
+      </button>
+      <button class="ghost" id="save-btn" title="保存到本地文件，之后再点会更新同一个文件">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+        保存
+      </button>
+      <button class="ghost" id="export-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        导出数据
+      </button>
+      <button class="ghost" id="import-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+        导入数据
+      </button>
+      <input type="file" id="import-file" accept=".json,application/json" style="display:none">
+    </div>
+
+    <div class="filters">
+      <div class="search-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="search-input" placeholder="按单词搜索…">
+      </div>
+      <div class="date-filter-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <input type="date" id="date-filter">
+        <button class="date-clear" id="date-clear" title="清除日期筛选">×</button>
+      </div>
+      <button class="ghost" id="unlearned-filter-btn">🔖 仅看未学习</button>
+      <button class="ghost" id="today-learned-filter-btn">📅 今天已学习</button>
+    </div>
+    <div class="count-line" id="count-line"></div>
+
+    <div class="cards" id="cards-container"></div>
+  </main>
+</div>
+
+<div class="quiz-overlay" id="quiz-overlay">
+  <div class="quiz-card" id="quiz-card"></div>
+</div>
+
+<div class="celebrate-overlay" id="celebrate-overlay">
+  <div class="celebrate-particles" id="celebrate-particles"></div>
+  <div class="celebrate-message" id="celebrate-message"></div>
+</div>
+
+<script>
+let allWords = [];
+let currentAudio = null;
+const revealedMeaning = new Set();
+const revealedEnglish = new Set();
+let editingMeaningFor = null;
+let showUnlearnedOnly = false;
+let showTodayLearnedOnly = false;
+let quizQueue = [];
+let quizIndex = 0;
+let quizRevealed = false;
+let celebrateTimeout = null;
+
+const REVIEW_INTERVALS_DAYS = [2, 7, 15];
+
+const brassPalette = ['#B8892B', '#8C6A9E', '#3D7A6B', '#B5432A', '#3E6B8C', '#7A6B3D'];
+function tabColor(letter) {
+  const idx = letter ? letter.toUpperCase().charCodeAt(0) % brassPalette.length : 0;
+  return brassPalette[idx];
+}
+
+function genId() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+}
+
+function computeDue(cycleStartIso, stage) {
+  const days = REVIEW_INTERVALS_DAYS[stage] ?? REVIEW_INTERVALS_DAYS[REVIEW_INTERVALS_DAYS.length - 1];
+  const d = new Date(cycleStartIso);
+  d.setDate(d.getDate() + days);
+  return d.toISOString();
+}
+
+const LOCAL_BACKUP_KEY = 'vocab-words-local-backup';
+let usingLocalFallback = false;
+
+function hasWindowStorage() {
+  return typeof window.storage !== 'undefined'
+    && typeof window.storage.get === 'function'
+    && typeof window.storage.set === 'function';
+}
+
+async function loadWords() {
+  let raw = null;
+  let source = null;
+
+  // Primary: Claude.ai's persistent artifact storage.
+  if (hasWindowStorage()) {
+    try {
+      const res = await window.storage.get('vocab-words', false);
+      if (res && res.value) { raw = res.value; source = 'window.storage'; }
+    } catch (e) {
+      console.error('window.storage read failed', e);
+    }
+  }
+
+  // Fallback / recovery: a local browser backup. This matters most when this
+  // file is opened directly (double-clicked, or in a plain browser tab)
+  // rather than through Claude.ai's artifact preview, since window.storage
+  // only exists inside that preview — without this, all data would silently
+  // vanish on close in that situation.
+  let localRaw = null;
+  try { localRaw = localStorage.getItem(LOCAL_BACKUP_KEY); } catch (e) { /* ignore */ }
+
+  if (!raw && localRaw) {
+    raw = localRaw;
+    source = 'localStorage';
+  }
+
+  usingLocalFallback = !hasWindowStorage();
+  updateStorageBanner();
+
+  try {
+    allWords = raw ? JSON.parse(raw).map(normalizeEntry) : [];
+  } catch (e) {
+    allWords = [];
+  }
+
+  // If we recovered data from the local backup that window.storage doesn't
+  // have (e.g. it was previously unavailable), sync it back up now.
+  if (source === 'localStorage' && hasWindowStorage()) {
+    await saveWords();
+  }
+
+  render();
+}
+
+async function saveWords() {
+  const json = JSON.stringify(allWords);
+  let savedAnywhere = false;
+
+  if (hasWindowStorage()) {
+    try {
+      await window.storage.set('vocab-words', json, false);
+      savedAnywhere = true;
+    } catch (e) {
+      console.error('window.storage save failed', e);
+    }
+  }
+
+  try {
+    localStorage.setItem(LOCAL_BACKUP_KEY, json);
+    savedAnywhere = true;
+  } catch (e) {
+    console.error('localStorage backup failed', e);
+  }
+
+  if (!savedAnywhere) {
+    const statusMsg = document.getElementById('status-msg');
+    if (statusMsg) {
+      statusMsg.textContent = '⚠️ 保存失败，请立即导出数据备份';
+      statusMsg.className = 'status-msg err';
+    }
+  }
+}
+
+function refreshBannerOverlapClass() {
+  const storageBanner = document.getElementById('storage-banner');
+  const linkedBanner = document.getElementById('linked-file-banner');
+  const anyVisible = (storageBanner && storageBanner.style.display !== 'none')
+    || (linkedBanner && linkedBanner.style.display !== 'none');
+  const field = document.querySelector('.field');
+  if (field) field.classList.toggle('banner-visible', anyVisible);
+}
+
+function updateStorageBanner() {
+  const banner = document.getElementById('storage-banner');
+  if (!banner) return;
+  banner.style.display = usingLocalFallback ? 'block' : 'none';
+  refreshBannerOverlapClass();
+}
+
+// Normalizes any entry shape (current or an older exported version) into the
+// current schema, so imports from older/newer versions of this tool keep working.
+function normalizeEntry(raw) {
+  let sentences = [];
+  if (Array.isArray(raw.sentences)) {
+    sentences = raw.sentences.map(s => {
+      if (typeof s === 'string') {
+        return { id: genId(), text: s, translation: '', dateAdded: raw.dateAdded || new Date().toISOString() };
+      }
+      return {
+        id: s.id || genId(),
+        text: s.text || '',
+        translation: s.translation || '',
+        dateAdded: s.dateAdded || raw.dateAdded || new Date().toISOString()
+      };
+    });
+  } else if (raw.sentence) {
+    sentences = [{ id: genId(), text: raw.sentence, translation: '', dateAdded: raw.dateAdded || new Date().toISOString() }];
+  }
+
+  const dateAdded = raw.dateAdded || new Date().toISOString();
+  const learned = !!raw.learned;
+  let learnedAt = raw.learnedAt || null;
+  let review = null;
+
+  if (learned) {
+    // Back-compat: older exports (v5 and earlier) anchored review to dateAdded
+    // and didn't store learnedAt. Recover a reasonable learnedAt from whatever
+    // review data exists, falling back to dateAdded.
+    if (!learnedAt) learnedAt = (raw.review && raw.review.cycleStart) || dateAdded;
+    if (raw.review && typeof raw.review === 'object') {
+      const cycleStart = raw.review.cycleStart || learnedAt;
+      const stage = typeof raw.review.stage === 'number' ? raw.review.stage : 0;
+      review = {
+        stage,
+        cycleStart,
+        nextDue: raw.review.nextDue || computeDue(cycleStart, stage),
+        completed: !!raw.review.completed
+      };
+    } else {
+      review = { stage: 0, cycleStart: learnedAt, nextDue: computeDue(learnedAt, 0), completed: false };
+    }
+  }
+
+  return {
+    id: raw.id || genId(),
+    word: raw.word || '',
+    phonetic: raw.phonetic || '',
+    audio: raw.audio || '',
+    meaning: raw.meaning || raw.chinese || raw.meaning_cn || '',
+    dateAdded,
+    sentences,
+    review,
+    learned,
+    learnedAt
+  };
+}
+
+async function fetchWordInfo(word) {
+  try {
+    const res = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(word.trim().toLowerCase()));
+    if (!res.ok) return null;
+    const data = await res.json();
+    const entry = data[0];
+    if (!entry) return null;
+    const phonetics = entry.phonetics || [];
+    // prefer the American ("-us") pronunciation entry when the API offers more than one
+    const usEntry = phonetics.find(p => p.audio && /-us[-.]|_us[-.]/i.test(p.audio));
+    const anyAudioEntry = phonetics.find(p => p.audio);
+    const chosen = usEntry || anyAudioEntry;
+    let phonetic = (usEntry && usEntry.text) || entry.phonetic || (chosen && chosen.text) || (phonetics.find(p => p.text) || {}).text || '';
+    let audio = chosen ? chosen.audio : '';
+    if (audio && audio.startsWith('//')) audio = 'https:' + audio;
+    return { phonetic, audio };
+  } catch (e) {
+    return null;
+  }
+}
+
+let chosenVoiceURI = '';
+
+function pickUsVoice() {
+  if (!('speechSynthesis' in window)) return null;
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices || !voices.length) return null;
+  if (chosenVoiceURI) {
+    const manual = voices.find(v => (v.voiceURI || v.name) === chosenVoiceURI);
+    if (manual) return manual;
+  }
+  return voices.find(v => v.lang === 'en-US' && /US English|Samantha|Alex|Google US/i.test(v.name))
+      || voices.find(v => v.lang === 'en-US')
+      || voices.find(v => v.lang && v.lang.startsWith('en'))
+      || null;
+}
+
+let speechRate = 0.9;
+
+function speak(text) {
+  if (!('speechSynthesis' in window) || !text) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = speechRate;
+  const voice = pickUsVoice();
+  if (voice) utter.voice = voice;
+  window.speechSynthesis.speak(utter);
+}
+
+// Voice lists load asynchronously on many platforms (notably Android Chrome),
+// so the dropdown has to be (re)built once they're actually available, and
+// again keep the person's saved choice selected each time it's rebuilt.
+function populateVoiceOptions() {
+  if (!('speechSynthesis' in window)) return;
+  const select = document.getElementById('voice-select');
+  if (!select) return;
+  const voices = window.speechSynthesis.getVoices().filter(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+  if (!voices.length) return;
+  select.innerHTML = '<option value="">自动选择</option>' + voices.map(v => {
+    const id = v.voiceURI || v.name;
+    return `<option value="${escapeAttr(id)}">${escapeHtml(v.name)} (${escapeHtml(v.lang)})</option>`;
+  }).join('');
+  select.value = voices.some(v => (v.voiceURI || v.name) === chosenVoiceURI) ? chosenVoiceURI : '';
+}
+
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = populateVoiceOptions;
+  populateVoiceOptions();
+}
+
+function playWordAudio(entry, btn) {
+  if (entry.audio) {
+    if (currentAudio) currentAudio.pause();
+    currentAudio = new Audio(entry.audio);
+    currentAudio.playbackRate = speechRate;
+    currentAudio.play().catch(() => speak(entry.word));
+  } else {
+    speak(entry.word);
+  }
+  pulseIcon(btn);
+}
+
+function pulseIcon(btn) {
+  if (!btn) return;
+  btn.classList.add('playing');
+  setTimeout(() => btn.classList.remove('playing'), 500);
+}
+
+function formatDate(iso) {
+  const d = new Date(iso);
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str || '';
+  return div.innerHTML;
+}
+
+// escapeHtml alone doesn't escape quote characters (not needed for text nodes),
+// but text placed inside an HTML attribute (value="...") must have both quote
+// types escaped or a stray " in the content breaks out of the attribute and
+// truncates it. Use this whenever dynamic text goes inside an attribute.
+function escapeAttr(str) {
+  return escapeHtml(str).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function reviewTagInfo(entry) {
+  if (!entry.learned || !entry.review) return null;
+  if (entry.review.completed) return { label: '✓ 已掌握', cls: 'done' };
+  const due = new Date(entry.review.nextDue);
+  const now = new Date();
+  const dayLabel = REVIEW_INTERVALS_DAYS[entry.review.stage] ?? '';
+  if (due <= now) return { label: `第${dayLabel}天测验 · 待测`, cls: 'due' };
+  const daysLeft = Math.ceil((due - now) / (1000 * 60 * 60 * 24));
+  return { label: `第${dayLabel}天测验 · ${daysLeft}天后`, cls: 'upcoming' };
+}
+
+function getDueWords() {
+  const now = new Date();
+  return allWords.filter(w => w.learned && w.review && !w.review.completed && new Date(w.review.nextDue) <= now);
+}
+
+function updateQuizBadge() {
+  const n = getDueWords().length;
+  const badge = document.getElementById('quiz-badge');
+  badge.textContent = n;
+  badge.style.display = n > 0 ? 'inline-block' : 'none';
+}
+
+function render() {
+  const query = document.getElementById('search-input').value.trim().toLowerCase();
+  const dateFilter = document.getElementById('date-filter').value;
+  document.getElementById('date-clear').classList.toggle('show', !!dateFilter);
+
+  const container = document.getElementById('cards-container');
+  const countLine = document.getElementById('count-line');
+  const unlearnedBtn = document.getElementById('unlearned-filter-btn');
+  unlearnedBtn.classList.toggle('active', showUnlearnedOnly);
+  const todayLearnedBtn = document.getElementById('today-learned-filter-btn');
+  todayLearnedBtn.classList.toggle('active', showTodayLearnedOnly);
+
+  const todayStr = formatDate(new Date().toISOString());
+  let filtered = allWords.filter(w => w.word.toLowerCase().includes(query));
+  if (dateFilter) filtered = filtered.filter(w => formatDate(w.dateAdded) === dateFilter);
+  if (showUnlearnedOnly) filtered = filtered.filter(w => !w.learned);
+  if (showTodayLearnedOnly) filtered = filtered.filter(w => w.learned && w.learnedAt && formatDate(w.learnedAt) === todayStr);
+  filtered = filtered.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+
+  const activeFilters = !!query || !!dateFilter || showUnlearnedOnly || showTodayLearnedOnly;
+  countLine.textContent = allWords.length
+    ? `共 ${allWords.length} 个单词${activeFilters ? ` · 找到 ${filtered.length} 个` : ''}`
+    : '';
+
+  if (!filtered.length) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="big">${allWords.length ? '没有找到匹配的单词' : '抽屉还是空的'}</div>
+        <div>${allWords.length ? '换个关键词、日期或筛选条件试试' : '在上面添加你今天学到的第一个单词吧'}</div>
+      </div>`;
+    updateQuizBadge();
+    return;
+  }
+
+  container.innerHTML = filtered.map((entry, i) => {
+    const letter = entry.word.charAt(0);
+    const rotate = (i % 2 === 0 ? -0.6 : 0.6);
+    const isRevealed = revealedMeaning.has(entry.id);
+    const tag = reviewTagInfo(entry);
+    return `
+      <div class="card" data-id="${entry.id}" style="transform: rotate(${rotate}deg);">
+        <div class="tab" style="background:${tabColor(letter)}"><span>${letter}</span></div>
+        <div class="card-top">
+          <span class="word">${escapeHtml(entry.word)}</span>
+          <span class="phonetic ${entry.phonetic ? '' : 'missing'}">${entry.phonetic ? escapeHtml(entry.phonetic) : '音标未找到'}</span>
+          <button class="icon-btn word-play" title="播放美式发音" aria-label="播放美式发音">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          </button>
+          <button class="meaning-toggle">${isRevealed ? '🙈 隐藏中文' : '👁 显示中文'}</button>
+        </div>
+        ${isRevealed ? (
+          editingMeaningFor === entry.id ? `
+            <div class="meaning-edit-row">
+              <input type="text" class="meaning-edit-input" value="${escapeAttr(entry.meaning)}" placeholder="填写中文含义…">
+              <button class="meaning-save-btn">保存</button>
+              <button class="meaning-cancel-btn">取消</button>
+            </div>` : `
+            <div class="meaning-box">
+              <span class="meaning-text">${entry.meaning ? escapeHtml(entry.meaning) : '（未填写中文含义）'}</span>
+              <button class="meaning-edit-icon" title="修改中文含义">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+              </button>
+            </div>`
+        ) : ''}
+
+        <div class="sentences-section">
+          <div class="sentences-label">例句 · ${entry.sentences.length}</div>
+          ${entry.sentences.map(s => {
+            const hasTranslation = !!s.translation;
+            const primaryText = hasTranslation ? s.translation : s.text;
+            return `
+            <div class="sentence-item" data-sid="${s.id}">
+              <div class="sentence-row">
+                <button class="icon-btn sentence-play" title="播放例句发音" aria-label="播放例句发音">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                </button>
+                <div class="sentence-text ${hasTranslation ? 'clickable' : ''}" title="${hasTranslation ? '点击查看英文原句' : ''}">${escapeHtml(primaryText)}</div>
+                ${hasTranslation ? '' : `<span class="translation-toggle" title="还没有中文翻译">未译</span>`}
+                <button class="sentence-del" title="删除这句例句">×</button>
+              </div>
+              ${hasTranslation && revealedEnglish.has(s.id) ? `<div class="translation-box">${escapeHtml(s.text)}</div>` : ''}
+            </div>`;
+          }).join('')}
+          <div class="add-sentence-row">
+            <input type="text" class="new-sentence-input" placeholder="添加一个新例句…">
+            <input type="text" class="new-translation-input" placeholder="这句例句的中文翻译（可选）…">
+            <button class="add-sentence-submit">＋ 添加例句</button>
+          </div>
+        </div>
+
+        <div class="card-foot">
+          <span class="date-tag">添加于 ${formatDate(entry.dateAdded)}</span>
+          ${entry.learned ? `
+            <button class="learned-tag is-learned" title="点击取消学习标记">✓ 已学习 · ${formatDate(entry.learnedAt)}</button>
+            ${tag ? `<span class="review-tag ${tag.cls}">${tag.label}</span>` : ''}
+          ` : `
+            <button class="learn-today-btn">✅ 今天已学习</button>
+          `}
+          <button class="delete-btn" title="删除整个单词">删除单词</button>
+        </div>
+      </div>`;
+  }).join('');
+
+  container.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const entry = allWords.find(w => w.id === id);
+
+    card.querySelector('.word-play').addEventListener('click', (e) => playWordAudio(entry, e.currentTarget));
+    card.querySelector('.meaning-toggle').addEventListener('click', () => {
+      if (revealedMeaning.has(id)) { revealedMeaning.delete(id); editingMeaningFor = null; }
+      else revealedMeaning.add(id);
+      render();
+    });
+    card.querySelector('.delete-btn').addEventListener('click', () => deleteWord(id));
+    const learnBtn = card.querySelector('.learn-today-btn');
+    if (learnBtn) learnBtn.addEventListener('click', () => markLearnedToday(id));
+    const learnedTagBtn = card.querySelector('.learned-tag');
+    if (learnedTagBtn) learnedTagBtn.addEventListener('click', () => unmarkLearned(id));
+
+    const editIcon = card.querySelector('.meaning-edit-icon');
+    if (editIcon) editIcon.addEventListener('click', () => { editingMeaningFor = id; render(); });
+    const meaningInputEl = card.querySelector('.meaning-edit-input');
+    if (meaningInputEl) {
+      meaningInputEl.focus();
+      meaningInputEl.setSelectionRange(meaningInputEl.value.length, meaningInputEl.value.length);
+      const save = () => saveMeaning(id, meaningInputEl.value);
+      card.querySelector('.meaning-save-btn').addEventListener('click', save);
+      card.querySelector('.meaning-cancel-btn').addEventListener('click', () => { editingMeaningFor = null; render(); });
+      meaningInputEl.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); save(); }
+        if (e.key === 'Escape') { editingMeaningFor = null; render(); }
+      });
+    }
+
+    card.querySelectorAll('.sentence-item').forEach(item => {
+      const sid = item.dataset.sid;
+      const sentence = entry.sentences.find(s => s.id === sid);
+      item.querySelector('.sentence-play').addEventListener('click', (e) => { speak(sentence.text); pulseIcon(e.currentTarget); });
+      item.querySelector('.sentence-del').addEventListener('click', () => deleteSentence(id, sid));
+      const clickableText = item.querySelector('.sentence-text.clickable');
+      if (clickableText) {
+        clickableText.addEventListener('click', () => {
+          if (revealedEnglish.has(sid)) revealedEnglish.delete(sid); else revealedEnglish.add(sid);
+          render();
+        });
+      }
+    });
+
+    const newSentInput = card.querySelector('.new-sentence-input');
+    const newTransInput = card.querySelector('.new-translation-input');
+    const addSentBtn = card.querySelector('.add-sentence-submit');
+    const submitSentence = () => addSentence(id, newSentInput.value, newTransInput.value);
+    addSentBtn.addEventListener('click', submitSentence);
+    newSentInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSentence(); } });
+    newTransInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSentence(); } });
+  });
+
+  updateQuizBadge();
+}
+
+async function saveMeaning(id, value) {
+  const entry = allWords.find(w => w.id === id);
+  if (!entry) return;
+  entry.meaning = (value || '').trim();
+  editingMeaningFor = null;
+  await saveWords();
+  render();
+}
+
+async function addSentence(entryId, text, translation) {
+  text = (text || '').trim();
+  translation = (translation || '').trim();
+  if (!text) return;
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  entry.sentences.push({ id: genId(), text, translation, dateAdded: new Date().toISOString() });
+  await saveWords();
+  render();
+}
+
+async function deleteSentence(entryId, sentenceId) {
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  entry.sentences = entry.sentences.filter(s => s.id !== sentenceId);
+  await saveWords();
+  render();
+}
+
+async function deleteWord(id) {
+  allWords = allWords.filter(w => w.id !== id);
+  revealedMeaning.delete(id);
+  await saveWords();
+  render();
+}
+
+async function markLearnedToday(id) {
+  const entry = allWords.find(w => w.id === id);
+  if (!entry || entry.learned) return;
+  const now = new Date().toISOString();
+  entry.learned = true;
+  entry.learnedAt = now;
+  entry.review = { stage: 0, cycleStart: now, nextDue: computeDue(now, 0), completed: false };
+  await saveWords();
+  render();
+  const learnedCount = allWords.filter(w => w.learned).length;
+  celebrateLearned(learnedCount);
+}
+
+async function unmarkLearned(id) {
+  const entry = allWords.find(w => w.id === id);
+  if (!entry) return;
+  entry.learned = false;
+  entry.learnedAt = null;
+  entry.review = null;
+  await saveWords();
+  render();
+}
+
+const CONFETTI_COLORS = ['#B8892B', '#D9B65C', '#B5432A', '#3D7A6B', '#8C6A9E', '#3E6B8C', '#D97757'];
+
+function spawnConfetti(container, count) {
+  container.innerHTML = '';
+  const frag = document.createDocumentFragment();
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'confetti-particle';
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = 90 + Math.random() * 260;
+    const x = Math.cos(angle) * distance;
+    const y = Math.sin(angle) * distance;
+    const size = 5 + Math.random() * 8;
+    p.style.setProperty('--x', x + 'px');
+    p.style.setProperty('--y', y + 'px');
+    p.style.width = size + 'px';
+    p.style.height = size + 'px';
+    p.style.background = CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)];
+    if (Math.random() > 0.5) p.style.borderRadius = '50%';
+    p.style.animationDuration = (0.8 + Math.random() * 0.7) + 's';
+    p.style.animationDelay = (Math.random() * 0.12) + 's';
+    frag.appendChild(p);
+  }
+  container.appendChild(frag);
+}
+
+const CELEBRATE_LINES = ['太棒了！🎉', '又学会一个词！', '坚持就是胜利！', '词汇抽屉又满了一格！'];
+
+function celebrateLearned(count) {
+  const overlay = document.getElementById('celebrate-overlay');
+  const particles = document.getElementById('celebrate-particles');
+  const message = document.getElementById('celebrate-message');
+
+  spawnConfetti(particles, 80);
+  const line = CELEBRATE_LINES[Math.floor(Math.random() * CELEBRATE_LINES.length)];
+  message.innerHTML = `
+    <div class="celebrate-emoji">🎆</div>
+    <div class="celebrate-title">${line}</div>
+    <div class="celebrate-count">已学习 <span>${count}</span> 个单词</div>
+  `;
+
+  overlay.classList.add('show');
+  clearTimeout(celebrateTimeout);
+  celebrateTimeout = setTimeout(() => overlay.classList.remove('show'), 2200);
+}
+
+document.getElementById('celebrate-overlay').addEventListener('click', () => {
+  document.getElementById('celebrate-overlay').classList.remove('show');
+  clearTimeout(celebrateTimeout);
+});
+
+async function addWord() {
+  const wordInput = document.getElementById('word-input');
+  const meaningInput = document.getElementById('meaning-input');
+  const sentenceInput = document.getElementById('sentence-input');
+  const sentenceTransInput = document.getElementById('sentence-translation-input');
+  const statusMsg = document.getElementById('status-msg');
+  const addBtn = document.getElementById('add-btn');
+
+  const word = wordInput.value.trim();
+  const meaning = meaningInput.value.trim();
+  const sentenceText = sentenceInput.value.trim();
+  const sentenceTranslation = sentenceTransInput.value.trim();
+
+  if (!word) {
+    statusMsg.textContent = '请输入单词';
+    statusMsg.className = 'status-msg err';
+    return;
+  }
+
+  addBtn.disabled = true;
+  statusMsg.textContent = '查询音标中…';
+  statusMsg.className = 'status-msg';
+
+  const info = await fetchWordInfo(word);
+  const dateAdded = new Date().toISOString();
+
+  const entry = {
+    id: genId(),
+    word,
+    meaning,
+    phonetic: info ? info.phonetic : '',
+    audio: info ? info.audio : '',
+    dateAdded,
+    sentences: sentenceText ? [{ id: genId(), text: sentenceText, translation: sentenceTranslation, dateAdded }] : [],
+    review: null,
+    learned: false,
+    learnedAt: null
+  };
+
+  allWords.push(entry);
+  await saveWords();
+
+  if (!info) {
+    statusMsg.textContent = '已添加（未找到音标）';
+    statusMsg.className = 'status-msg err';
+  } else {
+    statusMsg.textContent = '已添加 ✓ 点"今天已学习"后开始安排测验';
+    statusMsg.className = 'status-msg ok';
+  }
+
+  wordInput.value = '';
+  meaningInput.value = '';
+  sentenceInput.value = '';
+  sentenceTransInput.value = '';
+  addBtn.disabled = false;
+  render();
+  setTimeout(() => { statusMsg.textContent = ''; }, 3000);
+}
+
+function buildExportPayload() {
+  return {
+    version: 6,
+    exportedAt: new Date().toISOString(),
+    words: allWords
+  };
+}
+
+function exportData() {
+  const payload = buildExportPayload();
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const stamp = formatDate(new Date().toISOString());
+  a.href = url;
+  a.download = `vocab-export-all-data-${stamp}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  const statusMsg = document.getElementById('status-msg');
+  statusMsg.textContent = `已导出 ${allWords.length} 个单词`;
+  statusMsg.className = 'status-msg ok';
+  setTimeout(() => { statusMsg.textContent = ''; }, 3000);
+}
+
+// Remembers the local file the person picked, so repeated saves overwrite
+// that same file instead of downloading a new copy each time. The handle is
+// also persisted to IndexedDB (see below) so it can be reused across page
+// reloads — that's what lets the page auto-sync with a file living in a
+// Google Drive / iCloud synced folder without re-browsing every visit.
+let savedFileHandle = null;
+
+const HANDLE_DB_NAME = 'vocab-handle-db';
+const HANDLE_STORE = 'handles';
+const HANDLE_KEY = 'linked-file';
+
+function openHandleDB() {
+  return new Promise((resolve, reject) => {
+    if (!('indexedDB' in window)) { reject(new Error('no indexedDB')); return; }
+    const req = indexedDB.open(HANDLE_DB_NAME, 1);
+    req.onupgradeneeded = () => { req.result.createObjectStore(HANDLE_STORE); };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+async function persistFileHandle(handle) {
+  try {
+    const db = await openHandleDB();
+    await new Promise((resolve, reject) => {
+      const tx = db.transaction(HANDLE_STORE, 'readwrite');
+      tx.objectStore(HANDLE_STORE).put(handle, HANDLE_KEY);
+      tx.oncomplete = resolve;
+      tx.onerror = () => reject(tx.error);
+    });
+  } catch (e) { console.error('persist handle failed', e); }
+}
+
+async function loadPersistedFileHandle() {
+  try {
+    const db = await openHandleDB();
+    return await new Promise((resolve, reject) => {
+      const tx = db.transaction(HANDLE_STORE, 'readonly');
+      const req = tx.objectStore(HANDLE_STORE).get(HANDLE_KEY);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => reject(req.error);
+    });
+  } catch (e) { return null; }
+}
+
+async function verifyWritePermission(fileHandle) {
+  const opts = { mode: 'readwrite' };
+  if ((await fileHandle.queryPermission(opts)) === 'granted') return true;
+  if ((await fileHandle.requestPermission(opts)) === 'granted') return true;
+  return false;
+}
+
+async function saveToLocalFile() {
+  const statusMsg = document.getElementById('status-msg');
+
+  // The File System Access API (Chrome/Edge) lets us keep writing to the same
+  // file the person picked. Not all browsers support it — and it may also be
+  // blocked while previewing inside Claude.ai's sandboxed frame — so fall
+  // back to a normal download in that case.
+  if (!('showSaveFilePicker' in window)) {
+    exportData();
+    statusMsg.textContent = '当前浏览器不支持"保存到同一文件"，已改为下载新文件';
+    statusMsg.className = 'status-msg';
+    setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+    return;
+  }
+
+  try {
+    if (!savedFileHandle) {
+      savedFileHandle = await window.showSaveFilePicker({
+        suggestedName: 'vocab-export-all-data.json',
+        types: [{ description: 'JSON 文件', accept: { 'application/json': ['.json'] } }]
+      });
+      await persistFileHandle(savedFileHandle);
+    }
+
+    const ok = await verifyWritePermission(savedFileHandle);
+    if (!ok) throw new Error('write permission denied');
+
+    // Pull in whatever is already in the file first (e.g. saved from another
+    // device) and merge it, so saving is a two-way sync rather than blindly
+    // overwriting anything newer that's already there.
+    try {
+      const existingFile = await savedFileHandle.getFile();
+      const existingText = await existingFile.text();
+      if (existingText && existingText.trim()) {
+        await applyImportedJson(existingText);
+      }
+    } catch (readErr) {
+      console.error('Could not read existing linked file before saving', readErr);
+    }
+
+    const json = JSON.stringify(buildExportPayload(), null, 2);
+    const writable = await savedFileHandle.createWritable();
+    await writable.write(json);
+    await writable.close();
+    hideLinkedFileBanner();
+
+    statusMsg.textContent = `已同步保存到 ${savedFileHandle.name}`;
+    statusMsg.className = 'status-msg ok';
+  } catch (err) {
+    if (err && err.name === 'AbortError') return; // person cancelled the picker
+    console.error('Save to local file failed', err);
+    savedFileHandle = null;
+    exportData();
+    statusMsg.textContent = '无法直接保存到本地文件，已改为下载新文件';
+    statusMsg.className = 'status-msg';
+  }
+  setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+}
+
+// On page load, if a file was linked on a previous visit, try to sync from
+// it automatically. If the browser still has the permission grant, this is
+// silent; otherwise a small banner asks for one click to resume access
+// (browsers require a user gesture to re-grant file permissions — this is a
+// security rule, not something we can skip).
+async function tryAutoSyncLinkedFile() {
+  if (!('indexedDB' in window) || !('showSaveFilePicker' in window)) return;
+  let handle = null;
+  try {
+    handle = await loadPersistedFileHandle();
+  } catch (e) { return; }
+  if (!handle) return;
+  savedFileHandle = handle;
+  try {
+    const perm = await handle.queryPermission({ mode: 'readwrite' });
+    if (perm === 'granted') {
+      await syncFromLinkedFile();
+    } else {
+      showLinkedFileBanner(handle);
+    }
+  } catch (e) {
+    console.error('check linked file permission failed', e);
+  }
+}
+
+async function syncFromLinkedFile() {
+  if (!savedFileHandle) return;
+  try {
+    const file = await savedFileHandle.getFile();
+    const text = await file.text();
+    if (text && text.trim()) {
+      const result = await applyImportedJson(text);
+      if (result.ok) {
+        const statusMsg = document.getElementById('status-msg');
+        statusMsg.textContent = `🔗 已从关联文件同步：新增 ${result.added} 个${result.updated ? `，更新 ${result.updated} 个` : ''}`;
+        statusMsg.className = 'status-msg ok';
+        setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+      }
+    }
+    hideLinkedFileBanner();
+  } catch (e) {
+    console.error('sync from linked file failed', e);
+  }
+}
+
+function showLinkedFileBanner(handle) {
+  const banner = document.getElementById('linked-file-banner');
+  if (!banner) return;
+  const nameEl = banner.querySelector('.linked-file-name');
+  if (nameEl) nameEl.textContent = handle.name;
+  banner.style.display = 'flex';
+  refreshBannerOverlapClass();
+}
+
+function hideLinkedFileBanner() {
+  const banner = document.getElementById('linked-file-banner');
+  if (banner) banner.style.display = 'none';
+  refreshBannerOverlapClass();
+}
+
+function reviewProgressRank(review) {
+  if (!review) return -1;
+  if (review.completed) return 100;
+  return review.stage;
+}
+
+// Merges an imported entry into an existing local one, rather than discarding
+// the import outright. Blank fields get filled in, sentences are unioned by
+// id (so new example sentences added elsewhere aren't lost), and the learned/
+// review state adopts whichever side is further along so progress made on
+// another device or in another export never gets silently overwritten.
+function mergeEntry(existing, imported) {
+  if (!existing.meaning && imported.meaning) existing.meaning = imported.meaning;
+  if (!existing.phonetic && imported.phonetic) existing.phonetic = imported.phonetic;
+  if (!existing.audio && imported.audio) existing.audio = imported.audio;
+
+  const existingSentenceIds = new Set(existing.sentences.map(s => s.id));
+  imported.sentences.forEach(s => {
+    if (!existingSentenceIds.has(s.id)) {
+      existing.sentences.push(s);
+      existingSentenceIds.add(s.id);
+    } else {
+      const es = existing.sentences.find(x => x.id === s.id);
+      if (es && !es.translation && s.translation) es.translation = s.translation;
+    }
+  });
+
+  if (imported.learned && !existing.learned) {
+    existing.learned = true;
+    existing.learnedAt = imported.learnedAt;
+    existing.review = imported.review;
+  } else if (imported.learned && existing.learned) {
+    if (reviewProgressRank(imported.review) > reviewProgressRank(existing.review)) {
+      existing.review = imported.review;
+      existing.learnedAt = imported.learnedAt || existing.learnedAt;
+    }
+  }
+  return existing;
+}
+
+// Parses a JSON export payload and merges it into allWords (adding new words,
+// merging into existing ones). Returns {ok, message, added, updated} rather
+// than touching the DOM directly, so callers (file-picker import, or the
+// linked-file auto-sync) can each decide how to surface the result.
+async function applyImportedJson(text) {
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch (e) {
+    return { ok: false, message: '导入失败：文件不是有效的 JSON' };
+  }
+  const rawWords = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.words) ? parsed.words : null);
+  if (!rawWords) {
+    return { ok: false, message: '导入失败：找不到单词数据' };
+  }
+  let added = 0, updated = 0;
+  rawWords.forEach(raw => {
+    const norm = normalizeEntry(raw);
+    const existing = allWords.find(w => w.id === norm.id);
+    if (existing) {
+      mergeEntry(existing, norm);
+      updated++;
+    } else {
+      allWords.push(norm);
+      added++;
+    }
+  });
+  await saveWords();
+  render();
+  return {
+    ok: true,
+    added,
+    updated,
+    message: `已同步：新增 ${added} 个${updated ? `，更新已有单词 ${updated} 个` : ''}`
+  };
+}
+
+function handleImportFile(file) {
+  const statusMsg = document.getElementById('status-msg');
+  const reader = new FileReader();
+  reader.onload = async () => {
+    const result = await applyImportedJson(reader.result);
+    statusMsg.textContent = result.message;
+    statusMsg.className = result.ok ? 'status-msg ok' : 'status-msg err';
+    setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+  };
+  reader.readAsText(file);
+}
+
+/* ---------------- Quiz (spaced repetition: day 2 / 7 / 15) ---------------- */
+
+function openQuiz() {
+  quizQueue = getDueWords().map(w => w.id);
+  quizIndex = 0;
+  quizRevealed = false;
+  if (!quizQueue.length) {
+    const statusMsg = document.getElementById('status-msg');
+    statusMsg.textContent = '今天没有需要测验的单词';
+    statusMsg.className = 'status-msg';
+    setTimeout(() => { statusMsg.textContent = ''; }, 2500);
+    return;
+  }
+  document.getElementById('quiz-overlay').classList.add('show');
+  renderQuizCard();
+}
+
+function closeQuiz() {
+  document.getElementById('quiz-overlay').classList.remove('show');
+  if (currentAudio) currentAudio.pause();
+  render();
+}
+
+function renderQuizCard() {
+  const quizCard = document.getElementById('quiz-card');
+
+  if (quizIndex >= quizQueue.length) {
+    quizCard.innerHTML = `
+      <button class="quiz-close" id="quiz-close">×</button>
+      <div class="quiz-done">
+        <div class="big">🎉 今日测验完成</div>
+        <p>共测验了 ${quizQueue.length} 个单词</p>
+        <button class="primary" id="quiz-finish-btn">关闭</button>
+      </div>`;
+    document.getElementById('quiz-close').addEventListener('click', closeQuiz);
+    document.getElementById('quiz-finish-btn').addEventListener('click', closeQuiz);
+    return;
+  }
+
+  const entry = allWords.find(w => w.id === quizQueue[quizIndex]);
+  const dayLabel = REVIEW_INTERVALS_DAYS[entry.review.stage] ?? '';
+
+  quizCard.innerHTML = `
+    <button class="quiz-close" id="quiz-close">×</button>
+    <div class="quiz-progress">第 ${quizIndex + 1} / ${quizQueue.length} 个</div>
+    <div class="quiz-stage-tag">第 ${dayLabel} 天复习</div>
+    <div class="quiz-word-row">
+      <div class="quiz-word">${escapeHtml(entry.word)}</div>
+      <button class="icon-btn" id="quiz-play-word" title="播放美式发音" aria-label="播放美式发音">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+    </div>
+    <div class="quiz-phonetic">${entry.phonetic ? escapeHtml(entry.phonetic) : '（音标未找到）'}</div>
+    <div id="quiz-answer-zone">
+      <button class="quiz-reveal-btn" id="quiz-reveal-btn">还记得意思吗？点击显示答案</button>
+    </div>
+  `;
+
+  document.getElementById('quiz-close').addEventListener('click', closeQuiz);
+  document.getElementById('quiz-play-word').addEventListener('click', (e) => playWordAudio(entry, e.currentTarget));
+  document.getElementById('quiz-reveal-btn').addEventListener('click', () => revealQuizAnswer(entry));
+}
+
+function revealQuizAnswer(entry) {
+  const zone = document.getElementById('quiz-answer-zone');
+  zone.innerHTML = `
+    <div class="quiz-answer">
+      <div class="quiz-meaning">${entry.meaning ? escapeHtml(entry.meaning) : '（未填写中文含义）'}</div>
+      ${entry.sentences.slice(0, 3).map(s => `
+        <div class="quiz-sentence">
+          ${escapeHtml(s.text)}
+          ${s.translation ? `<div style="color: var(--text-muted); font-size: 12.5px; margin-top: 2px;">${escapeHtml(s.translation)}</div>` : ''}
+        </div>`).join('')}
+      <div class="quiz-choices">
+        <button class="btn-forget" id="quiz-forget-btn">😵 不记得了</button>
+        <button class="btn-remember" id="quiz-remember-btn">✅ 记得</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('quiz-remember-btn').addEventListener('click', () => answerQuiz(entry, true));
+  document.getElementById('quiz-forget-btn').addEventListener('click', () => answerQuiz(entry, false));
+}
+
+async function answerQuiz(entry, remembered) {
+  if (remembered) {
+    if (entry.review.stage < REVIEW_INTERVALS_DAYS.length - 1) {
+      entry.review.stage += 1;
+      entry.review.nextDue = computeDue(entry.review.cycleStart, entry.review.stage);
+    } else {
+      // passed the final (day 15) round — done, no more quizzes for this word
+      entry.review.completed = true;
+    }
+  } else {
+    const now = new Date().toISOString();
+    entry.review.stage = 0;
+    entry.review.cycleStart = now;
+    entry.review.nextDue = computeDue(now, 0);
+    entry.review.completed = false;
+  }
+  await saveWords();
+  quizIndex += 1;
+  renderQuizCard();
+}
+
+document.getElementById('add-btn').addEventListener('click', addWord);
+document.getElementById('word-input').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') { e.preventDefault(); addWord(); }
+});
+document.getElementById('search-input').addEventListener('input', render);
+document.getElementById('date-filter').addEventListener('change', render);
+document.getElementById('date-clear').addEventListener('click', () => {
+  document.getElementById('date-filter').value = '';
+  render();
+});
+document.getElementById('unlearned-filter-btn').addEventListener('click', () => {
+  showUnlearnedOnly = !showUnlearnedOnly;
+  render();
+});
+document.getElementById('today-learned-filter-btn').addEventListener('click', () => {
+  showTodayLearnedOnly = !showTodayLearnedOnly;
+  // collapse any cards left open (revealed meaning/English, in-progress edits)
+  // so the filtered view starts from the default collapsed state
+  revealedMeaning.clear();
+  revealedEnglish.clear();
+  editingMeaningFor = null;
+  render();
+});
+document.getElementById('save-btn').addEventListener('click', saveToLocalFile);
+document.getElementById('export-btn').addEventListener('click', exportData);
+document.getElementById('import-btn').addEventListener('click', () => document.getElementById('import-file').click());
+document.getElementById('import-file').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (file) handleImportFile(file);
+  e.target.value = '';
+});
+document.getElementById('quiz-btn').addEventListener('click', openQuiz);
+
+const LOCAL_SETTINGS_KEY = 'vocab-settings-local-backup';
+
+async function loadSettings() {
+  let raw = null;
+  if (hasWindowStorage()) {
+    try {
+      const res = await window.storage.get('vocab-settings', false);
+      if (res && res.value) raw = res.value;
+    } catch (e) { /* ignore, try fallback */ }
+  }
+  if (!raw) {
+    try { raw = localStorage.getItem(LOCAL_SETTINGS_KEY); } catch (e) { /* ignore */ }
+  }
+  if (raw) {
+    try {
+      const parsed = JSON.parse(raw);
+      if (parsed.speechRate) speechRate = parsed.speechRate;
+      if (parsed.chosenVoiceURI) chosenVoiceURI = parsed.chosenVoiceURI;
+    } catch (e) { /* ignore malformed settings */ }
+  }
+  document.getElementById('rate-select').value = String(speechRate);
+  populateVoiceOptions();
+}
+
+async function saveSettings() {
+  const json = JSON.stringify({ speechRate, chosenVoiceURI });
+  if (hasWindowStorage()) {
+    try { await window.storage.set('vocab-settings', json, false); } catch (e) { /* ignore */ }
+  }
+  try { localStorage.setItem(LOCAL_SETTINGS_KEY, json); } catch (e) { /* ignore */ }
+}
+
+document.getElementById('rate-select').addEventListener('change', (e) => {
+  speechRate = parseFloat(e.target.value) || 0.9;
+  saveSettings();
+});
+
+document.getElementById('voice-select').addEventListener('change', (e) => {
+  chosenVoiceURI = e.target.value;
+  saveSettings();
+  speak('This is how sentences will sound.');
+});
+
+document.getElementById('linked-file-sync-btn').addEventListener('click', async () => {
+  if (!savedFileHandle) return;
+  const ok = await verifyWritePermission(savedFileHandle);
+  if (ok) await syncFromLinkedFile();
+});
+
+loadSettings();
+loadWords().then(() => tryAutoSyncLinkedFile());
+
+// Registers the service worker so the page qualifies as an installable PWA
+// (Android "add to home screen" / "install app" prompt, and what PWABuilder
+// needs to be able to package this into an APK). Silently no-ops if this
+// file isn't served from a real http(s) origin — e.g. Claude.ai's preview or
+// a plain double-clicked local file — since service workers require that.
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js').catch(() => { /* not fatal */ });
+  });
+}
+</script>
+</body>
+</html>
