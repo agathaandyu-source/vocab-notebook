@@ -783,14 +783,46 @@
     border-radius: 0 6px 6px 0;
     margin-bottom: 12px;
   }
-  .quiz-sentence {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #4a453a;
+  .quiz-sentences {
     margin-bottom: 6px;
+  }
+  .quiz-sentence-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
     padding-left: 4px;
     border-left: 2px solid var(--paper-shadow);
   }
+  .quiz-sentence-row .icon-btn {
+    flex-shrink: 0;
+    margin-top: -4px;
+  }
+  .quiz-sentence-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4a453a;
+    padding-top: 6px;
+    animation: fadeIn 0.2s ease;
+  }
+  .quiz-sentence-translation {
+    color: var(--text-muted);
+    font-size: 12.5px;
+    margin-top: 2px;
+  }
+  .quiz-sentence-toggle {
+    background: none;
+    border: 1px dashed var(--paper-shadow);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .quiz-sentence-toggle:hover { border-color: var(--brass); color: var(--brass); }
 
   .quiz-choices {
     display: flex;
@@ -911,7 +943,7 @@
   <header>
     <div class="eyebrow">MY DAILY VOCABULARY</div>
     <h1>词汇抽屉</h1>
-    <p class="sub">像整理卡片索引一样，记下今天学到的每一个词 —— 中文含义默认隐藏，例句默认显示中文翻译（英文原句点开才看），点「今天已学习」后，从那天起第 2 / 7 / 15 天自动安排复习测验。</p>
+    <p class="sub">像整理卡片索引一样，记下今天学到的每一个词 —— 中文含义默认隐藏，例句默认显示中文翻译（英文原句点开才看），点「今天已学习」后，从那天起第 1 / 2 / 4 / 7 / 15 天自动安排复习测验。</p>
   </header>
 
   <div class="storage-banner" id="storage-banner" style="display:none;">
@@ -941,7 +973,7 @@
         <textarea id="sentence-input" placeholder="写一个包含这个单词的句子…"></textarea>
       </div>
       <div class="field-row">
-        <label for="sentence-translation-input">例句中文翻译（可选，默认隐藏）</label>
+        <label for="sentence-translation-input">例句中文翻译（可选，默认显示；英文原句点开才看）</label>
         <input type="text" id="sentence-translation-input" placeholder="这句例句的中文意思…" autocomplete="off">
       </div>
       <div class="add-actions">
@@ -996,7 +1028,7 @@
         <button class="date-clear" id="date-clear" title="清除日期筛选">×</button>
       </div>
       <button class="ghost" id="unlearned-filter-btn">🔖 仅看未学习</button>
-      <button class="ghost" id="today-learned-filter-btn">📅 今天已学习</button>
+      <button class="ghost" id="today-learned-filter-btn">✅ 已学习</button>
     </div>
     <div class="count-line" id="count-line"></div>
 
@@ -1020,13 +1052,15 @@ const revealedMeaning = new Set();
 const revealedEnglish = new Set();
 let editingMeaningFor = null;
 let showUnlearnedOnly = false;
-let showTodayLearnedOnly = false;
+let showLearnedOnly = false;
 let quizQueue = [];
 let quizIndex = 0;
 let quizRevealed = false;
+let quizSentenceRevealed = new Set();
+let quizForgotPending = false;
 let celebrateTimeout = null;
 
-const REVIEW_INTERVALS_DAYS = [2, 7, 15];
+const REVIEW_INTERVALS_DAYS = [1, 2, 4, 7, 15];
 
 const brassPalette = ['#B8892B', '#8C6A9E', '#3D7A6B', '#B5432A', '#3E6B8C', '#7A6B3D'];
 function tabColor(letter) {
@@ -1040,9 +1074,15 @@ function genId() {
 
 function computeDue(cycleStartIso, stage) {
   const days = REVIEW_INTERVALS_DAYS[stage] ?? REVIEW_INTERVALS_DAYS[REVIEW_INTERVALS_DAYS.length - 1];
-  const d = new Date(cycleStartIso);
-  d.setDate(d.getDate() + days);
-  return d.toISOString();
+  const start = new Date(cycleStartIso);
+  // Anchor to local midnight of cycleStart's calendar date (not its exact
+  // clock time) before adding the interval. Otherwise a word learned at,
+  // say, 2pm only becomes "due" at 2pm N days later — so if you check the
+  // quiz in the morning, yesterday's words with a 1-day interval look like
+  // they're not due yet even though it's already a new calendar day.
+  const due = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+  due.setDate(due.getDate() + days);
+  return due.toISOString();
 }
 
 const LOCAL_BACKUP_KEY = 'vocab-words-local-backup';
@@ -1180,7 +1220,11 @@ function normalizeEntry(raw) {
       review = {
         stage,
         cycleStart,
-        nextDue: raw.review.nextDue || computeDue(cycleStart, stage),
+        // Recomputed fresh rather than trusting raw.review.nextDue: nextDue is
+        // fully derived from cycleStart+stage, so recomputing here also
+        // retroactively applies the calendar-day due-date fix to entries
+        // that were already stored under the old time-sensitive logic.
+        nextDue: computeDue(cycleStart, stage),
         completed: !!raw.review.completed
       };
     } else {
@@ -1342,17 +1386,16 @@ function render() {
   const countLine = document.getElementById('count-line');
   const unlearnedBtn = document.getElementById('unlearned-filter-btn');
   unlearnedBtn.classList.toggle('active', showUnlearnedOnly);
-  const todayLearnedBtn = document.getElementById('today-learned-filter-btn');
-  todayLearnedBtn.classList.toggle('active', showTodayLearnedOnly);
+  const learnedBtn = document.getElementById('today-learned-filter-btn');
+  learnedBtn.classList.toggle('active', showLearnedOnly);
 
-  const todayStr = formatDate(new Date().toISOString());
   let filtered = allWords.filter(w => w.word.toLowerCase().includes(query));
   if (dateFilter) filtered = filtered.filter(w => formatDate(w.dateAdded) === dateFilter);
   if (showUnlearnedOnly) filtered = filtered.filter(w => !w.learned);
-  if (showTodayLearnedOnly) filtered = filtered.filter(w => w.learned && w.learnedAt && formatDate(w.learnedAt) === todayStr);
+  if (showLearnedOnly) filtered = filtered.filter(w => w.learned);
   filtered = filtered.sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
 
-  const activeFilters = !!query || !!dateFilter || showUnlearnedOnly || showTodayLearnedOnly;
+  const activeFilters = !!query || !!dateFilter || showUnlearnedOnly || showLearnedOnly;
   countLine.textContent = allWords.length
     ? `共 ${allWords.length} 个单词${activeFilters ? ` · 找到 ${filtered.length} 个` : ''}`
     : '';
@@ -1407,7 +1450,7 @@ function render() {
             <div class="sentence-item" data-sid="${s.id}">
               <div class="sentence-row">
                 <button class="icon-btn sentence-play" title="播放例句发音" aria-label="播放例句发音">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                 </button>
                 <div class="sentence-text ${hasTranslation ? 'clickable' : ''}" title="${hasTranslation ? '点击查看英文原句' : ''}">${escapeHtml(primaryText)}</div>
                 ${hasTranslation ? '' : `<span class="translation-toggle" title="还没有中文翻译">未译</span>`}
@@ -1669,12 +1712,20 @@ function buildExportPayload() {
   };
 }
 
+function formatDateTimeStamp() {
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, '0');
+  const datePart = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const timePart = `${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+  return `${datePart}-${timePart}`;
+}
+
 function exportData() {
   const payload = buildExportPayload();
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  const stamp = formatDate(new Date().toISOString());
+  const stamp = formatDateTimeStamp();
   a.href = url;
   a.download = `vocab-export-all-data-${stamp}.json`;
   document.body.appendChild(a);
@@ -1973,6 +2024,8 @@ function closeQuiz() {
 
 function renderQuizCard() {
   const quizCard = document.getElementById('quiz-card');
+  quizSentenceRevealed = new Set();
+  quizForgotPending = false;
 
   if (quizIndex >= quizQueue.length) {
     quizCard.innerHTML = `
@@ -2011,24 +2064,67 @@ function renderQuizCard() {
   document.getElementById('quiz-reveal-btn').addEventListener('click', () => revealQuizAnswer(entry));
 }
 
+// Renders one example sentence row for the quiz. Collapsed by default (just
+// the play icon), so seeing the sentence itself doesn't hand you the meaning
+// for free. It opens either when tapped individually, or all at once once
+// "不记得了" is pressed (quizForgotPending).
+function renderQuizSentenceRow(s) {
+  const isOpen = quizForgotPending || quizSentenceRevealed.has(s.id);
+  return `
+    <div class="quiz-sentence-row" data-sid="${s.id}">
+      <button class="icon-btn quiz-sentence-play" title="播放例句发音" aria-label="播放例句发音">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+      ${isOpen ? `
+        <div class="quiz-sentence-text">
+          ${escapeHtml(s.text)}
+          ${s.translation ? `<div class="quiz-sentence-translation">${escapeHtml(s.translation)}</div>` : ''}
+        </div>
+      ` : `
+        <button class="quiz-sentence-toggle" title="显示这句例句">显示例句</button>
+      `}
+    </div>`;
+}
+
 function revealQuizAnswer(entry) {
   const zone = document.getElementById('quiz-answer-zone');
+  const sentencesHtml = entry.sentences.slice(0, 3).map(s => renderQuizSentenceRow(s)).join('');
+  const choicesHtml = quizForgotPending
+    ? `<div class="quiz-choices"><button class="btn-forget" id="quiz-continue-btn">继续下一个 →</button></div>`
+    : `<div class="quiz-choices">
+         <button class="btn-forget" id="quiz-forget-btn">😵 不记得了</button>
+         <button class="btn-remember" id="quiz-remember-btn">✅ 记得</button>
+       </div>`;
+
   zone.innerHTML = `
     <div class="quiz-answer">
       <div class="quiz-meaning">${entry.meaning ? escapeHtml(entry.meaning) : '（未填写中文含义）'}</div>
-      ${entry.sentences.slice(0, 3).map(s => `
-        <div class="quiz-sentence">
-          ${escapeHtml(s.text)}
-          ${s.translation ? `<div style="color: var(--text-muted); font-size: 12.5px; margin-top: 2px;">${escapeHtml(s.translation)}</div>` : ''}
-        </div>`).join('')}
-      <div class="quiz-choices">
-        <button class="btn-forget" id="quiz-forget-btn">😵 不记得了</button>
-        <button class="btn-remember" id="quiz-remember-btn">✅ 记得</button>
-      </div>
+      <div class="quiz-sentences">${sentencesHtml}</div>
+      ${choicesHtml}
     </div>
   `;
-  document.getElementById('quiz-remember-btn').addEventListener('click', () => answerQuiz(entry, true));
-  document.getElementById('quiz-forget-btn').addEventListener('click', () => answerQuiz(entry, false));
+
+  zone.querySelectorAll('.quiz-sentence-row').forEach(row => {
+    const sid = row.dataset.sid;
+    const sentence = entry.sentences.find(s => s.id === sid);
+    const playBtn = row.querySelector('.quiz-sentence-play');
+    if (playBtn) playBtn.addEventListener('click', (e) => { speak(sentence.text); pulseIcon(e.currentTarget); });
+    const toggleBtn = row.querySelector('.quiz-sentence-toggle');
+    if (toggleBtn) toggleBtn.addEventListener('click', () => {
+      quizSentenceRevealed.add(sid);
+      revealQuizAnswer(entry);
+    });
+  });
+
+  const rememberBtn = document.getElementById('quiz-remember-btn');
+  const forgetBtn = document.getElementById('quiz-forget-btn');
+  const continueBtn = document.getElementById('quiz-continue-btn');
+  if (rememberBtn) rememberBtn.addEventListener('click', () => answerQuiz(entry, true));
+  if (forgetBtn) forgetBtn.addEventListener('click', () => {
+    quizForgotPending = true;
+    revealQuizAnswer(entry);
+  });
+  if (continueBtn) continueBtn.addEventListener('click', () => answerQuiz(entry, false));
 }
 
 async function answerQuiz(entry, remembered) {
@@ -2067,7 +2163,7 @@ document.getElementById('unlearned-filter-btn').addEventListener('click', () => 
   render();
 });
 document.getElementById('today-learned-filter-btn').addEventListener('click', () => {
-  showTodayLearnedOnly = !showTodayLearnedOnly;
+  showLearnedOnly = !showLearnedOnly;
   // collapse any cards left open (revealed meaning/English, in-progress edits)
   // so the filtered view starts from the default collapsed state
   revealedMeaning.clear();
