@@ -2230,8 +2230,34 @@ document.getElementById('linked-file-sync-btn').addEventListener('click', async 
   if (ok) await syncFromLinkedFile();
 });
 
+// If this device/browser has no local data yet (fresh install, new device),
+// try loading a baseline dataset bundled with the site itself — a
+// seed-data.json file placed next to index.html in the repo. Only runs when
+// truly empty, and only over a real http(s) origin (GitHub Pages etc.),
+// since a plain local file or Claude's preview can't fetch a sibling file.
+async function trySeedFromBundledData() {
+  if (allWords.length > 0) return;
+  if (!location.protocol.startsWith('http')) return;
+  try {
+    const res = await fetch('./seed-data.json', { cache: 'no-store' });
+    if (!res.ok) return; // no seed file published — perfectly fine, just start empty
+    const text = await res.text();
+    const result = await applyImportedJson(text);
+    if (result.ok && (result.added || result.updated)) {
+      const statusMsg = document.getElementById('status-msg');
+      statusMsg.textContent = `📦 已从初始数据加载 ${result.added} 个单词`;
+      statusMsg.className = 'status-msg ok';
+      setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+    }
+  } catch (e) {
+    // no seed-data.json, or the fetch failed — silently start with an empty drawer
+  }
+}
+
 loadSettings();
-loadWords().then(() => tryAutoSyncLinkedFile());
+loadWords()
+  .then(() => trySeedFromBundledData())
+  .then(() => tryAutoSyncLinkedFile());
 
 // Registers the service worker so the page qualifies as an installable PWA
 // (Android "add to home screen" / "install app" prompt, and what PWABuilder

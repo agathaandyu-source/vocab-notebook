@@ -1,0 +1,1483 @@
+{
+  "version": 6,
+  "exportedAt": "2026-07-12T16:24:39.589Z",
+  "words": [
+    {
+      "id": "mrgcs6d8xqakh",
+      "word": "Incidentally",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "顺便一提 / 顺带说一下 / 附带地",
+      "dateAdded": "2026-07-11T12:41:02.012Z",
+      "sentences": [
+        {
+          "id": "mrgfcedccwwkg",
+          "text": "The project is going well. Incidentally, the client mentioned a new requirement.",
+          "translation": "项目进展顺利。顺便说一下，客户提到了一个新需求。",
+          "dateAdded": "2026-07-11T13:52:44.736Z"
+        },
+        {
+          "id": "mrgfemgh3m7z2",
+          "text": "The bug was discovered incidentally during regression testing.",
+          "translation": "这个 bug 是在回归测试中偶然发现的。",
+          "dateAdded": "2026-07-11T13:54:28.529Z"
+        },
+        {
+          "id": "mrgfihgc9oci5",
+          "text": "The feature was added incidentally as part of a larger update.",
+          "translation": "这个功能是附带地在更大的更新中加进去的。",
+          "dateAdded": "2026-07-11T13:57:28.668Z"
+        },
+        {
+          "id": "mrgfv8vwflgkc",
+          "text": "The DELETE script has been executed successfully. Incidentally, the SR you referenced has already been marked as Completed. Kindly advise on next steps.",
+          "translation": "DELETE 脚本已成功执行。顺便一提，您提到的 SR 已被标记为已完成。请告知后续步骤。",
+          "dateAdded": "2026-07-11T14:07:24.092Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T12:41:02.012Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T12:41:02.012Z"
+    },
+    {
+      "id": "mrgd01pcgvdyv",
+      "word": "Coincidentally",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "巧合的是",
+      "dateAdded": "2026-07-11T12:47:09.216Z",
+      "sentences": [
+        {
+          "id": "mrgfo1lq19ax9",
+          "text": "Coincidentally, I met John yesterday too",
+          "translation": "巧合的是，我昨天也见到 John 了。（强调巧合",
+          "dateAdded": "2026-07-11T14:01:48.062Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T12:47:09.216Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T12:47:09.216Z"
+    },
+    {
+      "id": "mrgd3khmkxn5u",
+      "word": "Separately",
+      "phonetic": "/ˈsɛpəɹətli/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/separately-us.mp3",
+      "meaning": "另外 / 分开说",
+      "dateAdded": "2026-07-11T12:49:53.530Z",
+      "sentences": [
+        {
+          "id": "mrgiduka32n7p",
+          "text": "Thanks for confirming the audit log. Separately, could you also confirm the database timeout",
+          "translation": "感谢您确认审计日志。另外，能否也确认一下数据库的超时设置？",
+          "dateAdded": "2026-07-11T15:17:51.226Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T12:49:53.530Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T12:49:53.530Z"
+    },
+    {
+      "id": "mrgd87e8hjf8w",
+      "word": "period",
+      "phonetic": "/ˈpɪəɹɪəd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/period-us.mp3",
+      "meaning": "过去某段时期的，句号（美式），月经，就这样！/ 到此为止！，上课节次",
+      "dateAdded": "2026-07-11T12:53:29.840Z",
+      "sentences": [
+        {
+          "id": "mrhx46dl0zolo",
+          "text": "The retention period is 7 years.",
+          "translation": "保留期限是 7 年",
+          "dateAdded": "2026-07-12T14:58:00.393Z"
+        },
+        {
+          "id": "mrhx87mq57x9e",
+          "text": "End your sentence with a period.",
+          "translation": "用句号结束你的句子。",
+          "dateAdded": "2026-07-12T15:01:08.643Z"
+        },
+        {
+          "id": "mrhx9f58o0u1g",
+          "text": "No, we're not doing that. Period.",
+          "translation": "不，我们不会这么做。就这样。",
+          "dateAdded": "2026-07-12T15:02:05.036Z"
+        },
+        {
+          "id": "mrhxasti3v5tp",
+          "text": "The teacher assigned homework in the last period.",
+          "translation": "老师在最后一节课布置了作业。",
+          "dateAdded": "2026-07-12T15:03:09.414Z"
+        },
+        {
+          "id": "mrhxbbt617djx",
+          "text": "She's on her period.",
+          "translation": "她来月经了",
+          "dateAdded": "2026-07-12T15:03:34.026Z"
+        },
+        {
+          "id": "mrhxc1jmu2ftf",
+          "text": "probation period",
+          "translation": "试用期",
+          "dateAdded": "2026-07-12T15:04:07.378Z"
+        },
+        {
+          "id": "mrhxeydp883or",
+          "text": "Over a period of several months, we've observed the same issue recurring.",
+          "translation": "在几个月的期间内，我们观察到同样的问题反复出现。",
+          "dateAdded": "2026-07-12T15:06:23.245Z"
+        },
+        {
+          "id": "mrhxhr1mejimy",
+          "text": "This is an exciting period for the team with the new project.",
+          "translation": "对团队来说，这是一个令人兴奋的时期，因为有了新项目。",
+          "dateAdded": "2026-07-12T15:08:33.706Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T15:11:33.581Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T15:11:33.581Z"
+    },
+    {
+      "id": "mrgdsmv7d705k",
+      "word": "departure",
+      "phonetic": "/dɪˈpɑː(ɹ)tjə(ɹ)/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/departure-us.mp3",
+      "meaning": "出发",
+      "dateAdded": "2026-07-11T13:09:23.011Z",
+      "sentences": [
+        {
+          "id": "mrgeio0ruzz7y",
+          "text": "To clarify, 10:30 is my departure time, not arrival. Actually, it's too tight now",
+          "translation": "澄清一下，10:30 是我出发的时间，不是到达。其实现在时间太赶了",
+          "dateAdded": "2026-07-11T13:29:37.563Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T13:09:23.011Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T13:09:23.011Z"
+    },
+    {
+      "id": "mrge0sfai5cl8",
+      "word": "Happen to",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "碰巧 / 恰好 / 万一 / 正好  强调\"不是有意安排的\"，是巧合、偶然发生的。 比do you know 更礼貌",
+      "dateAdded": "2026-07-11T13:15:43.462Z",
+      "sentences": [
+        {
+          "id": "mrgekfu8zxf9d",
+          "text": "Happen to contain the same NRIC — do we overwrite it?",
+          "translation": "如果碰巧 / 恰好含有相同的 NRIC —— 我们要覆盖它吗？",
+          "dateAdded": "2026-07-11T13:31:00.272Z"
+        },
+        {
+          "id": "mrger5mlkp8li",
+          "text": "We happened to meet at the coffee shop.",
+          "translation": "我们恰好在咖啡店遇见了。",
+          "dateAdded": "2026-07-11T13:36:13.629Z"
+        },
+        {
+          "id": "mrget0d2rvfuf",
+          "text": "These records happen to contain the same NRIC.",
+          "translation": "这些记录恰好含有相同的 NRIC",
+          "dateAdded": "2026-07-11T13:37:40.118Z"
+        },
+        {
+          "id": "mrgevrlz95fj8",
+          "text": "Do you happen to know where the meeting room is?",
+          "translation": "你是否碰巧知道会议室在哪？",
+          "dateAdded": "2026-07-11T13:39:48.743Z"
+        },
+        {
+          "id": "mrgf3r8a4930c",
+          "text": "It just so happens that I know him.",
+          "translation": "事情就是这么巧，我认识他",
+          "dateAdded": "2026-07-11T13:46:01.498Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T13:15:43.462Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T13:15:43.462Z"
+    },
+    {
+      "id": "mrgfs0lex3c5k",
+      "word": "identified",
+      "phonetic": "/aɪˈdɛn.tɪ.faɪd/",
+      "audio": "",
+      "meaning": "已识别的 / 已发现的 / 已确认的",
+      "dateAdded": "2026-07-11T14:04:53.378Z",
+      "sentences": [
+        {
+          "id": "mrhxqc1iifgei",
+          "text": "We identify new risks every quarter.",
+          "translation": "我们每季度识别新风险",
+          "dateAdded": "2026-07-12T15:15:14.166Z"
+        },
+        {
+          "id": "mrhxrkvdz890t",
+          "text": "We have identified the root cause of the issue",
+          "translation": "我们已经识别了问题的根本原因",
+          "dateAdded": "2026-07-12T15:16:12.265Z"
+        },
+        {
+          "id": "mrhxtt221ygrx",
+          "text": "The identified issues will be addressed by Q4.",
+          "translation": "已识别的问题将在 Q4 前解决",
+          "dateAdded": "2026-07-12T15:17:56.186Z"
+        },
+        {
+          "id": "mrhxwtqj7qap6",
+          "text": "previously identified issues",
+          "translation": "之前识别的问题",
+          "dateAdded": "2026-07-12T15:20:17.035Z"
+        },
+        {
+          "id": "mrhxz6ppkyve6",
+          "text": "risk identification",
+          "translation": "风险识别",
+          "dateAdded": "2026-07-12T15:22:07.165Z"
+        },
+        {
+          "id": "mrhy21i489agq",
+          "text": "Once identified, the vulnerability is escalated to the security team.",
+          "translation": "一旦识别，漏洞就会上报给安全团队",
+          "dateAdded": "2026-07-12T15:24:20.380Z"
+        },
+        {
+          "id": "mrhy7ghc6asa5",
+          "text": "The issue was not previously identified during UAT and only surfaced in PROD.",
+          "translation": "该问题在 UAT 期间未被识别，仅在 PROD 中显现。",
+          "dateAdded": "2026-07-12T15:28:33.072Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T15:29:56.441Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T15:29:56.441Z"
+    },
+    {
+      "id": "mrgfsxme2yew2",
+      "word": "compatibility",
+      "phonetic": "/kəmˌpætɪˈbɪlɪti/",
+      "audio": "",
+      "meaning": "兼容性",
+      "dateAdded": "2026-07-11T14:05:36.182Z",
+      "sentences": [],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T15:12:37.184Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T15:12:37.184Z"
+    },
+    {
+      "id": "mrgg34dmvo6lh",
+      "word": "Accidentally",
+      "phonetic": "/ˌæksəˈdɛnt(ə)li/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/accidentally-us.mp3",
+      "meaning": "意外地 / 不小心 ， 描述\"错误 / 意外\"",
+      "dateAdded": "2026-07-11T14:13:31.498Z",
+      "sentences": [
+        {
+          "id": "mrggem0mi8d1d",
+          "text": "I accidentally deleted the file",
+          "translation": "我不小心删除了文件",
+          "dateAdded": "2026-07-11T14:22:27.574Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T15:30:45.299Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T15:30:45.299Z"
+    },
+    {
+      "id": "mrggs83zdowgq",
+      "word": "That reminds me",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "这提醒了我",
+      "dateAdded": "2026-07-11T14:33:02.735Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggslxapb94y",
+      "word": "Just to add",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "补充一下",
+      "dateAdded": "2026-07-11T14:33:20.638Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggtsru5tbqv",
+      "word": "occurs",
+      "phonetic": "/əˈkɝz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/occurs-us.mp3",
+      "meaning": "发生",
+      "dateAdded": "2026-07-11T14:34:16.170Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggv56dtcaia",
+      "word": "sync-up",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "碰头会",
+      "dateAdded": "2026-07-11T14:35:18.901Z",
+      "sentences": [
+        {
+          "id": "mrggw3vj6j4r0",
+          "text": "Incidentally, we'll have a sync-up at 3 PM.",
+          "translation": "顺便说下，我们下午 3 点开碰头会。",
+          "dateAdded": "2026-07-11T14:36:03.871Z"
+        },
+        {
+          "id": "mrgioc7dz8tbt",
+          "text": "sync",
+          "translation": "",
+          "dateAdded": "2026-07-11T15:26:00.649Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggxz4tso1vt",
+      "word": "Nevertheless",
+      "phonetic": "/ˈnɛvəðəlɛs/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/nevertheless-uk.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-11T14:37:31.037Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggyo214i9w7",
+      "word": "Consequently",
+      "phonetic": "/ˈkɑːnsəˌkwɛntli/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/consequently-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-11T14:38:03.337Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggz7eifulxi",
+      "word": "Meanwhile",
+      "phonetic": "/ˈmiːnhwaɪl/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-11T14:38:28.410Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrggzmf9aflfa",
+      "word": "Furthermore",
+      "phonetic": "/ˈfɜː(ɹ).ðə(ɹ).mɔː(ɹ)/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/furthermore-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-11T14:38:47.877Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrgh0bhns026s",
+      "word": "Assist in",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "协助 / 帮助（做某事）比 \"help\" 更正式、更书面",
+      "dateAdded": "2026-07-11T14:39:20.363Z",
+      "sentences": [
+        {
+          "id": "mrgh1nx2mboyf",
+          "text": "I will assist in resolving the issue.",
+          "translation": "我将协助解决这个问题",
+          "dateAdded": "2026-07-11T14:40:23.126Z"
+        },
+        {
+          "id": "mrgh7rr86hlaj",
+          "text": "We're happy to assist with any technical queries.",
+          "translation": "我们乐意协助解答任何技术疑问。",
+          "dateAdded": "2026-07-11T14:45:08.036Z"
+        },
+        {
+          "id": "mrghaggig4drn",
+          "text": "Please assist Sydney in taking over Hubert's role.",
+          "translation": "请协助 Sydney 接手 Hubert 的角色。",
+          "dateAdded": "2026-07-11T14:47:13.362Z"
+        },
+        {
+          "id": "mrghdcnjrzlkn",
+          "text": "We'll assist you with the migration going forward.",
+          "translation": "后续我们将协助您完成迁移。",
+          "dateAdded": "2026-07-11T14:49:28.399Z"
+        },
+        {
+          "id": "mrghh3u7sr8ba",
+          "text": "Could you kindly assist with the script execution",
+          "translation": "",
+          "dateAdded": "2026-07-11T14:52:23.599Z"
+        },
+        {
+          "id": "mrghk0n5ufz8a",
+          "text": "We will assist in resolving the production issue and provide an update by EOD.",
+          "translation": "我们将协助解决生产问题，并在今天下班前提供更新。",
+          "dateAdded": "2026-07-11T14:54:39.425Z"
+        },
+        {
+          "id": "mrghmrkj026l7",
+          "text": "Please let me know if I can assist further.",
+          "translation": "如需进一步协助，请告知",
+          "dateAdded": "2026-07-11T14:56:47.635Z"
+        },
+        {
+          "id": "mrghnzdzrsuhf",
+          "text": "Feel free to reach out if you need assistance.",
+          "translation": "如需协助，欢迎随时联系。",
+          "dateAdded": "2026-07-11T14:57:44.423Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T14:39:20.363Z",
+        "nextDue": "2026-07-11T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T14:39:20.363Z"
+    },
+    {
+      "id": "mrgi46ruohq2a",
+      "word": "clarify",
+      "phonetic": "/ˈklæɹɪfaɪ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/clarify-uk.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-11T15:10:20.490Z",
+      "sentences": [
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
+        },
+        {
+          "id": "mrgi5ct2r556c",
+          "text": "clarifications",
+          "translation": "",
+          "dateAdded": "2026-07-11T15:11:14.966Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrgl3jetf0mwe",
+      "word": "If you haven't already",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "如果你还没有（做过）的话，用来礼貌地提醒对方做一件事，同时不冒犯",
+      "dateAdded": "2026-07-11T16:33:49.061Z",
+      "sentences": [
+        {
+          "id": "mrgl3jetpiegk",
+          "text": "Please loop in the DBA, if you haven't already.",
+          "translation": "请把 DBA 加进邮件链，如果你还没加的话。",
+          "dateAdded": "2026-07-11T16:33:49.061Z"
+        },
+        {
+          "id": "mrgl4rtv0z9ge",
+          "text": "If not done yet, please complete by Friday.",
+          "translation": "如果尚未完成，请在周五前完成。",
+          "dateAdded": "2026-07-11T16:34:46.627Z"
+        },
+        {
+          "id": "mrgl5obap2h01",
+          "text": "If you haven't already had a chance to review the document, please do so by EOD tomorrow.",
+          "translation": "如果你还没来得及审阅文档，请在明天下班前完成。",
+          "dateAdded": "2026-07-11T16:35:28.726Z"
+        },
+        {
+          "id": "mrgl6f71fmwvd",
+          "text": "If you haven't already done so, kindly complete the UAT this week.",
+          "translation": "如果您还未完成，请在本周内完成 UAT。",
+          "dateAdded": "2026-07-11T16:36:03.565Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T17:25:43.834Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T17:25:43.834Z"
+    },
+    {
+      "id": "mrgl9qcmae42y",
+      "word": "Handoff",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "一次性的交接/传递（技术、系统场景多",
+      "dateAdded": "2026-07-11T16:38:37.990Z",
+      "sentences": [
+        {
+          "id": "mrgl9qcmx56sw",
+          "text": "Handoff failed, didn't it?",
+          "translation": "交接失败了，是吗？",
+          "dateAdded": "2026-07-11T16:38:37.990Z"
+        },
+        {
+          "id": "mrglas546sif4",
+          "text": "Not exactly — the handoff completed, but there was a validation error afterwards.",
+          "translation": "不完全是 —— 交接完成了，但之后出现了验证错误。",
+          "dateAdded": "2026-07-11T16:39:26.968Z"
+        },
+        {
+          "id": "mrglaz7x4do7l",
+          "text": "No, the handoff was successful. The issue is elsewhere.",
+          "translation": "没有，交接是成功的。问题在别处。",
+          "dateAdded": "2026-07-11T16:39:36.141Z"
+        },
+        {
+          "id": "mrglbuhw6mk0k",
+          "text": "The handoff failed with a timeout error.",
+          "translation": "交接因超时错误失败。",
+          "dateAdded": "2026-07-11T16:40:16.676Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-11T17:25:39.110Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-11T17:25:39.110Z"
+    },
+    {
+      "id": "mrglba1ymcobx",
+      "word": "crash",
+      "phonetic": "/kɹæʃ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/crash-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-11T16:39:50.182Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhcrw3h49ui4",
+      "word": "as soon as",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-12T05:28:34.877Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhcs1sxeb2g2",
+      "word": "as long as",
+      "phonetic": "",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/as%20long%20as-au.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T05:28:42.273Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhkf392798q1",
+      "word": "Remediation",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "补救 / 修复 / 补救措施",
+      "dateAdded": "2026-07-12T09:02:34.550Z",
+      "sentences": [
+        {
+          "id": "mrhktu7a98opw",
+          "text": "The security team is working on the remediation of the vulnerabilities.",
+          "translation": "安全团队正在修复这些漏洞。",
+          "dateAdded": "2026-07-12T09:14:02.662Z"
+        },
+        {
+          "id": "mrhkzaguqrxms",
+          "text": "All identified issues require immediate remediation.",
+          "translation": "所有已识别的问题都需要立即修复",
+          "dateAdded": "2026-07-12T09:18:17.022Z"
+        },
+        {
+          "id": "mrhl42ulee23m",
+          "text": "We have implemented the remediation actions as recommended.",
+          "translation": "我们已按建议实施了整改措施。",
+          "dateAdded": "2026-07-12T09:22:00.429Z"
+        },
+        {
+          "id": "mrhl584847tfu",
+          "text": "implemented",
+          "translation": "实施",
+          "dateAdded": "2026-07-12T09:22:53.912Z"
+        },
+        {
+          "id": "mrhl6e5nkyrav",
+          "text": "as recommended.",
+          "translation": "按建议",
+          "dateAdded": "2026-07-12T09:23:48.395Z"
+        },
+        {
+          "id": "mrhl995vtmnjd",
+          "text": "vulnerabilities",
+          "translation": "漏洞",
+          "dateAdded": "2026-07-12T09:26:01.891Z"
+        },
+        {
+          "id": "mrhldma54z546",
+          "text": "Correction",
+          "translation": "纠正数据错误",
+          "dateAdded": "2026-07-12T09:29:25.517Z"
+        },
+        {
+          "id": "mrhlecwfi0ixg",
+          "text": "Repair",
+          "translation": "修复硬件、设备，恢复原状",
+          "dateAdded": "2026-07-12T09:30:00.015Z"
+        },
+        {
+          "id": "mrhlgnfep6lof",
+          "text": "Mitigation",
+          "translation": "减轻 / 缓解降低影响",
+          "dateAdded": "2026-07-12T09:31:46.970Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:39:16.799Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:39:16.799Z"
+    },
+    {
+      "id": "mrhll2fynpt4t",
+      "word": "critical",
+      "phonetic": "/ˈkɹɪtɪkəl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/critical-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T09:35:13.054Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhlpac2s7z98",
+      "word": "comprehensive",
+      "phonetic": "/ˌkɑːm.pɹəˈhɛn.sɪv/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/comprehensive-us.mp3",
+      "meaning": "综合的",
+      "dateAdded": "2026-07-12T09:38:29.906Z",
+      "sentences": [
+        {
+          "id": "mrhlpac29o39a",
+          "text": "We have prepared a comprehensive remediation  plan for the audit findings",
+          "translation": "针对审计发现的问题，我们制定了一份全面的整改计划。",
+          "dateAdded": "2026-07-12T09:38:29.906Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhlu250x7udb",
+      "word": "escalate",
+      "phonetic": "/ˈɛs.kə.leɪt/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-12T09:42:12.564Z",
+      "sentences": [
+        {
+          "id": "mrhlvhhxejal0",
+          "text": "Please raise an escalation if the issue is not resolved by end of day.",
+          "translation": "如果今天下班前问题没解决，请上报。",
+          "dateAdded": "2026-07-12T09:43:19.125Z"
+        },
+        {
+          "id": "mrhlx9g788rl2",
+          "text": "I need to escalate this issue to my manager.",
+          "translation": "我需要把这个问题上报给我的经理。",
+          "dateAdded": "2026-07-12T09:44:42.007Z"
+        },
+        {
+          "id": "mrhlza326ld3c",
+          "text": "escalation procedure",
+          "translation": "升级流程",
+          "dateAdded": "2026-07-12T09:46:16.142Z"
+        },
+        {
+          "id": "mrhlztumtol0d",
+          "text": "priority escalation",
+          "translation": "优先级升级",
+          "dateAdded": "2026-07-12T09:46:41.758Z"
+        },
+        {
+          "id": "mrhm1vvrwsxbg",
+          "text": "de-escalate",
+          "translation": "缓和 / 降级（反义词）",
+          "dateAdded": "2026-07-12T09:48:17.703Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:59:17.709Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:59:17.709Z"
+    },
+    {
+      "id": "mrhm0az8qqqlt",
+      "word": "priority",
+      "phonetic": "/pɹaɪˈɒɹɨti/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-12T09:47:03.956Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhm4550axd0v",
+      "word": "due",
+      "phonetic": "/du/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/due-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T09:50:03.012Z",
+      "sentences": [
+        {
+          "id": "mrhm4550vdt68",
+          "text": "The incident has been escalated from P3 to P2 due to increased user impact.",
+          "translation": "由于用户影响扩大，事件已从 P3 升级为 P2。",
+          "dateAdded": "2026-07-12T09:50:03.012Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:59:08.786Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:59:08.786Z"
+    },
+    {
+      "id": "mrhm8x7v5azkn",
+      "word": "Promote",
+      "phonetic": "/pɹəˈmoʊt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/promote-us.mp3",
+      "meaning": "晋升",
+      "dateAdded": "2026-07-12T09:53:46.027Z",
+      "sentences": [
+        {
+          "id": "mrhm8x7v7xnud",
+          "text": "Promotion",
+          "translation": "晋升",
+          "dateAdded": "2026-07-12T09:53:46.027Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:58:28.172Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:58:28.172Z"
+    },
+    {
+      "id": "mrhmay4ri75gu",
+      "word": "raise",
+      "phonetic": "/ɹeɪz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/raise-us.mp3",
+      "meaning": "提出",
+      "dateAdded": "2026-07-12T09:55:20.523Z",
+      "sentences": [
+        {
+          "id": "mrhmay4r9a2kw",
+          "text": "I want to raise an issue in today's meeting",
+          "translation": "我想在今天会议上提出一个问题（同层级）",
+          "dateAdded": "2026-07-12T09:55:20.523Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:58:13.694Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:58:13.694Z"
+    },
+    {
+      "id": "mrhmdeu8scsux",
+      "word": "guidance",
+      "phonetic": "/ˈɡaɪdəns/",
+      "audio": "",
+      "meaning": "指导",
+      "dateAdded": "2026-07-12T09:57:15.488Z",
+      "sentences": [
+        {
+          "id": "mrhmdeu8id1j2",
+          "text": "I'd like to resolve this at our level first. If we can't reach an agreement, I may need to loop in [manager] for further guidance",
+          "translation": "我想我们先在我们这一层解决。如果达不成一致，可能需要请 [经理] 来进一步指导。",
+          "dateAdded": "2026-07-12T09:57:15.488Z"
+        },
+        {
+          "id": "mrhvumixs0822",
+          "text": "guidelines",
+          "translation": "指导方针",
+          "dateAdded": "2026-07-12T14:22:35.145Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T09:57:59.131Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T09:57:59.131Z"
+    },
+    {
+      "id": "mrhmkndaggu0o",
+      "word": "Mitigation",
+      "phonetic": "/mɪtɪˈɡeɪʃən/",
+      "audio": "",
+      "meaning": "缓解 / 减轻 / 缓解措施 不是消除问题本身（治标不治本）",
+      "dateAdded": "2026-07-12T10:02:53.134Z",
+      "sentences": [
+        {
+          "id": "mrhmknda36kjs",
+          "text": "We have implemented risk mitigation measures for the migration.",
+          "translation": "我们已为迁移实施了风险缓解措施。",
+          "dateAdded": "2026-07-12T10:02:53.134Z"
+        },
+        {
+          "id": "mrhmmyrkg71ih",
+          "text": "We're taking steps to mitigate the impact on customers.",
+          "translation": "我们正在采取措施以减轻对客户的影响。",
+          "dateAdded": "2026-07-12T10:04:41.216Z"
+        },
+        {
+          "id": "mrhmqchzi0mqt",
+          "text": "mitigate the damage",
+          "translation": "减少损失",
+          "dateAdded": "2026-07-12T10:07:18.983Z"
+        },
+        {
+          "id": "mrhmqrnqvojqe",
+          "text": "mitigate the impact",
+          "translation": "减轻影响",
+          "dateAdded": "2026-07-12T10:07:38.630Z"
+        },
+        {
+          "id": "mrhmsdp7vm8wg",
+          "text": "We have implemented mitigation measures to reduce impact, while working on the permanent remediation.",
+          "translation": "我们已实施缓解措施以降低影响，同时着手永久整改。",
+          "dateAdded": "2026-07-12T10:08:53.851Z"
+        },
+        {
+          "id": "mrhujq2eufhz9",
+          "text": "measures",
+          "translation": "",
+          "dateAdded": "2026-07-12T13:46:06.902Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T13:49:44.262Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T13:49:44.262Z"
+    },
+    {
+      "id": "mrhmmbrk0euvb",
+      "word": "consider",
+      "phonetic": "/kənˈsɪdɚ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/consider-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T10:04:11.408Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhn1i5x5s66h",
+      "word": "Implement",
+      "phonetic": "/ˈɪmpləmənt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/implement-1-us.mp3",
+      "meaning": "实施 / 落地 / 执行，把想法 / 计划 / 政策变成真实运行的东西",
+      "dateAdded": "2026-07-12T10:15:59.541Z",
+      "sentences": [
+        {
+          "id": "mrhu9p5vye83f",
+          "text": "implemented",
+          "translation": "过去式",
+          "dateAdded": "2026-07-12T13:38:19.171Z"
+        },
+        {
+          "id": "mrhuatrgv5171",
+          "text": "We will implement the new authentication system next quarter.",
+          "translation": "我们将在下季度实施新的身份验证系统",
+          "dateAdded": "2026-07-12T13:39:11.788Z"
+        },
+        {
+          "id": "mrhucqcprq2yq",
+          "text": "implementing",
+          "translation": "进行时",
+          "dateAdded": "2026-07-12T13:40:40.681Z"
+        },
+        {
+          "id": "mrhudr3og58ig",
+          "text": "The team is implementing the caching mechanism to improve performance.",
+          "translation": "团队正在实施缓存机制以提升性能",
+          "dateAdded": "2026-07-12T13:41:28.308Z"
+        },
+        {
+          "id": "mrhuxj5lapm4d",
+          "text": "implementation",
+          "translation": "实施 / 落地 名词",
+          "dateAdded": "2026-07-12T13:56:51.129Z"
+        },
+        {
+          "id": "mrhvc5vyr7bxm",
+          "text": "The changes will be implemented as per the approved CR.",
+          "translation": "变更将按已批准的 CR 实施。  implemented as per是 按照…实施",
+          "dateAdded": "2026-07-12T14:08:13.774Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhufpmrk1w7h",
+      "word": "mechanism",
+      "phonetic": "/ˈmɛkənɪzm/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/mechanism-us.mp3",
+      "meaning": "机制",
+      "dateAdded": "2026-07-12T13:42:59.715Z",
+      "sentences": [
+        {
+          "id": "mrhufpmrfyex2",
+          "text": "the caching mechanism",
+          "translation": "缓存机制",
+          "dateAdded": "2026-07-12T13:42:59.715Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhuhpqa3puae",
+      "word": "authenticte",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "身份验证",
+      "dateAdded": "2026-07-12T13:44:33.154Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhuq7uqycsxt",
+      "word": "partially",
+      "phonetic": "/ˈpɑːʃəli/",
+      "audio": "",
+      "meaning": "部分地",
+      "dateAdded": "2026-07-12T13:51:09.890Z",
+      "sentences": [],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T13:55:03.102Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T13:55:03.102Z"
+    },
+    {
+      "id": "mrhuronuhwju3",
+      "word": "gradually",
+      "phonetic": "/ˈɡɹædʒuəli/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/gradually-us.mp3",
+      "meaning": "逐步",
+      "dateAdded": "2026-07-12T13:52:18.330Z",
+      "sentences": [
+        {
+          "id": "mrhusut3tn6zn",
+          "text": "Gradually implemented in phases.",
+          "translation": "分阶段逐步实施。",
+          "dateAdded": "2026-07-12T13:53:12.951Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T13:54:51.711Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T13:54:51.711Z"
+    },
+    {
+      "id": "mrhuuc3w49sma",
+      "word": "phases",
+      "phonetic": "/ˈfeɪsiːz/",
+      "audio": "",
+      "meaning": "阶段",
+      "dateAdded": "2026-07-12T13:54:22.028Z",
+      "sentences": [],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T13:54:31.561Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T13:54:31.561Z"
+    },
+    {
+      "id": "mrhv0tlmflrbp",
+      "word": "approve",
+      "phonetic": "/əˈpɹuːv/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/approve-uk.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T13:59:24.634Z",
+      "sentences": [
+        {
+          "id": "mrhv0tlmp5184",
+          "text": "approval",
+          "translation": "",
+          "dateAdded": "2026-07-12T13:59:24.634Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhv2g3ywq2wb",
+      "word": "recommend",
+      "phonetic": "/ɹɛkəˈmɛnd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/recommend-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T14:00:40.462Z",
+      "sentences": [
+        {
+          "id": "mrhv2g3y7sduu",
+          "text": "recommended",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:00:40.462Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhv3oggrsl1a",
+      "word": "per",
+      "phonetic": "/pɝ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/per-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-12T14:01:37.936Z",
+      "sentences": [
+        {
+          "id": "mrhv46myfrgtu",
+          "text": "as per the audit report.",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:02:01.498Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhv4s969dicu",
+      "word": "issue",
+      "phonetic": "/ˈɪʃ(j)u/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/issue-us.mp3",
+      "meaning": "问题",
+      "dateAdded": "2026-07-12T14:02:29.514Z",
+      "sentences": [
+        {
+          "id": "mrhv4s96h2lnu",
+          "text": "issues",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:02:29.514Z"
+        },
+        {
+          "id": "mrhv6c7o42zrs",
+          "text": "detect similar issues.",
+          "translation": "检测类似问题",
+          "dateAdded": "2026-07-12T14:03:42.036Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:02:47.507Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:02:47.507Z"
+    },
+    {
+      "id": "mrhv8n3jocyvx",
+      "word": "Execute",
+      "phonetic": "/ˈɛksɪˌkjuːt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/execute-us.mp3",
+      "meaning": "精确执行，按步骤代码、战略",
+      "dateAdded": "2026-07-12T14:05:29.454Z",
+      "sentences": [
+        {
+          "id": "mrhva6zcxrl5t",
+          "text": "Execute the deployment script.",
+          "translation": "执行部署脚本",
+          "dateAdded": "2026-07-12T14:06:41.880Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:05:40.299Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:05:40.299Z"
+    },
+    {
+      "id": "mrhv9l8ojgad0",
+      "word": "Perform",
+      "phonetic": "/pɚˈfɔɹm/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/perform-us.mp3",
+      "meaning": "履行，测试  \"日常操作\" \"履行职责/操作动作\"",
+      "dateAdded": "2026-07-12T14:06:13.704Z",
+      "sentences": [
+        {
+          "id": "mrhvl0bs84thh",
+          "text": "perform the task",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:15:06.472Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhvhqqto1714",
+      "word": "Conduct",
+      "phonetic": "/ˈkɒndʌkt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/conduct-ca-noun.mp3",
+      "meaning": "有组织地开展\" \"研究、调查、评估\"类活动",
+      "dateAdded": "2026-07-12T14:12:34.085Z",
+      "sentences": [
+        {
+          "id": "mrhvidn30d0jk",
+          "text": "Conduct impact assessment on/for change request",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:13:03.759Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:13:39.358Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:13:39.358Z"
+    },
+    {
+      "id": "mrhvjlctgzu04",
+      "word": "carry out",
+      "phonetic": "",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/carry%20out-au.mp3",
+      "meaning": "把事情做出来",
+      "dateAdded": "2026-07-12T14:14:00.413Z",
+      "sentences": [
+        {
+          "id": "mrhvjlctwf19o",
+          "text": "carry out the approved change",
+          "translation": "",
+          "dateAdded": "2026-07-12T14:14:00.413Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:14:08.365Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:14:08.365Z"
+    },
+    {
+      "id": "mrhvn5lcksq7k",
+      "word": "Despite",
+      "phonetic": "/dɪˈspaɪt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/despite-us.mp3",
+      "meaning": "尽管",
+      "dateAdded": "2026-07-12T14:16:46.608Z",
+      "sentences": [
+        {
+          "id": "mrhvnxcrsvsaa",
+          "text": "Despite the tight timeline, we have successfully implemented all the required security controls.",
+          "translation": "尽管时间紧迫，我们还是成功落实了所有必要的安全管控。",
+          "dateAdded": "2026-07-12T14:17:22.587Z"
+        },
+        {
+          "id": "mrhvqoo93osbn",
+          "text": "In spite of initial resistance from some teams, the new AI governance framework has been rolled out successfully.",
+          "translation": "尽管一开始有些团队抵触，新的 AI 治理框架还是成功落地了。",
+          "dateAdded": "2026-07-12T14:19:31.305Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrhvt0qkadsbs",
+      "word": "Regardless",
+      "phonetic": "/ɹɪˈɡɑːd.lɪs/",
+      "audio": "",
+      "meaning": "无论",
+      "dateAdded": "2026-07-12T14:21:20.252Z",
+      "sentences": [
+        {
+          "id": "mrhvt0qkyoxc8",
+          "text": "Regardless of your role or department, you are required to comply with the PDPA guidelines.",
+          "translation": "无论你的岗位或部门，你都必须遵守 PDPA 指南。",
+          "dateAdded": "2026-07-12T14:21:20.252Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:45:51.369Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:45:51.369Z"
+    },
+    {
+      "id": "mrhvwqxj2ptuz",
+      "word": "Although",
+      "phonetic": "/ɑlˈðoʊ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/although-us.mp3",
+      "meaning": "虽然，连接是完整句子",
+      "dateAdded": "2026-07-12T14:24:14.167Z",
+      "sentences": [
+        {
+          "id": "mrhvwqxjlm6wq",
+          "text": "Although it was raining, we went out.",
+          "translation": "虽然在下雨，我出去了",
+          "dateAdded": "2026-07-12T14:24:14.167Z"
+        },
+        {
+          "id": "mrhvyhdu4pszo",
+          "text": "Even though he tried hard, he failed.",
+          "translation": "尽管他努力了，但他还是失败了。",
+          "dateAdded": "2026-07-12T14:25:35.106Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:24:56.683Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:24:56.683Z"
+    },
+    {
+      "id": "mrhw0o3xxu9pa",
+      "word": "whereas",
+      "phonetic": "/(h)wɛɹˈæz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whereas-us.mp3",
+      "meaning": "然而，表示相反",
+      "dateAdded": "2026-07-12T14:27:17.133Z",
+      "sentences": [
+        {
+          "id": "mrhw0o3x5zj9i",
+          "text": "He likes tea, whereas I like coffee.",
+          "translation": "他喜欢茶，而我喜欢咖啡。",
+          "dateAdded": "2026-07-12T14:27:17.133Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:46:05.979Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:46:05.979Z"
+    },
+    {
+      "id": "mrhw5o07umspd",
+      "word": "However",
+      "phonetic": "/haʊˈɛvɚ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/however-us.mp3",
+      "meaning": "然而 / 但是 / 不过，正式用语，邮件",
+      "dateAdded": "2026-07-12T14:31:10.279Z",
+      "sentences": [
+        {
+          "id": "mrhw5o070eb6r",
+          "text": "The plan looks good. However, we need to consider the cost.",
+          "translation": "计划看起来不错。然而，我们需要考虑成本。",
+          "dateAdded": "2026-07-12T14:31:10.279Z"
+        },
+        {
+          "id": "mrhw6ln11kehh",
+          "text": "However we look at it, the issue must be resolved.",
+          "translation": "无论我们怎么看，问题必须解决",
+          "dateAdded": "2026-07-12T14:31:53.869Z"
+        },
+        {
+          "id": "mrhw85np9d3yk",
+          "text": "However small the change, it needs approval.",
+          "translation": "无论变更多小，都需要审批。",
+          "dateAdded": "2026-07-12T14:33:06.470Z"
+        },
+        {
+          "id": "mrhwbe0zgf6h0",
+          "text": "The plan is expensive. Nevertheless, we should proceed.",
+          "translation": "尽管贵，但仍然要做（强调\"仍然\"）",
+          "dateAdded": "2026-07-12T14:35:37.283Z"
+        },
+        {
+          "id": "mrhwjnp16hml3",
+          "text": "The plan looks feasible. However, that said, we should still validate with the DBA before proceeding",
+          "translation": "计划看起来可行。话虽如此，我们仍应在推进前与 DBA 确认。",
+          "dateAdded": "2026-07-12T14:42:03.061Z"
+        },
+        {
+          "id": "mrhwmuses5ce6",
+          "text": "However, that said",
+          "translation": "顶级邮件转折句式 这是新加坡职场 / 商务邮件里超级地道的委婉转折",
+          "dateAdded": "2026-07-12T14:44:32.222Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:45:48.231Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:45:48.231Z"
+    },
+    {
+      "id": "mrhweyjd7wesz",
+      "word": "core",
+      "phonetic": "/kɔɹ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/core-us.mp3",
+      "meaning": "核心",
+      "dateAdded": "2026-07-12T14:38:23.833Z",
+      "sentences": [
+        {
+          "id": "mrhwfnnkksnx6",
+          "text": "all core modules",
+          "translation": "所有核心模块",
+          "dateAdded": "2026-07-12T14:38:56.385Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-12T14:45:39.118Z",
+        "nextDue": "2026-07-12T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-12T14:45:39.118Z"
+    }
+  ]
+}
