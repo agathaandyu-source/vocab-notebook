@@ -95,27 +95,6 @@
     text-align: center;
   }
 
-  .linked-file-banner {
-    max-width: 760px;
-    margin: 18px auto 0;
-    margin-left: max(20px, calc((100% - 760px) / 2));
-    margin-right: max(20px, calc((100% - 760px) / 2));
-    padding: 10px 16px;
-    background: rgba(62,107,140,0.14);
-    border: 1px solid rgba(62,107,140,0.4);
-    border-radius: 10px;
-    color: #8FB8D9;
-    font-size: 13px;
-    line-height: 1.5;
-    display: none;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .linked-file-banner .linked-file-name { color: var(--brass-light); }
-  .linked-file-banner button { flex-shrink: 0; padding: 6px 14px; font-size: 12.5px; }
-
   main {
     max-width: 760px;
     margin: 0 auto;
@@ -947,12 +926,7 @@
   </header>
 
   <div class="storage-banner" id="storage-banner" style="display:none;">
-    ⚠️ 当前数据保存在这个浏览器的本地存储中（不是 Claude 的云端存储），换设备、换浏览器或清除浏览数据都会丢失记录 —— 建议做完当天的记录后，点一下下面的「保存」把数据存到你自己的文件里。
-  </div>
-
-  <div class="linked-file-banner" id="linked-file-banner" style="display:none;">
-    <span>🔗 检测到已关联的本地文件「<strong class="linked-file-name"></strong>」，点击读取最新数据</span>
-    <button class="ghost" id="linked-file-sync-btn">立即同步</button>
+    ⚠️ 当前数据保存在这个浏览器的本地存储中（不是 Claude 的云端存储），换设备、换浏览器或清除浏览数据都会丢失记录 —— 建议做完当天的记录后，点一下下面的「导出数据」备份一份。
   </div>
 
   <main>
@@ -1001,10 +975,6 @@
       </div>
       <button class="ghost quiz-btn" id="quiz-btn">
         🧠 今日测验 <span class="badge" id="quiz-badge" style="display:none;">0</span>
-      </button>
-      <button class="ghost" id="save-btn" title="保存到本地文件，之后再点会更新同一个文件">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-        保存
       </button>
       <button class="ghost" id="export-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -1170,9 +1140,7 @@ async function saveWords() {
 
 function refreshBannerOverlapClass() {
   const storageBanner = document.getElementById('storage-banner');
-  const linkedBanner = document.getElementById('linked-file-banner');
-  const anyVisible = (storageBanner && storageBanner.style.display !== 'none')
-    || (linkedBanner && linkedBanner.style.display !== 'none');
+  const anyVisible = storageBanner && storageBanner.style.display !== 'none';
   const field = document.querySelector('.field');
   if (field) field.classList.toggle('banner-visible', anyVisible);
 }
@@ -1739,177 +1707,6 @@ function exportData() {
   setTimeout(() => { statusMsg.textContent = ''; }, 3000);
 }
 
-// Remembers the local file the person picked, so repeated saves overwrite
-// that same file instead of downloading a new copy each time. The handle is
-// also persisted to IndexedDB (see below) so it can be reused across page
-// reloads — that's what lets the page auto-sync with a file living in a
-// Google Drive / iCloud synced folder without re-browsing every visit.
-let savedFileHandle = null;
-
-const HANDLE_DB_NAME = 'vocab-handle-db';
-const HANDLE_STORE = 'handles';
-const HANDLE_KEY = 'linked-file';
-
-function openHandleDB() {
-  return new Promise((resolve, reject) => {
-    if (!('indexedDB' in window)) { reject(new Error('no indexedDB')); return; }
-    const req = indexedDB.open(HANDLE_DB_NAME, 1);
-    req.onupgradeneeded = () => { req.result.createObjectStore(HANDLE_STORE); };
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error);
-  });
-}
-
-async function persistFileHandle(handle) {
-  try {
-    const db = await openHandleDB();
-    await new Promise((resolve, reject) => {
-      const tx = db.transaction(HANDLE_STORE, 'readwrite');
-      tx.objectStore(HANDLE_STORE).put(handle, HANDLE_KEY);
-      tx.oncomplete = resolve;
-      tx.onerror = () => reject(tx.error);
-    });
-  } catch (e) { console.error('persist handle failed', e); }
-}
-
-async function loadPersistedFileHandle() {
-  try {
-    const db = await openHandleDB();
-    return await new Promise((resolve, reject) => {
-      const tx = db.transaction(HANDLE_STORE, 'readonly');
-      const req = tx.objectStore(HANDLE_STORE).get(HANDLE_KEY);
-      req.onsuccess = () => resolve(req.result || null);
-      req.onerror = () => reject(req.error);
-    });
-  } catch (e) { return null; }
-}
-
-async function verifyWritePermission(fileHandle) {
-  const opts = { mode: 'readwrite' };
-  if ((await fileHandle.queryPermission(opts)) === 'granted') return true;
-  if ((await fileHandle.requestPermission(opts)) === 'granted') return true;
-  return false;
-}
-
-async function saveToLocalFile() {
-  const statusMsg = document.getElementById('status-msg');
-
-  // The File System Access API (Chrome/Edge) lets us keep writing to the same
-  // file the person picked. Not all browsers support it — and it may also be
-  // blocked while previewing inside Claude.ai's sandboxed frame — so fall
-  // back to a normal download in that case.
-  if (!('showSaveFilePicker' in window)) {
-    exportData();
-    statusMsg.textContent = '当前浏览器不支持"保存到同一文件"，已改为下载新文件';
-    statusMsg.className = 'status-msg';
-    setTimeout(() => { statusMsg.textContent = ''; }, 4000);
-    return;
-  }
-
-  try {
-    if (!savedFileHandle) {
-      savedFileHandle = await window.showSaveFilePicker({
-        suggestedName: 'vocab-export-all-data.json',
-        types: [{ description: 'JSON 文件', accept: { 'application/json': ['.json'] } }]
-      });
-      await persistFileHandle(savedFileHandle);
-    }
-
-    const ok = await verifyWritePermission(savedFileHandle);
-    if (!ok) throw new Error('write permission denied');
-
-    // Pull in whatever is already in the file first (e.g. saved from another
-    // device) and merge it, so saving is a two-way sync rather than blindly
-    // overwriting anything newer that's already there.
-    try {
-      const existingFile = await savedFileHandle.getFile();
-      const existingText = await existingFile.text();
-      if (existingText && existingText.trim()) {
-        await applyImportedJson(existingText);
-      }
-    } catch (readErr) {
-      console.error('Could not read existing linked file before saving', readErr);
-    }
-
-    const json = JSON.stringify(buildExportPayload(), null, 2);
-    const writable = await savedFileHandle.createWritable();
-    await writable.write(json);
-    await writable.close();
-    hideLinkedFileBanner();
-
-    statusMsg.textContent = `已同步保存到 ${savedFileHandle.name}`;
-    statusMsg.className = 'status-msg ok';
-  } catch (err) {
-    if (err && err.name === 'AbortError') return; // person cancelled the picker
-    console.error('Save to local file failed', err);
-    savedFileHandle = null;
-    exportData();
-    statusMsg.textContent = '无法直接保存到本地文件，已改为下载新文件';
-    statusMsg.className = 'status-msg';
-  }
-  setTimeout(() => { statusMsg.textContent = ''; }, 4000);
-}
-
-// On page load, if a file was linked on a previous visit, try to sync from
-// it automatically. If the browser still has the permission grant, this is
-// silent; otherwise a small banner asks for one click to resume access
-// (browsers require a user gesture to re-grant file permissions — this is a
-// security rule, not something we can skip).
-async function tryAutoSyncLinkedFile() {
-  if (!('indexedDB' in window) || !('showSaveFilePicker' in window)) return;
-  let handle = null;
-  try {
-    handle = await loadPersistedFileHandle();
-  } catch (e) { return; }
-  if (!handle) return;
-  savedFileHandle = handle;
-  try {
-    const perm = await handle.queryPermission({ mode: 'readwrite' });
-    if (perm === 'granted') {
-      await syncFromLinkedFile();
-    } else {
-      showLinkedFileBanner(handle);
-    }
-  } catch (e) {
-    console.error('check linked file permission failed', e);
-  }
-}
-
-async function syncFromLinkedFile() {
-  if (!savedFileHandle) return;
-  try {
-    const file = await savedFileHandle.getFile();
-    const text = await file.text();
-    if (text && text.trim()) {
-      const result = await applyImportedJson(text);
-      if (result.ok) {
-        const statusMsg = document.getElementById('status-msg');
-        statusMsg.textContent = `🔗 已从关联文件同步：新增 ${result.added} 个${result.updated ? `，更新 ${result.updated} 个` : ''}`;
-        statusMsg.className = 'status-msg ok';
-        setTimeout(() => { statusMsg.textContent = ''; }, 4000);
-      }
-    }
-    hideLinkedFileBanner();
-  } catch (e) {
-    console.error('sync from linked file failed', e);
-  }
-}
-
-function showLinkedFileBanner(handle) {
-  const banner = document.getElementById('linked-file-banner');
-  if (!banner) return;
-  const nameEl = banner.querySelector('.linked-file-name');
-  if (nameEl) nameEl.textContent = handle.name;
-  banner.style.display = 'flex';
-  refreshBannerOverlapClass();
-}
-
-function hideLinkedFileBanner() {
-  const banner = document.getElementById('linked-file-banner');
-  if (banner) banner.style.display = 'none';
-  refreshBannerOverlapClass();
-}
-
 function reviewProgressRank(review) {
   if (!review) return -1;
   if (review.completed) return 100;
@@ -1953,7 +1750,7 @@ function mergeEntry(existing, imported) {
 // Parses a JSON export payload and merges it into allWords (adding new words,
 // merging into existing ones). Returns {ok, message, added, updated} rather
 // than touching the DOM directly, so callers (file-picker import, or the
-// linked-file auto-sync) can each decide how to surface the result.
+// bundled seed-data.json auto-load) can each decide how to surface the result.
 async function applyImportedJson(text) {
   let parsed;
   try {
@@ -2171,7 +1968,6 @@ document.getElementById('today-learned-filter-btn').addEventListener('click', ()
   editingMeaningFor = null;
   render();
 });
-document.getElementById('save-btn').addEventListener('click', saveToLocalFile);
 document.getElementById('export-btn').addEventListener('click', exportData);
 document.getElementById('import-btn').addEventListener('click', () => document.getElementById('import-file').click());
 document.getElementById('import-file').addEventListener('change', (e) => {
@@ -2224,19 +2020,15 @@ document.getElementById('voice-select').addEventListener('change', (e) => {
   speak('This is how sentences will sound.');
 });
 
-document.getElementById('linked-file-sync-btn').addEventListener('click', async () => {
-  if (!savedFileHandle) return;
-  const ok = await verifyWritePermission(savedFileHandle);
-  if (ok) await syncFromLinkedFile();
-});
-
-// If this device/browser has no local data yet (fresh install, new device),
-// try loading a baseline dataset bundled with the site itself — a
-// seed-data.json file placed next to index.html in the repo. Only runs when
-// truly empty, and only over a real http(s) origin (GitHub Pages etc.),
-// since a plain local file or Claude's preview can't fetch a sibling file.
+// Loads (and merges) the baseline dataset bundled with the site itself — a
+// seed-data.json file placed next to index.html in the repo. Runs on every
+// load, not just when local storage is empty: applyImportedJson's merge only
+// ever adds new words or advances learned/review progress, so re-merging the
+// same seed file repeatedly is harmless and keeps every device caught up
+// with whatever the seed file was last updated to. Only works over a real
+// http(s) origin (GitHub Pages etc.), since a plain local file or Claude's
+// preview can't fetch a sibling file.
 async function trySeedFromBundledData() {
-  if (allWords.length > 0) return;
   if (!location.protocol.startsWith('http')) return;
   try {
     const res = await fetch('./seed-data.json', { cache: 'no-store' });
@@ -2245,19 +2037,17 @@ async function trySeedFromBundledData() {
     const result = await applyImportedJson(text);
     if (result.ok && (result.added || result.updated)) {
       const statusMsg = document.getElementById('status-msg');
-      statusMsg.textContent = `📦 已从初始数据加载 ${result.added} 个单词`;
+      statusMsg.textContent = `📦 已从初始数据同步：新增 ${result.added} 个${result.updated ? `，更新 ${result.updated} 个` : ''}`;
       statusMsg.className = 'status-msg ok';
       setTimeout(() => { statusMsg.textContent = ''; }, 4000);
     }
   } catch (e) {
-    // no seed-data.json, or the fetch failed — silently start with an empty drawer
+    // no seed-data.json, or the fetch failed — silently continue with whatever's local
   }
 }
 
 loadSettings();
-loadWords()
-  .then(() => trySeedFromBundledData())
-  .then(() => tryAutoSyncLinkedFile());
+loadWords().then(() => trySeedFromBundledData());
 
 // Registers the service worker so the page qualifies as an installable PWA
 // (Android "add to home screen" / "install app" prompt, and what PWABuilder

@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-12T16:24:39.589Z",
+  "exportedAt": "2026-07-13T14:58:38.146Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -36,9 +36,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 2,
         "cycleStart": "2026-07-11T12:41:02.012Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "nextDue": "2026-07-14T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -61,8 +61,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-11T12:47:09.216Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:22:40.907Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -85,8 +85,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-11T12:49:53.530Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "cycleStart": "2026-07-13T10:49:57.857Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -150,9 +150,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-12T15:11:33.581Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -175,8 +175,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-11T13:09:23.011Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:23:01.213Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -223,8 +223,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-11T13:15:43.462Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:23:07.865Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -282,9 +282,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-12T15:29:56.441Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -300,8 +300,8 @@
       "sentences": [],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-12T15:12:37.184Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:00:17.274Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -324,8 +324,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-12T15:30:45.299Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:01:07.859Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -350,18 +350,6 @@
       "audio": "",
       "meaning": "补充一下",
       "dateAdded": "2026-07-11T14:33:20.638Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrggtsru5tbqv",
-      "word": "occurs",
-      "phonetic": "/əˈkɝz/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/occurs-us.mp3",
-      "meaning": "发生",
-      "dateAdded": "2026-07-11T14:34:16.170Z",
       "sentences": [],
       "review": null,
       "learned": false,
@@ -499,8 +487,8 @@
       ],
       "review": {
         "stage": 0,
-        "cycleStart": "2026-07-11T14:39:20.363Z",
-        "nextDue": "2026-07-11T16:00:00.000Z",
+        "cycleStart": "2026-07-13T11:16:42.836Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -565,9 +553,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-11T17:25:43.834Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -607,9 +595,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-11T17:25:39.110Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -819,7 +807,7 @@
       "word": "due",
       "phonetic": "/du/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/due-us.mp3",
-      "meaning": "",
+      "meaning": "Due to\" = \"由于 / 因为 / 归因于;due to be ...（预定 / 计划）;书面 / 邮件 ⭐",
       "dateAdded": "2026-07-12T09:50:03.012Z",
       "sentences": [
         {
@@ -827,6 +815,24 @@
           "text": "The incident has been escalated from P3 to P2 due to increased user impact.",
           "translation": "由于用户影响扩大，事件已从 P3 升级为 P2。",
           "dateAdded": "2026-07-12T09:50:03.012Z"
+        },
+        {
+          "id": "mrj54xhop79bm",
+          "text": "The report is due to be released next week.",
+          "translation": "报告预计下周发布",
+          "dateAdded": "2026-07-13T11:30:18.636Z"
+        },
+        {
+          "id": "mrj55xbosxfi4",
+          "text": "The success is largely due to the team's hard work.",
+          "translation": "成功很大程度归因于团队的努力。",
+          "dateAdded": "2026-07-13T11:31:05.076Z"
+        },
+        {
+          "id": "mrj56uk0i9qjq",
+          "text": "The change was rejected due to insufficient testing.",
+          "translation": "变更因测试不足被拒绝。",
+          "dateAdded": "2026-07-13T11:31:48.144Z"
         }
       ],
       "review": {
@@ -1478,6 +1484,285 @@
       },
       "learned": true,
       "learnedAt": "2026-07-12T14:45:39.118Z"
+    },
+    {
+      "id": "mrj0qo3xncgum",
+      "word": "decade",
+      "meaning": "",
+      "phonetic": "/dəˈkeɪd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/decade-us.mp3",
+      "dateAdded": "2026-07-13T09:27:14.829Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj0ty3uh48jh",
+      "word": "discover",
+      "meaning": "首次遇见、找到、意识到;东西存在但未知",
+      "phonetic": "/dɪsˈkʌvɚ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discover-us.mp3",
+      "dateAdded": "2026-07-13T09:29:47.754Z",
+      "sentences": [
+        {
+          "id": "mrj0ty3ubijoy",
+          "text": "We discovered a bug during testing.",
+          "translation": "我们在测试中发现了一个 bug。",
+          "dateAdded": "2026-07-13T09:29:47.754Z"
+        },
+        {
+          "id": "mrj11bov2qcmy",
+          "text": "A great discovery.",
+          "translation": "好的发现",
+          "dateAdded": "2026-07-13T09:35:31.951Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-13T09:33:32.693Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-13T09:33:32.693Z"
+    },
+    {
+      "id": "mrj0ww0f99ry9",
+      "word": "uncover",
+      "meaning": "揭露 / 揭开;东西被隐藏 / 遮盖",
+      "phonetic": "/ʌnˈkʌvə(ɹ)/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/uncover-uk.mp3",
+      "dateAdded": "2026-07-13T09:32:05.007Z",
+      "sentences": [
+        {
+          "id": "mrj0ww0fzii2q",
+          "text": "The root cause analysis uncovered a design flaw",
+          "translation": "根因分析揭露了一个设计缺陷",
+          "dateAdded": "2026-07-13T09:32:05.007Z"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-07-13T09:33:29.155Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-07-13T09:33:29.155Z"
+    },
+    {
+      "id": "mrj0y9o4u8rcm",
+      "word": "flaw",
+      "meaning": "缺陷；瑕疵",
+      "phonetic": "/ˈflɔ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/flaw-1-us.mp3",
+      "dateAdded": "2026-07-13T09:33:09.364Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj13t0ksdlmc",
+      "word": "Occur",
+      "meaning": "发生 / 出现 / 存在",
+      "phonetic": "/əˈkɝ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/occur-us.mp3",
+      "dateAdded": "2026-07-13T09:37:27.716Z",
+      "sentences": [
+        {
+          "id": "mrj15z5yog939",
+          "text": "Changes occur as needed.",
+          "translation": "变更按需发生。",
+          "dateAdded": "2026-07-13T09:39:08.998Z"
+        },
+        {
+          "id": "mrj16rn2ezxs3",
+          "text": "An unexpected outage occurred last night.",
+          "translation": "昨晚发生了意外停机。",
+          "dateAdded": "2026-07-13T09:39:45.902Z"
+        },
+        {
+          "id": "mrj1a3cnhs7it",
+          "text": "It occurs to me that this might be a data issue.",
+          "translation": "我突然想到这可能是数据问题。",
+          "dateAdded": "2026-07-13T09:42:21.047Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj1cp4h7z7m2",
+      "word": "Come up",
+      "meaning": "从看不见 / 未知变成看得见 / 已知 come up with (想出) ⭐⭐⭐ come up in (被提到) ⭐⭐⭐ come up against (遇到) ⭐⭐ come up short (未达标) ⭐⭐ come up empty (一无所获) ⭐⭐ 📌 常见句式： Something came up (有事)",
+      "phonetic": "",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/come%20up-au.mp3",
+      "dateAdded": "2026-07-13T09:44:22.577Z",
+      "sentences": [
+        {
+          "id": "mrj1gcbgqlrae",
+          "text": "His name came up during the discussion.",
+          "translation": "讨论中提到了他的名字。",
+          "dateAdded": "2026-07-13T09:47:12.604Z"
+        },
+        {
+          "id": "mrj1hx9yxvx0c",
+          "text": "The deadline is coming up on Friday.",
+          "translation": "截止日期即将到来，就在周五。",
+          "dateAdded": "2026-07-13T09:48:26.422Z"
+        },
+        {
+          "id": "mrj1j00u8utdd",
+          "text": "Nothing came up during our analysis.",
+          "translation": "分析中没有得出任何结论。",
+          "dateAdded": "2026-07-13T09:49:16.638Z"
+        },
+        {
+          "id": "mrj1kuskg6ey9",
+          "text": "The waiter came up to take our order.",
+          "translation": "服务员走过来记录我们的点单。",
+          "dateAdded": "2026-07-13T09:50:43.172Z"
+        },
+        {
+          "id": "mrj1oub0iil9r",
+          "text": "The team came up with three options.",
+          "translation": "团队提出了三个选项。",
+          "dateAdded": "2026-07-13T09:53:49.164Z"
+        },
+        {
+          "id": "mrj1q1c6fjeh4",
+          "text": "We need to come up with a solution by EOD.",
+          "translation": "我们需要在下班前想出一个解决方案。Come up with\" = \"想出 / 提出（方案、主意）\" —— 你一定要掌握",
+          "dateAdded": "2026-07-13T09:54:44.934Z"
+        },
+        {
+          "id": "mrj1snjbapzqg",
+          "text": "Sorry, something came up at the last minute. Can we reschedule the meeting to next week?",
+          "translation": "抱歉，最后一刻有事**。我们可以把会议改到下周吗？",
+          "dateAdded": "2026-07-13T09:56:47.015Z"
+        },
+        {
+          "id": "mrj1u8jzqsp3n",
+          "text": "The investigation came up empty",
+          "translation": "调查一无所获",
+          "dateAdded": "2026-07-13T09:58:00.911Z"
+        },
+        {
+          "id": "mrj1v4rvs2f48",
+          "text": "Our test coverage came up short at 60%.",
+          "translation": "我们的测试覆盖率未达标**，只有 60%",
+          "dateAdded": "2026-07-13T09:58:42.667Z"
+        },
+        {
+          "id": "mrj1vxpiwxvi0",
+          "text": "We came up against a licensing issue during the migration.",
+          "translation": "我们在迁移期间遭遇了一个许可证问题。",
+          "dateAdded": "2026-07-13T09:59:20.166Z"
+        },
+        {
+          "id": "mrj1x44fhbzk9",
+          "text": "I'll let you know as it comes up",
+          "translation": "一有情况我会告诉你。",
+          "dateAdded": "2026-07-13T10:00:15.135Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj2yl8gote9q",
+      "word": "Cover for",
+      "meaning": "顶替",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-13T10:29:23.584Z",
+      "sentences": [
+        {
+          "id": "mrj2yl8gd1k0z",
+          "text": "Could you cover for me while I'm on leave",
+          "translation": "我请假时你能顶替我吗？",
+          "dateAdded": "2026-07-13T10:29:23.584Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj3c3mdspee3",
+      "word": "discrepancy",
+      "meaning": "差异",
+      "phonetic": "/dɪsˈkɹɛpənsi/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
+      "dateAdded": "2026-07-13T10:39:53.941Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj3crarpw29v",
+      "word": "depandency",
+      "meaning": "依赖",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-13T10:40:24.627Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj4zexapn622",
+      "word": "kick off",
+      "meaning": "启动",
+      "phonetic": "",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/kick%20off-au.mp3",
+      "dateAdded": "2026-07-13T11:26:01.293Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj4zmoi6ri0d",
+      "word": "roll out",
+      "meaning": "推出 / 发布",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-13T11:26:11.346Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj5081qnu6c6",
+      "word": "push back",
+      "meaning": "推迟",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-13T11:26:39.038Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrj5bfxdkeh69",
+      "word": "collaboration",
+      "meaning": "协作",
+      "phonetic": "/kəˌlæbəˈɹeɪʃən/",
+      "audio": "",
+      "dateAdded": "2026-07-13T11:35:22.465Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
     }
   ]
 }
