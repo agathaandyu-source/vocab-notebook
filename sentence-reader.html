@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>句子朗读翻译器 / Sentence Reader</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f0;
+    color: #2c2c2a;
+  }
+  h1 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+  .sub { color: #888780; font-size: 13px; margin-bottom: 20px; }
+  textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    border: 1px solid #d3d1c7;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    resize: vertical;
+    font-family: inherit;
+  }
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  button {
+    padding: 8px 16px;
+    border: 1px solid #b4b2a9;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  button:hover { background: #efeee8; }
+  button.primary {
+    background: #26215c;
+    color: white;
+    border-color: #26215c;
+  }
+  button.primary:hover { background: #3c3489; }
+  select {
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid #b4b2a9;
+    font-size: 13px;
+    background: white;
+  }
+  .row {
+    background: white;
+    border: 1px solid #e5e4de;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .row-num {
+    color: #b4b2a9;
+    font-size: 12px;
+    min-width: 20px;
+    padding-top: 3px;
+  }
+  .row-content { flex: 1; }
+  .en-text { font-size: 16px; line-height: 1.6; margin-bottom: 4px; }
+  .zh-text {
+    font-size: 14px;
+    color: #5f5e5a;
+    line-height: 1.5;
+    min-height: 20px;
+  }
+  .zh-text.loading { color: #b4b2a9; font-style: italic; }
+  .play-btn {
+    background: #eeedfe;
+    border: 1px solid #cecbf6;
+    color: #26215c;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    flex-shrink: 0;
+    padding: 0;
+  }
+  .play-btn:hover { background: #cecbf6; }
+  .play-btn.playing { background: #7f77dd; color: white; }
+  #status {
+    font-size: 13px;
+    color: #888780;
+    margin-bottom: 10px;
+  }
+  #result { margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>句子朗读翻译器</h1>
+<div class="sub">粘贴一段英文，自动按句拆分 · 逐句朗读 · 自动翻译成中文</div>
+
+<div class="controls" style="margin-bottom:8px;">
+  <span style="color:#888780;font-size:13px;">默认示例：</span>
+  <button onclick="loadSample('learning')">学习方法</button>
+  <button onclick="loadSample('standup')">每日站会汇报</button>
+  <button onclick="loadSample('resume')">简历</button>
+</div>
+
+<textarea id="input" placeholder="在此粘贴英文作文……">Learning a new language takes patience and consistent practice. Many people give up too early because they expect quick results. However, small daily habits, like reading one paragraph or listening to one short recording, can lead to real progress over time. The key is to stay curious and keep going even when it feels slow.</textarea>
+
+<div class="controls">
+  <button class="primary" onclick="processText()">拆分并翻译</button>
+  <button onclick="clearAll()">清空</button>
+  <span style="color:#888780;font-size:13px;">语速</span>
+  <select id="rateSelect">
+    <option value="0.7">慢</option>
+    <option value="0.85">较慢</option>
+    <option value="1" selected>正常</option>
+    <option value="1.15">较快</option>
+  </select>
+  <select id="voiceSelect"></select>
+  <span style="color:#888780;font-size:13px;">音高</span>
+  <select id="pitchSelect">
+    <option value="0.9">低沉</option>
+    <option value="1" selected>正常</option>
+    <option value="1.1">上扬</option>
+  </select>
+</div>
+<div class="sub" style="margin:-14px 0 16px;">提示：Chrome/Edge 里名字带 "Natural" 或 "Online" 的发音人听感更接近真人口语，比系统默认机械音自然</div>
+
+<div id="status"></div>
+<div id="result"></div>
+
+<script>
+let sentences = [];
+let voices = [];
+
+function loadVoices() {
+  voices = speechSynthesis.getVoices().filter(v => v.lang.startsWith('en'));
+  const naturalPattern = /natural|online|neural/i;
+  voices.sort((a, b) => {
+    const aNat = naturalPattern.test(a.name) ? 0 : 1;
+    const bNat = naturalPattern.test(b.name) ? 0 : 1;
+    return aNat - bNat;
+  });
+  const sel = document.getElementById('voiceSelect');
+  sel.innerHTML = '';
+  voices.forEach((v, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = (naturalPattern.test(v.name) ? '★ ' : '') + v.name + ' (' + v.lang + ')';
+    sel.appendChild(opt);
+  });
+}
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
+function splitSentences(text) {
+  text = text.trim();
+  if (!text) return [];
+  // 按句末标点拆分，同时保留标点；简单处理常见缩写避免误拆
+  const abbrevPattern = /\b(Mr|Mrs|Ms|Dr|Prof|Sr|Jr|vs|etc|e\.g|i\.e|St|U\.S|U\.K)\.$/;
+  const raw = text.split(/(?<=[.!?])\s+(?=[A-Z"'])/);
+
+  // 第一遍：把明显是缩写导致的误拆合并回上一句
+  let step1 = [];
+  for (let i = 0; i < raw.length; i++) {
+    let seg = raw[i].trim();
+    if (!seg) continue;
+    if (step1.length && abbrevPattern.test(step1[step1.length - 1])) {
+      step1[step1.length - 1] += ' ' + seg;
+    } else {
+      step1.push(seg);
+    }
+  }
+
+  // 第二遍：编号（如 "2." "(3)" "1)"）会被上面的规则粘在上一句末尾
+  // （因为编号后面紧跟大写字母，正则在编号前不会切分）。
+  // 这里把粘在句尾的编号切下来，挪到下一句开头。
+  const trailingListMarker = /[.!?]\s+(\(?\d{1,3}[.)）、]\)?)\s*$/;
+  for (let i = 0; i < step1.length - 1; i++) {
+    const m = step1[i].match(trailingListMarker);
+    if (m) {
+      step1[i] = step1[i].slice(0, m.index + 1).trim();
+      step1[i + 1] = m[1] + ' ' + step1[i + 1];
+    }
+  }
+
+  return step1.length ? step1 : [text];
+}
+
+async function translateSentence(text) {
+  // 主接口：MyMemory
+  try {
+    const res = await fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(text) + '&langpair=en|zh-CN');
+    const data = await res.json();
+    if (data.responseData && data.responseData.translatedText && !/MYMEMORY WARNING/i.test(data.responseData.translatedText)) {
+      return data.responseData.translatedText;
+    }
+  } catch (e) {
+    console.warn('MyMemory 接口失败，切换备用接口', e);
+  }
+
+  // 备用接口：Google 翻译（免 key 端点）
+  try {
+    const res2 = await fetch('https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=' + encodeURIComponent(text));
+    const data2 = await res2.json();
+    if (data2 && data2[0]) {
+      return data2[0].map(seg => seg[0]).join('');
+    }
+  } catch (e2) {
+    console.warn('备用接口也失败', e2);
+  }
+
+  return '(翻译失败，请检查网络或按 F12 看控制台报错)';
+}
+
+async function processText() {
+  const text = document.getElementById('input').value;
+  sentences = splitSentences(text);
+  const resultDiv = document.getElementById('result');
+  const statusDiv = document.getElementById('status');
+  resultDiv.innerHTML = '';
+
+  if (sentences.length === 0) {
+    statusDiv.textContent = '请先输入英文内容';
+    return;
+  }
+
+  statusDiv.textContent = `共 ${sentences.length} 句，翻译中…`;
+
+  sentences.forEach((s, idx) => {
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.innerHTML = `
+      <button class="play-btn" id="play-${idx}" onclick="speak(${idx})">▶</button>
+      <div class="row-content">
+        <div class="row-num">${idx + 1}</div>
+        <div class="en-text">${escapeHtml(s)}</div>
+        <div class="zh-text loading" id="zh-${idx}">翻译中…</div>
+      </div>
+    `;
+    resultDiv.appendChild(row);
+  });
+
+  // 逐句翻译，控制间隔避免免费接口限流
+  for (let i = 0; i < sentences.length; i++) {
+    const zh = await translateSentence(sentences[i]);
+    const el = document.getElementById('zh-' + i);
+    el.textContent = zh;
+    el.classList.remove('loading');
+    statusDiv.textContent = `翻译中… (${i + 1}/${sentences.length})`;
+    await new Promise(r => setTimeout(r, 350));
+  }
+  statusDiv.textContent = `完成，共 ${sentences.length} 句`;
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+let currentUtterance = null;
+
+function speak(idx) {
+  speechSynthesis.cancel();
+  document.querySelectorAll('.play-btn').forEach(b => b.classList.remove('playing'));
+
+  const text = sentences[idx];
+  const utter = new SpeechSynthesisUtterance(text);
+  const rate = parseFloat(document.getElementById('rateSelect').value);
+  utter.rate = rate;
+  const pitch = parseFloat(document.getElementById('pitchSelect').value);
+  utter.pitch = pitch;
+  const voiceIdx = document.getElementById('voiceSelect').value;
+  if (voices[voiceIdx]) utter.voice = voices[voiceIdx];
+
+  const btn = document.getElementById('play-' + idx);
+  btn.classList.add('playing');
+  utter.onend = () => btn.classList.remove('playing');
+  utter.onerror = () => btn.classList.remove('playing');
+
+  currentUtterance = utter;
+  speechSynthesis.speak(utter);
+}
+
+const sampleTexts = {
+  learning: "Learning a new language takes patience and consistent practice. Many people give up too early because they expect quick results. However, small daily habits, like reading one paragraph or listening to one short recording, can lead to real progress over time. The key is to stay curious and keep going even when it feels slow.",
+  standup: `Morning everyone! Here's my update.
+Yesterday I completed three items:
+1. The NIR DB Data Dictionary — internal review is done and handed over to Lloyd. No further follow-up needed on my end.
+2. REQ-000069 — the country code incident from Steven. Investigation is done, response sent. Waiting for his reply.
+3. REQ-000065 — the vaccine deletion error. Root cause was that the data was already deleted on 26 May. I've replied to NEHR and will follow up next Monday to close it out.
+Today, I'll be focusing on two items:
+1. REQ-000068 — the webservice HCI code investigation. I'm aiming to wrap this up before lunch.
+2. SR-CDA-NIR-2026-001 — continuing on the regression test cases and test results.
+No major blockers on my end. Just waiting on Steven for his reply.
+That's all from me. Thanks!`,
+  resume: "I am a software engineer with experience in Java, Spring Framework, and PostgreSQL. I have worked on large-scale government projects involving multiple portals and complex database schemas. I am detail-oriented and committed to delivering accurate, well-tested solutions."
+};
+
+function loadSample(key) {
+  document.getElementById('input').value = sampleTexts[key] || '';
+  processText();
+}
+
+function clearAll() {
+  document.getElementById('input').value = '';
+  document.getElementById('result').innerHTML = '';
+  document.getElementById('status').textContent = '';
+  speechSynthesis.cancel();
+  sentences = [];
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  processText();
+});
+</script>
+
+</body>
+</html>
