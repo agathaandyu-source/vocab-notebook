@@ -98,6 +98,15 @@
   }
   .play-btn:hover { background: #cecbf6; }
   .play-btn.playing { background: #7f77dd; color: white; }
+  .play-btn.listening { background: #f0997b; color: white; }
+  .check-result {
+    font-size: 13px;
+    margin-top: 6px;
+    line-height: 1.6;
+  }
+  .word-ok { color: #0f6e56; }
+  .word-bad { color: #993c1d; text-decoration: line-through; text-decoration-color: #f0997b; }
+  .check-score { font-weight: 500; margin-right: 6px; }
   #status {
     font-size: 13px;
     color: #888780;
@@ -246,10 +255,12 @@ async function processText() {
     row.className = 'row';
     row.innerHTML = `
       <button class="play-btn" id="play-${idx}" onclick="speak(${idx})">▶</button>
+      <button class="play-btn" id="mic-${idx}" onclick="startRecognition(${idx})" title="跟读检测">🎤</button>
       <div class="row-content">
         <div class="row-num">${idx + 1}</div>
         <div class="en-text">${escapeHtml(s)}</div>
         <div class="zh-text loading" id="zh-${idx}">翻译中…</div>
+        <div class="check-result" id="check-${idx}"></div>
       </div>
     `;
     resultDiv.appendChild(row);
@@ -323,6 +334,69 @@ function clearAll() {
   document.getElementById('status').textContent = '';
   speechSynthesis.cancel();
   sentences = [];
+}
+
+// ---- 跟读检测（语音识别） ----
+const SpeechRecognitionClass = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+function normalizeWords(text) {
+  return text
+    .toLowerCase()
+    .replace(/[.,!?;:"'()]/g, '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+function compareAndRender(target, spoken) {
+  const targetWords = normalizeWords(target);
+  const spokenWords = normalizeWords(spoken);
+  let matchCount = 0;
+  const rendered = targetWords.map((w, i) => {
+    const ok = spokenWords[i] === w;
+    if (ok) matchCount++;
+    return `<span class="${ok ? 'word-ok' : 'word-bad'}">${escapeHtml(w)}</span>`;
+  }).join(' ');
+  const score = targetWords.length ? Math.round((matchCount / targetWords.length) * 100) : 0;
+  return { score, html: rendered };
+}
+
+function startRecognition(idx) {
+  if (!SpeechRecognitionClass) {
+    document.getElementById('check-' + idx).innerHTML =
+      '<span style="color:#993c1d;">当前浏览器不支持语音识别，请用 Chrome 或 Edge 打开（且需要 https 网址，本地文件无法使用麦克风）</span>';
+    return;
+  }
+
+  speechSynthesis.cancel();
+  const micBtn = document.getElementById('mic-' + idx);
+  const resultDiv = document.getElementById('check-' + idx);
+
+  const recognition = new SpeechRecognitionClass();
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  micBtn.classList.add('listening');
+  resultDiv.innerHTML = '<span style="color:#888780;">听你读…</span>';
+
+  recognition.onresult = (event) => {
+    const spoken = event.results[0][0].transcript;
+    const { score, html } = compareAndRender(sentences[idx], spoken);
+    resultDiv.innerHTML =
+      `<span class="check-score" style="color:${score >= 80 ? '#0f6e56' : '#993c1d'}">匹配度 ${score}%</span>` +
+      `你说的：${html}`;
+  };
+
+  recognition.onerror = (event) => {
+    resultDiv.innerHTML = `<span style="color:#993c1d;">识别出错（${event.error}），请检查麦克风权限后重试</span>`;
+  };
+
+  recognition.onend = () => {
+    micBtn.classList.remove('listening');
+  };
+
+  recognition.start();
 }
 
 window.addEventListener('DOMContentLoaded', () => {
