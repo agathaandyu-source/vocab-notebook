@@ -395,8 +395,12 @@ function startRecognition(idx) {
 
   const recognition = new SpeechRecognitionClass();
   recognition.lang = 'en-US';
-  recognition.interimResults = false;
+  // 持续模式：不会因为句中正常停顿/换气就自动判定结束，适合长句子
+  recognition.continuous = true;
+  recognition.interimResults = true;
   recognition.maxAlternatives = 1;
+
+  let finalTranscript = '';
 
   currentRecognition = recognition;
   currentRecognitionBtn = micBtn;
@@ -404,27 +408,39 @@ function startRecognition(idx) {
   micBtn.classList.add('listening');
   resultDiv.innerHTML = '<span style="color:#888780;">听你读…</span>';
 
-  // 兜底：如果 8 秒内没有任何结果/结束事件，强制复位，避免按钮卡死
+  // 超时时间按句子长度动态给：单词越多，允许的时间越长
+  const wordCount = normalizeWords(sentences[idx]).length;
+  const timeoutMs = Math.min(25000, Math.max(8000, wordCount * 700 + 4000));
+
   recognitionTimeoutId = setTimeout(() => {
-    try { recognition.abort(); } catch (e) {}
-    resultDiv.innerHTML = '<span style="color:#993c1d;">超时未识别到语音，请重试</span>';
-    resetRecognitionState();
-  }, 8000);
+    // 用 stop() 而不是 abort()，让已经识别到的内容先结算，不直接丢弃
+    try { recognition.stop(); } catch (e) {}
+  }, timeoutMs);
 
   recognition.onresult = (event) => {
-    const spoken = event.results[0][0].transcript;
-    const { score, html } = compareAndRender(sentences[idx], spoken);
-    resultDiv.innerHTML =
-      `<span class="check-score" style="color:${score >= 80 ? '#0f6e56' : '#993c1d'}">匹配度 ${score}%</span>` +
-      `你说的：${html}`;
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      if (event.results[i].isFinal) {
+        finalTranscript += event.results[i][0].transcript + ' ';
+      }
+    }
   };
 
   recognition.onerror = (event) => {
     if (event.error === 'aborted') return; // 我们主动 abort 的情况不算错误
+    if (event.error === 'no-speech' && finalTranscript.trim()) return; // 已经识别到内容，忽略末尾的 no-speech
     resultDiv.innerHTML = `<span style="color:#993c1d;">识别出错（${event.error}），请检查麦克风权限后重试</span>`;
   };
 
   recognition.onend = () => {
+    const spoken = finalTranscript.trim();
+    if (spoken) {
+      const { score, html } = compareAndRender(sentences[idx], spoken);
+      resultDiv.innerHTML =
+        `<span class="check-score" style="color:${score >= 80 ? '#0f6e56' : '#993c1d'}">匹配度 ${score}%</span>` +
+        `你说的：${html}`;
+    } else if (!resultDiv.textContent.includes('识别出错')) {
+      resultDiv.innerHTML = '<span style="color:#993c1d;">没识别到语音，请靠近麦克风重试</span>';
+    }
     resetRecognitionState();
   };
 
