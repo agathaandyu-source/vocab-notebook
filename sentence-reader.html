@@ -338,6 +338,9 @@ function clearAll() {
 
 // ---- 跟读检测（语音识别） ----
 const SpeechRecognitionClass = window.SpeechRecognition || window.webkitSpeechRecognition;
+let currentRecognition = null;
+let currentRecognitionBtn = null;
+let recognitionTimeoutId = null;
 
 function normalizeWords(text) {
   return text
@@ -361,11 +364,29 @@ function compareAndRender(target, spoken) {
   return { score, html: rendered };
 }
 
+function resetRecognitionState() {
+  if (recognitionTimeoutId) {
+    clearTimeout(recognitionTimeoutId);
+    recognitionTimeoutId = null;
+  }
+  if (currentRecognitionBtn) {
+    currentRecognitionBtn.classList.remove('listening');
+  }
+  currentRecognition = null;
+  currentRecognitionBtn = null;
+}
+
 function startRecognition(idx) {
   if (!SpeechRecognitionClass) {
     document.getElementById('check-' + idx).innerHTML =
       '<span style="color:#993c1d;">当前浏览器不支持语音识别，请用 Chrome 或 Edge 打开（且需要 https 网址，本地文件无法使用麦克风）</span>';
     return;
+  }
+
+  // 如果上一个识别还在跑，先强制停掉，避免报 InvalidStateError
+  if (currentRecognition) {
+    try { currentRecognition.abort(); } catch (e) {}
+    resetRecognitionState();
   }
 
   speechSynthesis.cancel();
@@ -377,8 +398,18 @@ function startRecognition(idx) {
   recognition.interimResults = false;
   recognition.maxAlternatives = 1;
 
+  currentRecognition = recognition;
+  currentRecognitionBtn = micBtn;
+
   micBtn.classList.add('listening');
   resultDiv.innerHTML = '<span style="color:#888780;">听你读…</span>';
+
+  // 兜底：如果 8 秒内没有任何结果/结束事件，强制复位，避免按钮卡死
+  recognitionTimeoutId = setTimeout(() => {
+    try { recognition.abort(); } catch (e) {}
+    resultDiv.innerHTML = '<span style="color:#993c1d;">超时未识别到语音，请重试</span>';
+    resetRecognitionState();
+  }, 8000);
 
   recognition.onresult = (event) => {
     const spoken = event.results[0][0].transcript;
@@ -389,14 +420,20 @@ function startRecognition(idx) {
   };
 
   recognition.onerror = (event) => {
+    if (event.error === 'aborted') return; // 我们主动 abort 的情况不算错误
     resultDiv.innerHTML = `<span style="color:#993c1d;">识别出错（${event.error}），请检查麦克风权限后重试</span>`;
   };
 
   recognition.onend = () => {
-    micBtn.classList.remove('listening');
+    resetRecognitionState();
   };
 
-  recognition.start();
+  try {
+    recognition.start();
+  } catch (e) {
+    resultDiv.innerHTML = '<span style="color:#993c1d;">启动失败，请稍等一秒再试</span>';
+    resetRecognitionState();
+  }
 }
 
 window.addEventListener('DOMContentLoaded', () => {
