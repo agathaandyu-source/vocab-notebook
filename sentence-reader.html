@@ -311,15 +311,21 @@ function speak(idx) {
 const sampleTexts = {
   learning: "Learning a new language takes patience and consistent practice. Many people give up too early because they expect quick results. However, small daily habits, like reading one paragraph or listening to one short recording, can lead to real progress over time. The key is to stay curious and keep going even when it feels slow.",
   standup: `Here's my update.
-Yesterday what did i do?:
-1. incident 65 — the vaccine deletion error. i'm aiming to close it
-2. incident 76 — the update vaccination encounted error. error message was that the person is not existing in NIR. I've replied to NEHR to obtain details to identify the root cause.
+Yesterday what did i do:
+1. incident 65 — the vaccine deletion error. i'm aiming to close it.
+2. incident 76 — the update vaccination encounted error. error message was that the person is not existing in NIR. 
+I've replied to NEHR to obtain details to identify the root cause.
 
 Today, I'll be focusing on one item:
-1. REQ-000078 — the reminder letter issue on Admin portal. meiping raised two issues regarding this matter. first,the speed is much slower than during the GDC phase; second, the font style has changed.
-I raised the ITSM SR to retreive the history records of reminder letter.but I did not find the issue regarding the first one. i unable to replicate the issue locally. i'll try it in UAT today.
-regarding the second one, I have found the root cause is that the new azure app server doesn't have the font style. solution is that we package the font style to deployment file. it maybe cause speech problom. so i need to determinte.
-Regarding the second issue, I found that the root cause is the absence of the corresponding font style on the new Azure application server. The solution is to bundle the font style into the deployment package. However, this could potentially lead to performance issues, so I need to verify this further.
+1. incident 78 — the reminder letter issue on Admin portal. 
+meiping raised two issues regarding this matter. 
+first,the speed is much slower than during the GDC phase; second, the font style has changed.
+I raised the ITSM SR to retreive the history records of reminder letter. 
+but I did not find the issue regarding the first one. 
+i unable to replicate the issue locally. i'll try it in UAT today.
+Regarding the second issue, I found that the root cause is the absence of the corresponding font style on the new Azure application server. 
+The solution is to bundle the font style into the deployment package. 
+However, this could potentially lead to performance issues, so I need to verify this further.
 
 No major blockers on my end. Just waiting on Steven for his reply.
 That's all from me.`,

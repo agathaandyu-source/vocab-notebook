@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-13T14:58:38.146Z",
+  "exportedAt": "2026-07-20T14:19:20.893Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -36,9 +36,9 @@
         }
       ],
       "review": {
-        "stage": 2,
+        "stage": 3,
         "cycleStart": "2026-07-11T12:41:02.012Z",
-        "nextDue": "2026-07-14T16:00:00.000Z",
+        "nextDue": "2026-07-17T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -60,9 +60,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-13T11:22:40.907Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-14T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -84,9 +84,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-13T10:49:57.857Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-14T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -150,9 +150,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 2,
         "cycleStart": "2026-07-12T15:11:33.581Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-15T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -174,9 +174,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-13T11:23:01.213Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-14T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -1488,9 +1488,9 @@
     {
       "id": "mrj0qo3xncgum",
       "word": "decade",
-      "meaning": "",
       "phonetic": "/dəˈkeɪd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/decade-us.mp3",
+      "meaning": "",
       "dateAdded": "2026-07-13T09:27:14.829Z",
       "sentences": [],
       "review": null,
@@ -1500,9 +1500,9 @@
     {
       "id": "mrj0ty3uh48jh",
       "word": "discover",
-      "meaning": "首次遇见、找到、意识到;东西存在但未知",
       "phonetic": "/dɪsˈkʌvɚ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discover-us.mp3",
+      "meaning": "首次遇见、找到、意识到;东西存在但未知",
       "dateAdded": "2026-07-13T09:29:47.754Z",
       "sentences": [
         {
@@ -1530,9 +1530,9 @@
     {
       "id": "mrj0ww0f99ry9",
       "word": "uncover",
-      "meaning": "揭露 / 揭开;东西被隐藏 / 遮盖",
       "phonetic": "/ʌnˈkʌvə(ɹ)/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/uncover-uk.mp3",
+      "meaning": "揭露 / 揭开;东西被隐藏 / 遮盖",
       "dateAdded": "2026-07-13T09:32:05.007Z",
       "sentences": [
         {
@@ -1554,9 +1554,9 @@
     {
       "id": "mrj0y9o4u8rcm",
       "word": "flaw",
-      "meaning": "缺陷；瑕疵",
       "phonetic": "/ˈflɔ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/flaw-1-us.mp3",
+      "meaning": "缺陷；瑕疵",
       "dateAdded": "2026-07-13T09:33:09.364Z",
       "sentences": [],
       "review": null,
@@ -1566,9 +1566,9 @@
     {
       "id": "mrj13t0ksdlmc",
       "word": "Occur",
-      "meaning": "发生 / 出现 / 存在",
       "phonetic": "/əˈkɝ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/occur-us.mp3",
+      "meaning": "发生 / 出现 / 存在",
       "dateAdded": "2026-07-13T09:37:27.716Z",
       "sentences": [
         {
@@ -1597,9 +1597,9 @@
     {
       "id": "mrj1cp4h7z7m2",
       "word": "Come up",
-      "meaning": "从看不见 / 未知变成看得见 / 已知 come up with (想出) ⭐⭐⭐ come up in (被提到) ⭐⭐⭐ come up against (遇到) ⭐⭐ come up short (未达标) ⭐⭐ come up empty (一无所获) ⭐⭐ 📌 常见句式： Something came up (有事)",
       "phonetic": "",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/come%20up-au.mp3",
+      "meaning": "从看不见 / 未知变成看得见 / 已知 come up with (想出) ⭐⭐⭐ come up in (被提到) ⭐⭐⭐ come up against (遇到) ⭐⭐ come up short (未达标) ⭐⭐ come up empty (一无所获) ⭐⭐ 📌 常见句式： Something came up (有事)",
       "dateAdded": "2026-07-13T09:44:22.577Z",
       "sentences": [
         {
@@ -1676,9 +1676,9 @@
     {
       "id": "mrj2yl8gote9q",
       "word": "Cover for",
-      "meaning": "顶替",
       "phonetic": "",
       "audio": "",
+      "meaning": "顶替",
       "dateAdded": "2026-07-13T10:29:23.584Z",
       "sentences": [
         {
@@ -1695,9 +1695,9 @@
     {
       "id": "mrj3c3mdspee3",
       "word": "discrepancy",
-      "meaning": "差异",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
+      "meaning": "差异",
       "dateAdded": "2026-07-13T10:39:53.941Z",
       "sentences": [],
       "review": null,
@@ -1707,9 +1707,9 @@
     {
       "id": "mrj3crarpw29v",
       "word": "depandency",
-      "meaning": "依赖",
       "phonetic": "",
       "audio": "",
+      "meaning": "依赖",
       "dateAdded": "2026-07-13T10:40:24.627Z",
       "sentences": [],
       "review": null,
@@ -1719,9 +1719,9 @@
     {
       "id": "mrj4zexapn622",
       "word": "kick off",
-      "meaning": "启动",
       "phonetic": "",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/kick%20off-au.mp3",
+      "meaning": "启动",
       "dateAdded": "2026-07-13T11:26:01.293Z",
       "sentences": [],
       "review": null,
@@ -1731,9 +1731,9 @@
     {
       "id": "mrj4zmoi6ri0d",
       "word": "roll out",
-      "meaning": "推出 / 发布",
       "phonetic": "",
       "audio": "",
+      "meaning": "推出 / 发布",
       "dateAdded": "2026-07-13T11:26:11.346Z",
       "sentences": [],
       "review": null,
@@ -1743,9 +1743,9 @@
     {
       "id": "mrj5081qnu6c6",
       "word": "push back",
-      "meaning": "推迟",
       "phonetic": "",
       "audio": "",
+      "meaning": "推迟",
       "dateAdded": "2026-07-13T11:26:39.038Z",
       "sentences": [],
       "review": null,
@@ -1755,11 +1755,433 @@
     {
       "id": "mrj5bfxdkeh69",
       "word": "collaboration",
-      "meaning": "协作",
       "phonetic": "/kəˌlæbəˈɹeɪʃən/",
       "audio": "",
+      "meaning": "协作",
       "dateAdded": "2026-07-13T11:35:22.465Z",
       "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrkhubq2gpxqa",
+      "word": "regard",
+      "meaning": "看待",
+      "phonetic": "/ɹɪˈɡɑɹd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
+      "dateAdded": "2026-07-14T10:13:45.050Z",
+      "sentences": [
+        {
+          "id": "mrkhubq2hoz5r",
+          "text": "Regarding the country name, what would you like me to prepare?",
+          "translation": "关于国家名字，你需要我准备什么",
+          "dateAdded": "2026-07-14T10:13:45.050Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mroaox5jv6hbp",
+      "word": "determinate",
+      "meaning": "",
+      "phonetic": "/dɪˈtɜːmɪneɪt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/determinate-uk.mp3",
+      "dateAdded": "2026-07-17T02:04:40.279Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mroo1asaxo05g",
+      "word": "Definitely",
+      "meaning": "绝对，无疑",
+      "phonetic": "/ˈdɛf.nɪt.li/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/definitely-us.mp3",
+      "dateAdded": "2026-07-17T08:18:12.826Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt0x76zbeyvy",
+      "word": "retrieve",
+      "meaning": "获取 / 检索 / 取回",
+      "phonetic": "/ɹiˈtɹiv/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/retrieve-uk.mp3",
+      "dateAdded": "2026-07-20T09:30:01.259Z",
+      "sentences": [
+        {
+          "id": "mrt89ags1n8ql",
+          "text": "retrieved",
+          "translation": "过去式",
+          "dateAdded": "2026-07-20T12:55:22.684Z"
+        },
+        {
+          "id": "mrt89k0x4lsos",
+          "text": "retrieval",
+          "translation": "名词",
+          "dateAdded": "2026-07-20T12:55:35.073Z"
+        },
+        {
+          "id": "mrt8af77aptyw",
+          "text": "Execute the SELECT query to retrieve the current values.",
+          "translation": "执行 SELECT 查询以获取当前值",
+          "dateAdded": "2026-07-20T12:56:15.475Z"
+        },
+        {
+          "id": "mrt8bsa2ud93h",
+          "text": "We retrieved the deleted records from the backup.",
+          "translation": "我们从备份中恢复了被删除的记录",
+          "dateAdded": "2026-07-20T12:57:19.082Z"
+        },
+        {
+          "id": "mrt8czo78qq8l",
+          "text": "automatically retrieve",
+          "translation": "自动检索",
+          "dateAdded": "2026-07-20T12:58:15.319Z"
+        },
+        {
+          "id": "mrt8djof4v0qu",
+          "text": "manually retrieve",
+          "translation": "手动获取",
+          "dateAdded": "2026-07-20T12:58:41.247Z"
+        },
+        {
+          "id": "mrt8fqid74o6z",
+          "text": "Please execute the SELECT script to retrieve the current values from the database. The output will be used as input for the UPDATE script",
+          "translation": "请执行 SELECT 脚本从数据库获取当前值。输出将作为 UPDATE 脚本的输入",
+          "dateAdded": "2026-07-20T13:00:23.413Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt3clrn8zkpc",
+      "word": "is capable of",
+      "meaning": "",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-20T10:37:59.219Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt87ppq9oplt",
+      "word": "replicate",
+      "meaning": "精确地重复 / 复制某个过程 / 状态 / 结果",
+      "phonetic": "/ˈɹɛpləˌkeɪt/",
+      "audio": "",
+      "dateAdded": "2026-07-20T12:54:09.134Z",
+      "sentences": [
+        {
+          "id": "mrt8twisx9472",
+          "text": "We're trying to replicate the issue locally.",
+          "translation": "我们正在尝试本地复现这个问题。",
+          "dateAdded": "2026-07-20T13:11:24.388Z"
+        },
+        {
+          "id": "mrt8vkhk12hi9",
+          "text": "Please check if the replication is running smoothly.",
+          "translation": "请检查复制是否运行正常。",
+          "dateAdded": "2026-07-20T13:12:42.104Z"
+        },
+        {
+          "id": "mrt91wcr99zmx",
+          "text": "I'll try to replicate the Parent Portal PROD issue locally to identify the root cause.",
+          "translation": "我会尝试本地复现 Parent Portal 的 PROD 问题以找到根本原因。",
+          "dateAdded": "2026-07-20T13:17:37.419Z"
+        },
+        {
+          "id": "mrt934ft1sgq7",
+          "text": "Unable to replicate the issue in UAT with the same test data. This suggests the bug is likely environment-specific",
+          "translation": "无法用相同测试数据在 UAT 复现问题。这表明 bug 很可能是环境相关的",
+          "dateAdded": "2026-07-20T13:18:34.553Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8aua7hhs33",
+      "word": "current",
+      "meaning": "",
+      "phonetic": "/ˈkɝɹənt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/current-us.mp3",
+      "dateAdded": "2026-07-20T12:56:35.023Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8ir993ighh",
+      "word": "Obtain",
+      "meaning": "获得 / 取得",
+      "phonetic": "/əbˈteɪn/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/obtain-us.mp3",
+      "dateAdded": "2026-07-20T13:02:44.349Z",
+      "sentences": [
+        {
+          "id": "mrt8jpz4pwhux",
+          "text": "We need to obtain approval from the CAB.",
+          "translation": "我们需要获得 CAB 的批准",
+          "dateAdded": "2026-07-20T13:03:29.344Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8iztazngd6",
+      "word": "Extract",
+      "meaning": "提取 / 抽取",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-20T13:02:55.438Z",
+      "sentences": [
+        {
+          "id": "mrt8kx8vd1fwd",
+          "text": "We need to extract the affected records for review",
+          "translation": "我们需要提取受影响的记录以供审查。⭐ (记录)",
+          "dateAdded": "2026-07-20T13:04:25.423Z"
+        },
+        {
+          "id": "mrt8miq4sfjfc",
+          "text": "We extracted specific records from the dump",
+          "translation": "从导出中提取特定记录（一部分",
+          "dateAdded": "2026-07-20T13:05:39.916Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8n1mv25kfu",
+      "word": "specific",
+      "meaning": "特定的",
+      "phonetic": "/spəˈsɪf.ɪk/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/specific-us.mp3",
+      "dateAdded": "2026-07-20T13:06:04.423Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8pfb9g5ifk",
+      "word": "record",
+      "meaning": "记录",
+      "phonetic": "/ˈɹɛkɚd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/record-1-us.mp3",
+      "dateAdded": "2026-07-20T13:07:55.461Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8ptzb4rs1q",
+      "word": "vaccine",
+      "meaning": "疫苗",
+      "phonetic": "/vækˈsaɪn/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/vaccine.mp3",
+      "dateAdded": "2026-07-20T13:08:14.471Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8xq4a01k9e",
+      "word": "Simulate",
+      "meaning": "模拟",
+      "phonetic": "/-jə-/",
+      "audio": "",
+      "dateAdded": "2026-07-20T13:14:22.714Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt8yt68xvvol",
+      "word": "Reproduce",
+      "meaning": "再产生一次 （步骤重现、问题重现）",
+      "phonetic": "/ˌɹi.pɹoʊˈdus/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reproduce-us.mp3",
+      "dateAdded": "2026-07-20T13:15:13.328Z",
+      "sentences": [
+        {
+          "id": "mrt8zvt4j1uq6",
+          "text": "We reproduced the bug",
+          "translation": "成功复现问题",
+          "dateAdded": "2026-07-20T13:16:03.400Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt94bb15w9vr",
+      "word": "likely",
+      "meaning": "很可能",
+      "phonetic": "/ˈlaɪkli/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/likely-us.mp3",
+      "dateAdded": "2026-07-20T13:19:30.109Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt971ra0phyx",
+      "word": "suggest",
+      "meaning": "建议，表名，暗示",
+      "phonetic": "/sə(ɡ)ˈdʒɛst/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/suggest-us.mp3",
+      "dateAdded": "2026-07-20T13:21:37.702Z",
+      "sentences": [
+        {
+          "id": "mrt971rah7j33",
+          "text": "We suggest postponing the deployment to next week",
+          "translation": "我们建议将部署推迟到下周。",
+          "dateAdded": "2026-07-20T13:21:37.702Z"
+        },
+        {
+          "id": "mrt98fhwa3r2o",
+          "text": "I suggest that we (should) review the report first",
+          "translation": "我建议我们先审阅报告。",
+          "dateAdded": "2026-07-20T13:22:42.164Z"
+        },
+        {
+          "id": "mrt9ip9k90dzd",
+          "text": "The team suggested some changes to the plan.",
+          "translation": "团队对计划提出了一些修改建议",
+          "dateAdded": "2026-07-20T13:30:41.384Z"
+        },
+        {
+          "id": "mrt9n3oveii08",
+          "text": "Initial analysis suggests a database timeout is the root cause.",
+          "translation": "初步分析表明数据库超时是根本原因",
+          "dateAdded": "2026-07-20T13:34:06.703Z"
+        },
+        {
+          "id": "mrt9q4bu40epl",
+          "text": "suggestion",
+          "translation": "名词",
+          "dateAdded": "2026-07-20T13:36:27.498Z"
+        },
+        {
+          "id": "mrt9the15ooki",
+          "text": "Please share your suggestions.",
+          "translation": "请分享您的建议",
+          "dateAdded": "2026-07-20T13:39:04.393Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt9jdx8o2fxb",
+      "word": "workaround",
+      "meaning": "变通方法",
+      "phonetic": "/ˈwɜːk.əɹaʊnd/",
+      "audio": "",
+      "dateAdded": "2026-07-20T13:31:13.340Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt9k371gmkjd",
+      "word": "approach",
+      "meaning": "方法",
+      "phonetic": "/əˈpɹoʊt͡ʃ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/approach-us.mp3",
+      "dateAdded": "2026-07-20T13:31:46.093Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt9kw70lrlkm",
+      "word": "Perhaps",
+      "meaning": "或许",
+      "phonetic": "/pɚˈhæps/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/perhaps-us.mp3",
+      "dateAdded": "2026-07-20T13:32:23.676Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt9m7dpbyhzh",
+      "word": "alternative",
+      "meaning": "两个选一个",
+      "phonetic": "/ɔl.ˈtɝ.nə.tɪv/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/alternative-us.mp3",
+      "dateAdded": "2026-07-20T13:33:24.829Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrt9sgj749iss",
+      "word": "rehearse",
+      "meaning": "排练",
+      "phonetic": "[ɹɪˈhɜːs]",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/rehearse-uk.mp3",
+      "dateAdded": "2026-07-20T13:38:16.627Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrtb0ryy7i2mb",
+      "word": "corresponding",
+      "meaning": "相应的",
+      "phonetic": "/ˌkɑɹəˈspɑndɪŋ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/corresponding-us.mp3",
+      "dateAdded": "2026-07-20T14:12:44.314Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrtb6rphxablo",
+      "word": "absence",
+      "meaning": "缺席，不在",
+      "phonetic": "/æbˈsɒns/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/absence-us.mp3",
+      "dateAdded": "2026-07-20T14:17:23.909Z",
+      "sentences": [
+        {
+          "id": "mrtb7z4s9ba35",
+          "text": "I found that the root cause is the absence of the corresponding font style",
+          "translation": "我发现根本原因是缺少相应的字体样式",
+          "dateAdded": "2026-07-20T14:18:20.188Z"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
