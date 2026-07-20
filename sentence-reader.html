@@ -310,16 +310,19 @@ function speak(idx) {
 
 const sampleTexts = {
   learning: "Learning a new language takes patience and consistent practice. Many people give up too early because they expect quick results. However, small daily habits, like reading one paragraph or listening to one short recording, can lead to real progress over time. The key is to stay curious and keep going even when it feels slow.",
-  standup: `Morning everyone! Here's my update.
-Yesterday I completed three items:
-1. The NIR DB Data Dictionary — internal review is done and handed over to Lloyd. No further follow-up needed on my end.
-2. REQ-000069 — the country code incident from Steven. Investigation is done, response sent. Waiting for his reply.
-3. REQ-000065 — the vaccine deletion error. Root cause was that the data was already deleted on 26 May. I've replied to NEHR and will follow up next Monday to close it out.
-Today, I'll be focusing on two items:
-1. REQ-000068 — the webservice HCI code investigation. I'm aiming to wrap this up before lunch.
-2. SR-CDA-NIR-2026-001 — continuing on the regression test cases and test results.
+  standup: `Here's my update.
+Yesterday what did i do?:
+1. incident 65 — the vaccine deletion error. i'm aiming to close it
+2. incident 76 — the update vaccination encounted error. error message was that the person is not existing in NIR. I've replied to NEHR to obtain details to identify the root cause.
+
+Today, I'll be focusing on one item:
+1. REQ-000078 — the reminder letter issue on Admin portal. meiping raised two issues regarding this matter. first,the speed is much slower than during the GDC phase; second, the font style has changed.
+I raised the ITSM SR to retreive the history records of reminder letter.but I did not find the issue regarding the first one. i unable to replicate the issue locally. i'll try it in UAT today.
+regarding the second one, I have found the root cause is that the new azure app server doesn't have the font style. solution is that we package the font style to deployment file. it maybe cause speech problom. so i need to determinte.
+Regarding the second issue, I found that the root cause is the absence of the corresponding font style on the new Azure application server. The solution is to bundle the font style into the deployment package. However, this could potentially lead to performance issues, so I need to verify this further.
+
 No major blockers on my end. Just waiting on Steven for his reply.
-That's all from me. Thanks!`,
+That's all from me.`,
   resume: "I am a software engineer with experience in Java, Spring Framework, and PostgreSQL. I have worked on large-scale government projects involving multiple portals and complex database schemas. I am detail-oriented and committed to delivering accurate, well-tested solutions."
 };
 
