@@ -1325,6 +1325,26 @@ let speechRate = 0.9;
 function speak(text) {
   if (!('speechSynthesis' in window) || !text) return;
   window.speechSynthesis.cancel();
+  // Chrome (notably on Android) can leave the synthesis queue stuck "paused"
+  // after the tab is backgrounded/screen-locked for a while, silently
+  // dropping every speak() call after that. resume() is a harmless no-op
+  // when nothing is stuck, but clears the stuck state when it happens.
+  window.speechSynthesis.resume();
+
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices || !voices.length) {
+    // No system TTS engine/voice is currently available at all — this is a
+    // device/OS-level condition (engine uninstalled or disabled), not
+    // something the page can work around. Say so instead of staying silent.
+    const statusMsg = document.getElementById('status-msg');
+    if (statusMsg) {
+      statusMsg.textContent = '⚠️ 手机上没有可用的语音引擎，请去系统设置检查"文字转语音输出"';
+      statusMsg.className = 'status-msg err';
+      setTimeout(() => { statusMsg.textContent = ''; }, 5000);
+    }
+    return;
+  }
+
   const utter = new SpeechSynthesisUtterance(text);
   utter.lang = 'en-US';
   utter.rate = speechRate;
@@ -1352,6 +1372,21 @@ function populateVoiceOptions() {
 if ('speechSynthesis' in window) {
   window.speechSynthesis.onvoiceschanged = populateVoiceOptions;
   populateVoiceOptions();
+
+  // voiceschanged doesn't fire reliably on every Android browser/WebView, so
+  // also poll for a while after load — cheap, and it's the only robust way
+  // to catch "voices actually became available" on those platforms.
+  let voicePollAttempts = 0;
+  const voicePollTimer = setInterval(() => {
+    voicePollAttempts += 1;
+    const found = window.speechSynthesis.getVoices();
+    if (found && found.length) {
+      populateVoiceOptions();
+      clearInterval(voicePollTimer);
+    } else if (voicePollAttempts >= 10) {
+      clearInterval(voicePollTimer); // give up after ~5s; speak() will warn if truly none
+    }
+  }, 500);
 }
 
 function playWordAudio(entry, btn) {
