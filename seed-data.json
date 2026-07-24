@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-24T16:05:59.002Z",
+  "exportedAt": "2026-07-24T16:06:44.758Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -60,9 +60,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 2,
         "cycleStart": "2026-07-13T11:22:40.907Z",
-        "nextDue": "2026-07-14T16:00:00.000Z",
+        "nextDue": "2026-07-16T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -84,9 +84,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 2,
         "cycleStart": "2026-07-13T10:49:57.857Z",
-        "nextDue": "2026-07-14T16:00:00.000Z",
+        "nextDue": "2026-07-16T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -150,9 +150,9 @@
         }
       ],
       "review": {
-        "stage": 2,
+        "stage": 3,
         "cycleStart": "2026-07-12T15:11:33.581Z",
-        "nextDue": "2026-07-15T16:00:00.000Z",
+        "nextDue": "2026-07-18T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -174,9 +174,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 2,
         "cycleStart": "2026-07-13T11:23:01.213Z",
-        "nextDue": "2026-07-14T16:00:00.000Z",
+        "nextDue": "2026-07-16T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -222,9 +222,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 2,
         "cycleStart": "2026-07-13T11:23:07.865Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-16T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -282,9 +282,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 3,
         "cycleStart": "2026-07-12T15:29:56.441Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-18T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -299,9 +299,9 @@
       "dateAdded": "2026-07-11T14:05:36.182Z",
       "sentences": [],
       "review": {
-        "stage": 0,
-        "cycleStart": "2026-07-13T11:00:17.274Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "stage": 1,
+        "cycleStart": "2026-07-14T11:01:05.474Z",
+        "nextDue": "2026-07-15T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -323,9 +323,9 @@
         }
       ],
       "review": {
-        "stage": 0,
-        "cycleStart": "2026-07-13T11:01:07.859Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "stage": 1,
+        "cycleStart": "2026-07-14T11:01:42.180Z",
+        "nextDue": "2026-07-15T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -486,9 +486,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 2,
         "cycleStart": "2026-07-13T11:16:42.836Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-16T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -553,9 +553,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 3,
         "cycleStart": "2026-07-11T17:25:43.834Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-18T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -595,9 +595,9 @@
         }
       ],
       "review": {
-        "stage": 1,
+        "stage": 2,
         "cycleStart": "2026-07-11T17:25:39.110Z",
-        "nextDue": "2026-07-13T16:00:00.000Z",
+        "nextDue": "2026-07-15T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -703,9 +703,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 2,
         "cycleStart": "2026-07-12T09:39:16.799Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-15T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -782,9 +782,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-12T09:59:17.709Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -836,9 +836,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-12T09:59:08.786Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -860,9 +860,9 @@
         }
       ],
       "review": {
-        "stage": 0,
+        "stage": 1,
         "cycleStart": "2026-07-12T09:58:28.172Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
+        "nextDue": "2026-07-13T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -1765,6 +1765,85 @@
       "learnedAt": null
     },
     {
+      "id": "mrnn5jlus82qf",
+      "word": "follow",
+      "phonetic": "/ˈfɑloʊ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/follow-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:05:45.090Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnbqtqy2g9r",
+      "word": "vaccine",
+      "phonetic": "/vækˈsaɪn/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/vaccine.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:10:34.382Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnfp93ycwm5",
+      "word": "root",
+      "phonetic": "/ɹuːt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/root-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:13:38.967Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnng284qjzgm",
+      "word": "cause",
+      "phonetic": "/kɔz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/cause-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:13:55.780Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnlc1w4vlus",
+      "word": "reply",
+      "phonetic": "/ɹɪˈplaɪ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reply-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:18:01.796Z",
+      "sentences": [
+        {
+          "id": "mrnnljaei00fd",
+          "text": "replied",
+          "translation": "",
+          "dateAdded": "2026-07-16T15:18:11.174Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnoj52uno0t",
+      "word": "aiming",
+      "phonetic": "/ˈeɪ.mɪŋ/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:20:30.950Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mrkhubq2gpxqa",
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
@@ -2142,7 +2221,7 @@
       "word": "alternative",
       "phonetic": "/ɔl.ˈtɝ.nə.tɪv/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/alternative-us.mp3",
-      "meaning": "两个选一个，替代",
+      "meaning": "两个选一个",
       "dateAdded": "2026-07-20T13:33:24.829Z",
       "sentences": [],
       "review": null,
@@ -2186,6 +2265,31 @@
           "text": "I found that the root cause is the absence of the corresponding font style",
           "translation": "我发现根本原因是缺少相应的字体样式",
           "dateAdded": "2026-07-20T14:18:20.188Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrxmz9vvctcrs",
+      "word": "hidden",
+      "phonetic": "/ˈhɪd(ə)n/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
+      "meaning": "隐藏",
+      "dateAdded": "2026-07-23T14:58:34.315Z",
+      "sentences": [
+        {
+          "id": "mrxmzy17fizaj",
+          "text": "There are no hidden extras.",
+          "translation": "",
+          "dateAdded": "2026-07-23T14:59:05.611Z"
+        },
+        {
+          "id": "mrycozdphntu1",
+          "text": "hid",
+          "translation": "",
+          "dateAdded": "2026-07-24T02:58:24.162Z"
         }
       ],
       "review": null,
@@ -2549,7 +2653,7 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
+      "meaning": "隐藏",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
