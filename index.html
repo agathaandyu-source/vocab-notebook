@@ -273,6 +273,47 @@
     max-width: 160px;
   }
 
+  .github-settings {
+    margin: 0 0 20px;
+    background: rgba(250,246,236,0.06);
+    border: 1px solid rgba(244,239,224,0.18);
+    border-radius: 10px;
+    padding: 4px 16px;
+  }
+  .github-settings summary {
+    cursor: pointer;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(244,239,224,0.85);
+    list-style: none;
+  }
+  .github-settings summary::-webkit-details-marker { display: none; }
+  .github-settings-body {
+    padding: 4px 0 16px;
+  }
+  .github-settings-body .field-row label {
+    color: rgba(244,239,224,0.65);
+  }
+  .github-settings-body input[type=text],
+  .github-settings-body input[type=password] {
+    background: var(--ink);
+    color: var(--text-light);
+    border-color: rgba(244,239,224,0.25);
+  }
+  .github-settings-hint {
+    font-size: 12px;
+    color: rgba(244,239,224,0.5);
+    line-height: 1.6;
+    margin: 4px 0 14px;
+  }
+  .github-settings-hint code {
+    background: rgba(217,182,92,0.15);
+    color: var(--brass-light);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
   .filters {
     display: flex;
     gap: 10px;
@@ -979,6 +1020,10 @@
       <button class="ghost quiz-btn" id="quiz-btn">
         🧠 今日测验 <span class="badge" id="quiz-badge" style="display:none;">0</span>
       </button>
+      <button class="ghost" id="gh-sync-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        同步
+      </button>
       <button class="ghost" id="export-btn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         导出数据
@@ -989,6 +1034,25 @@
       </button>
       <input type="file" id="import-file" accept=".json,application/json" style="display:none">
     </div>
+
+    <details class="github-settings">
+      <summary>⚙️ GitHub 同步设置</summary>
+      <div class="github-settings-body">
+        <div class="field-row">
+          <label for="gh-repo-input">仓库（格式：用户名/仓库名）</label>
+          <input type="text" id="gh-repo-input" placeholder="e.g. marq/vocab-drawer" autocomplete="off">
+        </div>
+        <div class="field-row">
+          <label for="gh-token-input">Personal Access Token</label>
+          <input type="password" id="gh-token-input" placeholder="github_pat_..." autocomplete="off">
+        </div>
+        <p class="github-settings-hint">令牌只会存在这台设备的浏览器里，同步时直接发给 GitHub，不会经过任何第三方。默认读写仓库根目录下的 <code>seed-data.json</code>，分支 <code>main</code>。</p>
+        <div class="add-actions">
+          <span class="status-msg" id="gh-status-msg"></span>
+          <button class="primary" id="gh-save-settings-btn">保存设置</button>
+        </div>
+      </div>
+    </details>
 
     <div class="filters">
       <div class="search-row">
@@ -1239,6 +1303,8 @@ async function fetchWordInfo(word) {
 }
 
 let chosenVoiceURI = '';
+let githubToken = '';
+let githubRepo = '';
 
 function pickUsVoice() {
   if (!('speechSynthesis' in window)) return null;
@@ -1683,6 +1749,118 @@ function buildExportPayload() {
   };
 }
 
+/* ---------------- GitHub API sync ---------------- */
+
+const GITHUB_FILE_PATH = 'seed-data.json';
+const GITHUB_BRANCH = 'main';
+
+// btoa()/atob() only handle Latin1, so text containing Chinese characters
+// needs to go through UTF-8 bytes first — otherwise GitHub gets mangled content.
+function utf8ToBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  bytes.forEach((b) => { binary += String.fromCharCode(b); });
+  return btoa(binary);
+}
+
+function base64ToUtf8(b64) {
+  const binary = atob(b64.replace(/\n/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
+async function githubGetFile() {
+  const res = await fetch(
+    `https://api.github.com/repos/${githubRepo}/contents/${GITHUB_FILE_PATH}?ref=${GITHUB_BRANCH}`,
+    { headers: { 'Authorization': `Bearer ${githubToken}`, 'Accept': 'application/vnd.github+json' } }
+  );
+  if (res.status === 404) return { exists: false, sha: null, content: null };
+  if (!res.ok) {
+    const err = new Error(`GitHub 读取失败：HTTP ${res.status}`);
+    err.status = res.status;
+    throw err;
+  }
+  const data = await res.json();
+  return { exists: true, sha: data.sha, content: base64ToUtf8(data.content) };
+}
+
+async function githubPutFile(contentStr, sha) {
+  const body = {
+    message: `词汇抽屉同步 · ${formatDateTimeStamp()}`,
+    content: utf8ToBase64(contentStr),
+    branch: GITHUB_BRANCH
+  };
+  if (sha) body.sha = sha;
+  const res = await fetch(`https://api.github.com/repos/${githubRepo}/contents/${GITHUB_FILE_PATH}`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${githubToken}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const err = new Error(`GitHub 写入失败：HTTP ${res.status}`);
+    err.status = res.status;
+    throw err;
+  }
+  return res.json();
+}
+
+// Two-way sync: pull whatever's already on GitHub and merge it in (never
+// regressing learned/review progress — see mergeEntry), then push the
+// merged result back. Retries once on a 409 (someone else's commit landed
+// between our read and write) by re-reading the latest sha and trying again.
+async function syncWithGithub() {
+  const statusMsg = document.getElementById('status-msg');
+  if (!githubToken || !githubRepo) {
+    statusMsg.textContent = '请先在下面「GitHub 同步设置」里填好仓库和令牌';
+    statusMsg.className = 'status-msg err';
+    setTimeout(() => { statusMsg.textContent = ''; }, 4000);
+    return;
+  }
+
+  statusMsg.textContent = '🔄 同步中…';
+  statusMsg.className = 'status-msg';
+
+  try {
+    let remote = await githubGetFile();
+    let mergeSummary = null;
+    if (remote.exists && remote.content) {
+      mergeSummary = await applyImportedJson(remote.content);
+    }
+
+    const payload = JSON.stringify(buildExportPayload(), null, 2);
+    try {
+      await githubPutFile(payload, remote.sha);
+    } catch (err) {
+      if (err.status === 409) {
+        remote = await githubGetFile(); // someone else committed in between — retry once
+        await githubPutFile(payload, remote.sha);
+      } else {
+        throw err;
+      }
+    }
+
+    const mergeNote = mergeSummary && mergeSummary.ok
+      ? `（拉取：新增 ${mergeSummary.added} 个，更新 ${mergeSummary.updated} 个）`
+      : '';
+    statusMsg.textContent = `✅ 已同步到 GitHub ${mergeNote}`;
+    statusMsg.className = 'status-msg ok';
+  } catch (err) {
+    console.error('GitHub sync failed', err);
+    let hint = err.message || String(err);
+    if (err.status === 401) hint = '令牌无效或已过期';
+    if (err.status === 403) hint = '权限不足，检查令牌的仓库权限是否有 Contents: Read and write';
+    if (err.status === 404) hint = '仓库名不对，或令牌没有该仓库的访问权限';
+    statusMsg.textContent = `同步失败：${hint}`;
+    statusMsg.className = 'status-msg err';
+  }
+  setTimeout(() => { statusMsg.textContent = ''; }, 5000);
+}
+
 function formatDateTimeStamp() {
   const d = new Date();
   const pad = (n) => String(n).padStart(2, '0');
@@ -1998,14 +2176,18 @@ async function loadSettings() {
       const parsed = JSON.parse(raw);
       if (parsed.speechRate) speechRate = parsed.speechRate;
       if (parsed.chosenVoiceURI) chosenVoiceURI = parsed.chosenVoiceURI;
+      if (parsed.githubToken) githubToken = parsed.githubToken;
+      if (parsed.githubRepo) githubRepo = parsed.githubRepo;
     } catch (e) { /* ignore malformed settings */ }
   }
   document.getElementById('rate-select').value = String(speechRate);
+  document.getElementById('gh-repo-input').value = githubRepo;
+  document.getElementById('gh-token-input').value = githubToken;
   populateVoiceOptions();
 }
 
 async function saveSettings() {
-  const json = JSON.stringify({ speechRate, chosenVoiceURI });
+  const json = JSON.stringify({ speechRate, chosenVoiceURI, githubToken, githubRepo });
   if (hasWindowStorage()) {
     try { await window.storage.set('vocab-settings', json, false); } catch (e) { /* ignore */ }
   }
@@ -2022,6 +2204,18 @@ document.getElementById('voice-select').addEventListener('change', (e) => {
   saveSettings();
   speak('This is how sentences will sound.');
 });
+
+document.getElementById('gh-save-settings-btn').addEventListener('click', async () => {
+  const ghStatus = document.getElementById('gh-status-msg');
+  githubRepo = document.getElementById('gh-repo-input').value.trim();
+  githubToken = document.getElementById('gh-token-input').value.trim();
+  await saveSettings();
+  ghStatus.textContent = '已保存 ✓';
+  ghStatus.className = 'status-msg ok';
+  setTimeout(() => { ghStatus.textContent = ''; }, 2500);
+});
+
+document.getElementById('gh-sync-btn').addEventListener('click', syncWithGithub);
 
 // Loads (and merges) the baseline dataset bundled with the site itself — a
 // seed-data.json file placed next to index.html in the repo. Runs on every
