@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-24T15:16:10.764Z",
+  "exportedAt": "2026-07-24T16:05:59.002Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -2195,9 +2195,9 @@
     {
       "id": "mruq4sx9ixilo",
       "word": "anomaly",
-      "meaning": "异常、异常情况、不正常的现象",
       "phonetic": "/əˈnɑməli/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/anomaly-us.mp3",
+      "meaning": "异常、异常情况、不正常的现象",
       "dateAdded": "2026-07-21T14:03:32.589Z",
       "sentences": [
         {
@@ -2226,9 +2226,9 @@
     {
       "id": "mruqdy2lt7kzy",
       "word": "affect",
-      "meaning": "",
       "phonetic": "/əˈfɛkt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/affect-1-au.mp3",
+      "meaning": "",
       "dateAdded": "2026-07-21T14:10:39.165Z",
       "sentences": [
         {
@@ -2263,9 +2263,9 @@
     {
       "id": "mruqhdyc6weky",
       "word": "evaluate",
-      "meaning": "评估",
       "phonetic": "/ɪ̈ˈvaljəˌweɪt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/evaluate-us.mp3",
+      "meaning": "评估",
       "dateAdded": "2026-07-21T14:13:19.716Z",
       "sentences": [],
       "review": null,
@@ -2275,9 +2275,9 @@
     {
       "id": "mrurnf98yv8gl",
       "word": "access",
-      "meaning": "作动词时是及物动词（access something），作形容词是 accessible（可访问的）",
       "phonetic": "/ˈækˌsɛs/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/access-1-us.mp3",
+      "meaning": "作动词时是及物动词（access something），作形容词是 accessible（可访问的）",
       "dateAdded": "2026-07-21T14:46:00.956Z",
       "sentences": [
         {
@@ -2300,9 +2300,9 @@
     {
       "id": "mrurovefice32",
       "word": "portal",
-      "meaning": "",
       "phonetic": "/ˈpɔːɹtəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/portal-us.mp3",
+      "meaning": "",
       "dateAdded": "2026-07-21T14:47:08.535Z",
       "sentences": [],
       "review": null,
@@ -2312,9 +2312,9 @@
     {
       "id": "mrus13jtn651y",
       "word": "Previous",
-      "meaning": "(形容词) — 之前的、上一个的、前一次的",
       "phonetic": "/ˈpɹivi.əs/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/previous-us.mp3",
+      "meaning": "(形容词) — 之前的、上一个的、前一次的",
       "dateAdded": "2026-07-21T14:56:38.969Z",
       "sentences": [
         {
@@ -2355,9 +2355,9 @@
     {
       "id": "mruszmyophgrp",
       "word": "Prior",
-      "meaning": "prior to 是固定搭配,事先的、在此之前的",
       "phonetic": "/ˈpɹaɪɚ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/prior-us.mp3",
+      "meaning": "prior to 是固定搭配,事先的、在此之前的",
       "dateAdded": "2026-07-21T15:23:30.432Z",
       "sentences": [
         {
@@ -2374,9 +2374,9 @@
     {
       "id": "mrvedtuhtc0cs",
       "word": "whether",
-      "meaning": "是否",
       "phonetic": "/ˈwɛðə(ɹ)/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whether-us.mp3",
+      "meaning": "是否",
       "dateAdded": "2026-07-22T01:22:24.473Z",
       "sentences": [
         {
@@ -2393,9 +2393,9 @@
     {
       "id": "mrz117dfnixkv",
       "word": "progress",
-      "meaning": "进展、进度、进步 （不可数名词）",
       "phonetic": "/ˈpɹoʊɡɹɛs/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/progress-1-us.mp3",
+      "meaning": "进展、进度、进步 （不可数名词）",
       "dateAdded": "2026-07-24T14:19:45.171Z",
       "sentences": [
         {
@@ -2436,9 +2436,9 @@
     {
       "id": "mrz1712dm5ces",
       "word": "on track",
-      "meaning": "按计划进行、进度正常、没有偏离目标",
       "phonetic": "",
       "audio": "",
+      "meaning": "按计划进行、进度正常、没有偏离目标",
       "dateAdded": "2026-07-24T14:24:16.933Z",
       "sentences": [
         {
@@ -2467,9 +2467,9 @@
     {
       "id": "mrz1llstj9oyy",
       "word": "ahead",
-      "meaning": "\"提前\"和\"领先于计划",
       "phonetic": "/əˈhɛd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/ahead-us.mp3",
+      "meaning": "\"提前\"和\"领先于计划",
       "dateAdded": "2026-07-24T14:35:36.989Z",
       "sentences": [
         {
@@ -2516,9 +2516,9 @@
     {
       "id": "mrz1pzphqgyza",
       "word": "potential",
-      "meaning": "潜在",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
+      "meaning": "潜在",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [],
       "review": null,
@@ -2528,9 +2528,9 @@
     {
       "id": "mrz1rhwr18qw7",
       "word": "extra",
-      "meaning": "额外的",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
+      "meaning": "额外的",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -2547,11 +2547,30 @@
     {
       "id": "mrz1x64lje08r",
       "word": "hidden",
-      "meaning": "隐藏",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
-      "sentences": [],
+      "sentences": [
+        {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
+        },
+        {
+          "id": "mrz4mh8ou00mo",
+          "text": "The old code hid the exception silently.",
+          "translation": "旧代码静默地掩盖了异常。",
+          "dateAdded": "2026-07-24T16:00:16.584Z"
+        },
+        {
+          "id": "mrz4ngl8qnik2",
+          "text": "The bug had been hidden in the legacy JBoss config",
+          "translation": "bug 一直藏在旧配置里",
+          "dateAdded": "2026-07-24T16:01:02.396Z"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
