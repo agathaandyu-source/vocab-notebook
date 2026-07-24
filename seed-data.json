@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-20T14:19:20.893Z",
+  "exportedAt": "2026-07-24T15:16:10.764Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1767,9 +1767,9 @@
     {
       "id": "mrkhubq2gpxqa",
       "word": "regard",
-      "meaning": "看待",
       "phonetic": "/ɹɪˈɡɑɹd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
+      "meaning": "看待",
       "dateAdded": "2026-07-14T10:13:45.050Z",
       "sentences": [
         {
@@ -1777,6 +1777,12 @@
           "text": "Regarding the country name, what would you like me to prepare?",
           "translation": "关于国家名字，你需要我准备什么",
           "dateAdded": "2026-07-14T10:13:45.050Z"
+        },
+        {
+          "id": "mrusu3hfs0a9g",
+          "text": "please disregard my previous message",
+          "translation": "请忽略我之前的消息",
+          "dateAdded": "2026-07-21T15:19:11.907Z"
         }
       ],
       "review": null,
@@ -1786,9 +1792,9 @@
     {
       "id": "mroaox5jv6hbp",
       "word": "determinate",
-      "meaning": "",
       "phonetic": "/dɪˈtɜːmɪneɪt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/determinate-uk.mp3",
+      "meaning": "确定的",
       "dateAdded": "2026-07-17T02:04:40.279Z",
       "sentences": [],
       "review": null,
@@ -1798,9 +1804,9 @@
     {
       "id": "mroo1asaxo05g",
       "word": "Definitely",
-      "meaning": "绝对，无疑",
       "phonetic": "/ˈdɛf.nɪt.li/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/definitely-us.mp3",
+      "meaning": "绝对，无疑",
       "dateAdded": "2026-07-17T08:18:12.826Z",
       "sentences": [],
       "review": null,
@@ -1810,9 +1816,9 @@
     {
       "id": "mrt0x76zbeyvy",
       "word": "retrieve",
-      "meaning": "获取 / 检索 / 取回",
       "phonetic": "/ɹiˈtɹiv/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/retrieve-uk.mp3",
+      "meaning": "获取 / 检索 / 取回",
       "dateAdded": "2026-07-20T09:30:01.259Z",
       "sentences": [
         {
@@ -1865,9 +1871,9 @@
     {
       "id": "mrt3clrn8zkpc",
       "word": "is capable of",
-      "meaning": "",
       "phonetic": "",
       "audio": "",
+      "meaning": "",
       "dateAdded": "2026-07-20T10:37:59.219Z",
       "sentences": [],
       "review": null,
@@ -1877,9 +1883,9 @@
     {
       "id": "mrt87ppq9oplt",
       "word": "replicate",
-      "meaning": "精确地重复 / 复制某个过程 / 状态 / 结果",
       "phonetic": "/ˈɹɛpləˌkeɪt/",
       "audio": "",
+      "meaning": "精确地重复 / 复制某个过程 / 状态 / 结果",
       "dateAdded": "2026-07-20T12:54:09.134Z",
       "sentences": [
         {
@@ -1914,9 +1920,9 @@
     {
       "id": "mrt8aua7hhs33",
       "word": "current",
-      "meaning": "",
       "phonetic": "/ˈkɝɹənt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/current-us.mp3",
+      "meaning": "",
       "dateAdded": "2026-07-20T12:56:35.023Z",
       "sentences": [],
       "review": null,
@@ -1926,9 +1932,9 @@
     {
       "id": "mrt8ir993ighh",
       "word": "Obtain",
-      "meaning": "获得 / 取得",
       "phonetic": "/əbˈteɪn/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/obtain-us.mp3",
+      "meaning": "获得 / 取得",
       "dateAdded": "2026-07-20T13:02:44.349Z",
       "sentences": [
         {
@@ -1945,9 +1951,9 @@
     {
       "id": "mrt8iztazngd6",
       "word": "Extract",
-      "meaning": "提取 / 抽取",
       "phonetic": "",
       "audio": "",
+      "meaning": "提取 / 抽取",
       "dateAdded": "2026-07-20T13:02:55.438Z",
       "sentences": [
         {
@@ -1970,9 +1976,9 @@
     {
       "id": "mrt8n1mv25kfu",
       "word": "specific",
-      "meaning": "特定的",
       "phonetic": "/spəˈsɪf.ɪk/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/specific-us.mp3",
+      "meaning": "特定的",
       "dateAdded": "2026-07-20T13:06:04.423Z",
       "sentences": [],
       "review": null,
@@ -1982,9 +1988,9 @@
     {
       "id": "mrt8pfb9g5ifk",
       "word": "record",
-      "meaning": "记录",
       "phonetic": "/ˈɹɛkɚd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/record-1-us.mp3",
+      "meaning": "记录",
       "dateAdded": "2026-07-20T13:07:55.461Z",
       "sentences": [],
       "review": null,
@@ -1994,9 +2000,9 @@
     {
       "id": "mrt8ptzb4rs1q",
       "word": "vaccine",
-      "meaning": "疫苗",
       "phonetic": "/vækˈsaɪn/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/vaccine.mp3",
+      "meaning": "疫苗",
       "dateAdded": "2026-07-20T13:08:14.471Z",
       "sentences": [],
       "review": null,
@@ -2006,9 +2012,9 @@
     {
       "id": "mrt8xq4a01k9e",
       "word": "Simulate",
-      "meaning": "模拟",
       "phonetic": "/-jə-/",
       "audio": "",
+      "meaning": "模拟",
       "dateAdded": "2026-07-20T13:14:22.714Z",
       "sentences": [],
       "review": null,
@@ -2018,9 +2024,9 @@
     {
       "id": "mrt8yt68xvvol",
       "word": "Reproduce",
-      "meaning": "再产生一次 （步骤重现、问题重现）",
       "phonetic": "/ˌɹi.pɹoʊˈdus/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reproduce-us.mp3",
+      "meaning": "再产生一次 （步骤重现、问题重现）",
       "dateAdded": "2026-07-20T13:15:13.328Z",
       "sentences": [
         {
@@ -2037,9 +2043,9 @@
     {
       "id": "mrt94bb15w9vr",
       "word": "likely",
-      "meaning": "很可能",
       "phonetic": "/ˈlaɪkli/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/likely-us.mp3",
+      "meaning": "很可能",
       "dateAdded": "2026-07-20T13:19:30.109Z",
       "sentences": [],
       "review": null,
@@ -2049,9 +2055,9 @@
     {
       "id": "mrt971ra0phyx",
       "word": "suggest",
-      "meaning": "建议，表名，暗示",
       "phonetic": "/sə(ɡ)ˈdʒɛst/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/suggest-us.mp3",
+      "meaning": "建议，表名，暗示",
       "dateAdded": "2026-07-20T13:21:37.702Z",
       "sentences": [
         {
@@ -2098,9 +2104,9 @@
     {
       "id": "mrt9jdx8o2fxb",
       "word": "workaround",
-      "meaning": "变通方法",
       "phonetic": "/ˈwɜːk.əɹaʊnd/",
       "audio": "",
+      "meaning": "变通方法",
       "dateAdded": "2026-07-20T13:31:13.340Z",
       "sentences": [],
       "review": null,
@@ -2110,9 +2116,9 @@
     {
       "id": "mrt9k371gmkjd",
       "word": "approach",
-      "meaning": "方法",
       "phonetic": "/əˈpɹoʊt͡ʃ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/approach-us.mp3",
+      "meaning": "方法",
       "dateAdded": "2026-07-20T13:31:46.093Z",
       "sentences": [],
       "review": null,
@@ -2122,9 +2128,9 @@
     {
       "id": "mrt9kw70lrlkm",
       "word": "Perhaps",
-      "meaning": "或许",
       "phonetic": "/pɚˈhæps/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/perhaps-us.mp3",
+      "meaning": "或许",
       "dateAdded": "2026-07-20T13:32:23.676Z",
       "sentences": [],
       "review": null,
@@ -2134,9 +2140,9 @@
     {
       "id": "mrt9m7dpbyhzh",
       "word": "alternative",
-      "meaning": "两个选一个",
       "phonetic": "/ɔl.ˈtɝ.nə.tɪv/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/alternative-us.mp3",
+      "meaning": "两个选一个，替代",
       "dateAdded": "2026-07-20T13:33:24.829Z",
       "sentences": [],
       "review": null,
@@ -2146,9 +2152,9 @@
     {
       "id": "mrt9sgj749iss",
       "word": "rehearse",
-      "meaning": "排练",
       "phonetic": "[ɹɪˈhɜːs]",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/rehearse-uk.mp3",
+      "meaning": "排练",
       "dateAdded": "2026-07-20T13:38:16.627Z",
       "sentences": [],
       "review": null,
@@ -2158,9 +2164,9 @@
     {
       "id": "mrtb0ryy7i2mb",
       "word": "corresponding",
-      "meaning": "相应的",
       "phonetic": "/ˌkɑɹəˈspɑndɪŋ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/corresponding-us.mp3",
+      "meaning": "相应的",
       "dateAdded": "2026-07-20T14:12:44.314Z",
       "sentences": [],
       "review": null,
@@ -2170,9 +2176,9 @@
     {
       "id": "mrtb6rphxablo",
       "word": "absence",
-      "meaning": "缺席，不在",
       "phonetic": "/æbˈsɒns/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/absence-us.mp3",
+      "meaning": "缺席，不在",
       "dateAdded": "2026-07-20T14:17:23.909Z",
       "sentences": [
         {
@@ -2182,6 +2188,370 @@
           "dateAdded": "2026-07-20T14:18:20.188Z"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mruq4sx9ixilo",
+      "word": "anomaly",
+      "meaning": "异常、异常情况、不正常的现象",
+      "phonetic": "/əˈnɑməli/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/anomaly-us.mp3",
+      "dateAdded": "2026-07-21T14:03:32.589Z",
+      "sentences": [
+        {
+          "id": "mrurd6yb96kac",
+          "text": "The audit team flagged several anomalies in the vaccination record counts.",
+          "translation": "审计团队在疫苗接种记录数量中标记出了几处异常。",
+          "dateAdded": "2026-07-21T14:38:03.635Z"
+        },
+        {
+          "id": "mrurdxdbb9atm",
+          "text": "Application Insights detected an anomaly in the response time during peak hours.",
+          "translation": "Application Insights 在高峰时段检测到了响应时间的异常。",
+          "dateAdded": "2026-07-21T14:38:37.871Z"
+        },
+        {
+          "id": "mrurgg1gcxqeb",
+          "text": "investigate an anomaly",
+          "translation": "调查异常",
+          "dateAdded": "2026-07-21T14:40:35.380Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mruqdy2lt7kzy",
+      "word": "affect",
+      "meaning": "",
+      "phonetic": "/əˈfɛkt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/affect-1-au.mp3",
+      "dateAdded": "2026-07-21T14:10:39.165Z",
+      "sentences": [
+        {
+          "id": "mruqxpt5k4103",
+          "text": "Please confirm there is no adverse effect on the Parent Portal after deployment.",
+          "translation": "请确认部署后“家长门户”未受不良影响。",
+          "dateAdded": "2026-07-21T14:26:01.577Z"
+        },
+        {
+          "id": "mruqysf15t4ef",
+          "text": "The ISO code re-use issue could affect downstream data integrity.",
+          "translation": "ISO代码复用问题可能会影响下游数据的完整性。",
+          "dateAdded": "2026-07-21T14:26:51.613Z"
+        },
+        {
+          "id": "mruqzkx8xh12a",
+          "text": "The new CR will take effect after the maintenance window.",
+          "translation": "新的变更请求（CR）将在维护窗口结束后生效。",
+          "dateAdded": "2026-07-21T14:27:28.557Z"
+        },
+        {
+          "id": "mrur1t4phlczp",
+          "text": "effect",
+          "translation": "",
+          "dateAdded": "2026-07-21T14:29:12.505Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mruqhdyc6weky",
+      "word": "evaluate",
+      "meaning": "评估",
+      "phonetic": "/ɪ̈ˈvaljəˌweɪt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/evaluate-us.mp3",
+      "dateAdded": "2026-07-21T14:13:19.716Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrurnf98yv8gl",
+      "word": "access",
+      "meaning": "作动词时是及物动词（access something），作形容词是 accessible（可访问的）",
+      "phonetic": "/ˈækˌsɛs/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/access-1-us.mp3",
+      "dateAdded": "2026-07-21T14:46:00.956Z",
+      "sentences": [
+        {
+          "id": "mruro40xqyid3",
+          "text": "All portals are accessible and working fine.",
+          "translation": "所有门户都可访问且运行正常。",
+          "dateAdded": "2026-07-21T14:46:33.057Z"
+        },
+        {
+          "id": "mrus0dkrut90s",
+          "text": "All portals can be accessed and are working fine.",
+          "translation": "所有门户都可以访问，运行正常",
+          "dateAdded": "2026-07-21T14:56:05.307Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrurovefice32",
+      "word": "portal",
+      "meaning": "",
+      "phonetic": "/ˈpɔːɹtəl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/portal-us.mp3",
+      "dateAdded": "2026-07-21T14:47:08.535Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrus13jtn651y",
+      "word": "Previous",
+      "meaning": "(形容词) — 之前的、上一个的、前一次的",
+      "phonetic": "/ˈpɹivi.əs/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/previous-us.mp3",
+      "dateAdded": "2026-07-21T14:56:38.969Z",
+      "sentences": [
+        {
+          "id": "mruskxdtp5wss",
+          "text": "Compared to the previous deployment, this release includes three critical fixes",
+          "translation": "与上一次部署相比，这次发布包含了三个关键修复",
+          "dateAdded": "2026-07-21T15:12:04.097Z"
+        },
+        {
+          "id": "mrusmbzedozjj",
+          "text": "Could you clarify the issue mentioned in the previous discussion?",
+          "translation": "你能说明一下之前讨论中提到的那个问题吗？",
+          "dateAdded": "2026-07-21T15:13:09.674Z"
+        },
+        {
+          "id": "mrusn8hmpjqyu",
+          "text": "as previously mentioned/discussed",
+          "translation": "如之前所提/所讨论的",
+          "dateAdded": "2026-07-21T15:13:51.802Z"
+        },
+        {
+          "id": "mrusqx86ohzs5",
+          "text": "As previously stated, the migration will proceed in two phases.",
+          "translation": "如之前所述，迁移将分两个阶段进行。",
+          "dateAdded": "2026-07-21T15:16:43.830Z"
+        },
+        {
+          "id": "mrvdwjfzvy2vc",
+          "text": "previously",
+          "translation": "",
+          "dateAdded": "2026-07-22T01:08:57.839Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mruszmyophgrp",
+      "word": "Prior",
+      "meaning": "prior to 是固定搭配,事先的、在此之前的",
+      "phonetic": "/ˈpɹaɪɚ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/prior-us.mp3",
+      "dateAdded": "2026-07-21T15:23:30.432Z",
+      "sentences": [
+        {
+          "id": "mruszmyosgrg6",
+          "text": "Prior to the migration, we backed up all records.",
+          "translation": "在迁移之前，我们备份了所有记录",
+          "dateAdded": "2026-07-21T15:23:30.432Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrvedtuhtc0cs",
+      "word": "whether",
+      "meaning": "是否",
+      "phonetic": "/ˈwɛðə(ɹ)/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whether-us.mp3",
+      "dateAdded": "2026-07-22T01:22:24.473Z",
+      "sentences": [
+        {
+          "id": "mrvedtuhlqpjv",
+          "text": "We need to verify whether it is an issue or not",
+          "translation": "我们需要核实这是否是一个问题。",
+          "dateAdded": "2026-07-22T01:22:24.473Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz117dfnixkv",
+      "word": "progress",
+      "meaning": "进展、进度、进步 （不可数名词）",
+      "phonetic": "/ˈpɹoʊɡɹɛs/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/progress-1-us.mp3",
+      "dateAdded": "2026-07-24T14:19:45.171Z",
+      "sentences": [
+        {
+          "id": "mrz117dfv8u71",
+          "text": "Please share an update on the progress of the migration.",
+          "translation": "请分享一下迁移工作的进展情况",
+          "dateAdded": "2026-07-24T14:19:45.171Z"
+        },
+        {
+          "id": "mrz12swmpshyn",
+          "text": "This ticket is still WIP, expected to be done by Friday.",
+          "translation": "这个工单还在进行中，预计周五完成",
+          "dateAdded": "2026-07-24T14:20:59.734Z"
+        },
+        {
+          "id": "mrz13besovvht",
+          "text": "Just a heads-up, the migration script is WIP — will share once it's tested",
+          "translation": "提醒一下，迁移脚本还在进行中——测试完会分享。",
+          "dateAdded": "2026-07-24T14:21:23.717Z"
+        },
+        {
+          "id": "mrz1450n5oy87",
+          "text": "WIP = Work In Progress",
+          "translation": "指正在进行、尚未完成的任务、代码、文档或工作项",
+          "dateAdded": "2026-07-24T14:22:02.087Z"
+        },
+        {
+          "id": "mrz14v6pyrl6v",
+          "text": "make progress",
+          "translation": "取得进展",
+          "dateAdded": "2026-07-24T14:22:36.001Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz1712dm5ces",
+      "word": "on track",
+      "meaning": "按计划进行、进度正常、没有偏离目标",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-24T14:24:16.933Z",
+      "sentences": [
+        {
+          "id": "mrz17rdzgjowc",
+          "text": "We need two more approvals to stay on track for the CAB deadline.",
+          "translation": "我们还需要两个审批才能赶上 CAB 的截止日期。",
+          "dateAdded": "2026-07-24T14:24:51.047Z"
+        },
+        {
+          "id": "mrz18sxlaugo5",
+          "text": "keep something on track",
+          "translation": "让...保持按计划进行",
+          "dateAdded": "2026-07-24T14:25:39.705Z"
+        },
+        {
+          "id": "mrz195z8ucxf0",
+          "text": "back on track",
+          "translation": "重回正轨",
+          "dateAdded": "2026-07-24T14:25:56.612Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz1llstj9oyy",
+      "word": "ahead",
+      "meaning": "\"提前\"和\"领先于计划",
+      "phonetic": "/əˈhɛd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/ahead-us.mp3",
+      "dateAdded": "2026-07-24T14:35:36.989Z",
+      "sentences": [
+        {
+          "id": "mrz1llstf0o1l",
+          "text": "Please let me know ahead of time if you need any changes to the deployment window.",
+          "translation": "如果你需要更改部署窗口，请提前告诉我",
+          "dateAdded": "2026-07-24T14:35:36.989Z"
+        },
+        {
+          "id": "mrz1mrak5so51",
+          "text": "Let's plan ahead for the CAB submission to avoid last-minute delays.",
+          "translation": "我们提前规划 CAB 提交，避免最后一刻延误",
+          "dateAdded": "2026-07-24T14:36:30.764Z"
+        },
+        {
+          "id": "mrz1n8vl8btd6",
+          "text": "We're currently ahead of schedule on the JBoss-to-Tomcat migration",
+          "translation": "我们目前在 JBoss 到 Tomcat 的迁移上进度领先于计划",
+          "dateAdded": "2026-07-24T14:36:53.553Z"
+        },
+        {
+          "id": "mrz1nvja064op",
+          "text": "looking ahead",
+          "translation": "展望未来",
+          "dateAdded": "2026-07-24T14:37:22.918Z"
+        },
+        {
+          "id": "mrz1oqqg3a4oo",
+          "text": "We finished ahead of schedule.",
+          "translation": "我们比计划提前完成了",
+          "dateAdded": "2026-07-24T14:38:03.352Z"
+        },
+        {
+          "id": "mrz1p8bs55kdn",
+          "text": "Go ahead and merge the branch once the tests pass.",
+          "translation": "测试通过后就可以合并分支了。（go ahead = 表示允许/批准对方继续做某事）",
+          "dateAdded": "2026-07-24T14:38:26.152Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz1pzphqgyza",
+      "word": "potential",
+      "meaning": "潜在",
+      "phonetic": "/po(ʊ)ˈtɛnʃəl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
+      "dateAdded": "2026-07-24T14:39:01.637Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz1rhwr18qw7",
+      "word": "extra",
+      "meaning": "额外的",
+      "phonetic": "/ˈɛkstɹə/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
+      "dateAdded": "2026-07-24T14:40:11.883Z",
+      "sentences": [
+        {
+          "id": "mrz1s36jla7va",
+          "text": "we've added extra monitoring alerts",
+          "translation": "我们增加了额外的监控告警",
+          "dateAdded": "2026-07-24T14:40:39.451Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrz1x64lje08r",
+      "word": "hidden",
+      "meaning": "隐藏",
+      "phonetic": "/ˈhɪd(ə)n/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
+      "dateAdded": "2026-07-24T14:44:36.549Z",
+      "sentences": [],
       "review": null,
       "learned": false,
       "learnedAt": null
