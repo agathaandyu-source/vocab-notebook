@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-24T16:06:44.758Z",
+  "exportedAt": "2026-07-24T16:21:47.857Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1765,85 +1765,6 @@
       "learnedAt": null
     },
     {
-      "id": "mrnn5jlus82qf",
-      "word": "follow",
-      "phonetic": "/ˈfɑloʊ/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/follow-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:05:45.090Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrnnbqtqy2g9r",
-      "word": "vaccine",
-      "phonetic": "/vækˈsaɪn/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/vaccine.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:10:34.382Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrnnfp93ycwm5",
-      "word": "root",
-      "phonetic": "/ɹuːt/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/root-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:13:38.967Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrnng284qjzgm",
-      "word": "cause",
-      "phonetic": "/kɔz/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/cause-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:13:55.780Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrnnlc1w4vlus",
-      "word": "reply",
-      "phonetic": "/ɹɪˈplaɪ/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reply-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:18:01.796Z",
-      "sentences": [
-        {
-          "id": "mrnnljaei00fd",
-          "text": "replied",
-          "translation": "",
-          "dateAdded": "2026-07-16T15:18:11.174Z"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrnnoj52uno0t",
-      "word": "aiming",
-      "phonetic": "/ˈeɪ.mɪŋ/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-07-16T15:20:30.950Z",
-      "sentences": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "mrkhubq2gpxqa",
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
@@ -2221,7 +2142,7 @@
       "word": "alternative",
       "phonetic": "/ɔl.ˈtɝ.nə.tɪv/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/alternative-us.mp3",
-      "meaning": "两个选一个",
+      "meaning": "两个选一个，替代",
       "dateAdded": "2026-07-20T13:33:24.829Z",
       "sentences": [],
       "review": null,
@@ -2265,31 +2186,6 @@
           "text": "I found that the root cause is the absence of the corresponding font style",
           "translation": "我发现根本原因是缺少相应的字体样式",
           "dateAdded": "2026-07-20T14:18:20.188Z"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrxmz9vvctcrs",
-      "word": "hidden",
-      "phonetic": "/ˈhɪd(ə)n/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
-      "dateAdded": "2026-07-23T14:58:34.315Z",
-      "sentences": [
-        {
-          "id": "mrxmzy17fizaj",
-          "text": "There are no hidden extras.",
-          "translation": "",
-          "dateAdded": "2026-07-23T14:59:05.611Z"
-        },
-        {
-          "id": "mrycozdphntu1",
-          "text": "hid",
-          "translation": "",
-          "dateAdded": "2026-07-24T02:58:24.162Z"
         }
       ],
       "review": null,
@@ -2673,6 +2569,110 @@
           "text": "The bug had been hidden in the legacy JBoss config",
           "translation": "bug 一直藏在旧配置里",
           "dateAdded": "2026-07-24T16:01:02.396Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnn5jlus82qf",
+      "word": "follow",
+      "phonetic": "/ˈfɑloʊ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/follow-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:05:45.090Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnbqtqy2g9r",
+      "word": "vaccine",
+      "phonetic": "/vækˈsaɪn/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/vaccine.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:10:34.382Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnfp93ycwm5",
+      "word": "root",
+      "phonetic": "/ɹuːt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/root-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:13:38.967Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnng284qjzgm",
+      "word": "cause",
+      "phonetic": "/kɔz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/cause-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:13:55.780Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnlc1w4vlus",
+      "word": "reply",
+      "phonetic": "/ɹɪˈplaɪ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reply-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:18:01.796Z",
+      "sentences": [
+        {
+          "id": "mrnnljaei00fd",
+          "text": "replied",
+          "translation": "",
+          "dateAdded": "2026-07-16T15:18:11.174Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrnnoj52uno0t",
+      "word": "aiming",
+      "phonetic": "/ˈeɪ.mɪŋ/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-07-16T15:20:30.950Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mrxmz9vvctcrs",
+      "word": "hidden",
+      "phonetic": "/ˈhɪd(ə)n/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
+      "meaning": "隐藏",
+      "dateAdded": "2026-07-23T14:58:34.315Z",
+      "sentences": [
+        {
+          "id": "mrxmzy17fizaj",
+          "text": "There are no hidden extras.",
+          "translation": "",
+          "dateAdded": "2026-07-23T14:59:05.611Z"
+        },
+        {
+          "id": "mrycozdphntu1",
+          "text": "hid",
+          "translation": "",
+          "dateAdded": "2026-07-24T02:58:24.162Z"
         }
       ],
       "review": null,
