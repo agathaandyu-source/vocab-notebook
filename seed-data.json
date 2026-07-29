@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-24T16:21:47.857Z",
+  "exportedAt": "2026-07-29T14:25:54.959Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -374,6 +374,12 @@
           "text": "sync",
           "translation": "",
           "dateAdded": "2026-07-11T15:26:00.649Z"
+        },
+        {
+          "id": "ms2j2drhterwr",
+          "text": "The NIR system syncs clinic addresses every night.",
+          "translation": "",
+          "dateAdded": "2026-07-27T01:07:51.725Z"
         }
       ],
       "review": null,
@@ -499,7 +505,7 @@
       "word": "clarify",
       "phonetic": "/ˈklæɹɪfaɪ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/clarify-uk.mp3",
-      "meaning": "",
+      "meaning": "澄清、说明清楚",
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
@@ -513,6 +519,18 @@
           "text": "clarifications",
           "translation": "",
           "dateAdded": "2026-07-11T15:11:14.966Z"
+        },
+        {
+          "id": "ms61f720at4el",
+          "text": "Could you clarify whether this is intentional code re-use or an error?",
+          "translation": "能否澄清这是有意的代码复用还是错误？",
+          "dateAdded": "2026-07-29T12:05:01.176Z"
+        },
+        {
+          "id": "ms61g9p97dokn",
+          "text": "Let me clarify the scope before we proceed with the migration.",
+          "translation": "在推进迁移之前，让我先澄清一下范围。",
+          "dateAdded": "2026-07-29T12:05:51.261Z"
         }
       ],
       "review": null,
@@ -2518,9 +2536,22 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在",
+      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
       "dateAdded": "2026-07-24T14:39:01.637Z",
-      "sentences": [],
+      "sentences": [
+        {
+          "id": "ms611vgfwepu4",
+          "text": "We identified a potential issue with the JTA transaction handling.",
+          "translation": "我们发现了 JTA 事务处理上一个潜在的问题",
+          "dateAdded": "2026-07-29T11:54:39.615Z"
+        },
+        {
+          "id": "ms613d4jig4zv",
+          "text": "This could potentially cause data integrity issues.",
+          "translation": "这可能会导致数据完整性问题。",
+          "dateAdded": "2026-07-29T11:55:49.171Z"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -2530,7 +2561,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的",
+      "meaning": "额外的、附加的，可以做形容词、副词、名词",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -2538,6 +2569,18 @@
           "text": "we've added extra monitoring alerts",
           "translation": "我们增加了额外的监控告警",
           "dateAdded": "2026-07-24T14:40:39.451Z"
+        },
+        {
+          "id": "ms605r9oawwp6",
+          "text": "Given the risk to PROD, let's do an extra round of testing",
+          "translation": "考虑到对生产环境的风险，我们再多做一轮测试吧。",
+          "dateAdded": "2026-07-29T11:29:41.196Z"
+        },
+        {
+          "id": "ms6080xpaaesd",
+          "text": "This ticket needs to be handled extra carefully.",
+          "translation": "这个工单需要格外小心地处理",
+          "dateAdded": "2026-07-29T11:31:27.037Z"
         }
       ],
       "review": null,
@@ -2549,7 +2592,7 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
@@ -2569,6 +2612,31 @@
           "text": "The bug had been hidden in the legacy JBoss config",
           "translation": "bug 一直藏在旧配置里",
           "dateAdded": "2026-07-24T16:01:02.396Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
         }
       ],
       "review": null,
@@ -2673,6 +2741,93 @@
           "text": "hid",
           "translation": "",
           "dateAdded": "2026-07-24T02:58:24.162Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms60cadrbvqtq",
+      "word": "effort",
+      "meaning": "努力、付出的力气/精力",
+      "phonetic": "/ˈɛfɚt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/effort-us.mp3",
+      "dateAdded": "2026-07-29T11:34:45.903Z",
+      "sentences": [
+        {
+          "id": "ms60cadrx1ldc",
+          "text": "Can you estimate the effort needed to convert these composite types?",
+          "translation": "你能估算一下转换这些复合类型需要多少工作量吗？",
+          "dateAdded": "2026-07-29T11:34:45.903Z"
+        },
+        {
+          "id": "ms60fwgz5wl4w",
+          "text": "This migration will require significant effort from the whole team",
+          "translation": "这次迁移需要整个团队投入大量精力",
+          "dateAdded": "2026-07-29T11:37:34.499Z"
+        },
+        {
+          "id": "ms60oi1uf8e1n",
+          "text": "We need an effort estimation for the composite type conversion before committing to a timeline",
+          "translation": "在承诺时间表之前，我们需要对复合类型转换做一个工作量估算",
+          "dateAdded": "2026-07-29T11:44:15.714Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms60itzbrj7io",
+      "word": "put in",
+      "meaning": "投入、花费（时间/精力）；也可以表示\"提交、安装、插入\"",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-07-29T11:39:51.239Z",
+      "sentences": [
+        {
+          "id": "ms60itzbqzkii",
+          "text": "She put in extra hours over the weekend to prep for the audit.",
+          "translation": "她周末加班为审计做准备。",
+          "dateAdded": "2026-07-29T11:39:51.239Z"
+        },
+        {
+          "id": "ms60jvv8h07qf",
+          "text": "Can you put in a ticket for the DBA team?",
+          "translation": "你能帮 DBA 团队提交一个工单吗？",
+          "dateAdded": "2026-07-29T11:40:40.340Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms615p3z67jvz",
+      "word": "carry",
+      "meaning": "（本身）带有、附带（风险/责任/后果）书面/正式",
+      "phonetic": "/ˈkæ.ɹi/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/carry.mp3",
+      "dateAdded": "2026-07-29T11:57:38.015Z",
+      "sentences": [
+        {
+          "id": "ms616qq6880ed",
+          "text": "This code change carries a potential risk to PROD data.",
+          "translation": "这个代码改动本身带有对生产数据的潜在风险。",
+          "dateAdded": "2026-07-29T11:58:26.766Z"
+        },
+        {
+          "id": "ms6172yo2n6nj",
+          "text": "Skipping the review step carries consequences.",
+          "translation": "跳过评审步骤是有后果的",
+          "dateAdded": "2026-07-29T11:58:42.624Z"
+        },
+        {
+          "id": "ms61avtid7g95",
+          "text": "his certification carries weight in government projects.",
+          "translation": "这个认证在政府项目里很有分量。",
+          "dateAdded": "2026-07-29T12:01:39.990Z"
         }
       ],
       "review": null,
