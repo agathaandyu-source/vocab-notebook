@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-29T14:25:54.959Z",
+  "exportedAt": "2026-07-29T14:49:20.504Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -509,12 +509,6 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
-        },
-        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -531,6 +525,24 @@
           "text": "Let me clarify the scope before we proceed with the migration.",
           "translation": "在推进迁移之前，让我先澄清一下范围。",
           "dateAdded": "2026-07-29T12:05:51.261Z"
+        },
+        {
+          "id": "ms66tfywduxpp",
+          "text": "Just to clarify my earlier point, the risk applies only to the Doctor Portal, not the Parent Portal.",
+          "translation": "为了澄清我之前的观点，该风险仅适用于医生门户网站，而不适用于家长门户网站。",
+          "dateAdded": "2026-07-29T14:36:03.992Z"
+        },
+        {
+          "id": "ms66uq1yfirgw",
+          "text": "I'd like some clarification on the CR's expected timeline.",
+          "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
+          "dateAdded": "2026-07-29T14:37:03.718Z"
+        },
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "review": null,
@@ -2750,9 +2762,9 @@
     {
       "id": "ms60cadrbvqtq",
       "word": "effort",
-      "meaning": "努力、付出的力气/精力",
       "phonetic": "/ˈɛfɚt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/effort-us.mp3",
+      "meaning": "努力、付出的力气/精力",
       "dateAdded": "2026-07-29T11:34:45.903Z",
       "sentences": [
         {
@@ -2781,9 +2793,9 @@
     {
       "id": "ms60itzbrj7io",
       "word": "put in",
-      "meaning": "投入、花费（时间/精力）；也可以表示\"提交、安装、插入\"",
       "phonetic": "",
       "audio": "",
+      "meaning": "投入、花费（时间/精力）；也可以表示\"提交、安装、插入\"",
       "dateAdded": "2026-07-29T11:39:51.239Z",
       "sentences": [
         {
@@ -2806,9 +2818,9 @@
     {
       "id": "ms615p3z67jvz",
       "word": "carry",
-      "meaning": "（本身）带有、附带（风险/责任/后果）书面/正式",
       "phonetic": "/ˈkæ.ɹi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/carry.mp3",
+      "meaning": "（本身）带有、附带（风险/责任/后果）书面/正式",
       "dateAdded": "2026-07-29T11:57:38.015Z",
       "sentences": [
         {
@@ -2830,6 +2842,55 @@
           "dateAdded": "2026-07-29T12:01:39.990Z"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms66llcif4gzd",
+      "word": "specify",
+      "meaning": "指定的",
+      "phonetic": "/ˈspɛsɪfaɪ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/specify-uk.mp3",
+      "dateAdded": "2026-07-29T14:29:57.714Z",
+      "sentences": [
+        {
+          "id": "ms66yiwxxnwzz",
+          "text": "Could you specify which environment — SIT or UAT — this issue occurred in",
+          "translation": "能否具体说明这个问题是在 SIT 还是 UAT 环境出现的？",
+          "dateAdded": "2026-07-29T14:40:01.089Z"
+        },
+        {
+          "id": "ms670um3bfx9d",
+          "text": "The CR document specifies that the deployment must happen during the maintenance window.",
+          "translation": "这个变更请求文档规定部署必须在维护窗口内进行。",
+          "dateAdded": "2026-07-29T14:41:49.563Z"
+        },
+        {
+          "id": "ms672f2hnv4zq",
+          "text": "specification",
+          "translation": "规格说明书",
+          "dateAdded": "2026-07-29T14:43:02.729Z"
+        },
+        {
+          "id": "ms677o7srhp7g",
+          "text": "Unless otherwise specified, all CRs require CAB approval before deployment",
+          "translation": "除非另有说明，所有变更请求在部署前都需要 CAB 批准。",
+          "dateAdded": "2026-07-29T14:47:07.864Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms66zutjpyz5q",
+      "word": "exact",
+      "meaning": "精确的",
+      "phonetic": "/ɪɡˈzækt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/exact-us.mp3",
+      "dateAdded": "2026-07-29T14:41:03.175Z",
+      "sentences": [],
       "review": null,
       "learned": false,
       "learnedAt": null
