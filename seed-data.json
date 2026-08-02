@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-07-29T14:49:20.504Z",
+  "exportedAt": "2026-08-02T15:31:31.701Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -2849,9 +2849,9 @@
     {
       "id": "ms66llcif4gzd",
       "word": "specify",
-      "meaning": "指定的",
       "phonetic": "/ˈspɛsɪfaɪ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/specify-uk.mp3",
+      "meaning": "指定的",
       "dateAdded": "2026-07-29T14:29:57.714Z",
       "sentences": [
         {
@@ -2886,11 +2886,61 @@
     {
       "id": "ms66zutjpyz5q",
       "word": "exact",
-      "meaning": "精确的",
       "phonetic": "/ɪɡˈzækt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/exact-us.mp3",
+      "meaning": "精确的",
       "dateAdded": "2026-07-29T14:41:03.175Z",
       "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msbyf7w73w8xa",
+      "word": "consist",
+      "meaning": "组成、在于",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-02T15:27:40.471Z",
+      "sentences": [
+        {
+          "id": "msbyg1k5i4j46",
+          "text": "Good code consists in clarity and simplicity",
+          "translation": "好代码的本质在于清晰和简洁 （本质是）",
+          "dateAdded": "2026-08-02T15:28:18.917Z"
+        },
+        {
+          "id": "msbygwojy33pd",
+          "text": "The migration plan consists of two phases",
+          "translation": "迁移计划由两个阶段组成 （consist 不用被动态，因为它本身已经是\"由...组成\"的主动含义）",
+          "dateAdded": "2026-08-02T15:28:59.251Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msbyip6qujmow",
+      "word": "consistent",
+      "meaning": "形容词）→ 修饰名词，表示\"一致的",
+      "phonetic": "/kənˈsɪstənt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/consistent-us.mp3",
+      "dateAdded": "2026-08-02T15:30:22.850Z",
+      "sentences": [
+        {
+          "id": "msbyip6q2l97m",
+          "text": "a consistent naming convention",
+          "translation": "统一的命名规范",
+          "dateAdded": "2026-08-02T15:30:22.850Z"
+        },
+        {
+          "id": "msbyjdcxnry0j",
+          "text": "code consistency",
+          "translation": "代码一致性",
+          "dateAdded": "2026-08-02T15:30:54.177Z"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
