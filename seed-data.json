@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "exportedAt": "2026-08-02T15:31:31.701Z",
+  "exportedAt": "2026-08-10T08:45:22.630Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -2898,9 +2898,9 @@
     {
       "id": "msbyf7w73w8xa",
       "word": "consist",
-      "meaning": "组成、在于",
       "phonetic": "",
       "audio": "",
+      "meaning": "组成、在于",
       "dateAdded": "2026-08-02T15:27:40.471Z",
       "sentences": [
         {
@@ -2923,9 +2923,9 @@
     {
       "id": "msbyip6qujmow",
       "word": "consistent",
-      "meaning": "形容词）→ 修饰名词，表示\"一致的",
       "phonetic": "/kənˈsɪstənt/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/consistent-us.mp3",
+      "meaning": "形容词）→ 修饰名词，表示\"一致的",
       "dateAdded": "2026-08-02T15:30:22.850Z",
       "sentences": [
         {
@@ -2941,6 +2941,164 @@
           "dateAdded": "2026-08-02T15:30:54.177Z"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msfi78vxq79w0",
+      "word": "oversee",
+      "meaning": "",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-05T03:04:39.357Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msfi7pf46g2ba",
+      "word": "liaise",
+      "meaning": "",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-05T03:05:00.784Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msfv35if0q1d5",
+      "word": "instruct",
+      "meaning": "给出指令/信息. 指示 告知，教导/传授知识或技能",
+      "phonetic": "/ˌɪnˈstɹʌkt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/instruct-us.mp3",
+      "dateAdded": "2026-08-05T09:05:23.366Z",
+      "sentences": [
+        {
+          "id": "msfv5baegy903",
+          "text": "Users have been instructed to clear their browser cache before re-logging in",
+          "translation": "用户已被告知在重新登录前清除浏览器缓存",
+          "dateAdded": "2026-08-05T09:07:04.166Z"
+        },
+        {
+          "id": "msfv7qw64wu3w",
+          "text": "As per the instructions from [name]",
+          "translation": "根据...的指示",
+          "dateAdded": "2026-08-05T09:08:57.702Z"
+        },
+        {
+          "id": "msfv94rb2fksj",
+          "text": "We have been instructed to inform you",
+          "translation": "我们奉命通知您",
+          "dateAdded": "2026-08-05T09:10:02.327Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msfy7walu1cz5",
+      "word": "either",
+      "meaning": "",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-05T10:33:03.549Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msfy8ba7n2tpo",
+      "word": "familiar",
+      "meaning": "familiar adj 熟悉的, 常见的, 认识的， 是衍生词, 来自拉丁语 familia (家庭) → familiaris (家里人的, 亲近的)",
+      "phonetic": "/fəˈmɪl.i.ɚ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/familiar-us.mp3",
+      "dateAdded": "2026-08-05T10:33:22.975Z",
+      "sentences": [
+        {
+          "id": "msmxs7czld6rk",
+          "text": "familial",
+          "translation": "家族的",
+          "dateAdded": "2026-08-10T07:55:14.627Z"
+        },
+        {
+          "id": "msmxtymsygsn2",
+          "text": "unfamiliar",
+          "translation": "不熟悉的",
+          "dateAdded": "2026-08-10T07:56:36.628Z"
+        },
+        {
+          "id": "msmxvgcu8ur3j",
+          "text": "I am familiar with X",
+          "translation": "我熟悉 X (人是主语)",
+          "dateAdded": "2026-08-10T07:57:46.254Z"
+        },
+        {
+          "id": "msmxvrzq0ujd9",
+          "text": "X is familiar to me",
+          "translation": "X 对我来说是熟悉的 (物是主语)",
+          "dateAdded": "2026-08-10T07:58:01.334Z"
+        },
+        {
+          "id": "msmxwlk7mpfzl",
+          "text": "This error message should be familiar to anyone who worked on the JBoss migration.",
+          "translation": "这条报错信息对做过 JBoss 迁移的人来说应该都很熟悉",
+          "dateAdded": "2026-08-10T07:58:39.655Z"
+        },
+        {
+          "id": "msmxzm8a9cqim",
+          "text": "Please familiarise yourself with the deployment checklist before the next release.",
+          "translation": "请在下次发布前熟悉一下部署 checklist",
+          "dateAdded": "2026-08-10T08:01:00.490Z"
+        },
+        {
+          "id": "msmy0fqplrh95",
+          "text": "I'm not too familiar with the FCINE flow",
+          "translation": "我对 FCINE 流程不太熟；not too familiar with 是新加坡人非常喜欢的委婉说法",
+          "dateAdded": "2026-08-10T08:01:38.737Z"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msmxh66tax5mx",
+      "word": "context",
+      "meaning": "上下文，背景",
+      "phonetic": "/ˈkɒntɛkst/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/context-uk.mp3",
+      "dateAdded": "2026-08-10T07:46:39.893Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msmxiczoukarw",
+      "word": "well-versed",
+      "meaning": "精通",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T07:47:35.364Z",
+      "sentences": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msmxrdhcsourp",
+      "word": "expert",
+      "meaning": "专家",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T07:54:35.904Z",
+      "sentences": [],
       "review": null,
       "learned": false,
       "learnedAt": null
