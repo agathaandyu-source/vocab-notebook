@@ -637,6 +637,100 @@
   }
   .sentence-del:hover { color: var(--coral); }
 
+  .usage-note {
+    margin: 4px 0 0 26px;
+    font-size: 12.5px;
+    color: var(--brass);
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .usage-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 6px 4px;
+    flex-shrink: 0;
+    opacity: 0.45;
+    transition: opacity 0.15s;
+  }
+  .usage-toggle:hover { opacity: 1; }
+
+  .derived-section {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--paper-shadow);
+  }
+  .derived-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+  }
+  .derived-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .derived-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(140,106,158,0.1);
+    border: 1px solid rgba(140,106,158,0.3);
+    border-radius: 20px;
+    padding: 3px 6px 3px 4px;
+    font-size: 13px;
+  }
+  .derived-chip .icon-btn.derived-play {
+    padding: 4px;
+    color: #6b5178;
+  }
+  .derived-chip .icon-btn.derived-play:hover { background: rgba(140,106,158,0.15); }
+  .derived-word {
+    font-weight: 600;
+    color: #6b5178;
+  }
+  .derived-sep { color: rgba(42,38,32,0.3); }
+  .derived-translation { color: #4a453a; }
+  .derived-del {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(42,38,32,0.3);
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    transition: color 0.15s, background 0.15s;
+  }
+  .derived-del:hover { color: var(--coral); background: rgba(181,67,42,0.1); }
+
+  .add-derived-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .add-derived-row input {
+    font-size: 13.5px;
+    padding: 8px 10px;
+    flex: 1;
+    min-width: 110px;
+  }
+  .add-derived-row .add-derived-submit {
+    background: #8C6A9E;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .add-derived-row .add-derived-submit:hover { background: #745582; }
+
   .add-sentence-row {
     display: flex;
     flex-direction: column;
@@ -991,6 +1085,10 @@
         <label for="sentence-translation-input">例句中文翻译（可选，默认显示；英文原句点开才看）</label>
         <input type="text" id="sentence-translation-input" placeholder="这句例句的中文意思…" autocomplete="off">
       </div>
+      <div class="field-row">
+        <label for="sentence-usage-input">这句例句用的是哪个用法（可选）</label>
+        <input type="text" id="sentence-usage-input" placeholder="e.g. 这里是及物动词用法" autocomplete="off">
+      </div>
       <div class="add-actions">
         <span class="status-msg" id="status-msg"></span>
         <button class="primary" id="add-btn">添加到抽屉</button>
@@ -1087,6 +1185,7 @@ let allWords = [];
 let currentAudio = null;
 const revealedMeaning = new Set();
 const revealedEnglish = new Set();
+const revealedUsageNotes = new Set();
 let editingMeaningFor = null;
 let showUnlearnedOnly = false;
 let showLearnedOnly = false;
@@ -1226,17 +1325,27 @@ function normalizeEntry(raw) {
   if (Array.isArray(raw.sentences)) {
     sentences = raw.sentences.map(s => {
       if (typeof s === 'string') {
-        return { id: genId(), text: s, translation: '', dateAdded: raw.dateAdded || new Date().toISOString() };
+        return { id: genId(), text: s, translation: '', usageNote: '', dateAdded: raw.dateAdded || new Date().toISOString() };
       }
       return {
         id: s.id || genId(),
         text: s.text || '',
         translation: s.translation || '',
+        usageNote: s.usageNote || '',
         dateAdded: s.dateAdded || raw.dateAdded || new Date().toISOString()
       };
     });
   } else if (raw.sentence) {
-    sentences = [{ id: genId(), text: raw.sentence, translation: '', dateAdded: raw.dateAdded || new Date().toISOString() }];
+    sentences = [{ id: genId(), text: raw.sentence, translation: '', usageNote: '', dateAdded: raw.dateAdded || new Date().toISOString() }];
+  }
+
+  let derivedWords = [];
+  if (Array.isArray(raw.derivedWords)) {
+    derivedWords = raw.derivedWords.map(d => ({
+      id: d.id || genId(),
+      word: d.word || '',
+      translation: d.translation || ''
+    }));
   }
 
   const dateAdded = raw.dateAdded || new Date().toISOString();
@@ -1275,6 +1384,7 @@ function normalizeEntry(raw) {
     meaning: raw.meaning || raw.chinese || raw.meaning_cn || '',
     dateAdded,
     sentences,
+    derivedWords,
     review,
     learned,
     learnedAt
@@ -1513,6 +1623,28 @@ function render() {
             </div>`
         ) : ''}
 
+        <div class="derived-section">
+          <div class="derived-label">衍生词 · ${entry.derivedWords.length}</div>
+          ${entry.derivedWords.length ? `
+            <div class="derived-list">
+              ${entry.derivedWords.map(d => `
+                <span class="derived-chip" data-did="${d.id}">
+                  <button class="icon-btn derived-play" title="播放发音" aria-label="播放发音">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  </button>
+                  <span class="derived-word">${escapeHtml(d.word)}</span>
+                  <span class="derived-sep">—</span>
+                  <span class="derived-translation">${d.translation ? escapeHtml(d.translation) : '（未填写翻译）'}</span>
+                  <button class="derived-del" title="删除这个衍生词">×</button>
+                </span>`).join('')}
+            </div>` : ''}
+          <div class="add-derived-row">
+            <input type="text" class="new-derived-word-input" placeholder="衍生词，如 difference">
+            <input type="text" class="new-derived-translation-input" placeholder="翻译，如 差异">
+            <button class="add-derived-submit">＋ 添加衍生词</button>
+          </div>
+        </div>
+
         <div class="sentences-section">
           <div class="sentences-label">例句 · ${entry.sentences.length}</div>
           ${entry.sentences.map(s => {
@@ -1525,15 +1657,18 @@ function render() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                 </button>
                 <div class="sentence-text ${hasTranslation ? 'clickable' : ''}" title="${hasTranslation ? '点击查看英文原句' : ''}">${escapeHtml(primaryText)}</div>
+                ${s.usageNote ? `<button class="usage-toggle" title="显示/隐藏用法说明">💡</button>` : ''}
                 ${hasTranslation ? '' : `<span class="translation-toggle" title="还没有中文翻译">未译</span>`}
                 <button class="sentence-del" title="删除这句例句">×</button>
               </div>
               ${hasTranslation && revealedEnglish.has(s.id) ? `<div class="translation-box">${escapeHtml(s.text)}</div>` : ''}
+              ${s.usageNote && revealedUsageNotes.has(s.id) ? `<div class="usage-note">💡 用法：${escapeHtml(s.usageNote)}</div>` : ''}
             </div>`;
           }).join('')}
           <div class="add-sentence-row">
             <input type="text" class="new-sentence-input" placeholder="添加一个新例句…">
             <input type="text" class="new-translation-input" placeholder="这句例句的中文翻译（可选）…">
+            <input type="text" class="new-usage-input" placeholder="这句用的是哪个用法（可选）…">
             <button class="add-sentence-submit">＋ 添加例句</button>
           </div>
         </div>
@@ -1594,15 +1729,42 @@ function render() {
           render();
         });
       }
+      const usageToggleBtn = item.querySelector('.usage-toggle');
+      if (usageToggleBtn) {
+        usageToggleBtn.addEventListener('click', () => {
+          if (revealedUsageNotes.has(sid)) revealedUsageNotes.delete(sid); else revealedUsageNotes.add(sid);
+          render();
+        });
+      }
     });
 
     const newSentInput = card.querySelector('.new-sentence-input');
     const newTransInput = card.querySelector('.new-translation-input');
+    const newUsageInput = card.querySelector('.new-usage-input');
     const addSentBtn = card.querySelector('.add-sentence-submit');
-    const submitSentence = () => addSentence(id, newSentInput.value, newTransInput.value);
+    const submitSentence = () => addSentence(id, newSentInput.value, newTransInput.value, newUsageInput.value);
     addSentBtn.addEventListener('click', submitSentence);
     newSentInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSentence(); } });
     newTransInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSentence(); } });
+    newUsageInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSentence(); } });
+
+    card.querySelectorAll('.derived-chip').forEach(chip => {
+      const did = chip.dataset.did;
+      const derived = entry.derivedWords.find(d => d.id === did);
+      const playBtn = chip.querySelector('.derived-play');
+      if (playBtn && derived) {
+        playBtn.addEventListener('click', (e) => { speak(derived.word); pulseIcon(e.currentTarget); });
+      }
+      const delBtn = chip.querySelector('.derived-del');
+      if (delBtn) delBtn.addEventListener('click', () => deleteDerivedWord(id, did));
+    });
+    const newDerivedWordInput = card.querySelector('.new-derived-word-input');
+    const newDerivedTransInput = card.querySelector('.new-derived-translation-input');
+    const addDerivedBtn = card.querySelector('.add-derived-submit');
+    const submitDerived = () => addDerivedWord(id, newDerivedWordInput.value, newDerivedTransInput.value);
+    addDerivedBtn.addEventListener('click', submitDerived);
+    newDerivedWordInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitDerived(); } });
+    newDerivedTransInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitDerived(); } });
   });
 
   updateQuizBadge();
@@ -1617,13 +1779,14 @@ async function saveMeaning(id, value) {
   render();
 }
 
-async function addSentence(entryId, text, translation) {
+async function addSentence(entryId, text, translation, usageNote) {
   text = (text || '').trim();
   translation = (translation || '').trim();
+  usageNote = (usageNote || '').trim();
   if (!text) return;
   const entry = allWords.find(w => w.id === entryId);
   if (!entry) return;
-  entry.sentences.push({ id: genId(), text, translation, dateAdded: new Date().toISOString() });
+  entry.sentences.push({ id: genId(), text, translation, usageNote, dateAdded: new Date().toISOString() });
   await saveWords();
   render();
 }
@@ -1632,6 +1795,25 @@ async function deleteSentence(entryId, sentenceId) {
   const entry = allWords.find(w => w.id === entryId);
   if (!entry) return;
   entry.sentences = entry.sentences.filter(s => s.id !== sentenceId);
+  await saveWords();
+  render();
+}
+
+async function addDerivedWord(entryId, word, translation) {
+  word = (word || '').trim();
+  translation = (translation || '').trim();
+  if (!word) return;
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  entry.derivedWords.push({ id: genId(), word, translation });
+  await saveWords();
+  render();
+}
+
+async function deleteDerivedWord(entryId, derivedId) {
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  entry.derivedWords = entry.derivedWords.filter(d => d.id !== derivedId);
   await saveWords();
   render();
 }
@@ -1722,6 +1904,7 @@ async function addWord() {
   const meaningInput = document.getElementById('meaning-input');
   const sentenceInput = document.getElementById('sentence-input');
   const sentenceTransInput = document.getElementById('sentence-translation-input');
+  const sentenceUsageInput = document.getElementById('sentence-usage-input');
   const statusMsg = document.getElementById('status-msg');
   const addBtn = document.getElementById('add-btn');
 
@@ -1729,6 +1912,7 @@ async function addWord() {
   const meaning = meaningInput.value.trim();
   const sentenceText = sentenceInput.value.trim();
   const sentenceTranslation = sentenceTransInput.value.trim();
+  const sentenceUsage = sentenceUsageInput.value.trim();
 
   if (!word) {
     statusMsg.textContent = '请输入单词';
@@ -1750,7 +1934,10 @@ async function addWord() {
     phonetic: info ? info.phonetic : '',
     audio: info ? info.audio : '',
     dateAdded,
-    sentences: sentenceText ? [{ id: genId(), text: sentenceText, translation: sentenceTranslation, dateAdded }] : [],
+    sentences: sentenceText
+      ? [{ id: genId(), text: sentenceText, translation: sentenceTranslation, usageNote: sentenceUsage, dateAdded }]
+      : [],
+    derivedWords: [],
     review: null,
     learned: false,
     learnedAt: null
@@ -1771,6 +1958,7 @@ async function addWord() {
   meaningInput.value = '';
   sentenceInput.value = '';
   sentenceTransInput.value = '';
+  sentenceUsageInput.value = '';
   addBtn.disabled = false;
   render();
   setTimeout(() => { statusMsg.textContent = ''; }, 3000);
@@ -1778,7 +1966,7 @@ async function addWord() {
 
 function buildExportPayload() {
   return {
-    version: 6,
+    version: 7,
     exportedAt: new Date().toISOString(),
     words: allWords
   };
@@ -1947,6 +2135,19 @@ function mergeEntry(existing, imported) {
     } else {
       const es = existing.sentences.find(x => x.id === s.id);
       if (es && !es.translation && s.translation) es.translation = s.translation;
+      if (es && !es.usageNote && s.usageNote) es.usageNote = s.usageNote;
+    }
+  });
+
+  if (!existing.derivedWords) existing.derivedWords = [];
+  const existingDerivedIds = new Set(existing.derivedWords.map(d => d.id));
+  (imported.derivedWords || []).forEach(d => {
+    if (!existingDerivedIds.has(d.id)) {
+      existing.derivedWords.push(d);
+      existingDerivedIds.add(d.id);
+    } else {
+      const ed = existing.derivedWords.find(x => x.id === d.id);
+      if (ed && !ed.translation && d.translation) ed.translation = d.translation;
     }
   });
 
@@ -2092,6 +2293,7 @@ function renderQuizSentenceRow(s) {
         <div class="quiz-sentence-text">
           ${escapeHtml(s.text)}
           ${s.translation ? `<div class="quiz-sentence-translation">${escapeHtml(s.translation)}</div>` : ''}
+          ${s.usageNote ? `<div class="usage-note" style="margin-left:0;">💡 用法：${escapeHtml(s.usageNote)}</div>` : ''}
         </div>
       ` : `
         <button class="quiz-sentence-toggle" title="显示这句例句">显示例句</button>
@@ -2181,6 +2383,7 @@ document.getElementById('today-learned-filter-btn').addEventListener('click', ()
   // so the filtered view starts from the default collapsed state
   revealedMeaning.clear();
   revealedEnglish.clear();
+  revealedUsageNotes.clear();
   editingMeaningFor = null;
   render();
 });
