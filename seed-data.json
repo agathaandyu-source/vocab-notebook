@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-08-10T12:14:26.755Z",
+  "exportedAt": "2026-08-10T15:04:02.013Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -395,41 +395,6 @@
       "meaning": "补充一下",
       "dateAdded": "2026-07-11T14:33:20.638Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrggv56dtcaia",
-      "word": "sync-up",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "碰头会",
-      "dateAdded": "2026-07-11T14:35:18.901Z",
-      "sentences": [
-        {
-          "id": "mrggw3vj6j4r0",
-          "text": "Incidentally, we'll have a sync-up at 3 PM.",
-          "translation": "顺便说下，我们下午 3 点开碰头会。",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T14:36:03.871Z"
-        },
-        {
-          "id": "mrgioc7dz8tbt",
-          "text": "sync",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:26:00.649Z"
-        },
-        {
-          "id": "ms2j2drhterwr",
-          "text": "The NIR system syncs clinic addresses every night.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-27T01:07:51.725Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -1248,6 +1213,13 @@
       "meaning": "",
       "dateAdded": "2026-07-12T13:59:24.634Z",
       "sentences": [
+        {
+          "id": "msnd2shxeu21t",
+          "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
+          "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
+          "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
+          "dateAdded": "2026-08-10T15:03:22.821Z"
+        },
         {
           "id": "mrhv0tlmp5184",
           "text": "approval",
@@ -3688,6 +3660,776 @@
       "review": null,
       "learned": false,
       "learnedAt": null
+    },
+    {
+      "id": "msn7fwab2ujez",
+      "word": "reach out",
+      "meaning": "联系",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T12:25:36.563Z",
+      "sentences": [
+        {
+          "id": "msn7fwabp55cn",
+          "text": "I'll reach out to the vendor",
+          "translation": "我会联系供应商。",
+          "usageNote": "reach out to sb固定搭配",
+          "dateAdded": "2026-08-10T12:25:36.563Z"
+        },
+        {
+          "id": "msn7gr4d3n05c",
+          "text": "If you have any questions, please feel free to reach out.",
+          "translation": "如有疑问, 欢迎随时联系",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T12:26:16.525Z"
+        }
+      ],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msn7k0b44td03",
+      "word": "keep",
+      "meaning": "保持",
+      "phonetic": "/kiːp/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/keep-us.mp3",
+      "dateAdded": "2026-08-10T12:28:48.400Z",
+      "sentences": [
+        {
+          "id": "msn7k0b48fsqo",
+          "text": "We will keep you updated once we have any findings.",
+          "translation": "一有进展我们会及时告知",
+          "usageNote": "keep + 宾语 + 形容词/过去分词 = 让某人/某物保持某种状态",
+          "dateAdded": "2026-08-10T12:28:48.400Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msn7kisv9t0sp",
+          "word": "findings",
+          "translation": "过程中的发现"
+        },
+        {
+          "id": "msn7msgf0n5ij",
+          "word": "updated",
+          "translation": "过去分词作形容词"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msn7osnufj32c",
+      "word": "find",
+      "meaning": "找到, 发现",
+      "phonetic": "/faɪnd/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/find-us.mp3",
+      "dateAdded": "2026-08-10T12:32:31.770Z",
+      "sentences": [
+        {
+          "id": "msn7r8pmbgafn",
+          "text": "Let me find out why the job failed.",
+          "translation": "我去查一下 job 为什么失败",
+          "usageNote": "find out (查明)",
+          "dateAdded": "2026-08-10T12:34:25.882Z"
+        },
+        {
+          "id": "msn7sjeq6mcz3",
+          "text": "I find the new UI confusing.",
+          "translation": "我觉得新 UI 让人困惑",
+          "usageNote": "find + sb/sth + adj",
+          "dateAdded": "2026-08-10T12:35:26.402Z"
+        },
+        {
+          "id": "msn7tvl8v8dl1",
+          "text": "The company was founded in 1981.",
+          "translation": "公司创立于 1981 年",
+          "usageNote": "这个 found 跟 find 无关, 是完全独立的动词",
+          "dateAdded": "2026-08-10T12:36:28.844Z"
+        },
+        {
+          "id": "msn7vea658pyh",
+          "text": "Our initial findings show a memory leak.",
+          "translation": "我们的初步发现是有内存泄漏。",
+          "usageNote": "finding = 调查/分析过程中的发现 (强调\"看出来什么\") result = 最终结果 (强调\"输出了什么\")",
+          "dateAdded": "2026-08-10T12:37:39.726Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msn7pgvryie1x",
+          "word": "found",
+          "translation": "v. 过去式/过去分词  找到了 (过去)"
+        },
+        {
+          "id": "msn7q04w5dl8q",
+          "word": "found",
+          "translation": "v. 原形 创立, 建立"
+        },
+        {
+          "id": "msn7qex2p44xb",
+          "word": "finding(s)",
+          "translation": "n.\t发现, 结论\t调查/研究的成果"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msn91etats4fr",
+      "word": "Four Seasons",
+      "meaning": "四季",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T13:10:19.965Z",
+      "sentences": [
+        {
+          "id": "msn933yv95qh1",
+          "text": "in the summer months",
+          "translation": "指北半球 6-8 月",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T13:11:39.223Z"
+        },
+        {
+          "id": "msn9aw3ybfcbq",
+          "text": "The batch job failed on 09 Aug 2026 at 02:15 AM SGT and was recovered by 02:45 AM.",
+          "translation": "批处理任务于 2026 年 8 月 9 日凌晨 2:15 (SGT) 失败, 于 2:45 恢复",
+          "usageNote": "on + 具体日期  at +具体时间点",
+          "dateAdded": "2026-08-10T13:17:42.286Z"
+        },
+        {
+          "id": "msn9f07v4d4fn",
+          "text": "The upgrade is planned in 2026.",
+          "translation": "计划在 2026 年",
+          "usageNote": "年份 → in",
+          "dateAdded": "2026-08-10T13:20:54.235Z"
+        },
+        {
+          "id": "msn9fgcw97esx",
+          "text": "The upgrade is planned in August 2026.",
+          "translation": "计划在 2026 年 8 月",
+          "usageNote": "月份 → in",
+          "dateAdded": "2026-08-10T13:21:15.152Z"
+        },
+        {
+          "id": "msn9gfu9s3hmg",
+          "text": "The upgrade will start at 10 PM on 15 August 2026",
+          "translation": "升级将于 8 月 15 日晚 10 点开始",
+          "usageNote": "具体时刻 → at  at 和 on 顺序随便",
+          "dateAdded": "2026-08-10T13:22:01.137Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msn91pcnv9cjb",
+          "word": "Spring",
+          "translation": "春"
+        },
+        {
+          "id": "msn91xutzzfgi",
+          "word": "Summer",
+          "translation": "夏"
+        },
+        {
+          "id": "msn927lxbm0ki",
+          "word": "Autumn",
+          "translation": "秋"
+        },
+        {
+          "id": "msn92fztzbxta",
+          "word": "Winter",
+          "translation": "冬"
+        },
+        {
+          "id": "msn93jykihkke",
+          "word": "January",
+          "translation": "一月"
+        },
+        {
+          "id": "msn93tmoxijz6",
+          "word": "February",
+          "translation": "二月"
+        },
+        {
+          "id": "msn941omzjiqn",
+          "word": "March",
+          "translation": "三月"
+        },
+        {
+          "id": "msn9497ffihd7",
+          "word": "April",
+          "translation": "四月"
+        },
+        {
+          "id": "msn94g66sn5wi",
+          "word": "May",
+          "translation": "五月"
+        },
+        {
+          "id": "msn94pgxmgahy",
+          "word": "June",
+          "translation": "六月"
+        },
+        {
+          "id": "msn94x13qdntd",
+          "word": "July",
+          "translation": "七月"
+        },
+        {
+          "id": "msn954xdbvoeh",
+          "word": "August",
+          "translation": "八月"
+        },
+        {
+          "id": "msn95dcgpldhw",
+          "word": "September",
+          "translation": "九月"
+        },
+        {
+          "id": "msn95lmhqw5y2",
+          "word": "October",
+          "translation": "十月"
+        },
+        {
+          "id": "msn95te5hnzkb",
+          "word": "November",
+          "translation": "十一月"
+        },
+        {
+          "id": "msn960oxcvxz7",
+          "word": "December",
+          "translation": "十二月"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msn9j4monmxhu",
+      "word": "Weekday",
+      "meaning": "工作日 (周一到周五)",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T13:24:06.576Z",
+      "sentences": [
+        {
+          "id": "msn9mjcl9f43s",
+          "text": "The stand-up is every weekday morning at 9:30.",
+          "translation": "站立会议定于每个工作日的上午 9:30 举行。",
+          "usageNote": "weekday morning  工作日早上",
+          "dateAdded": "2026-08-10T13:26:45.621Z"
+        },
+        {
+          "id": "msn9noop4n0te",
+          "text": "The deployment happened over the weekend.",
+          "translation": "部署发生在周末期间",
+          "usageNote": "over the weekend ⭐⭐⭐\t周末期间",
+          "dateAdded": "2026-08-10T13:27:39.193Z"
+        },
+        {
+          "id": "msn9ol83as85z",
+          "text": "Emergency fixes go through the after-hours hotline.",
+          "translation": "紧急维修需通过非工作时间热线进行处理。",
+          "usageNote": "after hours ⭐⭐⭐\t下班后 / 非营业时间",
+          "dateAdded": "2026-08-10T13:28:21.363Z"
+        },
+        {
+          "id": "msn9pf9y0aik1",
+          "text": "she is on leave this week.",
+          "translation": "她这周休假中",
+          "usageNote": "on leave ⭐⭐⭐\t休假中",
+          "dateAdded": "2026-08-10T13:29:00.310Z"
+        },
+        {
+          "id": "msn9scfk1a5ua",
+          "text": "Tomorrow is my off day",
+          "translation": "明天是我的休息日",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T13:31:16.592Z"
+        },
+        {
+          "id": "msn9to9r9mlyg",
+          "text": "I'll be OOO next Monday — please contact Li",
+          "translation": "下周一我不在办公室，请联系Li",
+          "usageNote": "out of office (OOO) ⭐⭐⭐\t不在办公室",
+          "dateAdded": "2026-08-10T13:32:18.591Z"
+        },
+        {
+          "id": "msn9z8ys3285g",
+          "text": "The release is scheduled for 15 Aug",
+          "translation": "发布定在 8 月 15 日。",
+          "usageNote": "scheduled for + 时间 ⭐⭐⭐\t(会议/活动)被安排在…   be scheduled for\" 是固定搭配 for 后面接的是这件事被指派/预定到的那个时间点, 强调\"这个时间是为它保留的\"。",
+          "dateAdded": "2026-08-10T13:36:38.692Z"
+        },
+        {
+          "id": "msna0kp7114gx",
+          "text": "The meeting is scheduled at 10 AM",
+          "translation": "会议被安排到10点",
+          "usageNote": "scheduled at + 时间点\t强调时刻",
+          "dateAdded": "2026-08-10T13:37:40.555Z"
+        },
+        {
+          "id": "msna5cn1ch6ev",
+          "text": "Let's have a quick sync on Monday, 10 Aug, at 2:30 PM.",
+          "translation": "我们周一 (8 月 10 日) 下午 2:30 快速对齐一下",
+          "usageNote": "on + 具体星期 / 具体日期 ； Monday, 10 August 2026, 2:30 PM\t新加坡邮件/文档标准",
+          "dateAdded": "2026-08-10T13:41:23.389Z"
+        },
+        {
+          "id": "msna6zmsfeien",
+          "text": "The incident occurred at approximately 3:47 PM SGT on Monday, 10 August 2026.",
+          "translation": "事件发生时间约为 2026 年 8 月 10 日 (周一) 下午 3:47 (SGT)",
+          "usageNote": "大致时间\tat approximately ⭐⭐",
+          "dateAdded": "2026-08-10T13:42:39.844Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msn9jg95oxqb7",
+          "word": "Weekend",
+          "translation": "周末 (周六周日)"
+        },
+        {
+          "id": "msn9jvws3kmkk",
+          "word": "Business day",
+          "translation": "工作日 (正式, 排除公共假期)"
+        },
+        {
+          "id": "msn9kk486q072",
+          "word": "Off day",
+          "translation": "休息日 (个人的)"
+        },
+        {
+          "id": "msn9kxbgtvdrv",
+          "word": "Rest day",
+          "translation": "休息日 (轮班场景)"
+        },
+        {
+          "id": "msn9px2u76v1y",
+          "word": "Monday",
+          "translation": "周一"
+        },
+        {
+          "id": "msn9q3q5jxjce",
+          "word": "Tuesday",
+          "translation": "周二"
+        },
+        {
+          "id": "msn9qbq8hmi30",
+          "word": "Wednesday",
+          "translation": "周三"
+        },
+        {
+          "id": "msn9qj3x4zwra",
+          "word": "Thursday",
+          "translation": "周四"
+        },
+        {
+          "id": "msn9qrahw2scj",
+          "word": "Friday",
+          "translation": "周五"
+        },
+        {
+          "id": "msn9qzim78ver",
+          "word": "Saturday",
+          "translation": "周六"
+        },
+        {
+          "id": "msn9r9kl2nj0a",
+          "word": "Sunday",
+          "translation": "周日"
+        },
+        {
+          "id": "msna7j3hlpi40",
+          "word": "approximately",
+          "translation": "大约"
+        },
+        {
+          "id": "msna92mcw78po",
+          "word": "midnight",
+          "translation": "12 AM = 午夜"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnadjjpm7fd6",
+      "word": "synchronize",
+      "meaning": "v. 动词\t同步 / 对齐",
+      "phonetic": "/ˈsɪŋ.kɹə.naɪːz/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/synchronize-us.mp3",
+      "dateAdded": "2026-08-10T13:47:45.589Z",
+      "sentences": [
+        {
+          "id": "msnaigsn8nfke",
+          "text": "Can we sync up on the CR before EOD?",
+          "translation": "我们下班前对一下 CR 好吗?",
+          "usageNote": "sync-up = 非正式对齐 (10-15 分钟, 快速拉齐信息)",
+          "dateAdded": "2026-08-10T13:51:35.303Z"
+        },
+        {
+          "id": "msnakiqmrixn4",
+          "text": "The replica is out of sync — investigating",
+          "translation": "副本不同步, 正在排查",
+          "usageNote": "out of sync 固定搭配：不同步",
+          "dateAdded": "2026-08-10T13:53:11.134Z"
+        },
+        {
+          "id": "msnalnm45aulh",
+          "text": "Let's sync on the audit findings tomorrow",
+          "translation": "明天我们对齐一下审计发现",
+          "usageNote": "sync on (话题)",
+          "dateAdded": "2026-08-10T13:54:04.108Z"
+        },
+        {
+          "id": "msnameannwo20",
+          "text": "I need to sync with Sydney before the handover.",
+          "translation": "交接前我要和 Sydney 对齐一下。",
+          "usageNote": "sync with (人)",
+          "dateAdded": "2026-08-10T13:54:38.687Z"
+        },
+        {
+          "id": "msnao1m30ez3d",
+          "text": "Let's have a quick sync at 3 PM",
+          "translation": "我们 3 点快速同步一下",
+          "usageNote": "have / do a quick sync 固定搭配 ：对齐信息 / 快速开个会",
+          "dateAdded": "2026-08-10T13:55:55.563Z"
+        },
+        {
+          "id": "msnapbcdmhgca",
+          "text": "The UAT and PROD configs are now in sync",
+          "translation": "UAT 和 PROD 的配置现在同步了",
+          "usageNote": "in sync  词组：同步",
+          "dateAdded": "2026-08-10T13:56:54.829Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnaecs9qjqgy",
+          "word": "sync",
+          "translation": "synchronize / synchronization 的缩写"
+        },
+        {
+          "id": "msnaf75ozya0m",
+          "word": "synchronous",
+          "translation": "adj.\t同步的"
+        },
+        {
+          "id": "msnafiu3lbaf9",
+          "word": "asynchronous",
+          "translation": "adj.\t异步的"
+        },
+        {
+          "id": "msnag6efei7yd",
+          "word": "resync",
+          "translation": "v.\t重新同步"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnasoac7hj7m",
+      "word": "explain",
+      "meaning": "(v.) 解释, 说明",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T13:59:31.572Z",
+      "sentences": [
+        {
+          "id": "msnav0uocrzm2",
+          "text": "Can you explain the deployment rollback process to Sydney?",
+          "translation": "你能给 Sydney 解释一下部署回滚流程吗",
+          "usageNote": "explain sth to sb",
+          "dateAdded": "2026-08-10T14:01:21.168Z"
+        },
+        {
+          "id": "msnavxb5kio75",
+          "text": "The vendor explained that the outage was caused by a DNS issue.",
+          "translation": "供应商解释说停机是由 DNS 问题导致的",
+          "usageNote": "explain that + 从句",
+          "dateAdded": "2026-08-10T14:02:03.233Z"
+        },
+        {
+          "id": "msnawxlwy0dlz",
+          "text": "Please explain why the batch job ran twice last night.",
+          "translation": "请解释一下为什么批处理任务昨晚跑了两次",
+          "usageNote": "explain why / how / what",
+          "dateAdded": "2026-08-10T14:02:50.276Z"
+        },
+        {
+          "id": "msnaxzvmgi1dc",
+          "text": "The error message is self-explanatory — missing config file",
+          "translation": "报错信息不言自明 —— 配置文件丢失",
+          "usageNote": "self-explanatory adj.\t不言自明的",
+          "dateAdded": "2026-08-10T14:03:39.874Z"
+        },
+        {
+          "id": "msnb1gkmvkf9j",
+          "text": "Give me an explanation for this",
+          "translation": "为此事给我解释",
+          "usageNote": "为某事给解释, 用 for",
+          "dateAdded": "2026-08-10T14:06:21.478Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnatikzz4qr0",
+          "word": "explanation",
+          "translation": "n.\t解释, 说明\tprovide an explanation"
+        },
+        {
+          "id": "msnau47mmguyy",
+          "word": "self-explanatory",
+          "translation": "adj.\t不言自明的"
+        },
+        {
+          "id": "msnbeds6ardm9",
+          "word": "explanatory",
+          "translation": "adj.\t解释性的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnbdhax3gawd",
+      "word": "correct",
+      "meaning": "adj. 正确的 v. 纠正, 更正",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T14:15:42.297Z",
+      "sentences": [
+        {
+          "id": "msnbgfhi8vm98",
+          "text": "We need to correct the schema name in the config",
+          "translation": "我们需要更正配置里的 schema 名称",
+          "usageNote": "correct + 名词 (v.)",
+          "dateAdded": "2026-08-10T14:17:59.910Z"
+        },
+        {
+          "id": "msnbh1vrv9y2n",
+          "text": "That's correct — the job runs at 2 AM daily.",
+          "translation": "没错, 这个任务每天凌晨 2 点跑。",
+          "usageNote": "that's correct 没错",
+          "dateAdded": "2026-08-10T14:18:28.935Z"
+        },
+        {
+          "id": "msnbho5xvo91t",
+          "text": "Correct me if I'm wrong, but the DB is in read-only mode?",
+          "translation": "如果我说错请纠正, 但数据库现在是只读模式吧",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T14:18:57.813Z"
+        },
+        {
+          "id": "msnbihib4gl7z",
+          "text": "I need to make a correction to yesterday's report.",
+          "translation": "我需要对昨天的报告做一处更正",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T14:19:35.843Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnbf1swnioi1",
+          "word": "correction",
+          "translation": "n.\t更正, 修正"
+        },
+        {
+          "id": "msnbfl20xz72v",
+          "word": "incorrect",
+          "translation": "adj.\t不正确的"
+        },
+        {
+          "id": "msnbiua031anr",
+          "word": "corrective",
+          "translation": "adj.\t纠正性的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnbjmufqb3x0",
+      "word": "fail",
+      "meaning": "失败",
+      "phonetic": "/feɪl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/fail-us.mp3",
+      "dateAdded": "2026-08-10T14:20:29.415Z",
+      "sentences": [
+        {
+          "id": "msnc17brm64rf",
+          "text": "the failed file is about the fair folder",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-08-10T14:34:09.112Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnbjzhskl1ze",
+          "word": "failure",
+          "translation": "n"
+        },
+        {
+          "id": "msnbku7iugtc9",
+          "word": "failed",
+          "translation": "失败的"
+        },
+        {
+          "id": "msnbl96f3k2sd",
+          "word": "file",
+          "translation": "文件"
+        },
+        {
+          "id": "msnblumzckd0a",
+          "word": "folder",
+          "translation": "文件夹"
+        },
+        {
+          "id": "msnbo8aujqyqh",
+          "word": "fire",
+          "translation": "火"
+        },
+        {
+          "id": "msnbondcvtha2",
+          "word": "fair",
+          "translation": "公平的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnc5kdtgj63z",
+      "word": "comment",
+      "meaning": "注释 (代码里的说明)",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T14:37:32.657Z",
+      "sentences": [
+        {
+          "id": "msnc8iyyclkjz",
+          "text": "Please comment on my PR when you get a chance",
+          "translation": "有空请到我的 PR 上评论一下",
+          "usageNote": "comment on\t对…发表评论",
+          "dateAdded": "2026-08-10T14:39:50.794Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnc6asdplnac",
+          "word": "comment out",
+          "translation": "注释掉 / 加注释"
+        },
+        {
+          "id": "msnc6suw9rb5k",
+          "word": "uncomment",
+          "translation": "v 取消注释"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msnc9lcmw0b1s",
+      "word": "annotate",
+      "meaning": "v.\t加注解, 做标注",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T14:40:40.534Z",
+      "sentences": [
+        {
+          "id": "msncb5ee0hjw2",
+          "text": "I've attached an annotated screenshot showing the incorrect mapping.",
+          "translation": "我附上了一张标注截图, 显示错误的字段映射",
+          "usageNote": "annotated 主要用在图片/文档上, 表示\"上面加了说明标注\"",
+          "dateAdded": "2026-08-10T14:41:53.174Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msnca0z3dgirw",
+          "word": "annotated",
+          "translation": "adj.\t加了注解的"
+        },
+        {
+          "id": "msncac1v2b206",
+          "word": "annotation",
+          "translation": "n.\t注解, 标注"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msncezd612hxe",
+      "word": "proceed",
+      "meaning": "(v.) 继续进行, 着手做, 前进",
+      "phonetic": "",
+      "audio": "",
+      "dateAdded": "2026-08-10T14:44:51.978Z",
+      "sentences": [
+        {
+          "id": "msnci12t9byva",
+          "text": "Once approval is received, we can proceed with the fix.",
+          "translation": "一旦审批通过, 我们就可以推进修复",
+          "usageNote": "Once + 一般现在时 表将来 ; proceed with + 名词/V-ing",
+          "dateAdded": "2026-08-10T14:47:14.165Z"
+        },
+        {
+          "id": "msncjb7utqlhk",
+          "text": "The batch proceeded to update the audit table.",
+          "translation": "批处理接着更新了审计表。",
+          "usageNote": "proceed to + 动词原形",
+          "dateAdded": "2026-08-10T14:48:13.962Z"
+        },
+        {
+          "id": "msncjxvqx2g0o",
+          "text": "Please confirm the backup before proceeding.",
+          "translation": "请在继续之前确认备份完成",
+          "usageNote": "before proceeding",
+          "dateAdded": "2026-08-10T14:48:43.334Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "msncfhbdyvb6x",
+          "word": "procedure",
+          "translation": "n.\t程序, 步骤"
+        },
+        {
+          "id": "msncfvjvjp6m4",
+          "word": "process",
+          "translation": "n./v.\t过程 / 处理"
+        },
+        {
+          "id": "msncg8z3kj0pw",
+          "word": "proceeding(s)",
+          "translation": "n.\t诉讼程序 / 会议记录 (法律/正式)"
+        },
+        {
+          "id": "msncgu9ydevmj",
+          "word": "proceeds",
+          "translation": "(n.)  收益 (卖东西/募捐得到的钱)"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
     }
   ],
   "tombstones": {
@@ -3696,6 +4438,7 @@
     "mrggz7eifulxi": "2026-08-10T12:10:23.925Z",
     "mrggyo214i9w7": "2026-08-10T12:10:24.932Z",
     "mrggxz4tso1vt": "2026-08-10T12:10:26.196Z",
-    "mrxmz9vvctcrs": "2026-08-10T12:14:19.512Z"
+    "mrxmz9vvctcrs": "2026-08-10T12:14:19.512Z",
+    "mrggv56dtcaia": "2026-08-10T13:58:36.069Z"
   }
 }
