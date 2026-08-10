@@ -1,6 +1,6 @@
 {
-  "version": 7,
-  "exportedAt": "2026-08-10T10:22:00.221Z",
+  "version": 8,
+  "exportedAt": "2026-08-10T12:14:26.755Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1256,7 +1256,13 @@
           "dateAdded": "2026-07-12T13:59:24.634Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "msn6xd75ovm47",
+          "word": "approval",
+          "translation": "批准"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -1959,7 +1965,7 @@
           "id": "msn2pvdoyay31",
           "text": "Regardless of your role or department, you are required to comply with the PDPA guidelines.",
           "translation": "无论你的岗位或部门，你都必须遵守ODOA指南",
-          "usageNote": "Regardless of +名字",
+          "usageNote": "Regardless of +名词短语",
           "dateAdded": "2026-08-10T10:13:23.868Z"
         },
         {
@@ -2889,13 +2895,6 @@
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
-          "id": "mrz4l3ci2ecb8",
-          "text": "hide",
-          "translation": "做了藏这个动作",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T15:59:11.922Z"
-        },
-        {
           "id": "mrz4mh8ou00mo",
           "text": "The old code hid the exception silently.",
           "translation": "旧代码静默地掩盖了异常。",
@@ -2908,9 +2907,22 @@
           "translation": "bug 一直藏在旧配置里",
           "usageNote": "",
           "dateAdded": "2026-07-24T16:01:02.396Z"
+        },
+        {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "usageNote": "",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "msn3cqwpbhw99",
+          "word": "hide",
+          "translation": "藏"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3024,34 +3036,6 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrxmz9vvctcrs",
-      "word": "hidden",
-      "phonetic": "/ˈhɪd(ə)n/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
-      "dateAdded": "2026-07-23T14:58:34.315Z",
-      "sentences": [
-        {
-          "id": "mrxmzy17fizaj",
-          "text": "There are no hidden extras.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-23T14:59:05.611Z"
-        },
-        {
-          "id": "mrycozdphntu1",
-          "text": "hid",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T02:58:24.162Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3645,9 +3629,9 @@
     {
       "id": "msn1y7mwq4984",
       "word": "句首连接副词",
-      "meaning": "这 4 个都是句首连接副词, 后面必须加逗号, 用法上是句子级",
       "phonetic": "",
       "audio": "",
+      "meaning": "这 4 个都是句首连接副词, 后面必须加逗号, 用法上是句子级",
       "dateAdded": "2026-08-10T09:51:53.383Z",
       "sentences": [
         {
@@ -3704,84 +3688,14 @@
       "review": null,
       "learned": false,
       "learnedAt": null
-    },
-    {
-      "id": "mrggxz4tso1vt",
-      "word": "Nevertheless",
-      "phonetic": "/ˈnɛvəðəlɛs/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/nevertheless-uk.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-11T14:37:31.037Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrggyo214i9w7",
-      "word": "Consequently",
-      "phonetic": "/ˈkɑːnsəˌkwɛntli/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/consequently-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-11T14:38:03.337Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrggz7eifulxi",
-      "word": "Meanwhile",
-      "phonetic": "/ˈmiːnhwaɪl/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-07-11T14:38:28.410Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrggzmf9aflfa",
-      "word": "Furthermore",
-      "phonetic": "/ˈfɜː(ɹ).ðə(ɹ).mɔː(ɹ)/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/furthermore-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-11T14:38:47.877Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrhvt0qkadsbs",
-      "word": "Regardless",
-      "phonetic": "/ɹɪˈɡɑːd.lɪs/",
-      "audio": "",
-      "meaning": "无论",
-      "dateAdded": "2026-07-12T14:21:20.252Z",
-      "sentences": [
-        {
-          "id": "mrhvt0qkyoxc8",
-          "text": "Regardless of your role or department, you are required to comply with the PDPA guidelines.",
-          "translation": "无论你的岗位或部门，你都必须遵守 PDPA 指南。",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T14:21:20.252Z"
-        }
-      ],
-      "derivedWords": [],
-      "review": {
-        "stage": 0,
-        "cycleStart": "2026-07-12T14:45:51.369Z",
-        "nextDue": "2026-07-12T16:00:00.000Z",
-        "completed": false
-      },
-      "learned": true,
-      "learnedAt": "2026-07-12T14:45:51.369Z"
     }
-  ]
+  ],
+  "tombstones": {
+    "mrhvt0qkadsbs": "2026-08-10T12:09:33.964Z",
+    "mrggzmf9aflfa": "2026-08-10T12:10:22.846Z",
+    "mrggz7eifulxi": "2026-08-10T12:10:23.925Z",
+    "mrggyo214i9w7": "2026-08-10T12:10:24.932Z",
+    "mrggxz4tso1vt": "2026-08-10T12:10:26.196Z",
+    "mrxmz9vvctcrs": "2026-08-10T12:14:19.512Z"
+  }
 }
