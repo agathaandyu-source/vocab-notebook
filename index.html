@@ -643,6 +643,9 @@
     color: var(--brass);
     font-style: italic;
     line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
   .usage-toggle {
     background: none;
@@ -655,6 +658,43 @@
     transition: opacity 0.15s;
   }
   .usage-toggle:hover { opacity: 1; }
+  .usage-toggle.empty { opacity: 0.2; filter: grayscale(1); }
+  .usage-toggle.empty:hover { opacity: 0.6; filter: none; }
+
+  .usage-edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--brass);
+    opacity: 0.6;
+    padding: 2px;
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+  .usage-edit-icon:hover { opacity: 1; }
+  .usage-edit-row {
+    margin: 4px 0 0 26px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .usage-edit-row input {
+    font-size: 12.5px;
+    padding: 6px 9px;
+    flex: 1;
+  }
+  .usage-edit-row button {
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .usage-save-btn { background: var(--brass); color: #fff; }
+  .usage-save-btn:hover { background: #a17722; }
+  .usage-cancel-btn { background: none; color: var(--text-muted); }
 
   .derived-section {
     margin-top: 12px;
@@ -706,6 +746,41 @@
     transition: color 0.15s, background 0.15s;
   }
   .derived-del:hover { color: var(--coral); background: rgba(181,67,42,0.1); }
+
+  .derived-edit-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8C6A9E;
+    opacity: 0.6;
+    padding: 3px;
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+  .derived-edit-icon:hover { opacity: 1; }
+
+  .derived-chip-editing {
+    padding: 3px 6px;
+  }
+  .derived-chip-editing .derived-edit-input {
+    font-size: 12.5px;
+    padding: 4px 8px;
+    width: 100px;
+    border-radius: 12px;
+  }
+  .derived-chip-editing .derived-save-btn,
+  .derived-chip-editing .derived-cancel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 3px 5px;
+    border-radius: 50%;
+  }
+  .derived-chip-editing .derived-save-btn { color: #3D7A6B; }
+  .derived-chip-editing .derived-save-btn:hover { background: rgba(61,122,107,0.12); }
+  .derived-chip-editing .derived-cancel-btn { color: rgba(42,38,32,0.4); }
+  .derived-chip-editing .derived-cancel-btn:hover { background: rgba(181,67,42,0.1); color: var(--coral); }
 
   .add-derived-row {
     display: flex;
@@ -1182,11 +1257,17 @@
 
 <script>
 let allWords = [];
+// Map of deleted word id -> ISO deletion timestamp. Carried through
+// export/import/GitHub sync so a word deleted on one device doesn't get
+// silently re-added the next time that device merges data from another.
+let deletedTombstones = {};
 let currentAudio = null;
 const revealedMeaning = new Set();
 const revealedEnglish = new Set();
 const revealedUsageNotes = new Set();
 let editingMeaningFor = null;
+let editingUsageNoteFor = null;
+let editingDerivedFor = null;
 let showUnlearnedOnly = false;
 let showLearnedOnly = false;
 let quizQueue = [];
@@ -1261,9 +1342,22 @@ async function loadWords() {
   updateStorageBanner();
 
   try {
-    allWords = raw ? JSON.parse(raw).map(normalizeEntry) : [];
+    const parsed = raw ? JSON.parse(raw) : null;
+    // Backward-compat: older versions stored a bare array of words with no
+    // tombstone tracking. Newer format is {words, tombstones}.
+    if (Array.isArray(parsed)) {
+      allWords = parsed.map(normalizeEntry);
+      deletedTombstones = {};
+    } else if (parsed && Array.isArray(parsed.words)) {
+      allWords = parsed.words.map(normalizeEntry);
+      deletedTombstones = (parsed.tombstones && typeof parsed.tombstones === 'object') ? parsed.tombstones : {};
+    } else {
+      allWords = [];
+      deletedTombstones = {};
+    }
   } catch (e) {
     allWords = [];
+    deletedTombstones = {};
   }
 
   // If we recovered data from the local backup that window.storage doesn't
@@ -1276,7 +1370,7 @@ async function loadWords() {
 }
 
 async function saveWords() {
-  const json = JSON.stringify(allWords);
+  const json = JSON.stringify({ words: allWords, tombstones: deletedTombstones });
   let savedAnywhere = false;
 
   if (hasWindowStorage()) {
@@ -1627,7 +1721,14 @@ function render() {
           <div class="derived-label">衍生词 · ${entry.derivedWords.length}</div>
           ${entry.derivedWords.length ? `
             <div class="derived-list">
-              ${entry.derivedWords.map(d => `
+              ${entry.derivedWords.map(d => editingDerivedFor === d.id ? `
+                <span class="derived-chip derived-chip-editing" data-did="${d.id}">
+                  <span class="derived-word">${escapeHtml(d.word)}</span>
+                  <span class="derived-sep">—</span>
+                  <input type="text" class="derived-edit-input" value="${escapeAttr(d.translation)}" placeholder="翻译…">
+                  <button class="derived-save-btn" title="保存">✓</button>
+                  <button class="derived-cancel-btn" title="取消">×</button>
+                </span>` : `
                 <span class="derived-chip" data-did="${d.id}">
                   <button class="icon-btn derived-play" title="播放发音" aria-label="播放发音">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
@@ -1635,6 +1736,9 @@ function render() {
                   <span class="derived-word">${escapeHtml(d.word)}</span>
                   <span class="derived-sep">—</span>
                   <span class="derived-translation">${d.translation ? escapeHtml(d.translation) : '（未填写翻译）'}</span>
+                  <button class="derived-edit-icon" title="修改翻译">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+                  </button>
                   <button class="derived-del" title="删除这个衍生词">×</button>
                 </span>`).join('')}
             </div>` : ''}
@@ -1650,6 +1754,8 @@ function render() {
           ${entry.sentences.map(s => {
             const hasTranslation = !!s.translation;
             const primaryText = hasTranslation ? s.translation : s.text;
+            const noteOpen = revealedUsageNotes.has(s.id);
+            const isEditingNote = editingUsageNoteFor === s.id;
             return `
             <div class="sentence-item" data-sid="${s.id}">
               <div class="sentence-row">
@@ -1657,12 +1763,25 @@ function render() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                 </button>
                 <div class="sentence-text ${hasTranslation ? 'clickable' : ''}" title="${hasTranslation ? '点击查看英文原句' : ''}">${escapeHtml(primaryText)}</div>
-                ${s.usageNote ? `<button class="usage-toggle" title="显示/隐藏用法说明">💡</button>` : ''}
+                <button class="usage-toggle ${s.usageNote ? '' : 'empty'}" title="${s.usageNote ? '显示/隐藏用法说明' : '添加用法说明'}">💡</button>
                 ${hasTranslation ? '' : `<span class="translation-toggle" title="还没有中文翻译">未译</span>`}
                 <button class="sentence-del" title="删除这句例句">×</button>
               </div>
               ${hasTranslation && revealedEnglish.has(s.id) ? `<div class="translation-box">${escapeHtml(s.text)}</div>` : ''}
-              ${s.usageNote && revealedUsageNotes.has(s.id) ? `<div class="usage-note">💡 用法：${escapeHtml(s.usageNote)}</div>` : ''}
+              ${noteOpen ? (
+                isEditingNote ? `
+                  <div class="usage-edit-row">
+                    <input type="text" class="usage-edit-input" value="${escapeAttr(s.usageNote)}" placeholder="这句用的是哪个用法…">
+                    <button class="usage-save-btn">保存</button>
+                    <button class="usage-cancel-btn">取消</button>
+                  </div>` : `
+                  <div class="usage-note">
+                    💡 用法：${s.usageNote ? escapeHtml(s.usageNote) : '（未填写）'}
+                    <button class="usage-edit-icon" title="修改用法说明">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+                    </button>
+                  </div>`
+              ) : ''}
             </div>`;
           }).join('')}
           <div class="add-sentence-row">
@@ -1732,8 +1851,29 @@ function render() {
       const usageToggleBtn = item.querySelector('.usage-toggle');
       if (usageToggleBtn) {
         usageToggleBtn.addEventListener('click', () => {
-          if (revealedUsageNotes.has(sid)) revealedUsageNotes.delete(sid); else revealedUsageNotes.add(sid);
+          if (revealedUsageNotes.has(sid)) {
+            revealedUsageNotes.delete(sid);
+            editingUsageNoteFor = null;
+          } else {
+            revealedUsageNotes.add(sid);
+            // no note yet — go straight into edit mode so "add" is one click
+            if (!sentence.usageNote) editingUsageNoteFor = sid;
+          }
           render();
+        });
+      }
+      const usageEditIcon = item.querySelector('.usage-edit-icon');
+      if (usageEditIcon) usageEditIcon.addEventListener('click', () => { editingUsageNoteFor = sid; render(); });
+      const usageEditInputEl = item.querySelector('.usage-edit-input');
+      if (usageEditInputEl) {
+        usageEditInputEl.focus();
+        usageEditInputEl.setSelectionRange(usageEditInputEl.value.length, usageEditInputEl.value.length);
+        const saveNote = () => saveUsageNote(id, sid, usageEditInputEl.value);
+        item.querySelector('.usage-save-btn').addEventListener('click', saveNote);
+        item.querySelector('.usage-cancel-btn').addEventListener('click', () => { editingUsageNoteFor = null; render(); });
+        usageEditInputEl.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { e.preventDefault(); saveNote(); }
+          if (e.key === 'Escape') { editingUsageNoteFor = null; render(); }
         });
       }
     });
@@ -1757,6 +1897,22 @@ function render() {
       }
       const delBtn = chip.querySelector('.derived-del');
       if (delBtn) delBtn.addEventListener('click', () => deleteDerivedWord(id, did));
+
+      const editIcon = chip.querySelector('.derived-edit-icon');
+      if (editIcon) editIcon.addEventListener('click', () => { editingDerivedFor = did; render(); });
+
+      const derivedEditInputEl = chip.querySelector('.derived-edit-input');
+      if (derivedEditInputEl) {
+        derivedEditInputEl.focus();
+        derivedEditInputEl.setSelectionRange(derivedEditInputEl.value.length, derivedEditInputEl.value.length);
+        const saveDerived = () => saveDerivedTranslation(id, did, derivedEditInputEl.value);
+        chip.querySelector('.derived-save-btn').addEventListener('click', saveDerived);
+        chip.querySelector('.derived-cancel-btn').addEventListener('click', () => { editingDerivedFor = null; render(); });
+        derivedEditInputEl.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { e.preventDefault(); saveDerived(); }
+          if (e.key === 'Escape') { editingDerivedFor = null; render(); }
+        });
+      }
     });
     const newDerivedWordInput = card.querySelector('.new-derived-word-input');
     const newDerivedTransInput = card.querySelector('.new-derived-translation-input');
@@ -1799,6 +1955,17 @@ async function deleteSentence(entryId, sentenceId) {
   render();
 }
 
+async function saveUsageNote(entryId, sentenceId, value) {
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  const sentence = entry.sentences.find(s => s.id === sentenceId);
+  if (!sentence) return;
+  sentence.usageNote = (value || '').trim();
+  editingUsageNoteFor = null;
+  await saveWords();
+  render();
+}
+
 async function addDerivedWord(entryId, word, translation) {
   word = (word || '').trim();
   translation = (translation || '').trim();
@@ -1818,9 +1985,21 @@ async function deleteDerivedWord(entryId, derivedId) {
   render();
 }
 
+async function saveDerivedTranslation(entryId, derivedId, value) {
+  const entry = allWords.find(w => w.id === entryId);
+  if (!entry) return;
+  const derived = entry.derivedWords.find(d => d.id === derivedId);
+  if (!derived) return;
+  derived.translation = (value || '').trim();
+  editingDerivedFor = null;
+  await saveWords();
+  render();
+}
+
 async function deleteWord(id) {
   allWords = allWords.filter(w => w.id !== id);
   revealedMeaning.delete(id);
+  deletedTombstones[id] = new Date().toISOString();
   await saveWords();
   render();
 }
@@ -1966,9 +2145,10 @@ async function addWord() {
 
 function buildExportPayload() {
   return {
-    version: 7,
+    version: 8,
     exportedAt: new Date().toISOString(),
-    words: allWords
+    words: allWords,
+    tombstones: deletedTombstones
   };
 }
 
@@ -2068,7 +2248,7 @@ async function syncWithGithub() {
     }
 
     const mergeNote = mergeSummary && mergeSummary.ok
-      ? `（拉取：新增 ${mergeSummary.added} 个，更新 ${mergeSummary.updated} 个）`
+      ? `（拉取：新增 ${mergeSummary.added} 个，更新 ${mergeSummary.updated} 个${mergeSummary.removed ? `，删除 ${mergeSummary.removed} 个` : ''}）`
       : '';
     statusMsg.textContent = `✅ 已同步到 GitHub ${mergeNote}`;
     statusMsg.className = 'status-msg ok';
@@ -2165,9 +2345,11 @@ function mergeEntry(existing, imported) {
 }
 
 // Parses a JSON export payload and merges it into allWords (adding new words,
-// merging into existing ones). Returns {ok, message, added, updated} rather
-// than touching the DOM directly, so callers (file-picker import, or the
-// bundled seed-data.json auto-load) can each decide how to surface the result.
+// merging into existing ones, and propagating deletions via tombstones so a
+// word deleted on one device doesn't get silently resurrected by another).
+// Returns {ok, message, added, updated, removed} rather than touching the
+// DOM directly, so callers (file-picker import, GitHub sync, or the bundled
+// seed-data.json auto-load) can each decide how to surface the result.
 async function applyImportedJson(text) {
   let parsed;
   try {
@@ -2179,8 +2361,19 @@ async function applyImportedJson(text) {
   if (!rawWords) {
     return { ok: false, message: '导入失败：找不到单词数据' };
   }
+
+  // Union tombstones first — once a word is known deleted anywhere, it stays
+  // deleted everywhere, regardless of which side's list still has it.
+  const importedTombstones = (parsed && typeof parsed.tombstones === 'object' && parsed.tombstones) || {};
+  Object.keys(importedTombstones).forEach(tid => {
+    if (!deletedTombstones[tid] || importedTombstones[tid] > deletedTombstones[tid]) {
+      deletedTombstones[tid] = importedTombstones[tid];
+    }
+  });
+
   let added = 0, updated = 0;
   rawWords.forEach(raw => {
+    if (deletedTombstones[raw.id]) return; // known-deleted elsewhere — don't resurrect it
     const norm = normalizeEntry(raw);
     const existing = allWords.find(w => w.id === norm.id);
     if (existing) {
@@ -2191,13 +2384,21 @@ async function applyImportedJson(text) {
       added++;
     }
   });
+
+  // Prune any local words that are now known-deleted — covers the case where
+  // the *other* side deleted a word this device still has locally.
+  const beforeCount = allWords.length;
+  allWords = allWords.filter(w => !deletedTombstones[w.id]);
+  const removed = beforeCount - allWords.length;
+
   await saveWords();
   render();
   return {
     ok: true,
     added,
     updated,
-    message: `已同步：新增 ${added} 个${updated ? `，更新已有单词 ${updated} 个` : ''}`
+    removed,
+    message: `已同步：新增 ${added} 个${updated ? `，更新已有单词 ${updated} 个` : ''}${removed ? `，同步删除 ${removed} 个` : ''}`
   };
 }
 
@@ -2385,6 +2586,8 @@ document.getElementById('today-learned-filter-btn').addEventListener('click', ()
   revealedEnglish.clear();
   revealedUsageNotes.clear();
   editingMeaningFor = null;
+  editingUsageNoteFor = null;
+  editingDerivedFor = null;
   render();
 });
 document.getElementById('export-btn').addEventListener('click', exportData);
