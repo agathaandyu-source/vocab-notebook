@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-08-10T15:04:02.013Z",
+  "exportedAt": "2026-08-24T11:15:29.784Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -145,6 +145,13 @@
           "dateAdded": "2026-07-12T15:03:34.026Z"
         },
         {
+          "id": "mrhxc1jmu2ftf",
+          "text": "probation period",
+          "translation": "试用期",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T15:04:07.378Z"
+        },
+        {
           "id": "mrhxeydp883or",
           "text": "Over a period of several months, we've observed the same issue recurring.",
           "translation": "在几个月的期间内，我们观察到同样的问题反复出现。",
@@ -157,13 +164,6 @@
           "translation": "对团队来说，这是一个令人兴奋的时期，因为有了新项目。",
           "usageNote": "",
           "dateAdded": "2026-07-12T15:08:33.706Z"
-        },
-        {
-          "id": "mrhxc1jmu2ftf",
-          "text": "probation period",
-          "translation": "试用期",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T15:04:07.378Z"
         }
       ],
       "derivedWords": [
@@ -484,6 +484,13 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
+        },
+        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -517,13 +524,6 @@
           "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
           "usageNote": "",
           "dateAdded": "2026-07-29T14:37:03.718Z"
-        },
-        {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "derivedWords": [],
@@ -1214,18 +1214,18 @@
       "dateAdded": "2026-07-12T13:59:24.634Z",
       "sentences": [
         {
-          "id": "msnd2shxeu21t",
-          "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
-          "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
-          "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
-          "dateAdded": "2026-08-10T15:03:22.821Z"
-        },
-        {
           "id": "mrhv0tlmp5184",
           "text": "approval",
           "translation": "",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:59:24.634Z"
+        },
+        {
+          "id": "msnd2shxeu21t",
+          "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
+          "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
+          "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
+          "dateAdded": "2026-08-10T15:03:22.821Z"
         }
       ],
       "derivedWords": [
@@ -1902,7 +1902,7 @@
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
-      "meaning": "v. / n.\t看待, 关注",
+      "meaning": "看待",
       "dateAdded": "2026-07-14T10:13:45.050Z",
       "sentences": [
         {
@@ -2800,7 +2800,7 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
+      "meaning": "潜在",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [
         {
@@ -2828,7 +2828,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的、附加的，可以做形容词、副词、名词",
+      "meaning": "额外的",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -2863,9 +2863,16 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
+      "meaning": "隐藏",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
+        {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "usageNote": "",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
+        },
         {
           "id": "mrz4mh8ou00mo",
           "text": "The old code hid the exception silently.",
@@ -2879,13 +2886,6 @@
           "translation": "bug 一直藏在旧配置里",
           "usageNote": "",
           "dateAdded": "2026-07-24T16:01:02.396Z"
-        },
-        {
-          "id": "mrz4l3ci2ecb8",
-          "text": "hide",
-          "translation": "做了藏这个动作",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T15:59:11.922Z"
         }
       ],
       "derivedWords": [
@@ -2895,34 +2895,6 @@
           "translation": "藏"
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "ms2vszh9h3euu",
-      "word": "artefacts",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "交付所需的一整套文档/材料",
-      "dateAdded": "2026-07-27T07:04:28.317Z",
-      "sentences": [
-        {
-          "id": "ms60xc2bd9498",
-          "text": "For the Add Query module SR, please get the artefacts ready.",
-          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:51:07.859Z"
-        },
-        {
-          "id": "ms60yqqk4sf9o",
-          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
-          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:52:13.532Z"
-        }
-      ],
-      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3008,6 +2980,34 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
+        }
+      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3224,6 +3224,19 @@
           "translation": ""
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msekju3mosxqy",
+      "word": "whole",
+      "phonetic": "/hoʊl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-08-04T11:22:39.778Z",
+      "sentences": [],
+      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3664,9 +3677,9 @@
     {
       "id": "msn7fwab2ujez",
       "word": "reach out",
-      "meaning": "联系",
       "phonetic": "",
       "audio": "",
+      "meaning": "联系",
       "dateAdded": "2026-08-10T12:25:36.563Z",
       "sentences": [
         {
@@ -3692,9 +3705,9 @@
     {
       "id": "msn7k0b44td03",
       "word": "keep",
-      "meaning": "保持",
       "phonetic": "/kiːp/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/keep-us.mp3",
+      "meaning": "保持",
       "dateAdded": "2026-08-10T12:28:48.400Z",
       "sentences": [
         {
@@ -3724,9 +3737,9 @@
     {
       "id": "msn7osnufj32c",
       "word": "find",
-      "meaning": "找到, 发现",
       "phonetic": "/faɪnd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/find-us.mp3",
+      "meaning": "找到, 发现",
       "dateAdded": "2026-08-10T12:32:31.770Z",
       "sentences": [
         {
@@ -3782,9 +3795,9 @@
     {
       "id": "msn91etats4fr",
       "word": "Four Seasons",
-      "meaning": "四季",
       "phonetic": "",
       "audio": "",
+      "meaning": "四季",
       "dateAdded": "2026-08-10T13:10:19.965Z",
       "sentences": [
         {
@@ -3912,9 +3925,9 @@
     {
       "id": "msn9j4monmxhu",
       "word": "Weekday",
-      "meaning": "工作日 (周一到周五)",
       "phonetic": "",
       "audio": "",
+      "meaning": "工作日 (周一到周五)",
       "dateAdded": "2026-08-10T13:24:06.576Z",
       "sentences": [
         {
@@ -4062,9 +4075,9 @@
     {
       "id": "msnadjjpm7fd6",
       "word": "synchronize",
-      "meaning": "v. 动词\t同步 / 对齐",
       "phonetic": "/ˈsɪŋ.kɹə.naɪːz/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/synchronize-us.mp3",
+      "meaning": "v. 动词\t同步 / 对齐",
       "dateAdded": "2026-08-10T13:47:45.589Z",
       "sentences": [
         {
@@ -4139,9 +4152,9 @@
     {
       "id": "msnasoac7hj7m",
       "word": "explain",
-      "meaning": "(v.) 解释, 说明",
       "phonetic": "",
       "audio": "",
+      "meaning": "(v.) 解释, 说明",
       "dateAdded": "2026-08-10T13:59:31.572Z",
       "sentences": [
         {
@@ -4204,9 +4217,9 @@
     {
       "id": "msnbdhax3gawd",
       "word": "correct",
-      "meaning": "adj. 正确的 v. 纠正, 更正",
       "phonetic": "",
       "audio": "",
+      "meaning": "adj. 正确的 v. 纠正, 更正",
       "dateAdded": "2026-08-10T14:15:42.297Z",
       "sentences": [
         {
@@ -4262,9 +4275,9 @@
     {
       "id": "msnbjmufqb3x0",
       "word": "fail",
-      "meaning": "失败",
       "phonetic": "/feɪl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/fail-us.mp3",
+      "meaning": "失败",
       "dateAdded": "2026-08-10T14:20:29.415Z",
       "sentences": [
         {
@@ -4314,9 +4327,9 @@
     {
       "id": "msnc5kdtgj63z",
       "word": "comment",
-      "meaning": "注释 (代码里的说明)",
       "phonetic": "",
       "audio": "",
+      "meaning": "注释 (代码里的说明)",
       "dateAdded": "2026-08-10T14:37:32.657Z",
       "sentences": [
         {
@@ -4346,9 +4359,9 @@
     {
       "id": "msnc9lcmw0b1s",
       "word": "annotate",
-      "meaning": "v.\t加注解, 做标注",
       "phonetic": "",
       "audio": "",
+      "meaning": "v.\t加注解, 做标注",
       "dateAdded": "2026-08-10T14:40:40.534Z",
       "sentences": [
         {
@@ -4378,9 +4391,9 @@
     {
       "id": "msncezd612hxe",
       "word": "proceed",
-      "meaning": "(v.) 继续进行, 着手做, 前进",
       "phonetic": "",
       "audio": "",
+      "meaning": "(v.) 继续进行, 着手做, 前进",
       "dateAdded": "2026-08-10T14:44:51.978Z",
       "sentences": [
         {
@@ -4427,6 +4440,32 @@
           "translation": "(n.)  收益 (卖东西/募捐得到的钱)"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mt5rp1s6arjjp",
+      "word": "interim",
+      "phonetic": "/ˈɪntəɹɪm/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
+      "meaning": "临时的",
+      "dateAdded": "2026-08-23T12:12:27.078Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mt5s0xt3djdkl",
+      "word": "vulnerability",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "漏洞",
+      "dateAdded": "2026-08-23T12:21:41.799Z",
+      "sentences": [],
+      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
