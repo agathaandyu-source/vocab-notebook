@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-08-24T11:15:29.784Z",
+  "exportedAt": "2026-08-25T15:32:35.176Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -37,9 +37,34 @@
           "translation": "DELETE 脚本已成功执行。顺便一提，您提到的 SR 已被标记为已完成。请告知后续步骤。",
           "usageNote": "",
           "dateAdded": "2026-07-11T14:07:24.092Z"
+        },
+        {
+          "id": "mt8rt7im5w3cl",
+          "text": "Coincidentally, I met John yesterday too",
+          "translation": "巧合的是，我昨天也见到 John 了",
+          "usageNote": "强调巧合",
+          "dateAdded": "2026-08-25T14:38:59.662Z"
+        },
+        {
+          "id": "mt8s34m6b8l8c",
+          "text": "I accidentally deleted the file",
+          "translation": "我不小心删除了那个文件。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T14:46:42.462Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "mt8rsisimyfh4",
+          "word": "Coincidentally",
+          "translation": "巧合的是"
+        },
+        {
+          "id": "mt8s2gbacxah8",
+          "word": "Accidentally",
+          "translation": "意外地，不小心的，描述错误/意外"
+        }
+      ],
       "review": {
         "stage": 3,
         "cycleStart": "2026-07-11T12:41:02.012Z",
@@ -48,32 +73,6 @@
       },
       "learned": true,
       "learnedAt": "2026-07-11T12:41:02.012Z"
-    },
-    {
-      "id": "mrgd01pcgvdyv",
-      "word": "Coincidentally",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "巧合的是",
-      "dateAdded": "2026-07-11T12:47:09.216Z",
-      "sentences": [
-        {
-          "id": "mrgfo1lq19ax9",
-          "text": "Coincidentally, I met John yesterday too",
-          "translation": "巧合的是，我昨天也见到 John 了。（强调巧合",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T14:01:48.062Z"
-        }
-      ],
-      "derivedWords": [],
-      "review": {
-        "stage": 2,
-        "cycleStart": "2026-07-13T11:22:40.907Z",
-        "nextDue": "2026-07-16T16:00:00.000Z",
-        "completed": false
-      },
-      "learned": true,
-      "learnedAt": "2026-07-11T12:47:09.216Z"
     },
     {
       "id": "mrgd3khmkxn5u",
@@ -145,13 +144,6 @@
           "dateAdded": "2026-07-12T15:03:34.026Z"
         },
         {
-          "id": "mrhxc1jmu2ftf",
-          "text": "probation period",
-          "translation": "试用期",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T15:04:07.378Z"
-        },
-        {
           "id": "mrhxeydp883or",
           "text": "Over a period of several months, we've observed the same issue recurring.",
           "translation": "在几个月的期间内，我们观察到同样的问题反复出现。",
@@ -164,6 +156,13 @@
           "translation": "对团队来说，这是一个令人兴奋的时期，因为有了新项目。",
           "usageNote": "",
           "dateAdded": "2026-07-12T15:08:33.706Z"
+        },
+        {
+          "id": "mrhxc1jmu2ftf",
+          "text": "probation period",
+          "translation": "试用期",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T15:04:07.378Z"
         }
       ],
       "derivedWords": [
@@ -337,8 +336,34 @@
       "audio": "",
       "meaning": "兼容性",
       "dateAdded": "2026-07-11T14:05:36.182Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mt8rzrpzim6vk",
+          "text": "Spring Boot 3.x is compatible with Java 17 and above.",
+          "translation": "",
+          "usageNote": "compatible with",
+          "dateAdded": "2026-08-25T14:44:05.783Z"
+        },
+        {
+          "id": "mt8s0uw4p7oub",
+          "text": "These two libraries are incompatible with each other.",
+          "translation": "这两个库彼此不兼容。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T14:44:56.548Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt8ry8rd0ugst",
+          "word": "compatible",
+          "translation": "adj.\t兼容的；可共存的"
+        },
+        {
+          "id": "mt8ryxgp30lx3",
+          "word": "incompatible",
+          "translation": "adj.\t不兼容的"
+        }
+      ],
       "review": {
         "stage": 1,
         "cycleStart": "2026-07-14T11:01:05.474Z",
@@ -347,32 +372,6 @@
       },
       "learned": true,
       "learnedAt": "2026-07-12T15:12:37.184Z"
-    },
-    {
-      "id": "mrgg34dmvo6lh",
-      "word": "Accidentally",
-      "phonetic": "/ˌæksəˈdɛnt(ə)li/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/accidentally-us.mp3",
-      "meaning": "意外地 / 不小心 ， 描述\"错误 / 意外\"",
-      "dateAdded": "2026-07-11T14:13:31.498Z",
-      "sentences": [
-        {
-          "id": "mrggem0mi8d1d",
-          "text": "I accidentally deleted the file",
-          "translation": "我不小心删除了文件",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T14:22:27.574Z"
-        }
-      ],
-      "derivedWords": [],
-      "review": {
-        "stage": 1,
-        "cycleStart": "2026-07-14T11:01:42.180Z",
-        "nextDue": "2026-07-15T16:00:00.000Z",
-        "completed": false
-      },
-      "learned": true,
-      "learnedAt": "2026-07-12T15:30:45.299Z"
     },
     {
       "id": "mrggs83zdowgq",
@@ -484,13 +483,6 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
-        },
-        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -524,6 +516,13 @@
           "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
           "usageNote": "",
           "dateAdded": "2026-07-29T14:37:03.718Z"
+        },
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "derivedWords": [],
@@ -630,36 +629,170 @@
       "word": "crash",
       "phonetic": "/kɹæʃ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/crash-us.mp3",
-      "meaning": "",
+      "meaning": "崩溃/宕机；闯入/速成；碰撞/坠毁",
       "dateAdded": "2026-07-11T16:39:50.182Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
+      "sentences": [
+        {
+          "id": "mt8t41on682ze",
+          "text": "The outage was caused by a misconfigured WAF rule. Total downtime was approximately 30 minutes.",
+          "translation": "此次服务中断是由 WAF 规则配置错误引起的，总停机时间约为 30 分钟。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:15:24.935Z"
+        },
+        {
+          "id": "mt8t6ao5ujwyp",
+          "text": "We have completed the root cause analysis. The outage was caused by an incorrect WAF rule.",
+          "translation": "我们已完成根本原因分析。此次服务中断是由一条错误的 WAF 规则引起的。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:17:09.893Z"
+        },
+        {
+          "id": "mt8t9hi2z43er",
+          "text": "The reason for the outage was a timeout.",
+          "translation": "导致中断的原因是超时。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:19:38.714Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt8semeyxdt5m",
+          "word": "crash course",
+          "translation": "速成课"
+        },
+        {
+          "id": "mt8ss0ndhnooh",
+          "word": "outage",
+          "translation": "一次具体的中断事件；服务/系统的）中断、停机"
+        },
+        {
+          "id": "mt8su1x29iit7",
+          "word": "service outage",
+          "translation": "服务中断"
+        },
+        {
+          "id": "mt8sujcfdkygf",
+          "word": "planned outage",
+          "translation": "计划停机（维护窗口）"
+        },
+        {
+          "id": "mt8svvh2glkjt",
+          "word": "downtime",
+          "translation": "不可用的时间段"
+        },
+        {
+          "id": "mt8t4j39esfav",
+          "word": "crash on startup",
+          "translation": "启动时崩溃"
+        },
+        {
+          "id": "mt8t4wctzdnbu",
+          "word": "crash dump",
+          "translation": "崩溃转储"
+        },
+        {
+          "id": "mt8t5aahgi1u2",
+          "word": "recover from a crash",
+          "translation": "从崩溃中恢复"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-08-25T14:48:45.554Z",
+        "nextDue": "2026-08-25T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-08-25T14:48:45.554Z"
     },
     {
       "id": "mrhcrw3h49ui4",
       "word": "as soon as",
       "phonetic": "",
       "audio": "",
-      "meaning": "",
+      "meaning": "一…就…",
       "dateAdded": "2026-07-12T05:28:34.877Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrhcs1sxeb2g2",
-      "word": "as long as",
-      "phonetic": "",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/as%20long%20as-au.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-12T05:28:42.273Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mt8teo17feipy",
+          "text": "I will deploy the hotfix as soon as we receive CAB approval.",
+          "translation": "一拿到 CAB 审批我就部署 hotfix。",
+          "usageNote": "as soon as 后面用一般现在时表将来，不要用 will：",
+          "dateAdded": "2026-08-25T15:23:40.459Z"
+        },
+        {
+          "id": "mt8tfzpniyk8w",
+          "text": "As long as the backup is completed before the outage window, we can proceed.",
+          "translation": "只要在停机窗口前完成备份，我们就可以继续。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:24:42.251Z"
+        },
+        {
+          "id": "mt8tgpk25dbxo",
+          "text": "This CR covers the Doctor Portal as well as the Admin Portal.",
+          "translation": "这个 CR 涵盖 Doctor Portal 以及 Admin Portal。",
+          "usageNote": "as well as 连接两个主语时，动词跟第一个主语一致",
+          "dateAdded": "2026-08-25T15:25:15.746Z"
+        },
+        {
+          "id": "mt8thqt4gq6c5",
+          "text": "As far as I know, this issue only affects the SIT environment.",
+          "translation": "据我所知，这个问题只影响 SIT 环境。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:26:04.024Z"
+        },
+        {
+          "id": "mt8tif4szcfw1",
+          "text": "As per our discussion yesterday, I will raise the CR",
+          "translation": "根据我们昨天的讨论，我会在今天之内提 CR。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:26:35.548Z"
+        },
+        {
+          "id": "mt8tj5pfvhh7x",
+          "text": "As mentioned in the previous email, the SIT fix has been verified by Mei Ping.",
+          "translation": "如前封邮件所述，SIT 修复已经由 Mei Ping 验证过。",
+          "usageNote": "",
+          "dateAdded": "2026-08-25T15:27:09.987Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt8sjk80vr45m",
+          "word": "as long as",
+          "translation": "只要…就…"
+        },
+        {
+          "id": "mt8tbmcweh0dj",
+          "word": "as well as",
+          "translation": "以及、还有"
+        },
+        {
+          "id": "mt8tby2zf39yv",
+          "word": "as far as I know",
+          "translation": "据我所知（\t留余地、不把话说死）"
+        },
+        {
+          "id": "mt8tcjfvwje2i",
+          "word": "as per",
+          "translation": "根据、按照"
+        },
+        {
+          "id": "mt8td41e5zfkm",
+          "word": "as needed / as required",
+          "translation": "按需、根据需要"
+        },
+        {
+          "id": "mt8tdicc23lnj",
+          "word": "as mentioned (earlier)",
+          "translation": "如前面提到的"
+        },
+        {
+          "id": "mt8tk79c99q1n",
+          "word": "as expected",
+          "translation": "如预期"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -839,7 +972,7 @@
       "word": "priority",
       "phonetic": "/pɹaɪˈɒɹɨti/",
       "audio": "",
-      "meaning": "",
+      "meaning": "优先事项",
       "dateAdded": "2026-07-12T09:47:03.956Z",
       "sentences": [],
       "derivedWords": [],
@@ -882,9 +1015,29 @@
           "translation": "变更因测试不足被拒绝。",
           "usageNote": "",
           "dateAdded": "2026-07-13T11:31:48.144Z"
+        },
+        {
+          "id": "mt8snoe6ylqa1",
+          "text": "The bug caused the server to crash.",
+          "translation": "这个 bug 导致服务器崩溃了。",
+          "usageNote": "cause + 宾语 + to do（使…做某事） 直接因果",
+          "dateAdded": "2026-08-25T15:02:41.214Z"
+        },
+        {
+          "id": "mt8sprnd0yq84",
+          "text": "The bug led to the server crashing.",
+          "translation": "这个bug导致服务器崩溃了",
+          "usageNote": "间接/渐进因果，链式推导",
+          "dateAdded": "2026-08-25T15:04:18.745Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "mt8sm77wfdsnu",
+          "word": "cause",
+          "translation": "引起/导致\"（动词） 或 \"原因/起因\"（名词）"
+        }
+      ],
       "review": {
         "stage": 1,
         "cycleStart": "2026-07-12T09:59:08.786Z",
@@ -1062,25 +1215,11 @@
       "dateAdded": "2026-07-12T10:15:59.541Z",
       "sentences": [
         {
-          "id": "mrhu9p5vye83f",
-          "text": "implemented",
-          "translation": "过去式",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:38:19.171Z"
-        },
-        {
           "id": "mrhuatrgv5171",
           "text": "We will implement the new authentication system next quarter.",
           "translation": "我们将在下季度实施新的身份验证系统",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:39:11.788Z"
-        },
-        {
-          "id": "mrhucqcprq2yq",
-          "text": "implementing",
-          "translation": "进行时",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:40:40.681Z"
         },
         {
           "id": "mrhudr3og58ig",
@@ -1090,21 +1229,51 @@
           "dateAdded": "2026-07-12T13:41:28.308Z"
         },
         {
-          "id": "mrhuxj5lapm4d",
-          "text": "implementation",
-          "translation": "实施 / 落地 名词",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:56:51.129Z"
-        },
-        {
           "id": "mrhvc5vyr7bxm",
           "text": "The changes will be implemented as per the approved CR.",
           "translation": "变更将按已批准的 CR 实施。  implemented as per是 按照…实施",
           "usageNote": "",
           "dateAdded": "2026-07-12T14:08:13.774Z"
+        },
+        {
+          "id": "mrhu9p5vye83f",
+          "text": "implemented",
+          "translation": "过去式",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:38:19.171Z"
+        },
+        {
+          "id": "mrhucqcprq2yq",
+          "text": "implementing",
+          "translation": "进行时",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:40:40.681Z"
+        },
+        {
+          "id": "mrhuxj5lapm4d",
+          "text": "implementation",
+          "translation": "实施 / 落地 名词",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:56:51.129Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "mt8tlbe3cq35h",
+          "word": "implementation",
+          "translation": "实施 / 落地 名词"
+        },
+        {
+          "id": "mt8tlmqkcsar9",
+          "word": "implementing",
+          "translation": ""
+        },
+        {
+          "id": "mt8tm04s5bpua",
+          "word": "implemented",
+          "translation": "过去式"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -1214,18 +1383,18 @@
       "dateAdded": "2026-07-12T13:59:24.634Z",
       "sentences": [
         {
-          "id": "mrhv0tlmp5184",
-          "text": "approval",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:59:24.634Z"
-        },
-        {
           "id": "msnd2shxeu21t",
           "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
           "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
           "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
           "dateAdded": "2026-08-10T15:03:22.821Z"
+        },
+        {
+          "id": "mrhv0tlmp5184",
+          "text": "approval",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:59:24.634Z"
         }
       ],
       "derivedWords": [
@@ -1253,27 +1422,6 @@
           "translation": "",
           "usageNote": "",
           "dateAdded": "2026-07-12T14:00:40.462Z"
-        }
-      ],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrhv3oggrsl1a",
-      "word": "per",
-      "phonetic": "/pɝ/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/per-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-07-12T14:01:37.936Z",
-      "sentences": [
-        {
-          "id": "mrhv46myfrgtu",
-          "text": "as per the audit report.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T14:02:01.498Z"
         }
       ],
       "derivedWords": [],
@@ -1592,7 +1740,7 @@
       "word": "decade",
       "phonetic": "/dəˈkeɪd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/decade-us.mp3",
-      "meaning": "",
+      "meaning": "十年",
       "dateAdded": "2026-07-13T09:27:14.829Z",
       "sentences": [],
       "derivedWords": [],
@@ -1902,7 +2050,7 @@
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
-      "meaning": "看待",
+      "meaning": "v. / n.\t看待, 关注",
       "dateAdded": "2026-07-14T10:13:45.050Z",
       "sentences": [
         {
@@ -2800,7 +2948,7 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在",
+      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [
         {
@@ -2828,7 +2976,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的",
+      "meaning": "额外的、附加的，可以做形容词、副词、名词",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -2863,16 +3011,9 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
-        {
-          "id": "mrz4l3ci2ecb8",
-          "text": "hide",
-          "translation": "做了藏这个动作",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T15:59:11.922Z"
-        },
         {
           "id": "mrz4mh8ou00mo",
           "text": "The old code hid the exception silently.",
@@ -2886,6 +3027,13 @@
           "translation": "bug 一直藏在旧配置里",
           "usageNote": "",
           "dateAdded": "2026-07-24T16:01:02.396Z"
+        },
+        {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "usageNote": "",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
         }
       ],
       "derivedWords": [
@@ -2895,6 +3043,34 @@
           "translation": "藏"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
+        }
+      ],
+      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -2980,34 +3156,6 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "ms2vszh9h3euu",
-      "word": "artefacts",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "交付所需的一整套文档/材料",
-      "dateAdded": "2026-07-27T07:04:28.317Z",
-      "sentences": [
-        {
-          "id": "ms60xc2bd9498",
-          "text": "For the Add Query module SR, please get the artefacts ready.",
-          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:51:07.859Z"
-        },
-        {
-          "id": "ms60yqqk4sf9o",
-          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
-          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:52:13.532Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3224,19 +3372,6 @@
           "translation": ""
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "msekju3mosxqy",
-      "word": "whole",
-      "phonetic": "/hoʊl/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-08-04T11:22:39.778Z",
-      "sentences": [],
-      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3564,19 +3699,6 @@
       "learnedAt": null
     },
     {
-      "id": "msmxiczoukarw",
-      "word": "well-versed",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "精通",
-      "dateAdded": "2026-08-10T07:47:35.364Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "msmxrdhcsourp",
       "word": "expert",
       "phonetic": "",
@@ -3606,7 +3728,13 @@
           "dateAdded": "2026-08-10T09:50:53.111Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "mt8tpilywumpa",
+          "word": "well-versed",
+          "translation": "精通"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4445,6 +4573,19 @@
       "learnedAt": null
     },
     {
+      "id": "msekju3mosxqy",
+      "word": "whole",
+      "phonetic": "/hoʊl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-08-04T11:22:39.778Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mt5rp1s6arjjp",
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
@@ -4478,6 +4619,11 @@
     "mrggyo214i9w7": "2026-08-10T12:10:24.932Z",
     "mrggxz4tso1vt": "2026-08-10T12:10:26.196Z",
     "mrxmz9vvctcrs": "2026-08-10T12:14:19.512Z",
-    "mrggv56dtcaia": "2026-08-10T13:58:36.069Z"
+    "mrggv56dtcaia": "2026-08-10T13:58:36.069Z",
+    "mrgd01pcgvdyv": "2026-08-25T14:39:11.378Z",
+    "mrgg34dmvo6lh": "2026-08-25T14:46:59.792Z",
+    "mrhcs1sxeb2g2": "2026-08-25T14:59:43.089Z",
+    "mrhv3oggrsl1a": "2026-08-25T15:30:00.991Z",
+    "msmxiczoukarw": "2026-08-25T15:32:09.260Z"
   }
 }
