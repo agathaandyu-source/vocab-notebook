@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-08T10:58:21.186Z",
+  "exportedAt": "2026-10-08T13:16:22.786Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -483,13 +483,6 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
-        },
-        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -523,6 +516,13 @@
           "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
           "usageNote": "",
           "dateAdded": "2026-07-29T14:37:03.718Z"
+        },
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "derivedWords": [],
@@ -2766,7 +2766,7 @@
       "word": "Prior",
       "phonetic": "/ˈpɹaɪɚ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/prior-us.mp3",
-      "meaning": "形容词，事先的、在此之前的，优先的",
+      "meaning": "prior to 是固定搭配,事先的、在此之前的",
       "dateAdded": "2026-07-21T15:23:30.432Z",
       "sentences": [
         {
@@ -2969,7 +2969,7 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在",
+      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [
         {
@@ -2997,7 +2997,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的",
+      "meaning": "额外的、附加的，可以做形容词、副词、名词",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -3032,7 +3032,7 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
@@ -3064,6 +3064,34 @@
           "translation": "藏"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
+        }
+      ],
+      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3149,34 +3177,6 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "ms2vszh9h3euu",
-      "word": "artefacts",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "交付所需的一整套文档/材料",
-      "dateAdded": "2026-07-27T07:04:28.317Z",
-      "sentences": [
-        {
-          "id": "ms60xc2bd9498",
-          "text": "For the Add Query module SR, please get the artefacts ready.",
-          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:51:07.859Z"
-        },
-        {
-          "id": "ms60yqqk4sf9o",
-          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
-          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:52:13.532Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3393,19 +3393,6 @@
           "translation": ""
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "msekju3mosxqy",
-      "word": "whole",
-      "phonetic": "/hoʊl/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-08-04T11:22:39.778Z",
-      "sentences": [],
-      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4612,6 +4599,56 @@
       "learnedAt": null
     },
     {
+      "id": "mt5h8c6esxcai",
+      "word": "decade",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-08-23T07:19:31.238Z",
+      "sentences": [
+        {
+          "id": "mt5hia61jr5rc",
+          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
+          "translation": "过去十年，政府 IT 基础设施转向云",
+          "usageNote": "over the past decade. 过去十年",
+          "dateAdded": "2026-08-23T07:27:15.193Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt5hdow0y0q6h",
+          "word": "a decade ago",
+          "translation": "十年前"
+        },
+        {
+          "id": "mt5hetprccrzp",
+          "word": "The past decade",
+          "translation": "过去的十年"
+        },
+        {
+          "id": "mt5hf7dgqk07s",
+          "word": "for a decade",
+          "translation": "持续十年"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msekju3mosxqy",
+      "word": "whole",
+      "phonetic": "/hoʊl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-08-04T11:22:39.778Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mt5rp1s6arjjp",
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
@@ -4631,6 +4668,113 @@
       "audio": "",
       "meaning": "漏洞",
       "dateAdded": "2026-08-23T12:21:41.799Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mty2dtiek77g2",
+      "word": "python",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-09-12T07:29:11.846Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mty6urlmuup7p",
+      "word": "split",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-09-12T09:34:20.986Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mtzjuyhglzg52",
+      "word": "gotta",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "Get to 连读",
+      "dateAdded": "2026-09-13T08:26:11.091Z",
+      "sentences": [
+        {
+          "id": "mtzjwp8x0zijz",
+          "text": "I gotta go",
+          "translation": "我得走了",
+          "usageNote": "通用，后面可以接原因",
+          "dateAdded": "2026-09-13T08:27:32.433Z"
+        },
+        {
+          "id": "mtzjxaq1yseai",
+          "text": "I‘m off",
+          "translation": "我下班啦",
+          "usageNote": "",
+          "dateAdded": "2026-09-13T08:28:00.265Z"
+        },
+        {
+          "id": "mtzjyaygj3xz8",
+          "text": "i'm heading out",
+          "translation": "我准备走了",
+          "usageNote": "已经动身",
+          "dateAdded": "2026-09-13T08:28:47.224Z"
+        },
+        {
+          "id": "mtzjz3e4a01qw",
+          "text": "Let's call it a day",
+          "translation": "到此为止了",
+          "usageNote": "",
+          "dateAdded": "2026-09-13T08:29:24.076Z"
+        }
+      ],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mutvcvxo3i7zm",
+      "word": "register",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "动词注册",
+      "dateAdded": "2026-10-04T13:41:08.652Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mutwfobpmxvbi",
+      "word": "dragonfly",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-04T14:11:18.373Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mutwql9dvn1hu",
+      "word": "chase",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-04T14:19:47.617Z",
       "sentences": [],
       "derivedWords": [],
       "review": null,
@@ -4689,6 +4833,7 @@
     "mrgg34dmvo6lh": "2026-08-25T14:46:59.792Z",
     "mrhcs1sxeb2g2": "2026-08-25T14:59:43.089Z",
     "mrhv3oggrsl1a": "2026-08-25T15:30:00.991Z",
-    "msmxiczoukarw": "2026-08-25T15:32:09.260Z"
+    "msmxiczoukarw": "2026-08-25T15:32:09.260Z",
+    "mutv91ggb0miv": "2026-10-04T13:41:06.885Z"
   }
 }
