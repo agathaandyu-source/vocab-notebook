@@ -1,5 +1,5 @@
-const CACHE_NAME = 'vocab-drawer-v1';
-const APP_SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
+const CACHE_NAME = 'vocab-drawer-v2';
+const APP_SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './cmu-dict.txt'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -21,13 +21,19 @@ self.addEventListener('activate', (event) => {
 
 // Network-first so you always get the latest deployed version when online,
 // falling back to the cached copy so the app shell still opens offline.
+// Cross-origin requests (dictionary API, audio, GitHub API) are left to the browser
+// so a failed lookup is never answered with a stale cached response.
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
   event.respondWith(
     fetch(event.request)
       .then((res) => {
-        const resClone = res.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, resClone)).catch(() => {});
+        if (res.ok) {
+          const resClone = res.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, resClone)).catch(() => {});
+        }
         return res;
       })
       .catch(() => caches.match(event.request))
