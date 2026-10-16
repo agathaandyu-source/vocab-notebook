@@ -591,6 +591,15 @@
     margin-bottom: 6px;
   }
 
+  .bulk-preview { margin-top: 10px; font-size: 13px; line-height: 1.6; }
+  .bulk-preview .bulk-item {
+    padding: 6px 10px; margin-bottom: 6px; border-radius: 8px;
+    background: rgba(42,38,32,0.05); border-left: 3px solid var(--brass);
+  }
+  .bulk-preview .bulk-item.merge { border-left-color: #6b8e7f; }
+  .bulk-preview .bulk-tag { font-size: 11px; padding: 1px 6px; border-radius: 8px; margin-left: 6px; background: rgba(42,38,32,0.1); }
+  .bulk-preview .bulk-meta { color: rgba(42,38,32,0.6); }
+  .bulk-preview .bulk-warn { color: var(--coral); }
   .sentence-item {
     margin-bottom: 8px;
   }
@@ -1189,6 +1198,34 @@
         <span class="status-msg" id="status-msg"></span>
         <button class="primary" id="add-btn">添加到抽屉</button>
       </div>
+
+      <details class="github-settings" id="bulk-details">
+        <summary>📋 批量粘贴（把 Claude 整理好的单词一次存进来）</summary>
+        <div class="github-settings-body">
+          <div class="field-row">
+            <label for="bulk-input">粘贴固定格式的内容（可以一次粘贴多个单词）</label>
+            <textarea id="bulk-input" rows="9" placeholder="单词: resilient
+含义: 有韧性的
+例句: She is a resilient person.
+翻译: 她是一个有韧性的人。
+用法: 形容人的性格
+衍生词: resilience | 韧性
+
+单词: ephemeral
+含义: 短暂的
+例句: Fame can be ephemeral.
+翻译: 名声可能转瞬即逝。"></textarea>
+          </div>
+          <p class="github-settings-hint">每个单词以「单词:」开头，单词之间空一行。「翻译」「用法」会归到它上面最近的一条「例句」；一个单词可以有多条例句、多条「衍生词」（写成 <code>衍生词: resilience | 韧性</code>）。只有「单词」是必填的。已存在的单词不会重复，只会补上新的含义、例句和衍生词。</p>
+          <div class="add-actions">
+            <span class="status-msg" id="bulk-status"></span>
+            <button class="ghost" id="bulk-copy-format-btn" type="button">复制格式说明给 Claude</button>
+            <button class="ghost" id="bulk-preview-btn" type="button">解析预览</button>
+            <button class="primary" id="bulk-confirm-btn" type="button" style="display:none;">确认添加</button>
+          </div>
+          <div id="bulk-preview" class="bulk-preview"></div>
+        </div>
+      </details>
     </div>
 
     <div class="toolbar">
@@ -2816,6 +2853,203 @@ async function answerQuiz(entry, remembered) {
   quizIndex += 1;
   renderQuizCard();
 }
+
+// ---------- Bulk paste import ----------
+const BULK_LABELS = {
+  word: ['单词', 'word'],
+  meaning: ['含义', '中文含义', '释义', '意思', 'meaning'],
+  sentence: ['例句', 'sentence', 'example'],
+  translation: ['翻译', '例句翻译', '译文', '中文翻译', 'translation'],
+  usage: ['用法', '用法说明', 'usage'],
+  derived: ['衍生词', '衍生', 'derived']
+};
+const BULK_FORMAT_PROMPT = `请把我刚学的单词，按下面的固定格式整理，放在一个代码块里，方便我复制粘贴：
+
+单词: （英文单词）
+含义: （中文含义）
+例句: （英文例句）
+翻译: （这条例句的中文翻译）
+用法: （这条例句用的是哪个用法，可省略）
+衍生词: （衍生单词） | （中文翻译）
+
+规则：
+- 每个单词以「单词:」开头，不同单词之间空一行
+- 一个单词可以有多条例句，每条例句后面紧跟它自己的「翻译:」和「用法:」
+- 衍生词可以有多行，每行一个，格式是「衍生词: resilience | 韧性」
+- 除了代码块，不要输出别的格式符号`;
+
+function bulkLabelKey(label) {
+  const l = label.trim().toLowerCase();
+  for (const [key, names] of Object.entries(BULK_LABELS)) {
+    if (names.some(n => n.toLowerCase() === l)) return key;
+  }
+  return null;
+}
+
+function parseBulkText(text) {
+  const entries = [];
+  const warnings = [];
+  let cur = null;
+  let lastSentence = null;
+  const lines = text.replace(/\r/g, '').split('\n');
+  lines.forEach((raw, idx) => {
+    let line = raw.replace(/\*\*/g, '').replace(/^\s*(?:[-*•]|\d+[.)、])\s+/, '').trim();
+    if (!line || /^[-–—_=`]{2,}$/.test(line) || /^```/.test(line)) return;
+    const m = line.match(/^([^:：]{1,12})[:：]\s*(.*)$/);
+    const key = m ? bulkLabelKey(m[1]) : null;
+    if (!key) { warnings.push('第 ' + (idx + 1) + ' 行无法识别，已忽略：' + line.slice(0, 30)); return; }
+    const value = m[2].trim();
+    if (key === 'word') {
+      if (!value) { warnings.push('第 ' + (idx + 1) + ' 行「单词」是空的'); cur = null; return; }
+      cur = { word: value, meaning: '', sentences: [], derived: [] };
+      lastSentence = null;
+      entries.push(cur);
+      return;
+    }
+    if (!cur) { warnings.push('第 ' + (idx + 1) + ' 行出现在任何「单词」之前，已忽略'); return; }
+    if (key === 'meaning') {
+      cur.meaning = cur.meaning ? cur.meaning + '；' + value : value;
+    } else if (key === 'sentence') {
+      if (!value) return;
+      lastSentence = { text: value, translation: '', usageNote: '' };
+      cur.sentences.push(lastSentence);
+    } else if (key === 'translation' || key === 'usage') {
+      if (!lastSentence) { warnings.push('「' + cur.word + '」第 ' + (idx + 1) + ' 行的' + (key === 'translation' ? '翻译' : '用法') + '前面没有例句，已忽略'); return; }
+      const field = key === 'translation' ? 'translation' : 'usageNote';
+      lastSentence[field] = lastSentence[field] ? lastSentence[field] + ' ' + value : value;
+    } else if (key === 'derived') {
+      value.split(/[;；]/).map(x => x.trim()).filter(Boolean).forEach(part => {
+        const dm = part.match(/^(.+?)\s*(?:[|｜]|\s[-—–]+\s|[:：=])\s*(.*)$/);
+        const w = (dm ? dm[1] : part).trim();
+        if (w) cur.derived.push({ word: w, translation: dm ? dm[2].trim() : '' });
+      });
+    }
+  });
+  return { entries, warnings };
+}
+
+let bulkParsed = null;
+
+function describeBulkPlan(parsed) {
+  return parsed.entries.map(e => {
+    const existing = allWords.find(w => w.word.trim().toLowerCase() === e.word.trim().toLowerCase());
+    return { e, existing };
+  });
+}
+
+function renderBulkPreview() {
+  const box = document.getElementById('bulk-preview');
+  const confirmBtn = document.getElementById('bulk-confirm-btn');
+  const status = document.getElementById('bulk-status');
+  const text = document.getElementById('bulk-input').value;
+  if (!text.trim()) {
+    box.innerHTML = '';
+    confirmBtn.style.display = 'none';
+    status.textContent = '请先粘贴内容';
+    status.className = 'status-msg err';
+    return;
+  }
+  bulkParsed = parseBulkText(text);
+  const plan = describeBulkPlan(bulkParsed);
+  if (!plan.length) {
+    box.innerHTML = '<div class="bulk-warn">没有识别到任何单词。每个单词需要以「单词: xxx」开头。</div>' +
+      bulkParsed.warnings.map(w => '<div class="bulk-warn">' + escapeHtml(w) + '</div>').join('');
+    confirmBtn.style.display = 'none';
+    status.textContent = '';
+    return;
+  }
+  const newCount = plan.filter(p => !p.existing).length;
+  const mergeCount = plan.length - newCount;
+  box.innerHTML = plan.map(({ e, existing }) => `
+    <div class="bulk-item ${existing ? 'merge' : ''}">
+      <b>${escapeHtml(e.word)}</b><span class="bulk-tag">${existing ? '已存在，补充' : '新词'}</span>
+      <div class="bulk-meta">${e.meaning ? escapeHtml(e.meaning) : '（无含义）'} · 例句 ${e.sentences.length} · 衍生词 ${e.derived.length}</div>
+    </div>`).join('') +
+    bulkParsed.warnings.map(w => '<div class="bulk-warn">⚠ ' + escapeHtml(w) + '</div>').join('');
+  status.textContent = '识别到 ' + plan.length + ' 个词（新词 ' + newCount + '，补充 ' + mergeCount + '）';
+  status.className = 'status-msg ok';
+  confirmBtn.style.display = '';
+}
+
+async function confirmBulkImport() {
+  if (!bulkParsed || !bulkParsed.entries.length) return;
+  const status = document.getElementById('bulk-status');
+  const confirmBtn = document.getElementById('bulk-confirm-btn');
+  confirmBtn.disabled = true;
+  await Promise.race([loadCmuDict(), new Promise(r => setTimeout(r, 2000))]);
+  const now = new Date().toISOString();
+  const norm = (t) => t.trim().toLowerCase().replace(/\s+/g, ' ');
+  let added = 0, updated = 0;
+  const needEnrich = [];
+  bulkParsed.entries.forEach(e => {
+    let entry = allWords.find(w => w.word.trim().toLowerCase() === e.word.trim().toLowerCase());
+    const mkSentence = (x) => ({ id: genId(), text: x.text, translation: x.translation, usageNote: x.usageNote, dateAdded: now });
+    if (!entry) {
+      entry = {
+        id: genId(), word: e.word, meaning: e.meaning,
+        phonetic: cmuPhonetic(e.word), audio: '', dateAdded: now,
+        sentences: e.sentences.map(mkSentence),
+        derivedWords: [], review: null, learned: false, learnedAt: null
+      };
+      allWords.push(entry);
+      added++;
+    } else {
+      let changed = false;
+      if (!entry.meaning && e.meaning) { entry.meaning = e.meaning; changed = true; }
+      e.sentences.forEach(x => {
+        const dup = entry.sentences.find(s => norm(s.text) === norm(x.text));
+        if (!dup) { entry.sentences.push(mkSentence(x)); changed = true; }
+        else {
+          if (!dup.translation && x.translation) { dup.translation = x.translation; changed = true; }
+          if (!dup.usageNote && x.usageNote) { dup.usageNote = x.usageNote; changed = true; }
+        }
+      });
+      if (changed) updated++;
+    }
+    e.derived.forEach(d => {
+      const dup = entry.derivedWords.find(x => norm(x.word) === norm(d.word));
+      if (!dup) entry.derivedWords.push({ id: genId(), word: d.word, translation: d.translation });
+      else if (!dup.translation && d.translation) dup.translation = d.translation;
+    });
+    if (!entry.phonetic || !entry.audio) needEnrich.push(entry);
+  });
+  await saveWords();
+  render();
+  document.getElementById('bulk-input').value = '';
+  document.getElementById('bulk-preview').innerHTML = '';
+  bulkParsed = null;
+  confirmBtn.style.display = 'none';
+  confirmBtn.disabled = false;
+  status.textContent = '✅ 已添加 ' + added + ' 个新词' + (updated ? '，补充了 ' + updated + ' 个已有单词' : '');
+  status.className = 'status-msg ok';
+  // look up audio / missing phonetics one by one in the background
+  (async () => {
+    for (const entry of needEnrich) {
+      try { await enrichEntry(entry); } catch (err) {}
+      await new Promise(r => setTimeout(r, 300));
+    }
+  })();
+}
+
+document.getElementById('bulk-preview-btn').addEventListener('click', renderBulkPreview);
+document.getElementById('bulk-confirm-btn').addEventListener('click', confirmBulkImport);
+document.getElementById('bulk-input').addEventListener('input', () => {
+  document.getElementById('bulk-confirm-btn').style.display = 'none'; // text changed: preview again
+});
+document.getElementById('bulk-copy-format-btn').addEventListener('click', async () => {
+  const status = document.getElementById('bulk-status');
+  try {
+    await navigator.clipboard.writeText(BULK_FORMAT_PROMPT);
+    status.textContent = '已复制，发给 Claude 即可';
+    status.className = 'status-msg ok';
+  } catch (e) {
+    const ta = document.getElementById('bulk-input');
+    ta.value = BULK_FORMAT_PROMPT;
+    ta.select();
+    status.textContent = '无法自动复制，已放进输入框，请手动全选复制（用完记得清空）';
+    status.className = 'status-msg err';
+  }
+});
 
 document.getElementById('add-btn').addEventListener('click', addWord);
 document.getElementById('word-input').addEventListener('keydown', (e) => {
