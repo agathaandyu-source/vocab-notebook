@@ -591,6 +591,24 @@
     margin-bottom: 6px;
   }
 
+  /* bulk paste box: lives on the light paper panel, so it needs its own dark-on-light colours */
+  .bulk-box {
+    margin-top: 18px; border: 1.5px dashed var(--paper-shadow); border-radius: 10px;
+    padding: 2px 14px; background: rgba(184,137,43,0.05); color: var(--text-dark);
+  }
+  .bulk-box summary { cursor: pointer; padding: 12px 0; font-size: 14px; font-weight: 600; color: var(--ink); }
+  .bulk-body { padding: 4px 0 14px; }
+  .bulk-body .field-row label { color: var(--text-muted); }
+  .bulk-body textarea { min-height: 160px; color: var(--text-dark); background: #fff; }
+  .bulk-hint { font-size: 12px; color: var(--text-muted); line-height: 1.6; margin: 4px 0 14px; }
+  .bulk-hint code { background: rgba(184,137,43,0.15); color: var(--text-dark); padding: 1px 5px; border-radius: 4px; }
+  .bulk-body .add-actions { flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+  .bulk-body .add-actions .status-msg { flex: 1 1 100%; text-align: left; }
+  .bulk-btn {
+    font: inherit; font-size: 13px; padding: 8px 14px; border-radius: 8px; cursor: pointer;
+    background: transparent; color: var(--ink); border: 1.5px solid var(--ink);
+  }
+  .bulk-btn:hover { background: rgba(27,42,74,0.08); }
   .bulk-preview { margin-top: 10px; font-size: 13px; line-height: 1.6; }
   .bulk-preview .bulk-item {
     padding: 6px 10px; margin-bottom: 6px; border-radius: 8px;
@@ -1199,9 +1217,9 @@
         <button class="primary" id="add-btn">添加到抽屉</button>
       </div>
 
-      <details class="github-settings" id="bulk-details">
+      <details class="bulk-box" id="bulk-details">
         <summary>📋 批量粘贴（把 Claude 整理好的单词一次存进来）</summary>
-        <div class="github-settings-body">
+        <div class="bulk-body">
           <div class="field-row">
             <label for="bulk-input">粘贴固定格式的内容（可以一次粘贴多个单词）</label>
             <textarea id="bulk-input" rows="9" placeholder="单词: resilient
@@ -1216,11 +1234,11 @@
 例句: Fame can be ephemeral.
 翻译: 名声可能转瞬即逝。"></textarea>
           </div>
-          <p class="github-settings-hint">每个单词以「单词:」开头，单词之间空一行。「翻译」「用法」会归到它上面最近的一条「例句」；一个单词可以有多条例句、多条「衍生词」（写成 <code>衍生词: resilience | 韧性</code>）。只有「单词」是必填的。已存在的单词不会重复，只会补上新的含义、例句和衍生词。</p>
+          <p class="bulk-hint">每个单词以「单词:」开头，单词之间空一行。「翻译」「用法」会归到它上面最近的一条「例句」；一个单词可以有多条例句、多条「衍生词」（写成 <code>衍生词: resilience | 韧性</code>）。只有「单词」是必填的。已存在的单词不会重复，只会补上新的含义、例句和衍生词。</p>
           <div class="add-actions">
             <span class="status-msg" id="bulk-status"></span>
-            <button class="ghost" id="bulk-copy-format-btn" type="button">复制格式说明给 Claude</button>
-            <button class="ghost" id="bulk-preview-btn" type="button">解析预览</button>
+            <button class="bulk-btn" id="bulk-copy-format-btn" type="button">复制格式说明给 Claude</button>
+            <button class="bulk-btn" id="bulk-preview-btn" type="button">解析预览</button>
             <button class="primary" id="bulk-confirm-btn" type="button" style="display:none;">确认添加</button>
           </div>
           <div id="bulk-preview" class="bulk-preview"></div>
@@ -2918,8 +2936,18 @@ function parseBulkText(text) {
       const field = key === 'translation' ? 'translation' : 'usageNote';
       lastSentence[field] = lastSentence[field] ? lastSentence[field] + ' ' + value : value;
     } else if (key === 'derived') {
+      // "；" may separate several derived words on one line, but it is also used inside a translation
+      // (e.g. "forgo | 放弃；割舍"). A piece without its own "word | translation" separator
+      // therefore belongs to the previous derived word's translation.
+      const sepRe = /^(.+?)\s*(?:[|｜]|\s[-—–]+\s|[:：=])\s*(.*)$/;
+      const lineStart = cur.derived.length;
       value.split(/[;；]/).map(x => x.trim()).filter(Boolean).forEach(part => {
-        const dm = part.match(/^(.+?)\s*(?:[|｜]|\s[-—–]+\s|[:：=])\s*(.*)$/);
+        const dm = part.match(sepRe);
+        if (!dm && cur.derived.length > lineStart) {
+          const prev = cur.derived[cur.derived.length - 1];
+          prev.translation = prev.translation ? prev.translation + '；' + part : part;
+          return;
+        }
         const w = (dm ? dm[1] : part).trim();
         if (w) cur.derived.push({ word: w, translation: dm ? dm[2].trim() : '' });
       });
