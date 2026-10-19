@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-19T11:21:21.591Z",
+  "exportedAt": "2026-10-19T12:17:11.340Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -483,13 +483,6 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
-        },
-        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -523,6 +516,13 @@
           "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
           "usageNote": "",
           "dateAdded": "2026-07-29T14:37:03.718Z"
+        },
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "derivedWords": [],
@@ -2759,7 +2759,7 @@
       "word": "Prior",
       "phonetic": "/ˈpɹaɪɚ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/prior-us.mp3",
-      "meaning": "形容词，事先的、在此之前的，优先的",
+      "meaning": "prior to 是固定搭配,事先的、在此之前的",
       "dateAdded": "2026-07-21T15:23:30.432Z",
       "sentences": [
         {
@@ -2962,7 +2962,7 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在",
+      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [
         {
@@ -2990,7 +2990,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的",
+      "meaning": "额外的、附加的，可以做形容词、副词、名词",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -3025,7 +3025,7 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
@@ -3062,14 +3062,97 @@
       "learnedAt": null
     },
     {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
+        }
+      ],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mrnn5jlus82qf",
       "word": "follow",
       "phonetic": "/ˈfɑloʊ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/follow-us.mp3",
-      "meaning": "",
+      "meaning": "跟随；跟进；理解；遵循",
       "dateAdded": "2026-07-16T15:05:45.090Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mvb4szbzua7dd",
+          "text": "I'll follow up with the vendor on the updated quote tomorrow.",
+          "translation": "我明天会跟供应商跟进更新后的报价。",
+          "usageNote": "follow up with sb（跟进某人，语气较平和）",
+          "dateAdded": "2026-10-16T15:37:41.087Z"
+        },
+        {
+          "id": "mvb4szbzb6vo4",
+          "text": "Please follow the onboarding steps in the setup presentation.",
+          "translation": "请按照设置演示文稿中的入职步骤操作。",
+          "usageNote": "follow + 指引/步骤（遵循）",
+          "dateAdded": "2026-10-16T15:37:41.087Z"
+        },
+        {
+          "id": "mvb4szbz21939",
+          "text": "Can you follow the logic of this change request?",
+          "translation": "你能理解这个变更请求的逻辑吗？",
+          "usageNote": "follow 表示理解、跟上思路",
+          "dateAdded": "2026-10-16T15:37:41.087Z"
+        },
+        {
+          "id": "mvb4szbzvzpef",
+          "text": "Let me know if you need me to follow the issue until it is closed.",
+          "translation": "如果你需要，我可以一直跟进这个问题直到关闭。",
+          "usageNote": "follow sth（持续关注某事）",
+          "dateAdded": "2026-10-16T15:37:41.087Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4szbzs8ulv",
+          "word": "follower",
+          "translation": "跟随者；追随者"
+        },
+        {
+          "id": "mvb4szbznprfm",
+          "word": "following",
+          "translation": "下列的；接下来的；追随者群"
+        },
+        {
+          "id": "mvb4szbz117bm",
+          "word": "followup",
+          "translation": "后续；跟进（名词）"
+        },
+        {
+          "id": "mvb4szbz6ilrc",
+          "word": "follow-on",
+          "translation": "后续的；延续的"
+        },
+        {
+          "id": "mvb4szbz8t7oy",
+          "word": "followership",
+          "translation": "追随能力；跟随者的行为"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3142,34 +3225,6 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "ms2vszh9h3euu",
-      "word": "artefacts",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "交付所需的一整套文档/材料",
-      "dateAdded": "2026-07-27T07:04:28.317Z",
-      "sentences": [
-        {
-          "id": "ms60xc2bd9498",
-          "text": "For the Add Query module SR, please get the artefacts ready.",
-          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:51:07.859Z"
-        },
-        {
-          "id": "ms60yqqk4sf9o",
-          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
-          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:52:13.532Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3386,19 +3441,6 @@
           "translation": ""
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "msekju3mosxqy",
-      "word": "whole",
-      "phonetic": "/hoʊl/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-08-04T11:22:39.778Z",
-      "sentences": [],
-      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4605,71 +4647,6 @@
       "learnedAt": null
     },
     {
-      "id": "mt5rp1s6arjjp",
-      "word": "interim",
-      "phonetic": "/ˈɪntəɹɪm/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的",
-      "dateAdded": "2026-08-23T12:12:27.078Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mt5s0xt3djdkl",
-      "word": "vulnerability",
-      "phonetic": "/ˌvʌlnɚəˈbɪlɪti/",
-      "audio": "",
-      "meaning": "漏洞",
-      "dateAdded": "2026-08-23T12:21:41.799Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muwdvys4lzk6n",
-      "word": "burp",
-      "phonetic": "/bɝp/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-10-06T07:55:24.244Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muwdwyb7yw7uc",
-      "word": "suite",
-      "phonetic": "/swit/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-10-06T07:56:10.291Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muytz433ulq43",
-      "word": "vehicle",
-      "phonetic": "/ˈvihɪkəl/",
-      "audio": "",
-      "meaning": "车辆",
-      "dateAdded": "2026-10-08T01:01:17.295Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "mt5h8c6esxcai",
       "word": "decade",
       "phonetic": "/dɛˈkeɪd/",
@@ -4700,6 +4677,100 @@
           "id": "mt5hf7dgqk07s",
           "word": "for a decade",
           "translation": "持续十年"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msekju3mosxqy",
+      "word": "whole",
+      "phonetic": "/hoʊl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-08-04T11:22:39.778Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mt5rp1s6arjjp",
+      "word": "interim",
+      "phonetic": "/ˈɪntəɹɪm/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
+      "meaning": "临时的",
+      "dateAdded": "2026-08-23T12:12:27.078Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mt5s0xt3djdkl",
+      "word": "vulnerability",
+      "phonetic": "/ˌvʌlnɚəˈbɪlɪti/",
+      "audio": "",
+      "meaning": "漏洞",
+      "dateAdded": "2026-08-23T12:21:41.799Z",
+      "sentences": [
+        {
+          "id": "mvb4xcna0a4kn",
+          "text": "The security scan found a critical vulnerability in the login module.",
+          "translation": "安全扫描在登录模块中发现了一个严重漏洞。",
+          "usageNote": "vulnerability 指系统或软件中的安全漏洞（常与 security 搭配）",
+          "dateAdded": "2026-10-16T15:41:04.965Z"
+        },
+        {
+          "id": "mvb4xcnalz749",
+          "text": "The team patched the vulnerability before the audit.",
+          "translation": "团队在审计前修补了这个漏洞。",
+          "usageNote": "patch / fix a vulnerability（修补漏洞）",
+          "dateAdded": "2026-10-16T15:41:04.965Z"
+        },
+        {
+          "id": "mvb4xcnaama8b",
+          "text": "Vulnerabilities in the older Spring version need to be addressed in this sprint.",
+          "translation": "旧版Spring中的漏洞需要在本次冲刺中处理。",
+          "usageNote": "vulnerabilities 复数形式，指多个漏洞",
+          "dateAdded": "2026-10-16T15:41:04.965Z"
+        },
+        {
+          "id": "mvb4xcnab971s",
+          "text": "Elderly residents are a vulnerability group that the outreach programme prioritises.",
+          "translation": "老年居民属于弱势群体，是外展计划优先关注的对象。",
+          "usageNote": "vulnerability 指人或群体容易受到伤害的状态",
+          "dateAdded": "2026-10-16T15:41:04.965Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4xcnapl9rl",
+          "word": "vulnerable",
+          "translation": "脆弱的；易受攻击的；弱势的"
+        },
+        {
+          "id": "mvb4xcnawfqhl",
+          "word": "vulnerably",
+          "translation": "脆弱地；易受伤害地"
+        },
+        {
+          "id": "mvb4xcnazsk4g",
+          "word": "invulnerable",
+          "translation": "无懈可击的；不可攻破的"
+        },
+        {
+          "id": "mvb4xcnapj0g7",
+          "word": "invulnerability",
+          "translation": "不可攻破性；无懈可击"
+        },
+        {
+          "id": "mvb4xcnam7zgx",
+          "word": "vulnerabilities",
+          "translation": "漏洞（复数）"
         }
       ],
       "review": null,
@@ -4781,17 +4852,112 @@
       "audio": "",
       "meaning": "动词注册",
       "dateAdded": "2026-10-04T13:41:08.652Z",
-      "sentences": [],
+      "sentences": [
+        {
+          "id": "mvb48cshj744q",
+          "text": "Please register your device on the portal before the workshop.",
+          "translation": "研讨会前请在门户网站上登记你的设备。",
+          "usageNote": "register + 名词（登记、注册）",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48csh5wzzz",
+          "text": "The system registered three failed login attempts.",
+          "translation": "系统记录到了三次登录失败。",
+          "usageNote": "系统或数据层面的记录",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48csh6s8wp",
+          "text": "The vaccination record did not register in the NIR database.",
+          "translation": "这条疫苗记录没有被录入NIR数据库。",
+          "usageNote": "没有被成功记录或识别（not register）",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48csh50vwm",
+          "text": "The audit comment did not register with the team until the meeting.",
+          "translation": "直到会议上，团队才真正意识到这条审计意见。",
+          "usageNote": "register with sb（被某人察觉、留下印象）",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48cshbdzhr",
+          "text": "The team needs to register the change request with CAB.",
+          "translation": "团队需要把这个变更请求提交给CAB登记。",
+          "usageNote": "register + 事项 + with + 机构（向机构正式登记）",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48csh7z21o",
+          "text": "His tone in the email registered as frustration.",
+          "translation": "他在邮件里的语气让人感觉到他很沮丧。",
+          "usageNote": "register as（给人留下某种印象）",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        },
+        {
+          "id": "mvb48csh49e3z",
+          "text": "Use a formal register when writing to the auditors.",
+          "translation": "给审计人员写信时要使用正式的语域。",
+          "usageNote": "register 作名词，指语言的正式程度",
+          "dateAdded": "2026-10-16T15:21:38.753Z"
+        }
+      ],
       "derivedWords": [
+        {
+          "id": "mvb48csh9aj6v",
+          "word": "registration",
+          "translation": "注册；登记"
+        },
+        {
+          "id": "mvb48cshur0bn",
+          "word": "registry",
+          "translation": "登记处；注册表"
+        },
+        {
+          "id": "mvb48cshe7a3q",
+          "word": "registrar",
+          "translation": "注册官；登记员"
+        },
+        {
+          "id": "mvb48csh08y45",
+          "word": "registered",
+          "translation": "已注册的；挂号的"
+        },
+        {
+          "id": "mvb48cshk8ijr",
+          "word": "registrant",
+          "translation": "注册者；登记人"
+        },
+        {
+          "id": "mvb48cshdwtt4",
+          "word": "reregister",
+          "translation": "重新注册"
+        },
+        {
+          "id": "mvb48csh5eyy2",
+          "word": "unregistered",
+          "translation": "未注册的"
+        },
+        {
+          "id": "mvb49ctaigqi4",
+          "word": "deregister",
+          "translation": "注销；取消注册"
+        },
         {
           "id": "mvb2aayz348mj",
           "word": "deregister",
           "translation": "注销"
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:25.656Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:25.656Z"
     },
     {
       "id": "mutwfobpmxvbi",
@@ -4811,13 +4977,743 @@
       "word": "chase",
       "phonetic": "/tʃeɪs/",
       "audio": "",
-      "meaning": "",
+      "meaning": "追赶；追逐；紧追不舍；催促（追讨）",
       "dateAdded": "2026-10-04T14:19:47.617Z",
+      "sentences": [
+        {
+          "id": "mvb4px8ojgjru",
+          "text": "The team is chasing the root cause of the timeout issue.",
+          "translation": "团队正在追查超时问题的根本原因。",
+          "usageNote": "chase + 事物（追查、跟进某件事）",
+          "dateAdded": "2026-10-16T15:35:18.408Z"
+        },
+        {
+          "id": "mvb4px8ohoo7t",
+          "text": "I'll chase the vendor for the updated quote today.",
+          "translation": "我今天会催供应商把更新后的报价发过来。",
+          "usageNote": "chase sb for sth（催要某人某物）",
+          "dateAdded": "2026-10-16T15:35:18.408Z"
+        },
+        {
+          "id": "mvb4px8otgdk9",
+          "text": "Please chase up the audit team about the missing logs.",
+          "translation": "请跟进一下审计团队，问问缺失日志的事情。",
+          "usageNote": "chase up（跟进、催办）",
+          "dateAdded": "2026-10-16T15:35:18.408Z"
+        },
+        {
+          "id": "mvb4px8o3jdus",
+          "text": "The dog chased the delivery van down the street.",
+          "translation": "狗一路追着送货车跑。",
+          "usageNote": "chase 的本义：追赶移动的对象",
+          "dateAdded": "2026-10-16T15:35:18.408Z"
+        },
+        {
+          "id": "mvb4px8o2jlsb",
+          "text": "The project is chasing a deadline that keeps moving.",
+          "translation": "项目一直在追赶一个不断后移的截止日期。",
+          "usageNote": "chase + 目标（努力追求某个目标）",
+          "dateAdded": "2026-10-16T15:35:18.408Z"
+        },
+        {
+          "id": "mvb4szbzcfvt1",
+          "text": "Could you chase the audit team about the missing logs?",
+          "translation": "你能催一下审计团队，问问缺失日志的事吗？",
+          "usageNote": "chase sb about sth（催某人办某事）",
+          "dateAdded": "2026-10-16T15:37:41.087Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4px8ocy9nw",
+          "word": "chaser",
+          "translation": "追逐者；（饮料后的）佐饮"
+        },
+        {
+          "id": "mvb4px8oh4y1m",
+          "word": "chasing",
+          "translation": "追逐（动名词/进行中）"
+        },
+        {
+          "id": "mvb4px8osvvsh",
+          "word": "chase-up",
+          "translation": "跟进；催办（名词）"
+        },
+        {
+          "id": "mvb4px8osyp0a",
+          "word": "chase-down",
+          "translation": "追查到底（名词/动词）"
+        },
+        {
+          "id": "mvb4px8oq1yup",
+          "word": "purchase",
+          "translation": "购买；购买的东西"
+        },
+        {
+          "id": "mvb4px8oseiue",
+          "word": "purchaser",
+          "translation": "买方；购买者"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:22.311Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:22.311Z"
+    },
+    {
+      "id": "muwdvys4lzk6n",
+      "word": "burp",
+      "phonetic": "/bɝp/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-06T07:55:24.244Z",
       "sentences": [],
       "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
+    },
+    {
+      "id": "muwdwyb7yw7uc",
+      "word": "suite",
+      "phonetic": "/swit/",
+      "audio": "",
+      "meaning": "套房；套件；一套（软件、工具等）；随从",
+      "dateAdded": "2026-10-06T07:56:10.291Z",
+      "sentences": [
+        {
+          "id": "mvb4jbk69po22",
+          "text": "The team installed the full test suite before the UAT run.",
+          "translation": "团队在UAT测试前安装了完整的测试套件。",
+          "usageNote": "test suite（一整套测试用例/测试工具）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6rn3lz",
+          "text": "We booked a suite at the hotel for the vendor visit.",
+          "translation": "我们为供应商来访订了一间套房。",
+          "usageNote": "suite 指套房（酒店房间）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6b2xxm",
+          "text": "The office suite includes Word, Excel and Outlook.",
+          "translation": "这套办公软件包括Word、Excel和Outlook。",
+          "usageNote": "office suite（一整套办公软件）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6c66m9",
+          "text": "The new tool is part of the cloud suite offered by the vendor.",
+          "translation": "这个新工具是供应商提供的云服务套件的一部分。",
+          "usageNote": "suite 指一组相关的产品或服务",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4jbk6x6ls0",
+          "word": "suite",
+          "translation": "与suit同形但意思不同，注意拼写区分"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:18.088Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:18.088Z"
+    },
+    {
+      "id": "muytz433ulq43",
+      "word": "vehicle",
+      "phonetic": "/ˈvihɪkəl/",
+      "audio": "",
+      "meaning": "车辆",
+      "dateAdded": "2026-10-08T01:01:17.295Z",
+      "sentences": [
+        {
+          "id": "mvb4eqdn2zznk",
+          "text": "The LTA inspection team uses a specialised vehicle to scan the road surface.",
+          "translation": "LTA的检测团队使用专用车辆扫描路面。",
+          "usageNote": "vehicle 指具体的车辆",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnwyd6m",
+          "text": "Each vehicle must pass the safety check before entering the site.",
+          "translation": "每辆车在进入现场前都必须通过安全检查。",
+          "usageNote": "可数名词，指一辆车（each/every vehicle）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnd0r58",
+          "text": "The new portal is a vehicle for sharing audit updates with agencies.",
+          "translation": "这个新门户是与各机构共享审计更新的一种手段。",
+          "usageNote": "vehicle for + 名词（传递信息或达成目的的载体）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnyfvq3",
+          "text": "Please declare the vehicle registration number when you arrive.",
+          "translation": "到达时请申报车辆登记号码。",
+          "usageNote": "车辆相关的正式表述（vehicle registration number）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4eqdnf086j",
+          "word": "vehicular",
+          "translation": "车辆的；与车辆有关的"
+        },
+        {
+          "id": "mvb4eqdnmwlkp",
+          "word": "vehicle-mounted",
+          "translation": "车载的"
+        },
+        {
+          "id": "mvb4eqdno4y1b",
+          "word": "vehicles",
+          "translation": "车辆（复数）"
+        },
+        {
+          "id": "mvb4eqdnofdz6",
+          "word": "vehicle-based",
+          "translation": "基于车辆的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvb2sbxsawxtr",
+      "word": "go for",
+      "phonetic": "/ɡoʊ fɔr/",
+      "audio": "",
+      "meaning": "选择；争取；尝试（做某事）",
+      "dateAdded": "2026-10-16T14:41:11.536Z",
+      "sentences": [
+        {
+          "id": "mvb2sbxsl37lh",
+          "text": "Which database should we go for, PostgreSQL or Oracle?",
+          "translation": "我们应该选哪个数据库，PostgreSQL还是Oracle？",
+          "usageNote": "做选择",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        },
+        {
+          "id": "mvb2sbxsa3m46",
+          "text": "Let's go for the PROD fix first, then tackle the UAT issues.",
+          "translation": "我们先争取把生产问题修好，再处理UAT的问题。",
+          "usageNote": "确定优先处理的事项",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb2sbxsznsr8",
+          "word": "forgo",
+          "translation": "放弃；割舍"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:26:20.300Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:26:20.300Z"
+    },
+    {
+      "id": "mvb2sbxsbeykp",
+      "word": "go over",
+      "phonetic": "/ɡoʊ ˈoʊvɚ/",
+      "audio": "",
+      "meaning": "检查；审阅；讲解",
+      "dateAdded": "2026-10-16T14:41:11.536Z",
+      "sentences": [
+        {
+          "id": "mvb2sbxs3r08a",
+          "text": "Can you go over the audit findings before the CAB meeting?",
+          "translation": "CAB会议前你能检查一下审计发现吗？",
+          "usageNote": "审阅文件，是很仔细的那种，不是一带而过",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        },
+        {
+          "id": "mvb2sbxspsdgj",
+          "text": "I'll go over the clinic address sync process with you step by step.",
+          "translation": "我会一步步带你过一遍诊所地址同步的流程。",
+          "usageNote": "逐步讲解",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb2sbxsxd8xb",
+          "word": "overview",
+          "translation": "概览；总体情况"
+        },
+        {
+          "id": "mvb2sbxsqw6ea",
+          "word": "overlook",
+          "translation": "忽略；漏看"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:25:40.300Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:25:40.300Z"
+    },
+    {
+      "id": "mvb2sbxs74pl6",
+      "word": "come over",
+      "phonetic": "/kʌm ˈoʊvɚ/",
+      "audio": "",
+      "meaning": "过来；到某人所在的地方",
+      "dateAdded": "2026-10-16T14:41:11.536Z",
+      "sentences": [
+        {
+          "id": "mvb2sbxstsj5o",
+          "text": "I'll come over to your desk after the stand-up.",
+          "translation": "站会结束后我会到你的座位来。",
+          "usageNote": "到对方所在的位置",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        },
+        {
+          "id": "mvb2sbxsiz4m8",
+          "text": "The DBA came over to check the database timeout issue.",
+          "translation": "DBA过来检查了数据库超时的问题。",
+          "usageNote": "过来提供现场支持",
+          "dateAdded": "2026-10-16T14:41:11.536Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb2sbxs5245h",
+          "word": "overcome",
+          "translation": "克服；战胜"
+        },
+        {
+          "id": "mvb337fyzxum0",
+          "word": "come up",
+          "translation": "想出"
+        },
+        {
+          "id": "mvb33s1xf2bzk",
+          "word": "run into",
+          "translation": "碰见"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:25:41.351Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:25:41.351Z"
+    },
+    {
+      "id": "mvb3vgrtv2gtx",
+      "word": "come",
+      "phonetic": "/kʌm/",
+      "audio": "",
+      "meaning": "来；到达；发生；变成",
+      "dateAdded": "2026-10-16T15:11:37.385Z",
+      "sentences": [
+        {
+          "id": "mvb3vgrud2fol",
+          "text": "The root cause came to light only after the audit.",
+          "translation": "审计之后，根本原因才被发现。",
+          "usageNote": "come to light（被发现、暴露）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgrudu6b0",
+          "text": "The fix came out in the last release.",
+          "translation": "这个修复在上一个版本中发布了。",
+          "usageNote": "come out（发布；露出）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgrub41c5",
+          "text": "We came up with a workaround for the timeout issue.",
+          "translation": "我们想出了一个超时问题的临时方案。",
+          "usageNote": "come up with（想出、提出）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgruztx0o",
+          "text": "I came across a similar bug in the old module.",
+          "translation": "我在旧模块里碰到过类似的bug。",
+          "usageNote": "come across（偶然遇到）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgrunetio",
+          "text": "The migration will come back to haunt us if we skip testing.",
+          "translation": "如果跳过测试，迁移会在日后给我们带来麻烦。",
+          "usageNote": "come back to haunt（日后带来麻烦）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgruxs0zf",
+          "text": "Let's come back to the budget item after the meeting.",
+          "translation": "会议之后我们再回到预算这一项。",
+          "usageNote": "come back to（回到某话题）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgruokh9v",
+          "text": "The new SR will come into effect next month.",
+          "translation": "新的SR下个月生效。",
+          "usageNote": "come into effect（生效）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgrubf11y",
+          "text": "Everything came together after the last sprint.",
+          "translation": "上一个冲刺之后，所有东西都整合到了一起。",
+          "usageNote": "come together（整合；成形）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        },
+        {
+          "id": "mvb3vgrupyj65",
+          "text": "The deadline came and went without any update.",
+          "translation": "截止日期过了，却没有任何更新。",
+          "usageNote": "come and go（来来去去；匆匆而过）",
+          "dateAdded": "2026-10-16T15:11:37.385Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb3vgru3msah",
+          "word": "coming",
+          "translation": "即将到来的；下一个"
+        },
+        {
+          "id": "mvb3vgruy7xsn",
+          "word": "comer",
+          "translation": "来者；到达者"
+        },
+        {
+          "id": "mvb3vgru7hh0r",
+          "word": "comeback",
+          "translation": "回归；反击"
+        },
+        {
+          "id": "mvb3vgrub8jtn",
+          "word": "outcome",
+          "translation": "结果；成果"
+        },
+        {
+          "id": "mvb3vgruwr3x4",
+          "word": "income",
+          "translation": "收入"
+        },
+        {
+          "id": "mvb3vgruosamm",
+          "word": "overcome",
+          "translation": "克服；战胜"
+        },
+        {
+          "id": "mvb3vgrutns1s",
+          "word": "welcome",
+          "translation": "欢迎"
+        },
+        {
+          "id": "mvb3vgruxhriu",
+          "word": "become",
+          "translation": "变成；成为"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:25:38.415Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:25:38.415Z"
+    },
+    {
+      "id": "mvb3zg0n42u19",
+      "word": "grab",
+      "phonetic": "/ɡræb/",
+      "audio": "",
+      "meaning": "抓住；快速拿取；抢到",
+      "dateAdded": "2026-10-16T15:14:43.031Z",
+      "sentences": [
+        {
+          "id": "mvb3zg0nx9a1y",
+          "text": "Can I come over to grab the quilt from you?",
+          "translation": "我能过来拿一下你的被子吗？",
+          "usageNote": "口语中快速拿取东西",
+          "dateAdded": "2026-10-16T15:14:43.031Z"
+        },
+        {
+          "id": "mvb3zg0nzis1v",
+          "text": "Let's grab a coffee before the stand-up.",
+          "translation": "站会前我们去喝杯咖啡吧。",
+          "usageNote": "口语中随手去做某事（grab a coffee / grab lunch）",
+          "dateAdded": "2026-10-16T15:14:43.031Z"
+        },
+        {
+          "id": "mvb3zg0negeks",
+          "text": "I'll grab the latest logs from the server.",
+          "translation": "我去服务器上拿最新的日志。",
+          "usageNote": "快速获取信息或文件",
+          "dateAdded": "2026-10-16T15:14:43.031Z"
+        },
+        {
+          "id": "mvb3zg0nqbxr2",
+          "text": "The team grabbed the chance to fix the bug during the freeze window.",
+          "translation": "团队抓住了在冻结窗口期修复这个bug的机会。",
+          "usageNote": "抓住机会（grab a chance / grab an opportunity）",
+          "dateAdded": "2026-10-16T15:14:43.031Z"
+        },
+        {
+          "id": "mvb3zg0nurdne",
+          "text": "Let's grab a quick sync before the CAB meeting.",
+          "translation": "CAB会议前我们快速碰个头吧。",
+          "usageNote": "口语中临时安排一个简短的会面",
+          "dateAdded": "2026-10-16T15:14:43.031Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb3zg0n7jyck",
+          "word": "grabber",
+          "translation": "抓取者；吸引眼球的东西"
+        },
+        {
+          "id": "mvb3zg0nozaw4",
+          "word": "grabby",
+          "translation": "贪婪的；想抓得多的"
+        },
+        {
+          "id": "mvb3zg0npbypv",
+          "word": "snatch",
+          "translation": "抢夺；快速抓住"
+        },
+        {
+          "id": "mvb3zg0n2kxnx",
+          "word": "seize",
+          "translation": "抓住；夺取"
+        },
+        {
+          "id": "mvb3zg0n3cvk4",
+          "word": "clutch",
+          "translation": "紧抓；攥住"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:25:35.011Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:25:35.011Z"
+    },
+    {
+      "id": "mvb4hx6rr2qoq",
+      "word": "suit",
+      "phonetic": "/sut/",
+      "audio": "",
+      "meaning": "适合；合适；西装；诉讼；满足需要",
+      "dateAdded": "2026-10-16T15:29:05.091Z",
+      "sentences": [
+        {
+          "id": "mvb4hx6rt46in",
+          "text": "The new scanning schedule suits the team better than the old one.",
+          "translation": "新的扫描时间表比旧的更适合团队。",
+          "usageNote": "suit + 人/事物（适合、合适）",
+          "dateAdded": "2026-10-16T15:29:05.091Z"
+        },
+        {
+          "id": "mvb4hx6rrocvf",
+          "text": "Does Thursday afternoon suit you for the UAT review?",
+          "translation": "周四下午适合你参加UAT评审吗？",
+          "usageNote": "suit sb（询问对方是否方便或合适）",
+          "dateAdded": "2026-10-16T15:29:05.091Z"
+        },
+        {
+          "id": "mvb4hx6rjmsow",
+          "text": "The solution suits our needs for the PPS pilot.",
+          "translation": "这个方案满足我们PPS试点的需求。",
+          "usageNote": "suit 表示满足需要",
+          "dateAdded": "2026-10-16T15:29:05.091Z"
+        },
+        {
+          "id": "mvb4hx6rqb0pr",
+          "text": "He wore a suit to the government briefing.",
+          "translation": "他穿西装参加了政府的简报会。",
+          "usageNote": "suit 作名词，指西装或套装",
+          "dateAdded": "2026-10-16T15:29:05.091Z"
+        },
+        {
+          "id": "mvb4hx6r0acs1",
+          "text": "The company filed a suit against the vendor over the delayed delivery.",
+          "translation": "公司因供应商延迟交付而对其提起了诉讼。",
+          "usageNote": "suit 作名词，指法律诉讼（file a suit）",
+          "dateAdded": "2026-10-16T15:29:05.091Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4hx6rxbffs",
+          "word": "suitable",
+          "translation": "合适的；适宜的"
+        },
+        {
+          "id": "mvb4hx6rn4yud",
+          "word": "suitability",
+          "translation": "适合性；适宜性"
+        },
+        {
+          "id": "mvb4hx6rgy354",
+          "word": "suitably",
+          "translation": "恰当地；适当地"
+        },
+        {
+          "id": "mvb4hx6su50hg",
+          "word": "suitor",
+          "translation": "求婚者；追求者"
+        },
+        {
+          "id": "mvb4hx6sujez3",
+          "word": "suitcase",
+          "translation": "手提箱"
+        },
+        {
+          "id": "mvb4hx6sd01gg",
+          "word": "lawsuit",
+          "translation": "诉讼；法律诉讼"
+        },
+        {
+          "id": "mvb4hx6sslus6",
+          "word": "tracksuit",
+          "translation": "运动套装"
+        },
+        {
+          "id": "mvb4hx6s1eof6",
+          "word": "swimsuit",
+          "translation": "泳衣"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:15.206Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:15.206Z"
+    },
+    {
+      "id": "mvb4ky8ptcumt",
+      "word": "against",
+      "phonetic": "/əˈɡɛnst/",
+      "audio": "",
+      "meaning": "反对；对抗；逆着；靠着；相对比较；违反",
+      "dateAdded": "2026-10-16T15:31:26.425Z",
+      "sentences": [
+        {
+          "id": "mvb4ky8p39cnr",
+          "text": "Are you for or against the proposed freeze extension?",
+          "translation": "你是支持还是反对延长这次冻结期的提议？",
+          "usageNote": "for or against（支持或反对）",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        },
+        {
+          "id": "mvb4ky8p93751",
+          "text": "The team pushed against the tight deadline but finished the fix on time.",
+          "translation": "团队顶着紧迫的期限工作，最终按时完成了修复。",
+          "usageNote": "push against（顶着、对抗某种压力）",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        },
+        {
+          "id": "mvb4ky8ph9bkg",
+          "text": "Please lean the ladder against the wall before climbing.",
+          "translation": "爬梯子前请把梯子靠在墙上。",
+          "usageNote": "物理意义上的\"靠着\"",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        },
+        {
+          "id": "mvb4ky8pirm38",
+          "text": "The new SLA must be checked against the contract terms.",
+          "translation": "新的SLA必须对照合同条款进行核对。",
+          "usageNote": "check/compare against（对照、比较）",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        },
+        {
+          "id": "mvb4ky8pqdd5p",
+          "text": "Deploying without UAT sign-off goes against our change policy.",
+          "translation": "未经UAT签字就部署违反了我们的变更政策。",
+          "usageNote": "go against（违背、违反规定）",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        },
+        {
+          "id": "mvb4ky8pjxfa4",
+          "text": "Our PROD stats are up 12% against last month.",
+          "translation": "我们的生产数据比上个月增长了12%。",
+          "usageNote": "与某基准相比（against last year / against the budget）",
+          "dateAdded": "2026-10-16T15:31:26.425Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4ky8p12h7y",
+          "word": "again",
+          "translation": "再一次；又"
+        },
+        {
+          "id": "mvb4ky8p8ayk9",
+          "word": "agonist",
+          "translation": "激动剂；主角（医学/生物语境）"
+        },
+        {
+          "id": "mvb4ky8p3fcrn",
+          "word": "antagonist",
+          "translation": "对手；反派；拮抗物"
+        },
+        {
+          "id": "mvb4ky8pbkozd",
+          "word": "antagonise",
+          "translation": "使对立；激怒（英式拼写，美式为antagonize）"
+        },
+        {
+          "id": "mvb4ky8pystbi",
+          "word": "anti",
+          "translation": "反对的（前缀，如anti-virus）"
+        },
+        {
+          "id": "mvb4ky8pk96hk",
+          "word": "against-the-grain",
+          "translation": "逆潮流的；与众不同的"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:12.716Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:12.716Z"
     },
     {
       "id": "mv0g2kmavqytt",
@@ -4926,7 +5822,7 @@
     "mrhcs1sxeb2g2": "2026-08-25T14:59:43.089Z",
     "mrhv3oggrsl1a": "2026-08-25T15:30:00.991Z",
     "msmxiczoukarw": "2026-08-25T15:32:09.260Z",
-    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z",
-    "mutv91ggb0miv": "2026-10-04T13:41:06.885Z"
+    "mutv91ggb0miv": "2026-10-04T13:41:06.885Z",
+    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z"
   }
 }
