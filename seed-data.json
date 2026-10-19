@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-19T13:45:14.134Z",
+  "exportedAt": "2026-10-19T13:46:14.455Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -483,13 +483,6 @@
       "dateAdded": "2026-07-11T15:10:20.490Z",
       "sentences": [
         {
-          "id": "mrgi50uq7zydm",
-          "text": "Just to clarify.",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-11T15:10:59.474Z"
-        },
-        {
           "id": "mrgi5ct2r556c",
           "text": "clarifications",
           "translation": "",
@@ -523,6 +516,13 @@
           "translation": "我想了解一下这个 CR 预期时间线的澄清说明",
           "usageNote": "",
           "dateAdded": "2026-07-29T14:37:03.718Z"
+        },
+        {
+          "id": "mrgi50uq7zydm",
+          "text": "Just to clarify.",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-11T15:10:59.474Z"
         }
       ],
       "derivedWords": [],
@@ -2759,7 +2759,7 @@
       "word": "Prior",
       "phonetic": "/ˈpɹaɪɚ/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/prior-us.mp3",
-      "meaning": "形容词，事先的、在此之前的，优先的",
+      "meaning": "prior to 是固定搭配,事先的、在此之前的",
       "dateAdded": "2026-07-21T15:23:30.432Z",
       "sentences": [
         {
@@ -2962,7 +2962,7 @@
       "word": "potential",
       "phonetic": "/po(ʊ)ˈtɛnʃəl/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/potential-us.mp3",
-      "meaning": "潜在",
+      "meaning": "潜在的、可能的（形容词）；潜力、可能性（名词",
       "dateAdded": "2026-07-24T14:39:01.637Z",
       "sentences": [
         {
@@ -2990,7 +2990,7 @@
       "word": "extra",
       "phonetic": "/ˈɛkstɹə/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/extra-us.mp3",
-      "meaning": "额外的",
+      "meaning": "额外的、附加的，可以做形容词、副词、名词",
       "dateAdded": "2026-07-24T14:40:11.883Z",
       "sentences": [
         {
@@ -3025,7 +3025,7 @@
       "word": "hidden",
       "phonetic": "/ˈhɪd(ə)n/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/hidden-us.mp3",
-      "meaning": "隐藏",
+      "meaning": "隐藏，处于被藏起来的状态，过去分词/形容词",
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
@@ -3057,6 +3057,34 @@
           "translation": "藏"
         }
       ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "ms2vszh9h3euu",
+      "word": "artefacts",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "交付所需的一整套文档/材料",
+      "dateAdded": "2026-07-27T07:04:28.317Z",
+      "sentences": [
+        {
+          "id": "ms60xc2bd9498",
+          "text": "For the Add Query module SR, please get the artefacts ready.",
+          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:51:07.859Z"
+        },
+        {
+          "id": "ms60yqqk4sf9o",
+          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
+          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
+          "usageNote": "",
+          "dateAdded": "2026-07-29T11:52:13.532Z"
+        }
+      ],
+      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -3197,34 +3225,6 @@
       "meaning": "",
       "dateAdded": "2026-07-16T15:20:30.950Z",
       "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "ms2vszh9h3euu",
-      "word": "artefacts",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "交付所需的一整套文档/材料",
-      "dateAdded": "2026-07-27T07:04:28.317Z",
-      "sentences": [
-        {
-          "id": "ms60xc2bd9498",
-          "text": "For the Add Query module SR, please get the artefacts ready.",
-          "translation": "关于 Add Query 模块的这个 SR，请把（相关的）材料/交付物准备好",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:51:07.859Z"
-        },
-        {
-          "id": "ms60yqqk4sf9o",
-          "text": "Could you clarify which artefacts you need — design doc, test evidence, or the sign-off form？",
-          "translation": "能否说明具体需要哪些材料——设计文档、测试证据，还是签核表？",
-          "usageNote": "",
-          "dateAdded": "2026-07-29T11:52:13.532Z"
-        }
-      ],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -3441,19 +3441,6 @@
           "translation": ""
         }
       ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "msekju3mosxqy",
-      "word": "whole",
-      "phonetic": "/hoʊl/",
-      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
-      "meaning": "",
-      "dateAdded": "2026-08-04T11:22:39.778Z",
-      "sentences": [],
-      "derivedWords": [],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4660,6 +4647,56 @@
       "learnedAt": null
     },
     {
+      "id": "mt5h8c6esxcai",
+      "word": "decade",
+      "phonetic": "/dɛˈkeɪd/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-08-23T07:19:31.238Z",
+      "sentences": [
+        {
+          "id": "mt5hia61jr5rc",
+          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
+          "translation": "过去十年，政府 IT 基础设施转向云",
+          "usageNote": "over the past decade. 过去十年",
+          "dateAdded": "2026-08-23T07:27:15.193Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt5hdow0y0q6h",
+          "word": "a decade ago",
+          "translation": "十年前"
+        },
+        {
+          "id": "mt5hetprccrzp",
+          "word": "The past decade",
+          "translation": "过去的十年"
+        },
+        {
+          "id": "mt5hf7dgqk07s",
+          "word": "for a decade",
+          "translation": "持续十年"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "msekju3mosxqy",
+      "word": "whole",
+      "phonetic": "/hoʊl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whole-us.mp3",
+      "meaning": "",
+      "dateAdded": "2026-08-04T11:22:39.778Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mt5rp1s6arjjp",
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
@@ -4734,172 +4771,6 @@
           "id": "mvb4xcnam7zgx",
           "word": "vulnerabilities",
           "translation": "漏洞（复数）"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muwdvys4lzk6n",
-      "word": "burp",
-      "phonetic": "/bɝp/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-10-06T07:55:24.244Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muwdwyb7yw7uc",
-      "word": "suite",
-      "phonetic": "/swit/",
-      "audio": "",
-      "meaning": "套房；套件；一套（软件、工具等）；随从",
-      "dateAdded": "2026-10-06T07:56:10.291Z",
-      "sentences": [
-        {
-          "id": "mvb4jbk69po22",
-          "text": "The team installed the full test suite before the UAT run.",
-          "translation": "团队在UAT测试前安装了完整的测试套件。",
-          "usageNote": "test suite（一整套测试用例/测试工具）",
-          "dateAdded": "2026-10-16T15:30:10.374Z"
-        },
-        {
-          "id": "mvb4jbk6rn3lz",
-          "text": "We booked a suite at the hotel for the vendor visit.",
-          "translation": "我们为供应商来访订了一间套房。",
-          "usageNote": "suite 指套房（酒店房间）",
-          "dateAdded": "2026-10-16T15:30:10.374Z"
-        },
-        {
-          "id": "mvb4jbk6b2xxm",
-          "text": "The office suite includes Word, Excel and Outlook.",
-          "translation": "这套办公软件包括Word、Excel和Outlook。",
-          "usageNote": "office suite（一整套办公软件）",
-          "dateAdded": "2026-10-16T15:30:10.374Z"
-        },
-        {
-          "id": "mvb4jbk6c66m9",
-          "text": "The new tool is part of the cloud suite offered by the vendor.",
-          "translation": "这个新工具是供应商提供的云服务套件的一部分。",
-          "usageNote": "suite 指一组相关的产品或服务",
-          "dateAdded": "2026-10-16T15:30:10.374Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvb4jbk6x6ls0",
-          "word": "suite",
-          "translation": "与suit同形但意思不同，注意拼写区分"
-        }
-      ],
-      "review": {
-        "stage": 0,
-        "cycleStart": "2026-10-16T15:41:18.088Z",
-        "nextDue": "2026-10-16T16:00:00.000Z",
-        "completed": false
-      },
-      "learned": true,
-      "learnedAt": "2026-10-16T15:41:18.088Z"
-    },
-    {
-      "id": "muytz433ulq43",
-      "word": "vehicle",
-      "phonetic": "/ˈvihɪkəl/",
-      "audio": "",
-      "meaning": "车辆",
-      "dateAdded": "2026-10-08T01:01:17.295Z",
-      "sentences": [
-        {
-          "id": "mvb4eqdn2zznk",
-          "text": "The LTA inspection team uses a specialised vehicle to scan the road surface.",
-          "translation": "LTA的检测团队使用专用车辆扫描路面。",
-          "usageNote": "vehicle 指具体的车辆",
-          "dateAdded": "2026-10-16T15:26:36.299Z"
-        },
-        {
-          "id": "mvb4eqdnwyd6m",
-          "text": "Each vehicle must pass the safety check before entering the site.",
-          "translation": "每辆车在进入现场前都必须通过安全检查。",
-          "usageNote": "可数名词，指一辆车（each/every vehicle）",
-          "dateAdded": "2026-10-16T15:26:36.299Z"
-        },
-        {
-          "id": "mvb4eqdnd0r58",
-          "text": "The new portal is a vehicle for sharing audit updates with agencies.",
-          "translation": "这个新门户是与各机构共享审计更新的一种手段。",
-          "usageNote": "vehicle for + 名词（传递信息或达成目的的载体）",
-          "dateAdded": "2026-10-16T15:26:36.299Z"
-        },
-        {
-          "id": "mvb4eqdnyfvq3",
-          "text": "Please declare the vehicle registration number when you arrive.",
-          "translation": "到达时请申报车辆登记号码。",
-          "usageNote": "车辆相关的正式表述（vehicle registration number）",
-          "dateAdded": "2026-10-16T15:26:36.299Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvb4eqdnf086j",
-          "word": "vehicular",
-          "translation": "车辆的；与车辆有关的"
-        },
-        {
-          "id": "mvb4eqdnmwlkp",
-          "word": "vehicle-mounted",
-          "translation": "车载的"
-        },
-        {
-          "id": "mvb4eqdno4y1b",
-          "word": "vehicles",
-          "translation": "车辆（复数）"
-        },
-        {
-          "id": "mvb4eqdnofdz6",
-          "word": "vehicle-based",
-          "translation": "基于车辆的"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mt5h8c6esxcai",
-      "word": "decade",
-      "phonetic": "/dɛˈkeɪd/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-08-23T07:19:31.238Z",
-      "sentences": [
-        {
-          "id": "mt5hia61jr5rc",
-          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
-          "translation": "过去十年，政府 IT 基础设施转向云",
-          "usageNote": "over the past decade. 过去十年",
-          "dateAdded": "2026-08-23T07:27:15.193Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mt5hdow0y0q6h",
-          "word": "a decade ago",
-          "translation": "十年前"
-        },
-        {
-          "id": "mt5hetprccrzp",
-          "word": "The past decade",
-          "translation": "过去的十年"
-        },
-        {
-          "id": "mt5hf7dgqk07s",
-          "word": "for a decade",
-          "translation": "持续十年"
         }
       ],
       "review": null,
@@ -5034,11 +4905,6 @@
       ],
       "derivedWords": [
         {
-          "id": "mvb2aayz348mj",
-          "word": "deregister",
-          "translation": "注销"
-        },
-        {
           "id": "mvb48csh9aj6v",
           "word": "registration",
           "translation": "注册；登记"
@@ -5077,6 +4943,11 @@
           "id": "mvb49ctaigqi4",
           "word": "deregister",
           "translation": "注销；取消注册"
+        },
+        {
+          "id": "mvb2aayz348mj",
+          "word": "deregister",
+          "translation": "注销"
         }
       ],
       "review": {
@@ -5194,92 +5065,128 @@
       "learnedAt": "2026-10-16T15:41:22.311Z"
     },
     {
-      "id": "mv0g2kmavqytt",
-      "word": "Overview",
-      "phonetic": "/ˈoʊvɚˌvju/",
-      "audio": "",
-      "meaning": "全貌，概述，概览",
-      "dateAdded": "2026-10-09T04:07:36.418Z",
-      "sentences": [
-        {
-          "id": "mv0g2kmamp4lb",
-          "text": "Before we dive into the code, I need an overview of the architecture.",
-          "translation": "",
-          "usageNote": "框架的总体",
-          "dateAdded": "2026-10-09T04:07:36.418Z"
-        },
-        {
-          "id": "mv0g3z3d89aay",
-          "text": "This is an overview of the entire migration project.",
-          "translation": "这是整个迁移项目的总结",
-          "usageNote": "\"overview of\" 是标准用法",
-          "dateAdded": "2026-10-09T04:08:41.833Z"
-        },
-        {
-          "id": "mv0g4tsk2ibyl",
-          "text": "Give me an overview.",
-          "translation": "给我讲讲总体情况",
-          "usageNote": "",
-          "dateAdded": "2026-10-09T04:09:21.620Z"
-        },
-        {
-          "id": "mv0g8qa2wxgpd",
-          "text": "Let me get an overview of the UAT blockers",
-          "translation": "让我先了解一下UAT的主要阻碍",
-          "usageNote": "\"give / get an overview of\" 这个搭配。在项目汇报中最常用",
-          "dateAdded": "2026-10-09T04:12:23.690Z"
-        }
-      ],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mv0gwcasnj4dw",
-      "word": "revise",
-      "phonetic": "/rɪˈvaɪz/",
-      "audio": "",
-      "meaning": "复习，修改",
-      "dateAdded": "2026-10-09T04:30:45.315Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mv0gy81dzu8oy",
-      "word": "inquiry",
-      "phonetic": "/ˌɪnkˈwaɪˌri/",
-      "audio": "",
-      "meaning": "澄清",
-      "dateAdded": "2026-10-09T04:32:13.105Z",
-      "sentences": [],
-      "derivedWords": [
-        {
-          "id": "mv0gynyr49do5",
-          "word": "inquire",
-          "translation": ""
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mv2kgtcafshe4",
-      "word": "work",
-      "phonetic": "/wɝk/",
+      "id": "muwdvys4lzk6n",
+      "word": "burp",
+      "phonetic": "/bɝp/",
       "audio": "",
       "meaning": "",
-      "dateAdded": "2026-10-10T15:46:11.722Z",
+      "dateAdded": "2026-10-06T07:55:24.244Z",
       "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "muwdwyb7yw7uc",
+      "word": "suite",
+      "phonetic": "/swit/",
+      "audio": "",
+      "meaning": "套房；套件；一套（软件、工具等）；随从",
+      "dateAdded": "2026-10-06T07:56:10.291Z",
+      "sentences": [
+        {
+          "id": "mvb4jbk69po22",
+          "text": "The team installed the full test suite before the UAT run.",
+          "translation": "团队在UAT测试前安装了完整的测试套件。",
+          "usageNote": "test suite（一整套测试用例/测试工具）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6rn3lz",
+          "text": "We booked a suite at the hotel for the vendor visit.",
+          "translation": "我们为供应商来访订了一间套房。",
+          "usageNote": "suite 指套房（酒店房间）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6b2xxm",
+          "text": "The office suite includes Word, Excel and Outlook.",
+          "translation": "这套办公软件包括Word、Excel和Outlook。",
+          "usageNote": "office suite（一整套办公软件）",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        },
+        {
+          "id": "mvb4jbk6c66m9",
+          "text": "The new tool is part of the cloud suite offered by the vendor.",
+          "translation": "这个新工具是供应商提供的云服务套件的一部分。",
+          "usageNote": "suite 指一组相关的产品或服务",
+          "dateAdded": "2026-10-16T15:30:10.374Z"
+        }
+      ],
       "derivedWords": [
         {
-          "id": "mv2kh6ovt4m57",
-          "word": "workload",
-          "translation": "工作量"
+          "id": "mvb4jbk6x6ls0",
+          "word": "suite",
+          "translation": "与suit同形但意思不同，注意拼写区分"
+        }
+      ],
+      "review": {
+        "stage": 0,
+        "cycleStart": "2026-10-16T15:41:18.088Z",
+        "nextDue": "2026-10-16T16:00:00.000Z",
+        "completed": false
+      },
+      "learned": true,
+      "learnedAt": "2026-10-16T15:41:18.088Z"
+    },
+    {
+      "id": "muytz433ulq43",
+      "word": "vehicle",
+      "phonetic": "/ˈvihɪkəl/",
+      "audio": "",
+      "meaning": "车辆",
+      "dateAdded": "2026-10-08T01:01:17.295Z",
+      "sentences": [
+        {
+          "id": "mvb4eqdn2zznk",
+          "text": "The LTA inspection team uses a specialised vehicle to scan the road surface.",
+          "translation": "LTA的检测团队使用专用车辆扫描路面。",
+          "usageNote": "vehicle 指具体的车辆",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnwyd6m",
+          "text": "Each vehicle must pass the safety check before entering the site.",
+          "translation": "每辆车在进入现场前都必须通过安全检查。",
+          "usageNote": "可数名词，指一辆车（each/every vehicle）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnd0r58",
+          "text": "The new portal is a vehicle for sharing audit updates with agencies.",
+          "translation": "这个新门户是与各机构共享审计更新的一种手段。",
+          "usageNote": "vehicle for + 名词（传递信息或达成目的的载体）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        },
+        {
+          "id": "mvb4eqdnyfvq3",
+          "text": "Please declare the vehicle registration number when you arrive.",
+          "translation": "到达时请申报车辆登记号码。",
+          "usageNote": "车辆相关的正式表述（vehicle registration number）",
+          "dateAdded": "2026-10-16T15:26:36.299Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvb4eqdnf086j",
+          "word": "vehicular",
+          "translation": "车辆的；与车辆有关的"
+        },
+        {
+          "id": "mvb4eqdnmwlkp",
+          "word": "vehicle-mounted",
+          "translation": "车载的"
+        },
+        {
+          "id": "mvb4eqdno4y1b",
+          "word": "vehicles",
+          "translation": "车辆（复数）"
+        },
+        {
+          "id": "mvb4eqdnofdz6",
+          "word": "vehicle-based",
+          "translation": "基于车辆的"
         }
       ],
       "review": null,
@@ -5809,11 +5716,104 @@
       "learnedAt": "2026-10-16T15:41:12.716Z"
     },
     {
+      "id": "mv0g2kmavqytt",
+      "word": "Overview",
+      "phonetic": "/ˈoʊvɚˌvju/",
+      "audio": "",
+      "meaning": "全貌，概述，概览",
+      "dateAdded": "2026-10-09T04:07:36.418Z",
+      "sentences": [
+        {
+          "id": "mv0g2kmamp4lb",
+          "text": "Before we dive into the code, I need an overview of the architecture.",
+          "translation": "",
+          "usageNote": "框架的总体",
+          "dateAdded": "2026-10-09T04:07:36.418Z"
+        },
+        {
+          "id": "mv0g3z3d89aay",
+          "text": "This is an overview of the entire migration project.",
+          "translation": "这是整个迁移项目的总结",
+          "usageNote": "\"overview of\" 是标准用法",
+          "dateAdded": "2026-10-09T04:08:41.833Z"
+        },
+        {
+          "id": "mv0g4tsk2ibyl",
+          "text": "Give me an overview.",
+          "translation": "给我讲讲总体情况",
+          "usageNote": "",
+          "dateAdded": "2026-10-09T04:09:21.620Z"
+        },
+        {
+          "id": "mv0g8qa2wxgpd",
+          "text": "Let me get an overview of the UAT blockers",
+          "translation": "让我先了解一下UAT的主要阻碍",
+          "usageNote": "\"give / get an overview of\" 这个搭配。在项目汇报中最常用",
+          "dateAdded": "2026-10-09T04:12:23.690Z"
+        }
+      ],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mv0gwcasnj4dw",
+      "word": "revise",
+      "phonetic": "/rɪˈvaɪz/",
+      "audio": "",
+      "meaning": "复习，修改",
+      "dateAdded": "2026-10-09T04:30:45.315Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mv0gy81dzu8oy",
+      "word": "inquiry",
+      "phonetic": "/ˌɪnkˈwaɪˌri/",
+      "audio": "",
+      "meaning": "澄清",
+      "dateAdded": "2026-10-09T04:32:13.105Z",
+      "sentences": [],
+      "derivedWords": [
+        {
+          "id": "mv0gynyr49do5",
+          "word": "inquire",
+          "translation": ""
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mv2kgtcafshe4",
+      "word": "work",
+      "phonetic": "/wɝk/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-10T15:46:11.722Z",
+      "sentences": [],
+      "derivedWords": [
+        {
+          "id": "mv2kh6ovt4m57",
+          "word": "workload",
+          "translation": "工作量"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mvfb13crm99vl",
       "word": "just",
-      "meaning": "刚刚；只是；仅仅；正好；公正的",
       "phonetic": "/dʒʌst/",
       "audio": "",
+      "meaning": "刚刚；只是；仅仅；正好；公正的",
       "dateAdded": "2026-10-19T13:43:01.947Z",
       "sentences": [
         {
@@ -5914,7 +5914,7 @@
     "mrhcs1sxeb2g2": "2026-08-25T14:59:43.089Z",
     "mrhv3oggrsl1a": "2026-08-25T15:30:00.991Z",
     "msmxiczoukarw": "2026-08-25T15:32:09.260Z",
-    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z",
-    "mutv91ggb0miv": "2026-10-04T13:41:06.885Z"
+    "mutv91ggb0miv": "2026-10-04T13:41:06.885Z",
+    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z"
   }
 }
