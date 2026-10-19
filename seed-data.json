@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-19T12:17:35.626Z",
+  "exportedAt": "2026-10-19T13:45:14.134Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -5807,6 +5807,98 @@
       },
       "learned": true,
       "learnedAt": "2026-10-16T15:41:12.716Z"
+    },
+    {
+      "id": "mvfb13crm99vl",
+      "word": "just",
+      "meaning": "刚刚；只是；仅仅；正好；公正的",
+      "phonetic": "/dʒʌst/",
+      "audio": "",
+      "dateAdded": "2026-10-19T13:43:01.947Z",
+      "sentences": [
+        {
+          "id": "mvfb13crit42a",
+          "text": "I just sent the updated audit report to the team.",
+          "translation": "我刚刚把更新后的审计报告发给了团队。",
+          "usageNote": "just + 过去式/现在完成时（表示刚刚发生）",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        },
+        {
+          "id": "mvfb13cr58870",
+          "text": "Can you just check the logs before the deployment?",
+          "translation": "部署前你能先检查一下日志吗？",
+          "usageNote": "just 放在动词前，表示\"只是、先\"，语气柔和",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        },
+        {
+          "id": "mvfb13crerrn7",
+          "text": "It's just a minor UI fix, not a change to the database.",
+          "translation": "这只是一个小的界面修复，不涉及数据库变更。",
+          "usageNote": "just 表示\"只是、仅仅\"（just a/an + 名词）",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        },
+        {
+          "id": "mvfb13crl5vb4",
+          "text": "That's just what we need for the UAT sign-off.",
+          "translation": "这正是我们UAT签字所需要的。",
+          "usageNote": "just 表示\"正好、恰好\"（just what / just the right）",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        },
+        {
+          "id": "mvfb13crni6lt",
+          "text": "We just need one more approval before the CAB meeting.",
+          "translation": "CAB会议前我们只还需要一个审批。",
+          "usageNote": "just need / just want（只需要、只想要，语气委婉）",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        },
+        {
+          "id": "mvfb13cr6fnwx",
+          "text": "Just to confirm, the freeze starts on Friday, right?",
+          "translation": "确认一下，冻结期是周五开始的，对吧？",
+          "usageNote": "句首 Just to confirm / Just checking（礼貌地确认或跟进，职场高频）",
+          "dateAdded": "2026-10-19T13:43:01.947Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfb13crvk3aw",
+          "word": "justice",
+          "translation": "公正；正义；司法"
+        },
+        {
+          "id": "mvfb13cr6vr6z",
+          "word": "justify",
+          "translation": "证明……正当；为……辩护"
+        },
+        {
+          "id": "mvfb13crijh3v",
+          "word": "justification",
+          "translation": "理由；辩解；正当理由"
+        },
+        {
+          "id": "mvfb13cr6l9yk",
+          "word": "justly",
+          "translation": "公正地；正当地"
+        },
+        {
+          "id": "mvfb13crqbwgg",
+          "word": "adjust",
+          "translation": "调整；适应"
+        },
+        {
+          "id": "mvfb13cre6szu",
+          "word": "adjustment",
+          "translation": "调整；修正"
+        },
+        {
+          "id": "mvfb13cr00uba",
+          "word": "injustice",
+          "translation": "不公正；不公平"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
     }
   ],
   "tombstones": {
