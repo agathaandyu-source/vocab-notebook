@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-19T13:46:14.455Z",
+  "exportedAt": "2026-10-20T11:31:49.381Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -5894,6 +5894,91 @@
           "id": "mvfb13cr00uba",
           "word": "injustice",
           "translation": "不公正；不公平"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgliv52ao4nx",
+      "word": "defer",
+      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
+      "phonetic": "/dɪˈfɝ/",
+      "audio": "",
+      "dateAdded": "2026-10-20T11:24:33.445Z",
+      "sentences": [
+        {
+          "id": "mvgliv527yeih",
+          "text": "The team decided to defer the PROD deployment until after the freeze period.",
+          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
+          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5268lh8",
+          "text": "The CAB has deferred the CR to next month's review.",
+          "translation": "CAB已将该CR推迟到下个月的评审。",
+          "usageNote": "defer to + 日期/事件（推迟到……）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5260wo1",
+          "text": "I'll defer to your judgement on the database design.",
+          "translation": "关于数据库设计，我尊重你的判断。",
+          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52pawpq",
+          "text": "Deferred revenue must be recognised in the period the service is delivered.",
+          "translation": "递延收入必须在服务交付的会计期间确认。",
+          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52i9bd5",
+          "text": "The team will defer to the vendor's recommendation on the licence.",
+          "translation": "团队会听从供应商对许可证的建议。",
+          "usageNote": "defer to 表示\"顺从、以……为准\"",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgliv52kbtyw",
+          "word": "deferment",
+          "translation": "延期；推迟"
+        },
+        {
+          "id": "mvgliv526kwbu",
+          "word": "deference",
+          "translation": "尊重；敬意；顺从"
+        },
+        {
+          "id": "mvgliv52o41vl",
+          "word": "deferential",
+          "translation": "恭敬的；顺从的"
+        },
+        {
+          "id": "mvgliv52k5bkd",
+          "word": "deferral",
+          "translation": "延期；推迟（名词，常见于财务和项目语境）"
+        },
+        {
+          "id": "mvgliv524gndh",
+          "word": "deferrable",
+          "translation": "可延期的"
+        },
+        {
+          "id": "mvgliv523har8",
+          "word": "referral",
+          "translation": "转介；推荐"
+        },
+        {
+          "id": "mvgliv52qssge",
+          "word": "infer",
+          "translation": "推断；推论"
         }
       ],
       "review": null,
