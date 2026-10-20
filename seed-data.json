@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-20T11:31:49.381Z",
+  "exportedAt": "2026-10-20T13:41:29.180Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1287,19 +1287,6 @@
           "dateAdded": "2026-07-12T13:42:59.715Z"
         }
       ],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mrhuhpqa3puae",
-      "word": "authenticte",
-      "phonetic": "",
-      "audio": "",
-      "meaning": "身份验证",
-      "dateAdded": "2026-07-12T13:44:33.154Z",
-      "sentences": [],
       "derivedWords": [],
       "review": null,
       "learned": false,
@@ -5901,11 +5888,1049 @@
       "learnedAt": null
     },
     {
+      "id": "mvfbcjs20tl1s",
+      "word": "yet",
+      "phonetic": "/jɛt/",
+      "audio": "",
+      "meaning": "还；尚未；然而；但是；已经（疑问句中）；甚至",
+      "dateAdded": "2026-10-19T13:51:56.450Z",
+      "sentences": [
+        {
+          "id": "mvfbcjs2hntzu",
+          "text": "The vendor has not sent the updated quote yet.",
+          "translation": "供应商还没有发来更新后的报价。",
+          "usageNote": "yet 用于否定句末尾，表示\"还没有\"（not...yet）",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        },
+        {
+          "id": "mvfbcjs2poae8",
+          "text": "Have you finished the UAT test cases yet?",
+          "translation": "你的UAT测试用例写完了吗？",
+          "usageNote": "yet 用于疑问句末尾，询问某事是否已经发生",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        },
+        {
+          "id": "mvfbcjs2vynd9",
+          "text": "The bug is serious, yet it was not caught in testing.",
+          "translation": "这个bug很严重，但测试时却没有发现。",
+          "usageNote": "yet 表示\"然而、但是\"，连接对比的内容（语气比but更书面）",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        },
+        {
+          "id": "mvfbcjs23b9wy",
+          "text": "It's a small change, yet it affects three modules.",
+          "translation": "这是个小改动，却影响了三个模块。",
+          "usageNote": "yet 表示\"却、仍然\"，强调出乎意料",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        },
+        {
+          "id": "mvfbcjs2s6y33",
+          "text": "The migration is yet to be approved by CAB.",
+          "translation": "这次迁移尚未获得CAB批准。",
+          "usageNote": "yet to + 动词（尚未做某事，书面语）",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        },
+        {
+          "id": "mvfbcjs2mamkb",
+          "text": "This is the best yet.",
+          "translation": "这是迄今为止最好的一个。",
+          "usageNote": "the + 最高级 + yet（迄今为止，口语）",
+          "dateAdded": "2026-10-19T13:51:56.450Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfbcjs2ajl3i",
+          "word": "yesterday",
+          "translation": "昨天"
+        },
+        {
+          "id": "mvfbcjs27axbz",
+          "word": "yeti",
+          "translation": "雪人（传说中的生物）"
+        },
+        {
+          "id": "mvfbcjs20th3v",
+          "word": "yearly",
+          "translation": "每年的；一年一次的"
+        },
+        {
+          "id": "mvfbcjs2gh174",
+          "word": "yeast",
+          "translation": "酵母"
+        },
+        {
+          "id": "mvfbcjs2dlj6g",
+          "word": "yield",
+          "translation": "产出；收益；屈服"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfbjb1tbg82l",
+      "word": "premise",
+      "phonetic": "/ˈprɛmɪs/",
+      "audio": "",
+      "meaning": "前提；前提假设；（复数 premises）房产、场所",
+      "dateAdded": "2026-10-19T13:57:11.729Z",
+      "sentences": [
+        {
+          "id": "mvfbjb1tj7ajv",
+          "text": "The whole plan is based on the premise that the freeze will not be extended.",
+          "translation": "整个计划是基于冻结期不会延长这个前提制定的。",
+          "usageNote": "premise 指推理或计划的前提，常用 on the premise that / based on the premise",
+          "dateAdded": "2026-10-19T13:57:11.729Z"
+        },
+        {
+          "id": "mvfbjb1txpdj2",
+          "text": "The premise of the proposal is that LTA will approve the budget next quarter.",
+          "translation": "这个提案的前提是LTA下个季度会批准预算。",
+          "usageNote": "the premise of sth（某事的前提）",
+          "dateAdded": "2026-10-19T13:57:11.729Z"
+        },
+        {
+          "id": "mvfbjb1tc83j8",
+          "text": "Please do not use the office premises for personal activities.",
+          "translation": "请勿将办公场所用于个人活动。",
+          "usageNote": "premises 复数形式，指房屋、场地、办公场所（常见于正式通知）",
+          "dateAdded": "2026-10-19T13:57:11.729Z"
+        },
+        {
+          "id": "mvfbjb1tkq21b",
+          "text": "The team's assumption is flawed; the premise needs to be revisited.",
+          "translation": "团队的假设有问题，前提需要重新审视。",
+          "usageNote": "与 assumption 相近，但 premise 更偏向论证或计划的基础",
+          "dateAdded": "2026-10-19T13:57:11.729Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfbjb1twdqvp",
+          "word": "premised",
+          "translation": "以……为前提的"
+        },
+        {
+          "id": "mvfbjb1t6fa9b",
+          "word": "premises",
+          "translation": "房产；场所（复数，常用于法律/通知语境）"
+        },
+        {
+          "id": "mvfbjb1tu1ota",
+          "word": "premising",
+          "translation": "作前提（较少用）"
+        },
+        {
+          "id": "mvfbjb1t01xo4",
+          "word": "premiss",
+          "translation": "前提（英式古写法，现代少用）"
+        },
+        {
+          "id": "mvfbjb1tcbty7",
+          "word": "promise",
+          "translation": "承诺；保证"
+        },
+        {
+          "id": "mvfbjb1tv0fux",
+          "word": "compromise",
+          "translation": "妥协；折中"
+        },
+        {
+          "id": "mvfbsjluq6n52",
+          "word": "on-premise",
+          "translation": "本地部署"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfbwlc2a83de",
+      "word": "authorization",
+      "phonetic": "/ˌɔθɚəˈzeɪʃən/",
+      "audio": "",
+      "meaning": "授权；批准；许可；认证授权",
+      "dateAdded": "2026-10-19T14:07:31.583Z",
+      "sentences": [
+        {
+          "id": "mvfbwlc2hvkhr",
+          "text": "The change cannot go to PROD without CAB authorization.",
+          "translation": "没有CAB的授权，这个变更不能上线到生产环境。",
+          "usageNote": "authorization 指正式批准或许可（常与 without / require 搭配）",
+          "dateAdded": "2026-10-19T14:07:31.583Z"
+        },
+        {
+          "id": "mvfbwlc2gjpsk",
+          "text": "Only users with admin authorization can access the audit logs.",
+          "translation": "只有拥有管理员授权的用户才能访问审计日志。",
+          "usageNote": "admin authorization / authorization level（授权级别）",
+          "dateAdded": "2026-10-19T14:07:31.583Z"
+        },
+        {
+          "id": "mvfbwlc2qetq1",
+          "text": "Please obtain written authorization before accessing the production database.",
+          "translation": "访问生产数据库前请先取得书面授权。",
+          "usageNote": "obtain / get authorization（取得授权，职场高频搭配）",
+          "dateAdded": "2026-10-19T14:07:31.583Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfbwlc2wnvvk",
+          "word": "authorize",
+          "translation": "授权；批准"
+        },
+        {
+          "id": "mvfbwlc26f1tv",
+          "word": "authorized",
+          "translation": "已授权的；经批准的"
+        },
+        {
+          "id": "mvfbwlc2yvgcb",
+          "word": "authorizer",
+          "translation": "授权人；批准人"
+        },
+        {
+          "id": "mvfbwlc239fb0",
+          "word": "unauthorized",
+          "translation": "未经授权的；未批准的"
+        },
+        {
+          "id": "mvfbwlc34s491",
+          "word": "authority",
+          "translation": "权威；权力；主管机构"
+        },
+        {
+          "id": "mvfbwlc37llxp",
+          "word": "authentication",
+          "translation": "身份验证；认证"
+        },
+        {
+          "id": "mvfbwlc3amn8z",
+          "word": "author",
+          "translation": "作者；创作者"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfc17lhi2ij0",
+      "word": "snapshot",
+      "phonetic": "/ˈsnæpˌʃɑt/",
+      "audio": "",
+      "meaning": "快照；截图；（某一时刻的）数据快照；快速拍照",
+      "dateAdded": "2026-10-19T14:11:07.061Z",
+      "sentences": [
+        {
+          "id": "mvfc17lhu7tdl",
+          "text": "Please take a snapshot of the current database state before the deployment.",
+          "translation": "部署前请对当前数据库状态做一个快照。",
+          "usageNote": "take a snapshot（做快照、截取某一时刻的状态）",
+          "dateAdded": "2026-10-19T14:11:07.061Z"
+        },
+        {
+          "id": "mvfc17lhpv32x",
+          "text": "The dashboard shows a snapshot of PROD performance as of 10 a.m.",
+          "translation": "仪表盘显示的是上午10点时生产环境性能的快照。",
+          "usageNote": "a snapshot of + 名词（某一时刻的状态）",
+          "dateAdded": "2026-10-19T14:11:07.061Z"
+        },
+        {
+          "id": "mvfc17lhfrv7x",
+          "text": "Can you send me a quick snapshot of the UAT blockers?",
+          "translation": "你能给我快速列一下UAT的阻塞项吗？",
+          "usageNote": "a quick snapshot（快速概览，非正式）",
+          "dateAdded": "2026-10-19T14:11:07.061Z"
+        },
+        {
+          "id": "mvfc17lhwj7y2",
+          "text": "The auditors requested a snapshot of the access logs for last quarter.",
+          "translation": "审计人员要求提供上个季度访问日志的快照。",
+          "usageNote": "snapshot 作可数名词，常用于数据、系统、文件的时间点记录",
+          "dateAdded": "2026-10-19T14:11:07.061Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfc17lhad7q4",
+          "word": "snapshots",
+          "translation": "快照（复数）"
+        },
+        {
+          "id": "mvfc17lhicfyz",
+          "word": "snapshotting",
+          "translation": "快照操作（动名词，技术语境）"
+        },
+        {
+          "id": "mvfc17li9aimc",
+          "word": "snap",
+          "translation": "快速拍照；突然折断；迅速抓住"
+        },
+        {
+          "id": "mvfc17liq1hdl",
+          "word": "snappy",
+          "translation": "敏捷的；简洁的；时髦的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfc7uvx6ned6",
+      "word": "as",
+      "phonetic": "/æz/",
+      "audio": "",
+      "meaning": "作为；当……时；因为；像……一样；与……相同；按照；截至",
+      "dateAdded": "2026-10-19T14:16:17.181Z",
+      "sentences": [
+        {
+          "id": "mvfc7uvxs9djs",
+          "text": "As the deadline approaches, the team is working overtime.",
+          "translation": "随着截止日期临近，团队正在加班。",
+          "usageNote": "as + 从句（当……时、随着……，表示同时发生）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvxubgjj",
+          "text": "The auditors reviewed the logs as part of the compliance check.",
+          "translation": "审计人员审查日志，作为合规检查的一部分。",
+          "usageNote": "as part of / as a result of（作为……的一部分；作为……的结果）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvxc59be",
+          "text": "Please update all snapshots as of now.",
+          "translation": "请截至目前更新所有快照。",
+          "usageNote": "as of + 时间（截至……时），是固定短语，整体作时间状语",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvxv98s2",
+          "text": "The figures are accurate as at 15 October 2026.",
+          "translation": "截至2026年10月15日，这些数据是准确的。",
+          "usageNote": "as at + 日期（与 as of 同义，英式及新加坡政府文件常用）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvxash46",
+          "text": "As per the CAB decision, the change is postponed to next month.",
+          "translation": "根据CAB的决定，该变更推迟到下个月。",
+          "usageNote": "as per（根据……，职场常用，新加坡英语高频）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvx8ko2n",
+          "text": "As you know, the freeze period starts on Friday.",
+          "translation": "如你所知，冻结期周五开始。",
+          "usageNote": "as you know / as you may recall（引出大家已知的信息，语气委婉）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        },
+        {
+          "id": "mvfc7uvx82ydp",
+          "text": "The new tool works as a bridge between the two systems.",
+          "translation": "这个新工具充当两个系统之间的桥梁。",
+          "usageNote": "as a + 名词（作为某种角色或身份）",
+          "dateAdded": "2026-10-19T14:16:17.181Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfc7uvx8viv0",
+          "word": "asap",
+          "translation": "尽快（as soon as possible 的缩写）"
+        },
+        {
+          "id": "mvfc7uvxfo2hw",
+          "word": "alas",
+          "translation": "唉（叹词，古语感较强）"
+        },
+        {
+          "id": "mvfc7uvxzsp88",
+          "word": "also",
+          "translation": "也；同样"
+        },
+        {
+          "id": "mvfc7uvxnlk6m",
+          "word": "alias",
+          "translation": "别名；化名"
+        },
+        {
+          "id": "mvfc7uvx6vv4w",
+          "word": "as-is",
+          "translation": "按现状；原样（名词/形容词，IT 中常指\"现状交付\"）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfcfgsjgr8bf",
+      "word": "disposal",
+      "phonetic": "/dɪˈspoʊzəl/",
+      "audio": "",
+      "meaning": "处理；处置；丢弃；清理；支配、可供使用",
+      "dateAdded": "2026-10-19T14:22:12.163Z",
+      "sentences": [
+        {
+          "id": "mvfcfgsjwa32q",
+          "text": "The data retention policy covers the disposal of expired records.",
+          "translation": "数据保留政策涵盖过期记录的销毁。",
+          "usageNote": "the disposal of + 名词（……的处置、销毁）",
+          "dateAdded": "2026-10-19T14:22:12.163Z"
+        },
+        {
+          "id": "mvfcfgsjurlj0",
+          "text": "The team has the disposal of two test servers for the PPS pilot.",
+          "translation": "团队可以使用两台测试服务器用于PPS试点。",
+          "usageNote": "at one's disposal / have sth at one's disposal（可供某人使用、支配）",
+          "dateAdded": "2026-10-19T14:22:12.163Z"
+        },
+        {
+          "id": "mvfcfgsjc75t7",
+          "text": "Please dispose of the printed copies in the confidential bin.",
+          "translation": "请把打印的副本扔进机密废纸箱。",
+          "usageNote": "dispose of（处理、丢弃，动词短语）",
+          "dateAdded": "2026-10-19T14:22:12.163Z"
+        },
+        {
+          "id": "mvfchwag64s6j",
+          "text": "The old hardware must go through secure disposal before it leaves the site.",
+          "translation": "旧硬件离开现场前必须经过安全销毁处理。",
+          "usageNote": "disposal 指物品或数据的处理、销毁（waste disposal / secure disposal）",
+          "dateAdded": "2026-10-19T14:24:05.560Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfcfgsj6czwh",
+          "word": "dispose",
+          "translation": "处理；处置；布置（动词）"
+        },
+        {
+          "id": "mvfcfgsj6rynv",
+          "word": "disposable",
+          "translation": "一次性的；可处理的"
+        },
+        {
+          "id": "mvfcfgsjr34yq",
+          "word": "disposition",
+          "translation": "性情；处置；安排"
+        },
+        {
+          "id": "mvfcfgsjr8ix6",
+          "word": "disposed",
+          "translation": "倾向于的；被处理的"
+        },
+        {
+          "id": "mvfcfgsjsypye",
+          "word": "indisposed",
+          "translation": "身体不适的；不愿意的"
+        },
+        {
+          "id": "mvfcfgsjuivbq",
+          "word": "redispose",
+          "translation": "重新安排；重新处置"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfclcjbx51si",
+      "word": "correlation",
+      "phonetic": "/ˌkɔrəˈleɪʃən/",
+      "audio": "",
+      "meaning": "相关性；关联；相互关系",
+      "dateAdded": "2026-10-19T14:26:46.583Z",
+      "sentences": [
+        {
+          "id": "mvfclcjbl7xsd",
+          "text": "There is a strong correlation between the database timeouts and the nightly batch jobs.",
+          "translation": "数据库超时与夜间批处理任务之间存在很强的相关性。",
+          "usageNote": "correlation between A and B（A与B之间的关联）",
+          "dateAdded": "2026-10-19T14:26:46.583Z"
+        },
+        {
+          "id": "mvfclcjbm1wzh",
+          "text": "The analysis found no correlation between the release date and the number of bugs.",
+          "translation": "分析发现发布日期与bug数量之间没有相关性。",
+          "usageNote": "no correlation / a correlation（无相关性 / 存在相关性）",
+          "dateAdded": "2026-10-19T14:26:46.583Z"
+        },
+        {
+          "id": "mvfclcjbhefmb",
+          "text": "We need to correlate the audit logs with the PROD incident reports.",
+          "translation": "我们需要把审计日志与生产事故报告对应起来看。",
+          "usageNote": "correlate（动词，使相互关联、对应）",
+          "dateAdded": "2026-10-19T14:26:46.583Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfclcjbtnau5",
+          "word": "correlate",
+          "translation": "使相关；与……相关"
+        },
+        {
+          "id": "mvfclcjbfergv",
+          "word": "correlated",
+          "translation": "相关的；有关联的"
+        },
+        {
+          "id": "mvfclcjbhfur9",
+          "word": "correlative",
+          "translation": "相关的；相互对应的（语法/逻辑语境）"
+        },
+        {
+          "id": "mvfclcjbajs4y",
+          "word": "correlational",
+          "translation": "相关性的（统计/研究语境）"
+        },
+        {
+          "id": "mvfclcjbmq0oz",
+          "word": "uncorrelated",
+          "translation": "不相关的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfcsr7oy7uy1",
+      "word": "intend",
+      "phonetic": "/ˌɪnˈtɛnd/",
+      "audio": "",
+      "meaning": "打算；计划；意欲；意图",
+      "dateAdded": "2026-10-19T14:32:32.196Z",
+      "sentences": [
+        {
+          "id": "mvfcsr7oyskwd",
+          "text": "I intend to finish the UAT test cases by Wednesday.",
+          "translation": "我打算周三前完成UAT测试用例。",
+          "usageNote": "intend to + 动词（打算做某事，最常见结构）",
+          "dateAdded": "2026-10-19T14:32:32.196Z"
+        },
+        {
+          "id": "mvfcsr7ouslqa",
+          "text": "The team does not intend to extend the freeze period.",
+          "translation": "团队不打算延长冻结期。",
+          "usageNote": "not intend to（否定：不打算，语气比 won't 更正式）",
+          "dateAdded": "2026-10-19T14:32:32.196Z"
+        },
+        {
+          "id": "mvfcsr7o4vgwu",
+          "text": "What do you intend to do about the audit finding?",
+          "translation": "你打算如何处理这个审计发现？",
+          "usageNote": "intend to do sth 用于疑问句，询问对方的计划",
+          "dateAdded": "2026-10-19T14:32:32.196Z"
+        },
+        {
+          "id": "mvfcsr7oev1pq",
+          "text": "The new feature is intended for internal users only.",
+          "translation": "这个新功能仅供内部用户使用。",
+          "usageNote": "be intended for（原本就是为……而设的）",
+          "dateAdded": "2026-10-19T14:32:32.196Z"
+        },
+        {
+          "id": "mvfcsr7o11vo4",
+          "text": "This is intended as a temporary fix, not a permanent solution.",
+          "translation": "这是一个临时修复，并非永久方案。",
+          "usageNote": "be intended as（打算作为……；原意是……）",
+          "dateAdded": "2026-10-19T14:32:32.196Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfcsr7oizut5",
+          "word": "intention",
+          "translation": "意图；打算"
+        },
+        {
+          "id": "mvfcsr7oqbfxx",
+          "word": "intentional",
+          "translation": "故意的；有意的"
+        },
+        {
+          "id": "mvfcsr7ou9o0l",
+          "word": "intentionally",
+          "translation": "故意地；有意地"
+        },
+        {
+          "id": "mvfcsr7oww49f",
+          "word": "intended",
+          "translation": "预期的；有意的"
+        },
+        {
+          "id": "mvfcsr7oldn20",
+          "word": "unintended",
+          "translation": "无意的；非本意的"
+        },
+        {
+          "id": "mvfcsr7ok46v3",
+          "word": "intentness",
+          "translation": "专注；专心"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfcwsodyt28b",
+      "word": "withdraw",
+      "phonetic": "/wɪˈðdrɔ/",
+      "audio": "",
+      "meaning": "撤回；撤销；提款；退出；收回 （通常在执行之前）",
+      "dateAdded": "2026-10-19T14:35:40.717Z",
+      "sentences": [
+        {
+          "id": "mvfcwsodjcbmv",
+          "text": "The team decided to withdraw the CR from tonight's deployment.",
+          "translation": "团队决定把这个CR从今晚的部署中撤回。",
+          "usageNote": "withdraw sth（撤回某个请求、提案或变更，未必已经执行）",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        },
+        {
+          "id": "mvfcwsodzcxvv",
+          "text": "The vendor withdrew its quote after the scope changed.",
+          "translation": "范围变更后，供应商撤回了报价。",
+          "usageNote": "withdraw 强调主动收回、不再推进",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        },
+        {
+          "id": "mvfcwsod6u8ta",
+          "text": "You can withdraw from the UAT session if you have a clash.",
+          "translation": "如果时间冲突，你可以退出这次UAT会议。",
+          "usageNote": "withdraw from sth（退出某活动、会议或项目）",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        },
+        {
+          "id": "mvfcwsod505ew",
+          "text": "The auditors withdrew the finding after the evidence was reviewed.",
+          "translation": "证据审核后，审计人员撤销了该项发现。",
+          "usageNote": "withdraw 指撤销已提出的意见或结论",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfczqylvgw1f",
+          "word": "withdrawal",
+          "translation": "撤回；提款；退出"
+        },
+        {
+          "id": "mvfd0ebl4td0w",
+          "word": "withdrawn",
+          "translation": "撤回的；内向的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfcwsodris90",
+      "word": "rollback",
+      "phonetic": "/ˈroʊlˌbæk/",
+      "audio": "",
+      "meaning": "回滚；撤回已部署的变更，恢复到之前的版本 （通常在执行之后）",
+      "dateAdded": "2026-10-19T14:35:40.717Z",
+      "sentences": [
+        {
+          "id": "mvfcwsod9dgg3",
+          "text": "We will roll back to the previous release if the PROD fix fails.",
+          "translation": "如果生产修复失败，我们将回滚到上一个版本。",
+          "usageNote": "roll back（动词短语）；rollback（名词/形容词）",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        },
+        {
+          "id": "mvfcwsod94wa9",
+          "text": "The rollback plan must be tested in UAT before the deployment.",
+          "translation": "部署前，回滚方案必须先在UAT中测试。",
+          "usageNote": "rollback plan（回滚方案，IT 项目高频词）",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        },
+        {
+          "id": "mvfcwsodcfmmg",
+          "text": "The database rollback took two hours because of the large transaction.",
+          "translation": "由于事务量大，数据库回滚花了两个小时。",
+          "usageNote": "rollback 指技术上的状态恢复，强调已经上线、要恢复原状",
+          "dateAdded": "2026-10-19T14:35:40.717Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfcwsodk7kq3",
+          "word": "rollout",
+          "translation": "推出；上线；分阶段发布"
+        },
+        {
+          "id": "mvfcwsodfjvsv",
+          "word": "rollover",
+          "translation": "展期；转结；翻转"
+        },
+        {
+          "id": "mvfcwsods6avf",
+          "word": "fallback",
+          "translation": "备用方案；退路"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfd464zj23o8",
+      "word": "face",
+      "phonetic": "/feɪs/",
+      "audio": "",
+      "meaning": "面对；面临；面孔；表面；脸",
+      "dateAdded": "2026-10-19T14:41:24.755Z",
+      "sentences": [
+        {
+          "id": "mvfd464zwa2v3",
+          "text": "We face a tight deadline for the UAT sign-off.",
+          "translation": "我们面临UAT签字的紧迫期限。",
+          "usageNote": "face + 问题/挑战（面对、面临，常指需要正面应对的困难）",
+          "dateAdded": "2026-10-19T14:41:24.755Z"
+        },
+        {
+          "id": "mvfd464zyvrkh",
+          "text": "The team faced several issues during the migration.",
+          "translation": "迁移过程中团队遇到了几个问题。",
+          "usageNote": "face issues / face challenges（语气偏正式，带有\"需要应对\"的意味）",
+          "dateAdded": "2026-10-19T14:41:24.755Z"
+        },
+        {
+          "id": "mvfd464zvduaq",
+          "text": "Let me face the facts: the timeline is no longer realistic.",
+          "translation": "我们面对现实吧：这个时间表已经不现实了。",
+          "usageNote": "face the facts（直面事实）",
+          "dateAdded": "2026-10-19T14:41:24.755Z"
+        },
+        {
+          "id": "mvfd464zdlf8h",
+          "text": "I'll face the music once the audit results come out.",
+          "translation": "审计结果出来后，我会坦然面对。",
+          "usageNote": "face the music（承担后果）",
+          "dateAdded": "2026-10-19T14:41:24.755Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfd464zg5g43",
+          "word": "facet",
+          "translation": "方面；侧面"
+        },
+        {
+          "id": "mvfd464zo7jaw",
+          "word": "facing",
+          "translation": "面对；面临"
+        },
+        {
+          "id": "mvfd464zu5aka",
+          "word": "surface",
+          "translation": "表面；表层"
+        },
+        {
+          "id": "mvfd464zdvp5e",
+          "word": "interface",
+          "translation": "界面；接口"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfd5dymrrwov",
+      "word": "encounter",
+      "phonetic": "/ɪnˈkaʊntɚ/",
+      "audio": "",
+      "meaning": "遇到；偶然碰到；（困难）遭遇",
+      "dateAdded": "2026-10-19T14:42:21.550Z",
+      "sentences": [
+        {
+          "id": "mvfd5dym88ida",
+          "text": "We encountered a timeout error during the batch run.",
+          "translation": "批处理运行时我们遇到了超时错误。",
+          "usageNote": "encounter + 问题/错误（遇到，多指意外或偶然碰到）",
+          "dateAdded": "2026-10-19T14:42:21.550Z"
+        },
+        {
+          "id": "mvfd5dym4s4d5",
+          "text": "The team encountered unexpected resistance from the vendor.",
+          "translation": "团队遇到了供应商意想不到的阻力。",
+          "usageNote": "encounter 书面感较强，常用于报告和正式文档",
+          "dateAdded": "2026-10-19T14:42:21.550Z"
+        },
+        {
+          "id": "mvfd5dym8ei9s",
+          "text": "Have you encountered this error before?",
+          "translation": "你以前遇到过这个错误吗？",
+          "usageNote": "encounter 作动词，主语通常是人",
+          "dateAdded": "2026-10-19T14:42:21.550Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfd5dymuwov4",
+          "word": "encounters",
+          "translation": "遭遇；相遇（名词复数）"
+        },
+        {
+          "id": "mvfd60rcmoosb",
+          "word": "counter",
+          "translation": "柜台；计数器；反击"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfd8zko3u2wd",
+      "word": "directly",
+      "phonetic": "/dɚˈɛktli/",
+      "audio": "",
+      "meaning": "直接地；径直；立即；正好；直接了当地",
+      "dateAdded": "2026-10-19T14:45:09.527Z",
+      "sentences": [
+        {
+          "id": "mvfd8zkob56xw",
+          "text": "Please reply directly to me, not to the whole group.",
+          "translation": "请直接回复我，不要回复整个群。",
+          "usageNote": "directly 修饰动词，表示不经过中间环节（reply directly / contact directly）",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        },
+        {
+          "id": "mvfd8zkokm44r",
+          "text": "The vendor will contact the auditors directly.",
+          "translation": "供应商会直接联系审计人员。",
+          "usageNote": "directly + 动词（不经他人，直接发生）",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        },
+        {
+          "id": "mvfd8zko27xge",
+          "text": "I'll deal with the issue directly and let you know the outcome.",
+          "translation": "我会直接处理这个问题，然后告诉你结果。",
+          "usageNote": "directly 表示\"亲自、直接\"",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        },
+        {
+          "id": "mvfd8zkohc5bj",
+          "text": "The new CR directly affects the clinic address sync.",
+          "translation": "这个新CR直接影响诊所地址同步。",
+          "usageNote": "directly + 动词，表示直接产生影响或关系",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        },
+        {
+          "id": "mvfd8zkomv4wx",
+          "text": "Let me be direct: the deadline will not be met.",
+          "translation": "我直说吧：这个截止日期赶不上了。",
+          "usageNote": "注意 direct 是形容词/动词，directly 是副词；\"直接说\" 用 be direct 而非 directly",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        },
+        {
+          "id": "mvfd8zko8nh0d",
+          "text": "The meeting starts directly after the stand-up.",
+          "translation": "会议紧接着站会开始。",
+          "usageNote": "directly 表示\"紧接着、马上\"（directly after / directly before）",
+          "dateAdded": "2026-10-19T14:45:09.527Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfd8zkovzrhb",
+          "word": "direct",
+          "translation": "直接的；指挥；导演"
+        },
+        {
+          "id": "mvfd8zkofgt7y",
+          "word": "directness",
+          "translation": "直接；坦率"
+        },
+        {
+          "id": "mvfd8zkorw4z3",
+          "word": "director",
+          "translation": "主管；董事；导演"
+        },
+        {
+          "id": "mvfd8zkoij39v",
+          "word": "directional",
+          "translation": "方向的；定向的"
+        },
+        {
+          "id": "mvfd8zkobrh6c",
+          "word": "directive",
+          "translation": "指令；指示（名词）"
+        },
+        {
+          "id": "mvfd8zkonhdhg",
+          "word": "indirectly",
+          "translation": "间接地"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfdd7p9ire0i",
+      "word": "toggling",
+      "phonetic": "/ˈtɑɡlɪŋ/",
+      "audio": "",
+      "meaning": "切换；开关切换（动名词/现在分词形式）",
+      "dateAdded": "2026-10-19T14:48:26.685Z",
+      "sentences": [
+        {
+          "id": "mvfdd7p95eqwn",
+          "text": "Toggling the feature flag on the server switches the new module on or off.",
+          "translation": "在服务器上切换功能开关，可以打开或关闭新模块。",
+          "usageNote": "toggling 作动名词或进行时，指不断切换某个开关或状态",
+          "dateAdded": "2026-10-19T14:48:26.685Z"
+        },
+        {
+          "id": "mvfdd7p9zsrl1",
+          "text": "Please stop toggling between the two environments; it causes confusion.",
+          "translation": "请不要在两个环境之间来回切换，这样会造成混乱。",
+          "usageNote": "toggle between A and B（在A和B之间来回切换）",
+          "dateAdded": "2026-10-19T14:48:26.685Z"
+        },
+        {
+          "id": "mvfdd7p9zy2d5",
+          "text": "You can toggle the setting in the admin portal.",
+          "translation": "你可以在管理门户中切换这个设置。",
+          "usageNote": "toggle sth（切换某个设置、开关）",
+          "dateAdded": "2026-10-19T14:48:26.685Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfdd7p9ytfz9",
+          "word": "toggle",
+          "translation": "切换开关；切换（动词/名词）"
+        },
+        {
+          "id": "mvfdd7p9cxobd",
+          "word": "toggled",
+          "translation": "已切换的"
+        },
+        {
+          "id": "mvfdd7p9iutm6",
+          "word": "toggler",
+          "translation": "切换者；切换器（较少用）"
+        },
+        {
+          "id": "mvfdd7p9tt3mi",
+          "word": "toggling-on",
+          "translation": "打开开关（口语中较少用）"
+        },
+        {
+          "id": "mvfdd7p9wblnn",
+          "word": "toggler-switch",
+          "translation": "切换开关（较少用的复合词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvfdmd425kbya",
+      "word": "variety",
+      "phonetic": "/vɚˈaɪəti/",
+      "audio": "",
+      "meaning": "多样性；种类；品种；各种各样的",
+      "dateAdded": "2026-10-19T14:55:33.602Z",
+      "sentences": [
+        {
+          "id": "mvfdmd421xmy7",
+          "text": "The team handles a wide variety of tasks, from audits to PROD support.",
+          "translation": "团队处理各种各样的任务，从审计到生产支持都有。",
+          "usageNote": "a variety of + 复数名词（各种各样的……，常用搭配，动词用复数）",
+          "dateAdded": "2026-10-19T14:55:33.602Z"
+        },
+        {
+          "id": "mvfdmd424qffi",
+          "text": "The system supports a variety of document formats.",
+          "translation": "该系统支持多种文档格式。",
+          "usageNote": "a variety of sth（多种……）",
+          "dateAdded": "2026-10-19T14:55:33.602Z"
+        },
+        {
+          "id": "mvfdmd42wnrtp",
+          "text": "The new portal offers a variety of reporting options.",
+          "translation": "新门户提供多种报告选项。",
+          "usageNote": "offer a variety of（提供多种……）",
+          "dateAdded": "2026-10-19T14:55:33.602Z"
+        },
+        {
+          "id": "mvfdmd42qg5l6",
+          "text": "There is great variety in how the agencies approach data retention.",
+          "translation": "各机构处理数据保留的方式存在很大差异。",
+          "usageNote": "variety 作不可数名词，表示多样性",
+          "dateAdded": "2026-10-19T14:55:33.602Z"
+        },
+        {
+          "id": "mvfdmd421gpfr",
+          "text": "The vendor sells a variety of Samsung and Lenovo laptops.",
+          "translation": "该供应商销售多种三星和联想笔记本电脑。",
+          "usageNote": "a variety of 之后的名词若是复数，谓语动词与\"a variety\"的主语一致（看 variety 本身为单数，但语境中常按复数理解，口语中两种都常见）",
+          "dateAdded": "2026-10-19T14:55:33.602Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvfdmd428dpfd",
+          "word": "various",
+          "translation": "各种各样的；不同的"
+        },
+        {
+          "id": "mvfdmd42426q7",
+          "word": "varied",
+          "translation": "多样的；变化的"
+        },
+        {
+          "id": "mvfdmd42sitnw",
+          "word": "variably",
+          "translation": "多变地；不一致地"
+        },
+        {
+          "id": "mvfdmd42j5hii",
+          "word": "variant",
+          "translation": "变体；变种"
+        },
+        {
+          "id": "mvfdmd421x7xx",
+          "word": "varietal",
+          "translation": "品种的（较少用，多见于葡萄酒、农产品）"
+        },
+        {
+          "id": "mvfdmd42cerfo",
+          "word": "varieties",
+          "translation": "品种（复数）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mvgliv52ao4nx",
       "word": "defer",
-      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
       "phonetic": "/dɪˈfɝ/",
       "audio": "",
+      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
       "dateAdded": "2026-10-20T11:24:33.445Z",
       "sentences": [
         {
@@ -6000,6 +7025,7 @@
     "mrhv3oggrsl1a": "2026-08-25T15:30:00.991Z",
     "msmxiczoukarw": "2026-08-25T15:32:09.260Z",
     "mutv91ggb0miv": "2026-10-04T13:41:06.885Z",
-    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z"
+    "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z",
+    "mrhuhpqa3puae": "2026-10-19T14:07:12.594Z"
   }
 }
