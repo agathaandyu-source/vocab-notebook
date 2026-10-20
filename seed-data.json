@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-20T13:41:29.180Z",
+  "exportedAt": "2026-10-20T15:40:31.370Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -7004,6 +7004,314 @@
           "id": "mvgliv52qssge",
           "word": "infer",
           "translation": "推断；推论"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgufs2yc9hf4",
+      "word": "scrutinize",
+      "meaning": "仔细审查；细查；严格检查；推敲",
+      "phonetic": "/ˈskrutəˌnaɪz/",
+      "audio": "",
+      "dateAdded": "2026-10-20T15:34:06.058Z",
+      "sentences": [
+        {
+          "id": "mvgufs2y4nnmg",
+          "text": "The auditors will scrutinize every transaction in the access logs.",
+          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
+          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
+          "dateAdded": "2026-10-20T15:34:06.058Z"
+        },
+        {
+          "id": "mvgufs2yhpgiu",
+          "text": "The CAB scrutinised the rollback plan before approving the CR.",
+          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
+          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
+          "dateAdded": "2026-10-20T15:34:06.058Z"
+        },
+        {
+          "id": "mvgufs2ygrmcb",
+          "text": "Every change request is subject to close scrutiny by the review board.",
+          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
+          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
+          "dateAdded": "2026-10-20T15:34:06.058Z"
+        },
+        {
+          "id": "mvgufs2yodhyt",
+          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
+          "translation": "成本超支之后，供应商的提案受到了严格审视。",
+          "usageNote": "come under scrutiny（受到审视、被严格检查）",
+          "dateAdded": "2026-10-20T15:34:06.058Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgufs2y7t8nq",
+          "word": "scrutiny",
+          "translation": "审查；细查；审视（名词）"
+        },
+        {
+          "id": "mvgufs2yd2h8l",
+          "word": "scrutinizer",
+          "translation": "审查者；细查者（较少用）"
+        },
+        {
+          "id": "mvgufs2yeh18o",
+          "word": "scrutinising",
+          "translation": "审查（现在分词，英式）"
+        },
+        {
+          "id": "mvgufs2yjqr75",
+          "word": "scrutineer",
+          "translation": "监票员；检票员（较少用，多见于选举语境）"
+        },
+        {
+          "id": "mvgufs2ys9h6u",
+          "word": "inscrutable",
+          "translation": "难以理解的；莫测高深的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvguh4xck6gjy",
+      "word": "efficiency",
+      "meaning": "效率；效能；高效；效益",
+      "phonetic": "/ɪˈfɪʃənsi/",
+      "audio": "",
+      "dateAdded": "2026-10-20T15:35:09.359Z",
+      "sentences": [
+        {
+          "id": "mvguh4xc3ddmi",
+          "text": "The new script improved the batch job's efficiency by about 40%.",
+          "translation": "新脚本将批处理任务的效率提高了约40%。",
+          "usageNote": "efficiency 作不可数名词，指做事的效率（improve / increase efficiency）",
+          "dateAdded": "2026-10-20T15:35:09.359Z"
+        },
+        {
+          "id": "mvguh4xc9eyb2",
+          "text": "Automating the scheduled reports will save the team time and improve efficiency.",
+          "translation": "自动化定时报告将为团队节省时间，并提高效率。",
+          "usageNote": "improve / boost / increase efficiency（提高效率，职场高频搭配）",
+          "dateAdded": "2026-10-20T15:35:09.359Z"
+        },
+        {
+          "id": "mvguh4xcpccfb",
+          "text": "The team reviewed the process for efficiency before the migration.",
+          "translation": "迁移前团队审查了流程以提升效率。",
+          "usageNote": "for efficiency / in terms of efficiency（为了效率；就效率而言）",
+          "dateAdded": "2026-10-20T15:35:09.359Z"
+        },
+        {
+          "id": "mvguh4xcf537y",
+          "text": "The vendor's efficiency in resolving PROD issues has been impressive.",
+          "translation": "供应商解决生产问题的效率令人印象深刻。",
+          "usageNote": "指某人或某团队的办事效率（的效率）",
+          "dateAdded": "2026-10-20T15:35:09.359Z"
+        },
+        {
+          "id": "mvguh4xc104zs",
+          "text": "The energy efficiency of the new servers reduces the operating cost.",
+          "translation": "新服务器的能效降低了运营成本。",
+          "usageNote": "energy / fuel / cost efficiency（能源效率、燃料效率、成本效益）",
+          "dateAdded": "2026-10-20T15:35:09.359Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvguh4xchpf70",
+          "word": "efficient",
+          "translation": "高效的；有效率的"
+        },
+        {
+          "id": "mvguh4xcko2fw",
+          "word": "efficiently",
+          "translation": "高效地；有效地"
+        },
+        {
+          "id": "mvguh4xcou7yr",
+          "word": "inefficiency",
+          "translation": "低效；效率低下"
+        },
+        {
+          "id": "mvguh4xckok4d",
+          "word": "inefficient",
+          "translation": "低效的；效率低的"
+        },
+        {
+          "id": "mvguh4xcmtbin",
+          "word": "efficacy",
+          "translation": "功效；效力（多用于药品、方法的效果）"
+        },
+        {
+          "id": "mvguh4xcobe27",
+          "word": "effective",
+          "translation": "有效的；生效的"
+        },
+        {
+          "id": "mvguh4xcku254",
+          "word": "efficacious",
+          "translation": "有效的（较书面，多用于药效）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvguie79vlosf",
+      "word": "confront",
+      "meaning": "面对；对抗；正视；与……对质；使面临",
+      "phonetic": "/kənfˈrʌnt/",
+      "audio": "",
+      "dateAdded": "2026-10-20T15:36:08.036Z",
+      "sentences": [
+        {
+          "id": "mvguie79cv2jk",
+          "text": "We need to confront the root cause of the timeout issue instead of masking it.",
+          "translation": "我们需要正视超时问题的根本原因，而不是掩盖它。",
+          "usageNote": "confront + 问题/困难（正面面对、直面，语气比 face 更强烈）",
+          "dateAdded": "2026-10-20T15:36:08.036Z"
+        },
+        {
+          "id": "mvguie79711pu",
+          "text": "The team was confronted with a tight deadline and a shortage of testers.",
+          "translation": "团队面临紧迫的期限和测试人员短缺的双重压力。",
+          "usageNote": "be confronted with sth（被迫面对某种状况，常用被动语态）",
+          "dateAdded": "2026-10-20T15:36:08.036Z"
+        },
+        {
+          "id": "mvguie79a9t9d",
+          "text": "The auditors confronted the vendor with the missing access logs.",
+          "translation": "审计人员就缺失的访问日志与供应商对质。",
+          "usageNote": "confront sb with sth（拿某事质问某人、当面指出）",
+          "dateAdded": "2026-10-20T15:36:08.036Z"
+        },
+        {
+          "id": "mvguie79z0aov",
+          "text": "The manager confronted the issue directly in the stand-up.",
+          "translation": "经理在站会上直接提出了这个问题。",
+          "usageNote": "confront 表示\"正面直接应对\"，含有对立或棘手的意味",
+          "dateAdded": "2026-10-20T15:36:08.036Z"
+        },
+        {
+          "id": "mvguie79lay7j",
+          "text": "The PPS pilot confronts a number of technical challenges.",
+          "translation": "PPS试点面临若干技术挑战。",
+          "usageNote": "confront 作及物动词，直接接宾语，不加介词（不说 confront with the issue）",
+          "dateAdded": "2026-10-20T15:36:08.036Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvguie79srrby",
+          "word": "confrontation",
+          "translation": "对抗；冲突；对质"
+        },
+        {
+          "id": "mvguie79zsole",
+          "word": "confrontational",
+          "translation": "对抗性的；好争斗的"
+        },
+        {
+          "id": "mvguie79c6f8c",
+          "word": "confronter",
+          "translation": "对质者；直面者（较少用）"
+        },
+        {
+          "id": "mvguie79novp5",
+          "word": "confronting",
+          "translation": "令人不安的；需正视的"
+        },
+        {
+          "id": "mvguie79sb4vx",
+          "word": "confronted",
+          "translation": "面临的；被对质的（过去式/过去分词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgujm73x916t",
+      "word": "negotiate",
+      "meaning": "谈判；协商；磋商；顺利通过（障碍、路段）",
+      "phonetic": "/nəˈɡoʊʃiˌeɪt/",
+      "audio": "",
+      "dateAdded": "2026-10-20T15:37:05.055Z",
+      "sentences": [
+        {
+          "id": "mvgujm73zr6jh",
+          "text": "We are negotiating the contract terms with the vendor.",
+          "translation": "我们正在与供应商协商合同条款。",
+          "usageNote": "negotiate + 事项（就某事进行谈判，及物动词，后面直接接宾语）",
+          "dateAdded": "2026-10-20T15:37:05.055Z"
+        },
+        {
+          "id": "mvgujm73m9met",
+          "text": "The PM negotiated an extension of the UAT deadline with LTA.",
+          "translation": "项目经理与LTA协商延长了UAT的期限。",
+          "usageNote": "negotiate sth with sb（与某人就某事协商）",
+          "dateAdded": "2026-10-20T15:37:05.055Z"
+        },
+        {
+          "id": "mvgujm73gi3af",
+          "text": "Both parties need to negotiate in good faith.",
+          "translation": "双方都需要本着诚意进行谈判。",
+          "usageNote": "negotiate in good faith（本着诚意谈判，合同和政府项目常用）",
+          "dateAdded": "2026-10-20T15:37:05.055Z"
+        },
+        {
+          "id": "mvgujm73fi0se",
+          "text": "The team negotiated the narrow road safely with the heavy vehicles.",
+          "translation": "团队小心地穿过了这条狭窄的道路，避开了重型车辆。",
+          "usageNote": "negotiate 表示\"顺利通过、绕过\"障碍（negotiate an obstacle / a bend）",
+          "dateAdded": "2026-10-20T15:37:05.055Z"
+        },
+        {
+          "id": "mvgujm73r71dp",
+          "text": "We are open to negotiation if the scope changes.",
+          "translation": "如果范围有变化，我们愿意协商。",
+          "usageNote": "negotiation 名词形式（in negotiation with / open to negotiation）",
+          "dateAdded": "2026-10-20T15:37:05.055Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgujm736dztf",
+          "word": "negotiation",
+          "translation": "谈判；协商"
+        },
+        {
+          "id": "mvgujm73yqiii",
+          "word": "negotiator",
+          "translation": "谈判者；协商人"
+        },
+        {
+          "id": "mvgujm73kxizl",
+          "word": "negotiable",
+          "translation": "可协商的；可议价的"
+        },
+        {
+          "id": "mvgujm73oos40",
+          "word": "non-negotiable",
+          "translation": "不可协商的；不能让步的"
+        },
+        {
+          "id": "mvgujm73tikfg",
+          "word": "negotiating",
+          "translation": "谈判的（作定语或现在分词）"
+        },
+        {
+          "id": "mvgujm73hmvxn",
+          "word": "renegotiate",
+          "translation": "重新谈判；重新协商"
         }
       ],
       "review": null,
