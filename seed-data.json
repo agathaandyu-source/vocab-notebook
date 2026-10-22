@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-20T15:40:31.370Z",
+  "exportedAt": "2026-10-22T01:41:13.953Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1952,10 +1952,60 @@
       "word": "discrepancy",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
-      "meaning": "差异",
+      "meaning": "差异；不一致；矛盾；出入（尤指数字或记录之间的差距）",
       "dateAdded": "2026-07-13T10:39:53.941Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mvgm6t6pu7tbs",
+          "text": "There is a discrepancy between the audit report and the PROD database records.",
+          "translation": "审计报告与生产数据库记录之间存在差异。",
+          "usageNote": "discrepancy between A and B（A与B之间的不一致，常用搭配）",
+          "dateAdded": "2026-10-20T11:43:10.657Z"
+        },
+        {
+          "id": "mvgm6t6p9zgrd",
+          "text": "The team must resolve the discrepancy in the vaccination figures before the submission.",
+          "translation": "提交前团队必须解决疫苗接种数据的出入问题。",
+          "usageNote": "resolve / investigate / explain a discrepancy（解决、调查、解释差异）",
+          "dateAdded": "2026-10-20T11:43:10.657Z"
+        },
+        {
+          "id": "mvgm6t6pzudlt",
+          "text": "Please explain the discrepancy in the invoice amount.",
+          "translation": "请解释发票金额的差异。",
+          "usageNote": "discrepancy in sth（某方面的差异，指数字或金额）",
+          "dateAdded": "2026-10-20T11:43:10.657Z"
+        },
+        {
+          "id": "mvgm6t6pzjwvs",
+          "text": "The discrepancy was caused by a timezone issue in the batch job.",
+          "translation": "这个差异是由批处理任务中的时区问题造成的。",
+          "usageNote": "discrepancy 常用于指数据或记录的不一致，比 difference 更正式、更强调\"本该一致却不一致\"",
+          "dateAdded": "2026-10-20T11:43:10.657Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgm6t6pruesv",
+          "word": "discrepant",
+          "translation": "不一致的；相互矛盾的（形容词，较正式）"
+        },
+        {
+          "id": "mvgm6t6pbpnbw",
+          "word": "discrepancies",
+          "translation": "差异（复数，报告中高频）"
+        },
+        {
+          "id": "mvgm6t6phr2rk",
+          "word": "discrete",
+          "translation": "离散的；分立的；各自独立的"
+        },
+        {
+          "id": "mvgm6t6peq0ur",
+          "word": "discreet",
+          "translation": "谨慎的；慎重的（与 discrete 拼写相近，注意区分）"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4688,10 +4738,72 @@
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的",
+      "meaning": "临时的；过渡性的；中期的；临时措施；中期（报告、结果）",
       "dateAdded": "2026-08-23T12:12:27.078Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mvglvtzx9dsf1",
+          "text": "The team will apply an interim fix until the permanent patch is released.",
+          "translation": "在正式补丁发布之前，团队会先上临时修复。",
+          "usageNote": "interim + 名词（临时的、过渡性的，如 interim fix / interim solution）",
+          "dateAdded": "2026-10-20T11:34:38.493Z"
+        },
+        {
+          "id": "mvglvtzy7x35d",
+          "text": "Please submit the interim report by the end of this month.",
+          "translation": "请在本月底前提交中期报告。",
+          "usageNote": "interim report / interim review（中期报告 / 中期评审，项目管理高频）",
+          "dateAdded": "2026-10-20T11:34:38.493Z"
+        },
+        {
+          "id": "mvglvtzygcdyn",
+          "text": "The vendor has agreed to an interim arrangement for the PPS pilot.",
+          "translation": "供应商已同意PPS试点的临时安排。",
+          "usageNote": "interim arrangement / interim measure（临时安排 / 临时措施）",
+          "dateAdded": "2026-10-20T11:34:38.493Z"
+        },
+        {
+          "id": "mvglvtzyxtsr7",
+          "text": "Ms Tan will act as interim project manager until the new hire starts.",
+          "translation": "在新同事入职前，Tan女士将暂任项目经理。",
+          "usageNote": "interim 作名词或形容词，表示\"暂时的、代理的\"（act as interim）",
+          "dateAdded": "2026-10-20T11:34:38.493Z"
+        },
+        {
+          "id": "mvglvtzyhqdkq",
+          "text": "In the interim, please continue to use the existing workaround.",
+          "translation": "在此期间，请继续使用现有的临时方案。",
+          "usageNote": "in the interim（在此期间、与此同时，句首或句末常用）",
+          "dateAdded": "2026-10-20T11:34:38.493Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvglvtzyxkpr8",
+          "word": "interims",
+          "translation": "临时措施；中期报告（复数，英式常用）"
+        },
+        {
+          "id": "mvglvtzy96kkp",
+          "word": "interimly",
+          "translation": "暂时地（极少用）"
+        },
+        {
+          "id": "mvglvtzy9dgcm",
+          "word": "interregnum",
+          "translation": "空位期；过渡期（较书面）"
+        },
+        {
+          "id": "mvglvtzyksftm",
+          "word": "interior",
+          "translation": "内部的；内饰；内陆"
+        },
+        {
+          "id": "mvglvtzy0e1ek",
+          "word": "intermediate",
+          "translation": "中间的；中级的"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -5888,6 +6000,224 @@
       "learnedAt": null
     },
     {
+      "id": "mvgliv52ao4nx",
+      "word": "defer",
+      "phonetic": "/dɪˈfɝ/",
+      "audio": "",
+      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
+      "dateAdded": "2026-10-20T11:24:33.445Z",
+      "sentences": [
+        {
+          "id": "mvgliv527yeih",
+          "text": "The team decided to defer the PROD deployment until after the freeze period.",
+          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
+          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5268lh8",
+          "text": "The CAB has deferred the CR to next month's review.",
+          "translation": "CAB已将该CR推迟到下个月的评审。",
+          "usageNote": "defer to + 日期/事件（推迟到……）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5260wo1",
+          "text": "I'll defer to your judgement on the database design.",
+          "translation": "关于数据库设计，我尊重你的判断。",
+          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52pawpq",
+          "text": "Deferred revenue must be recognised in the period the service is delivered.",
+          "translation": "递延收入必须在服务交付的会计期间确认。",
+          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52i9bd5",
+          "text": "The team will defer to the vendor's recommendation on the licence.",
+          "translation": "团队会听从供应商对许可证的建议。",
+          "usageNote": "defer to 表示\"顺从、以……为准\"",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgliv52kbtyw",
+          "word": "deferment",
+          "translation": "延期；推迟"
+        },
+        {
+          "id": "mvgliv526kwbu",
+          "word": "deference",
+          "translation": "尊重；敬意；顺从"
+        },
+        {
+          "id": "mvgliv52o41vl",
+          "word": "deferential",
+          "translation": "恭敬的；顺从的"
+        },
+        {
+          "id": "mvgliv52k5bkd",
+          "word": "deferral",
+          "translation": "延期；推迟（名词，常见于财务和项目语境）"
+        },
+        {
+          "id": "mvgliv524gndh",
+          "word": "deferrable",
+          "translation": "可延期的"
+        },
+        {
+          "id": "mvgliv523har8",
+          "word": "referral",
+          "translation": "转介；推荐"
+        },
+        {
+          "id": "mvgliv52qssge",
+          "word": "infer",
+          "translation": "推断；推论"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvglytpsbaljx",
+      "word": "liaison",
+      "phonetic": "/liˈeɪˌzɑn/",
+      "audio": "",
+      "meaning": "联络；联络人；协调；沟通；（非正式）暧昧关系",
+      "dateAdded": "2026-10-20T11:36:58.096Z",
+      "sentences": [
+        {
+          "id": "mvglytpthnmhs",
+          "text": "She acts as the liaison between the project team and LTA.",
+          "translation": "她担任项目团队与LTA之间的联络人。",
+          "usageNote": "act as liaison / serve as liaison（担任联络人，职场高频搭配）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt89nkc",
+          "text": "We need to liaise with the DBA before the freeze period.",
+          "translation": "冻结期前我们需要与DBA进行沟通协调。",
+          "usageNote": "liaise with sb（与某人联络、协调，动词形式）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt6e1ak",
+          "text": "Please liaise with the audit team on the access log request.",
+          "translation": "请与审计团队对接，协调访问日志的请求。",
+          "usageNote": "liaise with / liaise on（动词，新加坡政府邮件常用：please liaise with）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptadi74",
+          "text": "There is a liaison meeting with the agency every Thursday.",
+          "translation": "每周四都与该机构有一次联络会议。",
+          "usageNote": "liaison meeting / liaison officer（联络会议 / 联络官）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptk9eqd",
+          "text": "The liaison officer will coordinate the handover with the vendor.",
+          "translation": "联络官将与供应商协调交接事宜。",
+          "usageNote": "liaison officer（联络官，政府及大型项目中常见）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvglytptj75kh",
+          "word": "liaise",
+          "translation": "联络；协调（动词，英式和美式都常用）"
+        },
+        {
+          "id": "mvglytptbdo2n",
+          "word": "liaising",
+          "translation": "联络；协调（动名词/现在分词）"
+        },
+        {
+          "id": "mvglytpttrreo",
+          "word": "liaised",
+          "translation": "已联络的（过去式/过去分词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgmo9cf1qryd",
+      "word": "scrutinize",
+      "phonetic": "/ˈskrutəˌnaɪz/",
+      "audio": "",
+      "meaning": "仔细审查；细查；严格检查；推敲",
+      "dateAdded": "2026-10-20T11:56:44.751Z",
+      "sentences": [
+        {
+          "id": "mvgmo9cfnj5xg",
+          "text": "The auditors will scrutinize every transaction in the access logs.",
+          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
+          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cfnfthv",
+          "text": "The CAB scrutinised the rollback plan before approving the CR.",
+          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
+          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cf7nu4w",
+          "text": "Every change request is subject to close scrutiny by the review board.",
+          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
+          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cftqpw0",
+          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
+          "translation": "成本超支之后，供应商的提案受到了严格审视。",
+          "usageNote": "come under scrutiny（受到审视、被严格检查）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgmo9cg598qb",
+          "word": "scrutiny",
+          "translation": "审查；细查；审视（名词）"
+        },
+        {
+          "id": "mvgmo9cgtqrl1",
+          "word": "scrutinizer",
+          "translation": "审查者；细查者（较少用）"
+        },
+        {
+          "id": "mvgmo9cg3yyqk",
+          "word": "scrutinising",
+          "translation": "审查（现在分词，英式）"
+        },
+        {
+          "id": "mvgmo9cgnh0d6",
+          "word": "scrutineer",
+          "translation": "监票员；检票员（较少用，多见于选举语境）"
+        },
+        {
+          "id": "mvgmo9cgoi2y8",
+          "word": "inscrutable",
+          "translation": "难以理解的；莫测高深的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mvfbcjs20tl1s",
       "word": "yet",
       "phonetic": "/jɛt/",
@@ -6926,96 +7256,11 @@
       "learnedAt": null
     },
     {
-      "id": "mvgliv52ao4nx",
-      "word": "defer",
-      "phonetic": "/dɪˈfɝ/",
-      "audio": "",
-      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
-      "dateAdded": "2026-10-20T11:24:33.445Z",
-      "sentences": [
-        {
-          "id": "mvgliv527yeih",
-          "text": "The team decided to defer the PROD deployment until after the freeze period.",
-          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
-          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5268lh8",
-          "text": "The CAB has deferred the CR to next month's review.",
-          "translation": "CAB已将该CR推迟到下个月的评审。",
-          "usageNote": "defer to + 日期/事件（推迟到……）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5260wo1",
-          "text": "I'll defer to your judgement on the database design.",
-          "translation": "关于数据库设计，我尊重你的判断。",
-          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52pawpq",
-          "text": "Deferred revenue must be recognised in the period the service is delivered.",
-          "translation": "递延收入必须在服务交付的会计期间确认。",
-          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52i9bd5",
-          "text": "The team will defer to the vendor's recommendation on the licence.",
-          "translation": "团队会听从供应商对许可证的建议。",
-          "usageNote": "defer to 表示\"顺从、以……为准\"",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvgliv52kbtyw",
-          "word": "deferment",
-          "translation": "延期；推迟"
-        },
-        {
-          "id": "mvgliv526kwbu",
-          "word": "deference",
-          "translation": "尊重；敬意；顺从"
-        },
-        {
-          "id": "mvgliv52o41vl",
-          "word": "deferential",
-          "translation": "恭敬的；顺从的"
-        },
-        {
-          "id": "mvgliv52k5bkd",
-          "word": "deferral",
-          "translation": "延期；推迟（名词，常见于财务和项目语境）"
-        },
-        {
-          "id": "mvgliv524gndh",
-          "word": "deferrable",
-          "translation": "可延期的"
-        },
-        {
-          "id": "mvgliv523har8",
-          "word": "referral",
-          "translation": "转介；推荐"
-        },
-        {
-          "id": "mvgliv52qssge",
-          "word": "infer",
-          "translation": "推断；推论"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "mvgufs2yc9hf4",
       "word": "scrutinize",
-      "meaning": "仔细审查；细查；严格检查；推敲",
       "phonetic": "/ˈskrutəˌnaɪz/",
       "audio": "",
+      "meaning": "仔细审查；细查；严格检查；推敲",
       "dateAdded": "2026-10-20T15:34:06.058Z",
       "sentences": [
         {
@@ -7081,9 +7326,9 @@
     {
       "id": "mvguh4xck6gjy",
       "word": "efficiency",
-      "meaning": "效率；效能；高效；效益",
       "phonetic": "/ɪˈfɪʃənsi/",
       "audio": "",
+      "meaning": "效率；效能；高效；效益",
       "dateAdded": "2026-10-20T15:35:09.359Z",
       "sentences": [
         {
@@ -7166,9 +7411,9 @@
     {
       "id": "mvguie79vlosf",
       "word": "confront",
-      "meaning": "面对；对抗；正视；与……对质；使面临",
       "phonetic": "/kənfˈrʌnt/",
       "audio": "",
+      "meaning": "面对；对抗；正视；与……对质；使面临",
       "dateAdded": "2026-10-20T15:36:08.036Z",
       "sentences": [
         {
@@ -7241,9 +7486,9 @@
     {
       "id": "mvgujm73x916t",
       "word": "negotiate",
-      "meaning": "谈判；协商；磋商；顺利通过（障碍、路段）",
       "phonetic": "/nəˈɡoʊʃiˌeɪt/",
       "audio": "",
+      "meaning": "谈判；协商；磋商；顺利通过（障碍、路段）",
       "dateAdded": "2026-10-20T15:37:05.055Z",
       "sentences": [
         {
@@ -7312,6 +7557,350 @@
           "id": "mvgujm73hmvxn",
           "word": "renegotiate",
           "translation": "重新谈判；重新协商"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvhwon9haywd1",
+      "word": "defect",
+      "phonetic": "/ˈdifɛkt/",
+      "audio": "",
+      "meaning": "缺陷；瑕疵；缺点；（名词）缺陷；（动词）叛逃；脱离",
+      "dateAdded": "2026-10-21T09:24:45.125Z",
+      "sentences": [
+        {
+          "id": "mvhwon9hlns6y",
+          "text": "The team logged a critical defect in the PROD release notes.",
+          "translation": "团队在生产发布说明中记录了一个严重缺陷。",
+          "usageNote": "defect 作名词，指软件、产品中的缺陷（常与 log / raise / fix 搭配）",
+          "dateAdded": "2026-10-21T09:24:45.125Z"
+        },
+        {
+          "id": "mvhwon9hekx28",
+          "text": "The defect was traced back to the batch job's timezone setting.",
+          "translation": "这个缺陷被追溯到批处理任务的时区设置。",
+          "usageNote": "trace / track down a defect（追溯、定位缺陷）",
+          "dateAdded": "2026-10-21T09:24:45.125Z"
+        },
+        {
+          "id": "mvhwon9h90rqh",
+          "text": "The vendor agreed to fix all the defects before UAT sign-off.",
+          "translation": "供应商同意在UAT签字前修复所有缺陷。",
+          "usageNote": "fix / resolve a defect（修复缺陷）",
+          "dateAdded": "2026-10-21T09:24:45.125Z"
+        },
+        {
+          "id": "mvhwon9h51rs7",
+          "text": "Defects found in UAT must be closed before the CAB meeting.",
+          "translation": "UAT中发现的缺陷必须在CAB会议前关闭。",
+          "usageNote": "defect 作复数 defects，指多个缺陷；也可用于 defect tracker（缺陷跟踪工具）",
+          "dateAdded": "2026-10-21T09:24:45.125Z"
+        },
+        {
+          "id": "mvhwon9ikiw76",
+          "text": "He defected to a competitor after the project ended.",
+          "translation": "项目结束后，他跳槽到了竞争对手那里。",
+          "usageNote": "defect 作动词，指叛逃、脱离原属阵营（defect to / from）",
+          "dateAdded": "2026-10-21T09:24:45.125Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvhwon9iwyp2f",
+          "word": "defective",
+          "translation": "有缺陷的；有瑕疵的"
+        },
+        {
+          "id": "mvhwon9iocxrs",
+          "word": "defector",
+          "translation": "叛逃者；投诚者"
+        },
+        {
+          "id": "mvhwon9ikuqhu",
+          "word": "defection",
+          "translation": "叛逃；脱离"
+        },
+        {
+          "id": "mvhwon9imks32",
+          "word": "defectiveness",
+          "translation": "缺陷性；瑕疵性（较少用）"
+        },
+        {
+          "id": "mvhwon9iewhva",
+          "word": "defect-free",
+          "translation": "无缺陷的"
+        },
+        {
+          "id": "mvhwon9ir9zv5",
+          "word": "defecate",
+          "translation": "排便（医学/生理语境，注意区分拼写）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvitknhrsf4o0",
+      "word": "instead",
+      "phonetic": "/ˌɪnsˈtɛd/",
+      "audio": "",
+      "meaning": "代替；反而；作为替代",
+      "dateAdded": "2026-10-22T00:45:26.126Z",
+      "sentences": [
+        {
+          "id": "mvitknhrs66ws",
+          "text": "Let's use the staging server instead of UAT for this test.",
+          "translation": "这次测试我们改用预发布服务器，而不是UAT。",
+          "usageNote": "instead 放在句末，表示\"替代、反而\"（instead of 之前的对象）",
+          "dateAdded": "2026-10-22T00:45:26.126Z"
+        },
+        {
+          "id": "mvitknhrg7g56",
+          "text": "Instead of waiting for the vendor, the team fixed the issue themselves.",
+          "translation": "团队没有等供应商，而是自己修复了这个问题。",
+          "usageNote": "instead of + 名词/动名词（而不是……，职场高频句型）",
+          "dateAdded": "2026-10-22T00:45:26.126Z"
+        },
+        {
+          "id": "mvitknhr1is5f",
+          "text": "Can we push the release to next week instead?",
+          "translation": "我们能把发布改到下周吗？",
+          "usageNote": "instead 作副词，单独使用，常放句末，语气较口语",
+          "dateAdded": "2026-10-22T00:45:26.126Z"
+        },
+        {
+          "id": "mvitknhrxpwtm",
+          "text": "The auditors asked for the logs; the team sent a summary instead.",
+          "translation": "审计人员要求提供日志，团队却发送了一份摘要。",
+          "usageNote": "instead 表示\"反而、却\"，引出与预期不同的结果",
+          "dateAdded": "2026-10-22T00:45:26.126Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvitknhrnap7t",
+          "word": "instead-of",
+          "translation": "代替（较少用，多作前置词组）"
+        },
+        {
+          "id": "mvitknhrt8pgx",
+          "word": "insteadiness",
+          "translation": "代替性（极少用）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvitpr4lfqwrk",
+      "word": "scope",
+      "phonetic": "/skoʊp/",
+      "audio": "",
+      "meaning": "范围；领域；覆盖面；余地；（动词）细看；查看",
+      "dateAdded": "2026-10-22T00:49:24.116Z",
+      "sentences": [
+        {
+          "id": "mvitpr4lv4ut0",
+          "text": "The scope of the PPS pilot was agreed with LTA last month.",
+          "translation": "PPS试点的范围是上个月与LTA商定的。",
+          "usageNote": "scope 作名词，指工作、项目或权限所涵盖的范围（project scope / scope of work）",
+          "dateAdded": "2026-10-22T00:49:24.116Z"
+        },
+        {
+          "id": "mvitpr4lzz50w",
+          "text": "This change is out of scope for the current sprint.",
+          "translation": "这项变更不在本次冲刺的范围之内。",
+          "usageNote": "in scope / out of scope（属于/不属于范围，项目管理高频搭配）",
+          "dateAdded": "2026-10-22T00:49:24.116Z"
+        },
+        {
+          "id": "mvitpr4l0ab5z",
+          "text": "The audit covers a wide scope of access controls and data retention.",
+          "translation": "此次审计涵盖访问控制和数据保留等广泛领域。",
+          "usageNote": "a wide / narrow scope（范围广/窄）",
+          "dateAdded": "2026-10-22T00:49:24.116Z"
+        },
+        {
+          "id": "mvitpr4l49ajj",
+          "text": "Please scope the effort for the new CR before the planning meeting.",
+          "translation": "请在规划会议前评估一下新CR的工作量和范围。",
+          "usageNote": "scope 作动词，指界定或评估范围（scope out / scope the work）",
+          "dateAdded": "2026-10-22T00:49:24.116Z"
+        },
+        {
+          "id": "mvitpr4lqo0ng",
+          "text": "The developer has a wide scope to make decisions on the design.",
+          "translation": "开发人员在设计方面有很大的决策余地。",
+          "usageNote": "scope 表示\"余地、权限范围\"（scope for sth / room to decide）",
+          "dateAdded": "2026-10-22T00:49:24.116Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvitpr4ls51vr",
+          "word": "scoping",
+          "translation": "界定范围；范围划定（名词/动名词，项目管理常用）"
+        },
+        {
+          "id": "mvitpr4l30kk5",
+          "word": "scoped",
+          "translation": "限定范围的；有范围的"
+        },
+        {
+          "id": "mvitpr4ldbe7i",
+          "word": "scope creep",
+          "translation": "范围蔓延（项目中需求不断增加导致超出原定范围）"
+        },
+        {
+          "id": "mvitpr4lnazwe",
+          "word": "microscope",
+          "translation": "显微镜"
+        },
+        {
+          "id": "mvitpr4mpqpmu",
+          "word": "telescope",
+          "translation": "望远镜"
+        },
+        {
+          "id": "mvitpr4m4lt16",
+          "word": "kaleidoscope",
+          "translation": "万花筒；多样化的事物"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvitus0bdyagy",
+      "word": "smoke test",
+      "phonetic": "/smoʊk tɛst/",
+      "audio": "",
+      "meaning": "冒烟测试；基础功能测试；快速验证测试（IT 项目用语）",
+      "dateAdded": "2026-10-22T00:53:18.539Z",
+      "sentences": [
+        {
+          "id": "mvitus0cgw6r9",
+          "text": "The team ran a smoke test on the new build before handing it over to UAT.",
+          "translation": "团队在把新版本交给UAT之前，先做了一轮冒烟测试。",
+          "usageNote": "smoke test 指对新版本做的快速、基础的功能检查，只确认系统\"能跑起来、主要功能没坏\"，不做深入测试",
+          "dateAdded": "2026-10-22T00:53:18.539Z"
+        },
+        {
+          "id": "mvitus0ct84ts",
+          "text": "If the smoke test fails, the build goes back to the developers.",
+          "translation": "如果冒烟测试失败，这个版本就退回给开发人员。",
+          "usageNote": "常见搭配：run / perform a smoke test（做冒烟测试）；smoke test fails / passes（测试失败 / 通过）",
+          "dateAdded": "2026-10-22T00:53:18.539Z"
+        },
+        {
+          "id": "mvitus0clslmy",
+          "text": "We need a smoke test on PROD after every deployment.",
+          "translation": "每次部署后，我们都需要在生产环境做一次冒烟测试。",
+          "usageNote": "after deployment / on PROD（部署后、在某环境上做）",
+          "dateAdded": "2026-10-22T00:53:18.539Z"
+        },
+        {
+          "id": "mvitus0c653ov",
+          "text": "The smoke test covers login, search and the main submission flow only.",
+          "translation": "冒烟测试只覆盖登录、搜索和主要提交流程。",
+          "usageNote": "smoke test 的范围较窄，只测核心功能，与 regression test（回归测试）和 full test（全面测试）区分",
+          "dateAdded": "2026-10-22T00:53:18.539Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvitus0crdibo",
+          "word": "smoke testing",
+          "translation": "冒烟测试（动名词，指进行这项测试的活动）"
+        },
+        {
+          "id": "mvitus0cq4luk",
+          "word": "smoke tester",
+          "translation": "冒烟测试人员"
+        },
+        {
+          "id": "mvitus0cp2m41",
+          "word": "regression test",
+          "translation": "回归测试（确认旧功能未被新改动破坏）"
+        },
+        {
+          "id": "mvitus0cdjg08",
+          "word": "sanity test",
+          "translation": "健全性测试（与 smoke test 相近，常用于快速确认改动是否合理）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvivk9wqtsuxm",
+      "word": "promptly",
+      "meaning": "迅速地；及时地；立即地；准时地",
+      "phonetic": "/ˈprɑmptli/",
+      "audio": "",
+      "dateAdded": "2026-10-22T01:41:07.754Z",
+      "sentences": [
+        {
+          "id": "mvivk9wrhvcan",
+          "text": "Please report any PROD incident to the on-call team promptly.",
+          "translation": "发现任何生产事故，请及时报告给值班团队。",
+          "usageNote": "promptly 修饰动词，强调\"马上、不拖延\"（report / respond / reply promptly）",
+          "dateAdded": "2026-10-22T01:41:07.754Z"
+        },
+        {
+          "id": "mvivk9wroj2hw",
+          "text": "The vendor responded promptly to the audit query.",
+          "translation": "供应商对审计问题做出了迅速回应。",
+          "usageNote": "promptly 放在动词之后或之前都可以，语气比 quickly 更正式，适合工作邮件",
+          "dateAdded": "2026-10-22T01:41:07.754Z"
+        },
+        {
+          "id": "mvivk9wrkbnlh",
+          "text": "Please notify me promptly if the deadline is at risk.",
+          "translation": "如果截止日期有风险，请尽快通知我。",
+          "usageNote": "promptly + 动词 + if/when（一旦……就及时……）",
+          "dateAdded": "2026-10-22T01:41:07.754Z"
+        },
+        {
+          "id": "mvivk9wrdy9af",
+          "text": "The team was prompt in fixing the bug.",
+          "translation": "团队修复这个bug很及时。",
+          "usageNote": "注意 prompt 是形容词/名词/动词，promptly 是副词；形容词 prompt 表示\"及时的\"（be prompt in + 动名词）",
+          "dateAdded": "2026-10-22T01:41:07.754Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvivk9wrucl1n",
+          "word": "prompt",
+          "translation": "及时的；提示；促使（形容词/名词/动词）"
+        },
+        {
+          "id": "mvivk9wrt3zkv",
+          "word": "promptness",
+          "translation": "及时；迅速"
+        },
+        {
+          "id": "mvivk9wry186r",
+          "word": "prompter",
+          "translation": "提词员；促使者（较少用）"
+        },
+        {
+          "id": "mvivk9wr5enaf",
+          "word": "prompting",
+          "translation": "提示；促使（名词）"
+        },
+        {
+          "id": "mvivk9wr52x98",
+          "word": "promptitude",
+          "translation": "敏捷；及时（较书面）"
         }
       ],
       "review": null,
