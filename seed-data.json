@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-25T07:03:50.235Z",
+  "exportedAt": "2026-10-25T07:04:08.079Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1488,7 +1488,7 @@
       "word": "issue",
       "phonetic": "/ˈɪʃ(j)u/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/issue-us.mp3",
-      "meaning": "问题；议题；发行；发布；分发；发出",
+      "meaning": "问题",
       "dateAdded": "2026-07-12T14:02:29.514Z",
       "sentences": [
         {
@@ -2104,7 +2104,7 @@
       "word": "discrepancy",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
-      "meaning": "差异；不一致；矛盾；出入（尤指数字或记录之间的差距）",
+      "meaning": "差异",
       "dateAdded": "2026-07-13T10:39:53.941Z",
       "sentences": [
         {
@@ -4864,7 +4864,7 @@
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的；过渡性的；中期的；临时措施；中期（报告、结果）",
+      "meaning": "临时的",
       "dateAdded": "2026-08-23T12:12:27.078Z",
       "sentences": [
         {
@@ -6126,224 +6126,6 @@
       "learnedAt": null
     },
     {
-      "id": "mvgliv52ao4nx",
-      "word": "defer",
-      "phonetic": "/dɪˈfɝ/",
-      "audio": "",
-      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
-      "dateAdded": "2026-10-20T11:24:33.445Z",
-      "sentences": [
-        {
-          "id": "mvgliv527yeih",
-          "text": "The team decided to defer the PROD deployment until after the freeze period.",
-          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
-          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5268lh8",
-          "text": "The CAB has deferred the CR to next month's review.",
-          "translation": "CAB已将该CR推迟到下个月的评审。",
-          "usageNote": "defer to + 日期/事件（推迟到……）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5260wo1",
-          "text": "I'll defer to your judgement on the database design.",
-          "translation": "关于数据库设计，我尊重你的判断。",
-          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52pawpq",
-          "text": "Deferred revenue must be recognised in the period the service is delivered.",
-          "translation": "递延收入必须在服务交付的会计期间确认。",
-          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52i9bd5",
-          "text": "The team will defer to the vendor's recommendation on the licence.",
-          "translation": "团队会听从供应商对许可证的建议。",
-          "usageNote": "defer to 表示\"顺从、以……为准\"",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvgliv52kbtyw",
-          "word": "deferment",
-          "translation": "延期；推迟"
-        },
-        {
-          "id": "mvgliv526kwbu",
-          "word": "deference",
-          "translation": "尊重；敬意；顺从"
-        },
-        {
-          "id": "mvgliv52o41vl",
-          "word": "deferential",
-          "translation": "恭敬的；顺从的"
-        },
-        {
-          "id": "mvgliv52k5bkd",
-          "word": "deferral",
-          "translation": "延期；推迟（名词，常见于财务和项目语境）"
-        },
-        {
-          "id": "mvgliv524gndh",
-          "word": "deferrable",
-          "translation": "可延期的"
-        },
-        {
-          "id": "mvgliv523har8",
-          "word": "referral",
-          "translation": "转介；推荐"
-        },
-        {
-          "id": "mvgliv52qssge",
-          "word": "infer",
-          "translation": "推断；推论"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvglytpsbaljx",
-      "word": "liaison",
-      "phonetic": "/liˈeɪˌzɑn/",
-      "audio": "",
-      "meaning": "联络；联络人；协调；沟通；（非正式）暧昧关系",
-      "dateAdded": "2026-10-20T11:36:58.096Z",
-      "sentences": [
-        {
-          "id": "mvglytpthnmhs",
-          "text": "She acts as the liaison between the project team and LTA.",
-          "translation": "她担任项目团队与LTA之间的联络人。",
-          "usageNote": "act as liaison / serve as liaison（担任联络人，职场高频搭配）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytpt89nkc",
-          "text": "We need to liaise with the DBA before the freeze period.",
-          "translation": "冻结期前我们需要与DBA进行沟通协调。",
-          "usageNote": "liaise with sb（与某人联络、协调，动词形式）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytpt6e1ak",
-          "text": "Please liaise with the audit team on the access log request.",
-          "translation": "请与审计团队对接，协调访问日志的请求。",
-          "usageNote": "liaise with / liaise on（动词，新加坡政府邮件常用：please liaise with）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytptadi74",
-          "text": "There is a liaison meeting with the agency every Thursday.",
-          "translation": "每周四都与该机构有一次联络会议。",
-          "usageNote": "liaison meeting / liaison officer（联络会议 / 联络官）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytptk9eqd",
-          "text": "The liaison officer will coordinate the handover with the vendor.",
-          "translation": "联络官将与供应商协调交接事宜。",
-          "usageNote": "liaison officer（联络官，政府及大型项目中常见）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvglytptj75kh",
-          "word": "liaise",
-          "translation": "联络；协调（动词，英式和美式都常用）"
-        },
-        {
-          "id": "mvglytptbdo2n",
-          "word": "liaising",
-          "translation": "联络；协调（动名词/现在分词）"
-        },
-        {
-          "id": "mvglytpttrreo",
-          "word": "liaised",
-          "translation": "已联络的（过去式/过去分词）"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvgmo9cf1qryd",
-      "word": "scrutinize",
-      "phonetic": "/ˈskrutəˌnaɪz/",
-      "audio": "",
-      "meaning": "仔细审查；细查；严格检查；推敲",
-      "dateAdded": "2026-10-20T11:56:44.751Z",
-      "sentences": [
-        {
-          "id": "mvgmo9cfnj5xg",
-          "text": "The auditors will scrutinize every transaction in the access logs.",
-          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
-          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cfnfthv",
-          "text": "The CAB scrutinised the rollback plan before approving the CR.",
-          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
-          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cf7nu4w",
-          "text": "Every change request is subject to close scrutiny by the review board.",
-          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
-          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cftqpw0",
-          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
-          "translation": "成本超支之后，供应商的提案受到了严格审视。",
-          "usageNote": "come under scrutiny（受到审视、被严格检查）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvgmo9cg598qb",
-          "word": "scrutiny",
-          "translation": "审查；细查；审视（名词）"
-        },
-        {
-          "id": "mvgmo9cgtqrl1",
-          "word": "scrutinizer",
-          "translation": "审查者；细查者（较少用）"
-        },
-        {
-          "id": "mvgmo9cg3yyqk",
-          "word": "scrutinising",
-          "translation": "审查（现在分词，英式）"
-        },
-        {
-          "id": "mvgmo9cgnh0d6",
-          "word": "scrutineer",
-          "translation": "监票员；检票员（较少用，多见于选举语境）"
-        },
-        {
-          "id": "mvgmo9cgoi2y8",
-          "word": "inscrutable",
-          "translation": "难以理解的；莫测高深的"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "mvfbcjs20tl1s",
       "word": "yet",
       "phonetic": "/jɛt/",
@@ -7382,6 +7164,91 @@
       "learnedAt": null
     },
     {
+      "id": "mvgliv52ao4nx",
+      "word": "defer",
+      "phonetic": "/dɪˈfɝ/",
+      "audio": "",
+      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
+      "dateAdded": "2026-10-20T11:24:33.445Z",
+      "sentences": [
+        {
+          "id": "mvgliv527yeih",
+          "text": "The team decided to defer the PROD deployment until after the freeze period.",
+          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
+          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5268lh8",
+          "text": "The CAB has deferred the CR to next month's review.",
+          "translation": "CAB已将该CR推迟到下个月的评审。",
+          "usageNote": "defer to + 日期/事件（推迟到……）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5260wo1",
+          "text": "I'll defer to your judgement on the database design.",
+          "translation": "关于数据库设计，我尊重你的判断。",
+          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52pawpq",
+          "text": "Deferred revenue must be recognised in the period the service is delivered.",
+          "translation": "递延收入必须在服务交付的会计期间确认。",
+          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52i9bd5",
+          "text": "The team will defer to the vendor's recommendation on the licence.",
+          "translation": "团队会听从供应商对许可证的建议。",
+          "usageNote": "defer to 表示\"顺从、以……为准\"",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgliv52kbtyw",
+          "word": "deferment",
+          "translation": "延期；推迟"
+        },
+        {
+          "id": "mvgliv526kwbu",
+          "word": "deference",
+          "translation": "尊重；敬意；顺从"
+        },
+        {
+          "id": "mvgliv52o41vl",
+          "word": "deferential",
+          "translation": "恭敬的；顺从的"
+        },
+        {
+          "id": "mvgliv52k5bkd",
+          "word": "deferral",
+          "translation": "延期；推迟（名词，常见于财务和项目语境）"
+        },
+        {
+          "id": "mvgliv524gndh",
+          "word": "deferrable",
+          "translation": "可延期的"
+        },
+        {
+          "id": "mvgliv523har8",
+          "word": "referral",
+          "translation": "转介；推荐"
+        },
+        {
+          "id": "mvgliv52qssge",
+          "word": "infer",
+          "translation": "推断；推论"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "mvgufs2yc9hf4",
       "word": "scrutinize",
       "phonetic": "/ˈskrutəˌnaɪz/",
@@ -7683,6 +7550,139 @@
           "id": "mvgujm73hmvxn",
           "word": "renegotiate",
           "translation": "重新谈判；重新协商"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvglytpsbaljx",
+      "word": "liaison",
+      "phonetic": "/liˈeɪˌzɑn/",
+      "audio": "",
+      "meaning": "联络；联络人；协调；沟通；（非正式）暧昧关系",
+      "dateAdded": "2026-10-20T11:36:58.096Z",
+      "sentences": [
+        {
+          "id": "mvglytpthnmhs",
+          "text": "She acts as the liaison between the project team and LTA.",
+          "translation": "她担任项目团队与LTA之间的联络人。",
+          "usageNote": "act as liaison / serve as liaison（担任联络人，职场高频搭配）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt89nkc",
+          "text": "We need to liaise with the DBA before the freeze period.",
+          "translation": "冻结期前我们需要与DBA进行沟通协调。",
+          "usageNote": "liaise with sb（与某人联络、协调，动词形式）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt6e1ak",
+          "text": "Please liaise with the audit team on the access log request.",
+          "translation": "请与审计团队对接，协调访问日志的请求。",
+          "usageNote": "liaise with / liaise on（动词，新加坡政府邮件常用：please liaise with）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptadi74",
+          "text": "There is a liaison meeting with the agency every Thursday.",
+          "translation": "每周四都与该机构有一次联络会议。",
+          "usageNote": "liaison meeting / liaison officer（联络会议 / 联络官）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptk9eqd",
+          "text": "The liaison officer will coordinate the handover with the vendor.",
+          "translation": "联络官将与供应商协调交接事宜。",
+          "usageNote": "liaison officer（联络官，政府及大型项目中常见）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvglytptj75kh",
+          "word": "liaise",
+          "translation": "联络；协调（动词，英式和美式都常用）"
+        },
+        {
+          "id": "mvglytptbdo2n",
+          "word": "liaising",
+          "translation": "联络；协调（动名词/现在分词）"
+        },
+        {
+          "id": "mvglytpttrreo",
+          "word": "liaised",
+          "translation": "已联络的（过去式/过去分词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgmo9cf1qryd",
+      "word": "scrutinize",
+      "phonetic": "/ˈskrutəˌnaɪz/",
+      "audio": "",
+      "meaning": "仔细审查；细查；严格检查；推敲",
+      "dateAdded": "2026-10-20T11:56:44.751Z",
+      "sentences": [
+        {
+          "id": "mvgmo9cfnj5xg",
+          "text": "The auditors will scrutinize every transaction in the access logs.",
+          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
+          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cfnfthv",
+          "text": "The CAB scrutinised the rollback plan before approving the CR.",
+          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
+          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cf7nu4w",
+          "text": "Every change request is subject to close scrutiny by the review board.",
+          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
+          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cftqpw0",
+          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
+          "translation": "成本超支之后，供应商的提案受到了严格审视。",
+          "usageNote": "come under scrutiny（受到审视、被严格检查）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgmo9cg598qb",
+          "word": "scrutiny",
+          "translation": "审查；细查；审视（名词）"
+        },
+        {
+          "id": "mvgmo9cgtqrl1",
+          "word": "scrutinizer",
+          "translation": "审查者；细查者（较少用）"
+        },
+        {
+          "id": "mvgmo9cg3yyqk",
+          "word": "scrutinising",
+          "translation": "审查（现在分词，英式）"
+        },
+        {
+          "id": "mvgmo9cgnh0d6",
+          "word": "scrutineer",
+          "translation": "监票员；检票员（较少用，多见于选举语境）"
+        },
+        {
+          "id": "mvgmo9cgoi2y8",
+          "word": "inscrutable",
+          "translation": "难以理解的；莫测高深的"
         }
       ],
       "review": null,
@@ -8027,6 +8027,81 @@
           "id": "mvivk9wr52x98",
           "word": "promptitude",
           "translation": "敏捷；及时（较书面）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvjlegx4fquo9",
+      "word": "acknowledge",
+      "phonetic": "/ækˈnɑlɪdʒ/",
+      "audio": "",
+      "meaning": "承认；确认收到；致谢；公开认可",
+      "dateAdded": "2026-10-22T13:44:26.920Z",
+      "sentences": [
+        {
+          "id": "mvjlegx499a8z",
+          "text": "Please acknowledge receipt of the audit report by replying to this email.",
+          "translation": "请回复此邮件，确认已收到审计报告。",
+          "usageNote": "acknowledge receipt of sth（确认收到某物，正式邮件高频句型）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
+        },
+        {
+          "id": "mvjlegx49snut",
+          "text": "The vendor acknowledged the defect and committed to a fix in the next release.",
+          "translation": "供应商承认了这个缺陷，并承诺在下一个版本中修复。",
+          "usageNote": "acknowledge + 事实/问题（承认、认可某事属实）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
+        },
+        {
+          "id": "mvjlegx4ik4be",
+          "text": "We acknowledge that the timeline was too tight.",
+          "translation": "我们承认时间表过于紧张。",
+          "usageNote": "acknowledge that + 从句（承认……，较正式）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
+        },
+        {
+          "id": "mvjlegx4thg4k",
+          "text": "Thanks for the update; I acknowledge the request and will respond by Friday.",
+          "translation": "感谢更新，我已收到你的请求，周五前回复你。",
+          "usageNote": "acknowledge 表示\"确认已收到、已看到\"（工作沟通中常用，比 noted 更正式）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
+        },
+        {
+          "id": "mvjlegx46zy9m",
+          "text": "The team was acknowledged for its work during the PROD recovery.",
+          "translation": "团队在生产恢复期间的工作受到了表扬。",
+          "usageNote": "be acknowledged for / as（因……而受到认可，被动语态）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvjlegx48kv79",
+          "word": "acknowledgement",
+          "translation": "确认；致谢；承认（英式拼写，新加坡政府文件常用）"
+        },
+        {
+          "id": "mvjlegx4e4hys",
+          "word": "acknowledgment",
+          "translation": "确认；致谢（美式拼写）"
+        },
+        {
+          "id": "mvjlegx4hhb57",
+          "word": "acknowledged",
+          "translation": "公认的；已确认的"
+        },
+        {
+          "id": "mvjlegx4mscwy",
+          "word": "unacknowledged",
+          "translation": "未被承认的；未确认的"
+        },
+        {
+          "id": "mvjlegx47r1ay",
+          "word": "acknowledging",
+          "translation": "承认；确认（现在分词）"
         }
       ],
       "review": null,
@@ -8655,74 +8730,79 @@
       "learnedAt": null
     },
     {
-      "id": "mvjlegx4fquo9",
-      "word": "acknowledge",
-      "phonetic": "/ækˈnɑlɪdʒ/",
+      "id": "mvjn3do9ntcfg",
+      "word": "identify",
+      "phonetic": "/aɪˈdɛntəˌfaɪ/",
       "audio": "",
-      "meaning": "承认；确认收到；致谢；公开认可",
-      "dateAdded": "2026-10-22T13:44:26.920Z",
+      "meaning": "识别；辨认；找出；认定；确定身份",
+      "dateAdded": "2026-10-22T14:31:48.729Z",
       "sentences": [
         {
-          "id": "mvjlegx499a8z",
-          "text": "Please acknowledge receipt of the audit report by replying to this email.",
-          "translation": "请回复此邮件，确认已收到审计报告。",
-          "usageNote": "acknowledge receipt of sth（确认收到某物，正式邮件高频句型）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
+          "id": "mvjn3docs07nu",
+          "text": "The team identified the root cause of the timeout within two hours.",
+          "translation": "团队在两小时内找出了超时的根本原因。",
+          "usageNote": "identify + 问题/原因/风险（找出、查明，项目和审计中的高频用法）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
         },
         {
-          "id": "mvjlegx49snut",
-          "text": "The vendor acknowledged the defect and committed to a fix in the next release.",
-          "translation": "供应商承认了这个缺陷，并承诺在下一个版本中修复。",
-          "usageNote": "acknowledge + 事实/问题（承认、认可某事属实）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
+          "id": "mvjn3doccajja",
+          "text": "Please identify any risks before the CAB meeting.",
+          "translation": "请在CAB会议前找出所有风险。",
+          "usageNote": "identify sth as sth（把某物认定为……）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
         },
         {
-          "id": "mvjlegx4ik4be",
-          "text": "We acknowledge that the timeline was too tight.",
-          "translation": "我们承认时间表过于紧张。",
-          "usageNote": "acknowledge that + 从句（承认……，较正式）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
+          "id": "mvjn3doc398q9",
+          "text": "The auditors identified the access logs as incomplete.",
+          "translation": "审计人员认定访问日志不完整。",
+          "usageNote": "identify sb/sth with sb/sth（把两者等同或联系起来，较少用）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
         },
         {
-          "id": "mvjlegx4thg4k",
-          "text": "Thanks for the update; I acknowledge the request and will respond by Friday.",
-          "translation": "感谢更新，我已收到你的请求，周五前回复你。",
-          "usageNote": "acknowledge 表示\"确认已收到、已看到\"（工作沟通中常用，比 noted 更正式）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
+          "id": "mvjn3docu8mq8",
+          "text": "The system identifies users by their login credentials.",
+          "translation": "系统通过登录凭证识别用户。",
+          "usageNote": "identify sb by sth（通过某种特征识别某人或某物）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
         },
         {
-          "id": "mvjlegx46zy9m",
-          "text": "The team was acknowledged for its work during the PROD recovery.",
-          "translation": "团队在生产恢复期间的工作受到了表扬。",
-          "usageNote": "be acknowledged for / as（因……而受到认可，被动语态）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
+          "id": "mvjn3doc8gejy",
+          "text": "Please show your ID to be identified before entering the site.",
+          "translation": "进入现场前请出示证件以便核实身份。",
+          "usageNote": "be identified（被识别、被核实身份，被动语态）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
         }
       ],
       "derivedWords": [
         {
-          "id": "mvjlegx48kv79",
-          "word": "acknowledgement",
-          "translation": "确认；致谢；承认（英式拼写，新加坡政府文件常用）"
+          "id": "mvjn3docg3eqq",
+          "word": "identification",
+          "translation": "识别；身份证明；证件"
         },
         {
-          "id": "mvjlegx4e4hys",
-          "word": "acknowledgment",
-          "translation": "确认；致谢（美式拼写）"
+          "id": "mvjn3doc8y42c",
+          "word": "identifiable",
+          "translation": "可识别的；可辨认的"
         },
         {
-          "id": "mvjlegx4hhb57",
-          "word": "acknowledged",
-          "translation": "公认的；已确认的"
+          "id": "mvjn3doctgjl6",
+          "word": "identifier",
+          "translation": "标识符；识别码（技术语境高频，如 user identifier）"
         },
         {
-          "id": "mvjlegx4mscwy",
-          "word": "unacknowledged",
-          "translation": "未被承认的；未确认的"
+          "id": "mvjn3doc1bgaf",
+          "word": "identity",
+          "translation": "身份；同一性；特性"
         },
         {
-          "id": "mvjlegx47r1ay",
-          "word": "acknowledging",
-          "translation": "承认；确认（现在分词）"
+          "id": "mvjn3docohbhh",
+          "word": "unidentified",
+          "translation": "未识别的；不明的"
+        },
+        {
+          "id": "mvjn3docxdoyb",
+          "word": "misidentify",
+          "translation": "错误识别；误认"
         }
       ],
       "review": null,
@@ -8803,86 +8883,6 @@
           "id": "mvkhxyvgmfeg5",
           "word": "factoid",
           "translation": "琐碎的事实；似是而非的事实"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvjn3do9ntcfg",
-      "word": "identify",
-      "phonetic": "/aɪˈdɛntəˌfaɪ/",
-      "audio": "",
-      "meaning": "识别；辨认；找出；认定；确定身份",
-      "dateAdded": "2026-10-22T14:31:48.729Z",
-      "sentences": [
-        {
-          "id": "mvjn3docs07nu",
-          "text": "The team identified the root cause of the timeout within two hours.",
-          "translation": "团队在两小时内找出了超时的根本原因。",
-          "usageNote": "identify + 问题/原因/风险（找出、查明，项目和审计中的高频用法）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
-        },
-        {
-          "id": "mvjn3doccajja",
-          "text": "Please identify any risks before the CAB meeting.",
-          "translation": "请在CAB会议前找出所有风险。",
-          "usageNote": "identify sth as sth（把某物认定为……）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
-        },
-        {
-          "id": "mvjn3doc398q9",
-          "text": "The auditors identified the access logs as incomplete.",
-          "translation": "审计人员认定访问日志不完整。",
-          "usageNote": "identify sb/sth with sb/sth（把两者等同或联系起来，较少用）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
-        },
-        {
-          "id": "mvjn3docu8mq8",
-          "text": "The system identifies users by their login credentials.",
-          "translation": "系统通过登录凭证识别用户。",
-          "usageNote": "identify sb by sth（通过某种特征识别某人或某物）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
-        },
-        {
-          "id": "mvjn3doc8gejy",
-          "text": "Please show your ID to be identified before entering the site.",
-          "translation": "进入现场前请出示证件以便核实身份。",
-          "usageNote": "be identified（被识别、被核实身份，被动语态）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvjn3docg3eqq",
-          "word": "identification",
-          "translation": "识别；身份证明；证件"
-        },
-        {
-          "id": "mvjn3doc8y42c",
-          "word": "identifiable",
-          "translation": "可识别的；可辨认的"
-        },
-        {
-          "id": "mvjn3doctgjl6",
-          "word": "identifier",
-          "translation": "标识符；识别码（技术语境高频，如 user identifier）"
-        },
-        {
-          "id": "mvjn3doc1bgaf",
-          "word": "identity",
-          "translation": "身份；同一性；特性"
-        },
-        {
-          "id": "mvjn3docohbhh",
-          "word": "unidentified",
-          "translation": "未识别的；不明的"
-        },
-        {
-          "id": "mvjn3docxdoyb",
-          "word": "misidentify",
-          "translation": "错误识别；误认"
         }
       ],
       "review": null,
