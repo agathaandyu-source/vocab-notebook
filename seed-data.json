@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-22T14:21:28.207Z",
+  "exportedAt": "2026-10-25T07:02:14.372Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -92,9 +92,9 @@
       ],
       "derivedWords": [],
       "review": {
-        "stage": 2,
+        "stage": 3,
         "cycleStart": "2026-07-13T10:49:57.857Z",
-        "nextDue": "2026-07-16T16:00:00.000Z",
+        "nextDue": "2026-07-19T16:00:00.000Z",
         "completed": false
       },
       "learned": true,
@@ -8036,9 +8036,9 @@
     {
       "id": "mvjlegx4fquo9",
       "word": "acknowledge",
-      "meaning": "承认；确认收到；致谢；公开认可",
       "phonetic": "/ækˈnɑlɪdʒ/",
       "audio": "",
+      "meaning": "承认；确认收到；致谢；公开认可",
       "dateAdded": "2026-10-22T13:44:26.920Z",
       "sentences": [
         {
@@ -8723,6 +8723,86 @@
           "id": "mvjarbjuf29ji",
           "word": "turntable",
           "translation": "转盘；唱片机"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvjn3do9ntcfg",
+      "word": "identify",
+      "phonetic": "/aɪˈdɛntəˌfaɪ/",
+      "audio": "",
+      "meaning": "识别；辨认；找出；认定；确定身份",
+      "dateAdded": "2026-10-22T14:31:48.729Z",
+      "sentences": [
+        {
+          "id": "mvjn3docs07nu",
+          "text": "The team identified the root cause of the timeout within two hours.",
+          "translation": "团队在两小时内找出了超时的根本原因。",
+          "usageNote": "identify + 问题/原因/风险（找出、查明，项目和审计中的高频用法）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doccajja",
+          "text": "Please identify any risks before the CAB meeting.",
+          "translation": "请在CAB会议前找出所有风险。",
+          "usageNote": "identify sth as sth（把某物认定为……）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doc398q9",
+          "text": "The auditors identified the access logs as incomplete.",
+          "translation": "审计人员认定访问日志不完整。",
+          "usageNote": "identify sb/sth with sb/sth（把两者等同或联系起来，较少用）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3docu8mq8",
+          "text": "The system identifies users by their login credentials.",
+          "translation": "系统通过登录凭证识别用户。",
+          "usageNote": "identify sb by sth（通过某种特征识别某人或某物）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doc8gejy",
+          "text": "Please show your ID to be identified before entering the site.",
+          "translation": "进入现场前请出示证件以便核实身份。",
+          "usageNote": "be identified（被识别、被核实身份，被动语态）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvjn3docg3eqq",
+          "word": "identification",
+          "translation": "识别；身份证明；证件"
+        },
+        {
+          "id": "mvjn3doc8y42c",
+          "word": "identifiable",
+          "translation": "可识别的；可辨认的"
+        },
+        {
+          "id": "mvjn3doctgjl6",
+          "word": "identifier",
+          "translation": "标识符；识别码（技术语境高频，如 user identifier）"
+        },
+        {
+          "id": "mvjn3doc1bgaf",
+          "word": "identity",
+          "translation": "身份；同一性；特性"
+        },
+        {
+          "id": "mvjn3docohbhh",
+          "word": "unidentified",
+          "translation": "未识别的；不明的"
+        },
+        {
+          "id": "mvjn3docxdoyb",
+          "word": "misidentify",
+          "translation": "错误识别；误认"
         }
       ],
       "review": null,
