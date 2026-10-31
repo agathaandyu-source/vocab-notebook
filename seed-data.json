@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-25T07:04:08.079Z",
+  "exportedAt": "2026-10-31T10:50:32.183Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -1488,7 +1488,7 @@
       "word": "issue",
       "phonetic": "/ˈɪʃ(j)u/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/issue-us.mp3",
-      "meaning": "问题",
+      "meaning": "问题；议题；发行；发布；分发；发出",
       "dateAdded": "2026-07-12T14:02:29.514Z",
       "sentences": [
         {
@@ -2104,7 +2104,7 @@
       "word": "discrepancy",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
-      "meaning": "差异",
+      "meaning": "差异；不一致；矛盾；出入（尤指数字或记录之间的差距）",
       "dateAdded": "2026-07-13T10:39:53.941Z",
       "sentences": [
         {
@@ -2553,9 +2553,44 @@
       "word": "Reproduce",
       "phonetic": "/ˌɹi.pɹoʊˈdus/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reproduce-us.mp3",
-      "meaning": "再产生一次 （步骤重现、问题重现）",
+      "meaning": "再产生一次 （步骤重现、问题重现）v. 复制；再现；繁殖；生育；",
       "dateAdded": "2026-07-20T13:15:13.328Z",
       "sentences": [
+        {
+          "id": "mvuct3utcb5x5",
+          "text": "The results of the experiment were hard to reproduce.",
+          "translation": "这个实验的结果很难复现。",
+          "usageNote": "v. reproduce sth 重现、复现某物（实验结果、问题、错误）",
+          "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
+        {
+          "id": "mvuct3ut6t4y4",
+          "text": "Can you reproduce the bug on your machine?",
+          "translation": "你能在你的机器上复现这个 bug 吗？",
+          "usageNote": "v. reproduce a bug / an issue 复现 bug / 问题（IT 语境常用）",
+          "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
+        {
+          "id": "mvuct3ut4sazw",
+          "text": "The museum sells prints that reproduce famous paintings.",
+          "translation": "博物馆出售复制名画的印刷品。",
+          "usageNote": "v. 复制；仿制（图画、文件、声音等）",
+          "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
+        {
+          "id": "mvuct3utz08tx",
+          "text": "Rabbits reproduce very quickly.",
+          "translation": "兔子繁殖得非常快。",
+          "usageNote": "v. （不及物）繁殖；生育",
+          "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
+        {
+          "id": "mvuct3uto2zr8",
+          "text": "No part of this publication may be reproduced without permission.",
+          "translation": "未经许可，不得复制本出版物的任何部分。",
+          "usageNote": "v. be reproduced 被动语态，被复制；被转载（版权声明常见句式）",
+          "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
         {
           "id": "mrt8zvt4j1uq6",
           "text": "We reproduced the bug",
@@ -2564,7 +2599,23 @@
           "dateAdded": "2026-07-20T13:16:03.400Z"
         }
       ],
-      "derivedWords": [],
+      "derivedWords": [
+        {
+          "id": "mvuct3uuqanj3",
+          "word": "reproduction",
+          "translation": "n. 复制；复制品；繁殖"
+        },
+        {
+          "id": "mvuct3uuu6dnr",
+          "word": "reproducible",
+          "translation": "adj. 可复制的；可复现的"
+        },
+        {
+          "id": "mvuct3uuv953y",
+          "word": "reproductive",
+          "translation": "adj. 生殖的；繁殖的"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -4864,7 +4915,7 @@
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的",
+      "meaning": "临时的；过渡性的；中期的；临时措施；中期（报告、结果）",
       "dateAdded": "2026-08-23T12:12:27.078Z",
       "sentences": [
         {
@@ -5986,11 +6037,56 @@
       "id": "mv0gwcasnj4dw",
       "word": "revise",
       "phonetic": "/rɪˈvaɪz/",
-      "audio": "",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/revise-us.mp3",
       "meaning": "复习，修改",
       "dateAdded": "2026-10-09T04:30:45.315Z",
-      "sentences": [],
-      "derivedWords": [],
+      "sentences": [
+        {
+          "id": "mvt6d1jvgsy9h",
+          "text": "The author revised the manuscript before sending it to the publisher.",
+          "translation": "作者在把手稿寄给出版社之前做了修改。",
+          "usageNote": "v. revise sth 修订、修改某物（文稿、计划、条款等）",
+          "dateAdded": "2026-10-29T06:41:07.867Z"
+        },
+        {
+          "id": "mvt6d1jwaalz3",
+          "text": "We have revised our estimate upwards because of rising costs.",
+          "translation": "由于成本上涨，我们上调了预估数字。",
+          "usageNote": "v. revise sth upwards / downwards 上调 / 下调（数字、预测）",
+          "dateAdded": "2026-10-29T06:41:07.867Z"
+        },
+        {
+          "id": "mvt6d1jw99zrg",
+          "text": "After hearing the new evidence, he revised his opinion of the project.",
+          "translation": "听到新的证据后，他改变了对这个项目的看法。",
+          "usageNote": "v. revise one's opinion / view / plan 改变看法 / 观点 / 计划",
+          "dateAdded": "2026-10-29T06:41:07.867Z"
+        },
+        {
+          "id": "mvt6d1jw4lpfa",
+          "text": "She is revising for her final exams this week.",
+          "translation": "她这周正在复习期末考试。",
+          "usageNote": "v. revise for sth 为某事复习（英式英语，美式多用 review / study）",
+          "dateAdded": "2026-10-29T06:41:07.867Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvt6d1jwftz9j",
+          "word": "revision",
+          "translation": "n. 修订；修改；复习"
+        },
+        {
+          "id": "mvt6d1jw3ao5a",
+          "word": "revised",
+          "translation": "adj. 修订过的；修正的"
+        },
+        {
+          "id": "mvt6d1jwnp7ol",
+          "word": "reviser",
+          "translation": "n. 修订者；校订者"
+        }
+      ],
       "review": null,
       "learned": false,
       "learnedAt": null
@@ -6119,6 +6215,224 @@
           "id": "mvfb13cr00uba",
           "word": "injustice",
           "translation": "不公正；不公平"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgliv52ao4nx",
+      "word": "defer",
+      "phonetic": "/dɪˈfɝ/",
+      "audio": "",
+      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
+      "dateAdded": "2026-10-20T11:24:33.445Z",
+      "sentences": [
+        {
+          "id": "mvgliv527yeih",
+          "text": "The team decided to defer the PROD deployment until after the freeze period.",
+          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
+          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5268lh8",
+          "text": "The CAB has deferred the CR to next month's review.",
+          "translation": "CAB已将该CR推迟到下个月的评审。",
+          "usageNote": "defer to + 日期/事件（推迟到……）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv5260wo1",
+          "text": "I'll defer to your judgement on the database design.",
+          "translation": "关于数据库设计，我尊重你的判断。",
+          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52pawpq",
+          "text": "Deferred revenue must be recognised in the period the service is delivered.",
+          "translation": "递延收入必须在服务交付的会计期间确认。",
+          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        },
+        {
+          "id": "mvgliv52i9bd5",
+          "text": "The team will defer to the vendor's recommendation on the licence.",
+          "translation": "团队会听从供应商对许可证的建议。",
+          "usageNote": "defer to 表示\"顺从、以……为准\"",
+          "dateAdded": "2026-10-20T11:24:33.445Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgliv52kbtyw",
+          "word": "deferment",
+          "translation": "延期；推迟"
+        },
+        {
+          "id": "mvgliv526kwbu",
+          "word": "deference",
+          "translation": "尊重；敬意；顺从"
+        },
+        {
+          "id": "mvgliv52o41vl",
+          "word": "deferential",
+          "translation": "恭敬的；顺从的"
+        },
+        {
+          "id": "mvgliv52k5bkd",
+          "word": "deferral",
+          "translation": "延期；推迟（名词，常见于财务和项目语境）"
+        },
+        {
+          "id": "mvgliv524gndh",
+          "word": "deferrable",
+          "translation": "可延期的"
+        },
+        {
+          "id": "mvgliv523har8",
+          "word": "referral",
+          "translation": "转介；推荐"
+        },
+        {
+          "id": "mvgliv52qssge",
+          "word": "infer",
+          "translation": "推断；推论"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvglytpsbaljx",
+      "word": "liaison",
+      "phonetic": "/liˈeɪˌzɑn/",
+      "audio": "",
+      "meaning": "联络；联络人；协调；沟通；（非正式）暧昧关系",
+      "dateAdded": "2026-10-20T11:36:58.096Z",
+      "sentences": [
+        {
+          "id": "mvglytpthnmhs",
+          "text": "She acts as the liaison between the project team and LTA.",
+          "translation": "她担任项目团队与LTA之间的联络人。",
+          "usageNote": "act as liaison / serve as liaison（担任联络人，职场高频搭配）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt89nkc",
+          "text": "We need to liaise with the DBA before the freeze period.",
+          "translation": "冻结期前我们需要与DBA进行沟通协调。",
+          "usageNote": "liaise with sb（与某人联络、协调，动词形式）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytpt6e1ak",
+          "text": "Please liaise with the audit team on the access log request.",
+          "translation": "请与审计团队对接，协调访问日志的请求。",
+          "usageNote": "liaise with / liaise on（动词，新加坡政府邮件常用：please liaise with）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptadi74",
+          "text": "There is a liaison meeting with the agency every Thursday.",
+          "translation": "每周四都与该机构有一次联络会议。",
+          "usageNote": "liaison meeting / liaison officer（联络会议 / 联络官）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        },
+        {
+          "id": "mvglytptk9eqd",
+          "text": "The liaison officer will coordinate the handover with the vendor.",
+          "translation": "联络官将与供应商协调交接事宜。",
+          "usageNote": "liaison officer（联络官，政府及大型项目中常见）",
+          "dateAdded": "2026-10-20T11:36:58.096Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvglytptj75kh",
+          "word": "liaise",
+          "translation": "联络；协调（动词，英式和美式都常用）"
+        },
+        {
+          "id": "mvglytptbdo2n",
+          "word": "liaising",
+          "translation": "联络；协调（动名词/现在分词）"
+        },
+        {
+          "id": "mvglytpttrreo",
+          "word": "liaised",
+          "translation": "已联络的（过去式/过去分词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvgmo9cf1qryd",
+      "word": "scrutinize",
+      "phonetic": "/ˈskrutəˌnaɪz/",
+      "audio": "",
+      "meaning": "仔细审查；细查；严格检查；推敲",
+      "dateAdded": "2026-10-20T11:56:44.751Z",
+      "sentences": [
+        {
+          "id": "mvgmo9cfnj5xg",
+          "text": "The auditors will scrutinize every transaction in the access logs.",
+          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
+          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cfnfthv",
+          "text": "The CAB scrutinised the rollback plan before approving the CR.",
+          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
+          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cf7nu4w",
+          "text": "Every change request is subject to close scrutiny by the review board.",
+          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
+          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        },
+        {
+          "id": "mvgmo9cftqpw0",
+          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
+          "translation": "成本超支之后，供应商的提案受到了严格审视。",
+          "usageNote": "come under scrutiny（受到审视、被严格检查）",
+          "dateAdded": "2026-10-20T11:56:44.751Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvgmo9cg598qb",
+          "word": "scrutiny",
+          "translation": "审查；细查；审视（名词）"
+        },
+        {
+          "id": "mvgmo9cgtqrl1",
+          "word": "scrutinizer",
+          "translation": "审查者；细查者（较少用）"
+        },
+        {
+          "id": "mvgmo9cg3yyqk",
+          "word": "scrutinising",
+          "translation": "审查（现在分词，英式）"
+        },
+        {
+          "id": "mvgmo9cgnh0d6",
+          "word": "scrutineer",
+          "translation": "监票员；检票员（较少用，多见于选举语境）"
+        },
+        {
+          "id": "mvgmo9cgoi2y8",
+          "word": "inscrutable",
+          "translation": "难以理解的；莫测高深的"
         }
       ],
       "review": null,
@@ -7164,91 +7478,6 @@
       "learnedAt": null
     },
     {
-      "id": "mvgliv52ao4nx",
-      "word": "defer",
-      "phonetic": "/dɪˈfɝ/",
-      "audio": "",
-      "meaning": "推迟；延期；延后；（出于尊重）听从；顺从",
-      "dateAdded": "2026-10-20T11:24:33.445Z",
-      "sentences": [
-        {
-          "id": "mvgliv527yeih",
-          "text": "The team decided to defer the PROD deployment until after the freeze period.",
-          "translation": "团队决定把生产部署推迟到冻结期结束之后。",
-          "usageNote": "defer sth（推迟某事，项目和会议里的高频用法）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5268lh8",
-          "text": "The CAB has deferred the CR to next month's review.",
-          "translation": "CAB已将该CR推迟到下个月的评审。",
-          "usageNote": "defer to + 日期/事件（推迟到……）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv5260wo1",
-          "text": "I'll defer to your judgement on the database design.",
-          "translation": "关于数据库设计，我尊重你的判断。",
-          "usageNote": "defer to sb（听从、尊重某人的意见，较书面）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52pawpq",
-          "text": "Deferred revenue must be recognised in the period the service is delivered.",
-          "translation": "递延收入必须在服务交付的会计期间确认。",
-          "usageNote": "deferred 作形容词，表示\"递延的、延期的\"（deferred payment / deferred revenue）",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        },
-        {
-          "id": "mvgliv52i9bd5",
-          "text": "The team will defer to the vendor's recommendation on the licence.",
-          "translation": "团队会听从供应商对许可证的建议。",
-          "usageNote": "defer to 表示\"顺从、以……为准\"",
-          "dateAdded": "2026-10-20T11:24:33.445Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvgliv52kbtyw",
-          "word": "deferment",
-          "translation": "延期；推迟"
-        },
-        {
-          "id": "mvgliv526kwbu",
-          "word": "deference",
-          "translation": "尊重；敬意；顺从"
-        },
-        {
-          "id": "mvgliv52o41vl",
-          "word": "deferential",
-          "translation": "恭敬的；顺从的"
-        },
-        {
-          "id": "mvgliv52k5bkd",
-          "word": "deferral",
-          "translation": "延期；推迟（名词，常见于财务和项目语境）"
-        },
-        {
-          "id": "mvgliv524gndh",
-          "word": "deferrable",
-          "translation": "可延期的"
-        },
-        {
-          "id": "mvgliv523har8",
-          "word": "referral",
-          "translation": "转介；推荐"
-        },
-        {
-          "id": "mvgliv52qssge",
-          "word": "infer",
-          "translation": "推断；推论"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "mvgufs2yc9hf4",
       "word": "scrutinize",
       "phonetic": "/ˈskrutəˌnaɪz/",
@@ -7550,139 +7779,6 @@
           "id": "mvgujm73hmvxn",
           "word": "renegotiate",
           "translation": "重新谈判；重新协商"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvglytpsbaljx",
-      "word": "liaison",
-      "phonetic": "/liˈeɪˌzɑn/",
-      "audio": "",
-      "meaning": "联络；联络人；协调；沟通；（非正式）暧昧关系",
-      "dateAdded": "2026-10-20T11:36:58.096Z",
-      "sentences": [
-        {
-          "id": "mvglytpthnmhs",
-          "text": "She acts as the liaison between the project team and LTA.",
-          "translation": "她担任项目团队与LTA之间的联络人。",
-          "usageNote": "act as liaison / serve as liaison（担任联络人，职场高频搭配）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytpt89nkc",
-          "text": "We need to liaise with the DBA before the freeze period.",
-          "translation": "冻结期前我们需要与DBA进行沟通协调。",
-          "usageNote": "liaise with sb（与某人联络、协调，动词形式）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytpt6e1ak",
-          "text": "Please liaise with the audit team on the access log request.",
-          "translation": "请与审计团队对接，协调访问日志的请求。",
-          "usageNote": "liaise with / liaise on（动词，新加坡政府邮件常用：please liaise with）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytptadi74",
-          "text": "There is a liaison meeting with the agency every Thursday.",
-          "translation": "每周四都与该机构有一次联络会议。",
-          "usageNote": "liaison meeting / liaison officer（联络会议 / 联络官）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        },
-        {
-          "id": "mvglytptk9eqd",
-          "text": "The liaison officer will coordinate the handover with the vendor.",
-          "translation": "联络官将与供应商协调交接事宜。",
-          "usageNote": "liaison officer（联络官，政府及大型项目中常见）",
-          "dateAdded": "2026-10-20T11:36:58.096Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvglytptj75kh",
-          "word": "liaise",
-          "translation": "联络；协调（动词，英式和美式都常用）"
-        },
-        {
-          "id": "mvglytptbdo2n",
-          "word": "liaising",
-          "translation": "联络；协调（动名词/现在分词）"
-        },
-        {
-          "id": "mvglytpttrreo",
-          "word": "liaised",
-          "translation": "已联络的（过去式/过去分词）"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvgmo9cf1qryd",
-      "word": "scrutinize",
-      "phonetic": "/ˈskrutəˌnaɪz/",
-      "audio": "",
-      "meaning": "仔细审查；细查；严格检查；推敲",
-      "dateAdded": "2026-10-20T11:56:44.751Z",
-      "sentences": [
-        {
-          "id": "mvgmo9cfnj5xg",
-          "text": "The auditors will scrutinize every transaction in the access logs.",
-          "translation": "审计人员会仔细审查访问日志中的每一笔记录。",
-          "usageNote": "scrutinize + 名词（仔细检查某对象，常用于审计、合规、审批场景）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cfnfthv",
-          "text": "The CAB scrutinised the rollback plan before approving the CR.",
-          "translation": "CAB在批准该CR之前，严格审查了回滚方案。",
-          "usageNote": "scrutinise / scrutinize（英式用 -ise，美式用 -ize，新加坡英语多用英式 -ise）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cf7nu4w",
-          "text": "Every change request is subject to close scrutiny by the review board.",
-          "translation": "每一项变更请求都要接受评审委员会的严格审查。",
-          "usageNote": "close / careful / intense scrutiny（严格的审查，名词搭配）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        },
-        {
-          "id": "mvgmo9cftqpw0",
-          "text": "The vendor's proposal came under scrutiny after the cost overrun.",
-          "translation": "成本超支之后，供应商的提案受到了严格审视。",
-          "usageNote": "come under scrutiny（受到审视、被严格检查）",
-          "dateAdded": "2026-10-20T11:56:44.751Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvgmo9cg598qb",
-          "word": "scrutiny",
-          "translation": "审查；细查；审视（名词）"
-        },
-        {
-          "id": "mvgmo9cgtqrl1",
-          "word": "scrutinizer",
-          "translation": "审查者；细查者（较少用）"
-        },
-        {
-          "id": "mvgmo9cg3yyqk",
-          "word": "scrutinising",
-          "translation": "审查（现在分词，英式）"
-        },
-        {
-          "id": "mvgmo9cgnh0d6",
-          "word": "scrutineer",
-          "translation": "监票员；检票员（较少用，多见于选举语境）"
-        },
-        {
-          "id": "mvgmo9cgoi2y8",
-          "word": "inscrutable",
-          "translation": "难以理解的；莫测高深的"
         }
       ],
       "review": null,
@@ -8027,81 +8123,6 @@
           "id": "mvivk9wr52x98",
           "word": "promptitude",
           "translation": "敏捷；及时（较书面）"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mvjlegx4fquo9",
-      "word": "acknowledge",
-      "phonetic": "/ækˈnɑlɪdʒ/",
-      "audio": "",
-      "meaning": "承认；确认收到；致谢；公开认可",
-      "dateAdded": "2026-10-22T13:44:26.920Z",
-      "sentences": [
-        {
-          "id": "mvjlegx499a8z",
-          "text": "Please acknowledge receipt of the audit report by replying to this email.",
-          "translation": "请回复此邮件，确认已收到审计报告。",
-          "usageNote": "acknowledge receipt of sth（确认收到某物，正式邮件高频句型）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
-        },
-        {
-          "id": "mvjlegx49snut",
-          "text": "The vendor acknowledged the defect and committed to a fix in the next release.",
-          "translation": "供应商承认了这个缺陷，并承诺在下一个版本中修复。",
-          "usageNote": "acknowledge + 事实/问题（承认、认可某事属实）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
-        },
-        {
-          "id": "mvjlegx4ik4be",
-          "text": "We acknowledge that the timeline was too tight.",
-          "translation": "我们承认时间表过于紧张。",
-          "usageNote": "acknowledge that + 从句（承认……，较正式）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
-        },
-        {
-          "id": "mvjlegx4thg4k",
-          "text": "Thanks for the update; I acknowledge the request and will respond by Friday.",
-          "translation": "感谢更新，我已收到你的请求，周五前回复你。",
-          "usageNote": "acknowledge 表示\"确认已收到、已看到\"（工作沟通中常用，比 noted 更正式）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
-        },
-        {
-          "id": "mvjlegx46zy9m",
-          "text": "The team was acknowledged for its work during the PROD recovery.",
-          "translation": "团队在生产恢复期间的工作受到了表扬。",
-          "usageNote": "be acknowledged for / as（因……而受到认可，被动语态）",
-          "dateAdded": "2026-10-22T13:44:26.920Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mvjlegx48kv79",
-          "word": "acknowledgement",
-          "translation": "确认；致谢；承认（英式拼写，新加坡政府文件常用）"
-        },
-        {
-          "id": "mvjlegx4e4hys",
-          "word": "acknowledgment",
-          "translation": "确认；致谢（美式拼写）"
-        },
-        {
-          "id": "mvjlegx4hhb57",
-          "word": "acknowledged",
-          "translation": "公认的；已确认的"
-        },
-        {
-          "id": "mvjlegx4mscwy",
-          "word": "unacknowledged",
-          "translation": "未被承认的；未确认的"
-        },
-        {
-          "id": "mvjlegx47r1ay",
-          "word": "acknowledging",
-          "translation": "承认；确认（现在分词）"
         }
       ],
       "review": null,
@@ -8730,79 +8751,74 @@
       "learnedAt": null
     },
     {
-      "id": "mvjn3do9ntcfg",
-      "word": "identify",
-      "phonetic": "/aɪˈdɛntəˌfaɪ/",
+      "id": "mvjlegx4fquo9",
+      "word": "acknowledge",
+      "phonetic": "/ækˈnɑlɪdʒ/",
       "audio": "",
-      "meaning": "识别；辨认；找出；认定；确定身份",
-      "dateAdded": "2026-10-22T14:31:48.729Z",
+      "meaning": "承认；确认收到；致谢；公开认可",
+      "dateAdded": "2026-10-22T13:44:26.920Z",
       "sentences": [
         {
-          "id": "mvjn3docs07nu",
-          "text": "The team identified the root cause of the timeout within two hours.",
-          "translation": "团队在两小时内找出了超时的根本原因。",
-          "usageNote": "identify + 问题/原因/风险（找出、查明，项目和审计中的高频用法）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
+          "id": "mvjlegx499a8z",
+          "text": "Please acknowledge receipt of the audit report by replying to this email.",
+          "translation": "请回复此邮件，确认已收到审计报告。",
+          "usageNote": "acknowledge receipt of sth（确认收到某物，正式邮件高频句型）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
         },
         {
-          "id": "mvjn3doccajja",
-          "text": "Please identify any risks before the CAB meeting.",
-          "translation": "请在CAB会议前找出所有风险。",
-          "usageNote": "identify sth as sth（把某物认定为……）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
+          "id": "mvjlegx49snut",
+          "text": "The vendor acknowledged the defect and committed to a fix in the next release.",
+          "translation": "供应商承认了这个缺陷，并承诺在下一个版本中修复。",
+          "usageNote": "acknowledge + 事实/问题（承认、认可某事属实）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
         },
         {
-          "id": "mvjn3doc398q9",
-          "text": "The auditors identified the access logs as incomplete.",
-          "translation": "审计人员认定访问日志不完整。",
-          "usageNote": "identify sb/sth with sb/sth（把两者等同或联系起来，较少用）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
+          "id": "mvjlegx4ik4be",
+          "text": "We acknowledge that the timeline was too tight.",
+          "translation": "我们承认时间表过于紧张。",
+          "usageNote": "acknowledge that + 从句（承认……，较正式）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
         },
         {
-          "id": "mvjn3docu8mq8",
-          "text": "The system identifies users by their login credentials.",
-          "translation": "系统通过登录凭证识别用户。",
-          "usageNote": "identify sb by sth（通过某种特征识别某人或某物）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
+          "id": "mvjlegx4thg4k",
+          "text": "Thanks for the update; I acknowledge the request and will respond by Friday.",
+          "translation": "感谢更新，我已收到你的请求，周五前回复你。",
+          "usageNote": "acknowledge 表示\"确认已收到、已看到\"（工作沟通中常用，比 noted 更正式）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
         },
         {
-          "id": "mvjn3doc8gejy",
-          "text": "Please show your ID to be identified before entering the site.",
-          "translation": "进入现场前请出示证件以便核实身份。",
-          "usageNote": "be identified（被识别、被核实身份，被动语态）",
-          "dateAdded": "2026-10-22T14:31:48.729Z"
+          "id": "mvjlegx46zy9m",
+          "text": "The team was acknowledged for its work during the PROD recovery.",
+          "translation": "团队在生产恢复期间的工作受到了表扬。",
+          "usageNote": "be acknowledged for / as（因……而受到认可，被动语态）",
+          "dateAdded": "2026-10-22T13:44:26.920Z"
         }
       ],
       "derivedWords": [
         {
-          "id": "mvjn3docg3eqq",
-          "word": "identification",
-          "translation": "识别；身份证明；证件"
+          "id": "mvjlegx48kv79",
+          "word": "acknowledgement",
+          "translation": "确认；致谢；承认（英式拼写，新加坡政府文件常用）"
         },
         {
-          "id": "mvjn3doc8y42c",
-          "word": "identifiable",
-          "translation": "可识别的；可辨认的"
+          "id": "mvjlegx4e4hys",
+          "word": "acknowledgment",
+          "translation": "确认；致谢（美式拼写）"
         },
         {
-          "id": "mvjn3doctgjl6",
-          "word": "identifier",
-          "translation": "标识符；识别码（技术语境高频，如 user identifier）"
+          "id": "mvjlegx4hhb57",
+          "word": "acknowledged",
+          "translation": "公认的；已确认的"
         },
         {
-          "id": "mvjn3doc1bgaf",
-          "word": "identity",
-          "translation": "身份；同一性；特性"
+          "id": "mvjlegx4mscwy",
+          "word": "unacknowledged",
+          "translation": "未被承认的；未确认的"
         },
         {
-          "id": "mvjn3docohbhh",
-          "word": "unidentified",
-          "translation": "未识别的；不明的"
-        },
-        {
-          "id": "mvjn3docxdoyb",
-          "word": "misidentify",
-          "translation": "错误识别；误认"
+          "id": "mvjlegx47r1ay",
+          "word": "acknowledging",
+          "translation": "承认；确认（现在分词）"
         }
       ],
       "review": null,
@@ -8888,6 +8904,1147 @@
       "review": null,
       "learned": false,
       "learnedAt": null
+    },
+    {
+      "id": "mvjn3do9ntcfg",
+      "word": "identify",
+      "phonetic": "/aɪˈdɛntəˌfaɪ/",
+      "audio": "",
+      "meaning": "识别；辨认；找出；认定；确定身份",
+      "dateAdded": "2026-10-22T14:31:48.729Z",
+      "sentences": [
+        {
+          "id": "mvjn3docs07nu",
+          "text": "The team identified the root cause of the timeout within two hours.",
+          "translation": "团队在两小时内找出了超时的根本原因。",
+          "usageNote": "identify + 问题/原因/风险（找出、查明，项目和审计中的高频用法）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doccajja",
+          "text": "Please identify any risks before the CAB meeting.",
+          "translation": "请在CAB会议前找出所有风险。",
+          "usageNote": "identify sth as sth（把某物认定为……）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doc398q9",
+          "text": "The auditors identified the access logs as incomplete.",
+          "translation": "审计人员认定访问日志不完整。",
+          "usageNote": "identify sb/sth with sb/sth（把两者等同或联系起来，较少用）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3docu8mq8",
+          "text": "The system identifies users by their login credentials.",
+          "translation": "系统通过登录凭证识别用户。",
+          "usageNote": "identify sb by sth（通过某种特征识别某人或某物）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        },
+        {
+          "id": "mvjn3doc8gejy",
+          "text": "Please show your ID to be identified before entering the site.",
+          "translation": "进入现场前请出示证件以便核实身份。",
+          "usageNote": "be identified（被识别、被核实身份，被动语态）",
+          "dateAdded": "2026-10-22T14:31:48.729Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvjn3docg3eqq",
+          "word": "identification",
+          "translation": "识别；身份证明；证件"
+        },
+        {
+          "id": "mvjn3doc8y42c",
+          "word": "identifiable",
+          "translation": "可识别的；可辨认的"
+        },
+        {
+          "id": "mvjn3doctgjl6",
+          "word": "identifier",
+          "translation": "标识符；识别码（技术语境高频，如 user identifier）"
+        },
+        {
+          "id": "mvjn3doc1bgaf",
+          "word": "identity",
+          "translation": "身份；同一性；特性"
+        },
+        {
+          "id": "mvjn3docohbhh",
+          "word": "unidentified",
+          "translation": "未识别的；不明的"
+        },
+        {
+          "id": "mvjn3docxdoyb",
+          "word": "misidentify",
+          "translation": "错误识别；误认"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvnloz6ihdm56",
+      "word": "remain",
+      "phonetic": "/rɪˈmeɪn/",
+      "audio": "",
+      "meaning": "保持；仍然是；剩余；留下；仍未决定",
+      "dateAdded": "2026-10-25T09:03:41.849Z",
+      "sentences": [
+        {
+          "id": "mvnloz6i0ohdb",
+          "text": "Several issues remain open after the UAT sign-off.",
+          "translation": "UAT签字后仍有几个问题未关闭。",
+          "usageNote": "remain + 形容词/状态（保持、仍然处于某种状态，如 remain open / remain unchanged）",
+          "dateAdded": "2026-10-25T09:03:41.849Z"
+        },
+        {
+          "id": "mvnloz6iydur5",
+          "text": "The freeze period will remain in place until the CAB approves the next release.",
+          "translation": "在CAB批准下一个版本之前，冻结期将继续有效。",
+          "usageNote": "remain in place（继续有效、保持原样，职场高频短语）",
+          "dateAdded": "2026-10-25T09:03:41.849Z"
+        },
+        {
+          "id": "mvnloz6ibbg79",
+          "text": "Only two defects remain to be fixed before go-live.",
+          "translation": "上线前只剩两个缺陷需要修复。",
+          "usageNote": "remain to be + 过去分词（尚待做某事，书面语，如 remain to be seen / remain to be done）",
+          "dateAdded": "2026-10-25T09:03:41.849Z"
+        },
+        {
+          "id": "mvnloz6i4qk0i",
+          "text": "It remains to be seen whether the vendor can meet the deadline.",
+          "translation": "供应商能否赶上期限，还有待观察。",
+          "usageNote": "it remains to be seen（还有待观察，口语和书面都常用）",
+          "dateAdded": "2026-10-25T09:03:41.849Z"
+        },
+        {
+          "id": "mvnloz6iq22at",
+          "text": "Please keep the original logs; the audit team will need them.",
+          "translation": "请保留原始日志，审计团队会需要它们。",
+          "usageNote": "注意 remain 不是\"记得\"，也不表示\"留下来做某事\"；\"留下来\"常用 stay",
+          "dateAdded": "2026-10-25T09:03:41.849Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvnloz6imc2k7",
+          "word": "remainder",
+          "translation": "剩余部分；余数"
+        },
+        {
+          "id": "mvnloz6i0w8i4",
+          "word": "remaining",
+          "translation": "剩余的；尚存的"
+        },
+        {
+          "id": "mvnloz6ibtc7p",
+          "word": "remains",
+          "translation": "遗迹；遗骸；剩余物（复数名词）"
+        },
+        {
+          "id": "mvnloz6iao4ey",
+          "word": "remainderless",
+          "translation": "无剩余的（数学语境，较少用）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvrw8hm1gqc5z",
+      "word": "head",
+      "phonetic": "/hɛd/",
+      "audio": "",
+      "meaning": "头；头脑；领导；首位；朝……前进；（动词）领导；带领；撰写……的标题",
+      "dateAdded": "2026-10-28T09:09:53.065Z",
+      "sentences": [
+        {
+          "id": "mvrw8hm1ee02v",
+          "text": "She heads the PPS project team and reports directly to the director.",
+          "translation": "她负责PPS项目团队，直接向总监汇报。",
+          "usageNote": "head 作动词，指领导、负责某团队或项目（head a team / head up a project）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1eo9iu",
+          "text": "Can you head up the UAT review for the LTA module?",
+          "translation": "你能牵头负责LTA模块的UAT评审吗？",
+          "usageNote": "head up（牵头、负责，职场口语高频）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1giorb",
+          "text": "Let's keep a list of the issues and head them off before the freeze.",
+          "translation": "我们列一份问题清单，在冻结期前把它们提前化解掉。",
+          "usageNote": "head off（提前阻止、化解，如 head off problems / head off a delay）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1pge9l",
+          "text": "Make sure you have a backup plan to head off any further delays.",
+          "translation": "确保你有备用方案，以防进一步延误。",
+          "usageNote": "head off sth（防止某事发生，与 head off 同义）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1k3ady",
+          "text": "The team headed back to the office after the site visit.",
+          "translation": "现场考察后，团队返回了办公室。",
+          "usageNote": "head back / head out / head over（返回、出发、过去，口语常用）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1etjka",
+          "text": "Let's head over to the DBA's desk to check the timeout logs.",
+          "translation": "我们过去DBA那边看看超时日志吧。",
+          "usageNote": "head over（过去某地，口语，与 come over 相近，但 head over 更强调\"出发前往\"）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1dka3r",
+          "text": "The PROD issue is heading for a serious outage if we don't act now.",
+          "translation": "如果现在不采取行动，这个生产问题将导致严重中断。",
+          "usageNote": "head for / be heading for sth（朝……走去，或走向某种结果，常带不好的含义）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1018ua",
+          "text": "I'm not sure where the project is heading, so let's check the plan.",
+          "translation": "我不确定项目往哪个方向发展，我们看看计划吧。",
+          "usageNote": "where something is heading（事情的走向、趋势）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrw8hm1h5gmg",
+          "text": "Let's go over the risks, starting with the top of the list.",
+          "translation": "我们从清单最上面开始，逐一过一遍风险。",
+          "usageNote": "at the top / head of the list（列表的顶端，即优先事项）",
+          "dateAdded": "2026-10-28T09:09:53.065Z"
+        },
+        {
+          "id": "mvrwirshg8955",
+          "text": "The project is heading into the UAT phase next week.",
+          "translation": "项目下周将进入UAT阶段。",
+          "usageNote": "head into + 阶段/局面（走向某种状态）",
+          "dateAdded": "2026-10-28T09:17:52.816Z"
+        },
+        {
+          "id": "mvrwirshc21aw",
+          "text": "I'm heading to the meeting room now, I'll be back in 10 minutes.",
+          "translation": "我现在去会议室，10分钟后回来。",
+          "usageNote": "head to / head for + 地点（前往某地，口语常用进行时）",
+          "dateAdded": "2026-10-28T09:17:52.816Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvrw8hm14mqkh",
+          "word": "header",
+          "translation": "页眉；标题；表头"
+        },
+        {
+          "id": "mvrw8hm132br1",
+          "word": "heading",
+          "translation": "标题；方向"
+        },
+        {
+          "id": "mvrw8hm1ctgln",
+          "word": "headline",
+          "translation": "标题；头条新闻"
+        },
+        {
+          "id": "mvrw8hm131x66",
+          "word": "headache",
+          "translation": "头痛；麻烦事"
+        },
+        {
+          "id": "mvrw8hm15tagt",
+          "word": "headquarters",
+          "translation": "总部"
+        },
+        {
+          "id": "mvrw8hm1q5u95",
+          "word": "headway",
+          "translation": "进展；前进"
+        },
+        {
+          "id": "mvrw8hm12eole",
+          "word": "ahead",
+          "translation": "在前面；提前"
+        },
+        {
+          "id": "mvrw8hm1327ka",
+          "word": "overhead",
+          "translation": "日常开销；高架的"
+        },
+        {
+          "id": "mvrwirshww5ah",
+          "word": "headed",
+          "translation": "adj. 朝……去的；有……领头的"
+        },
+        {
+          "id": "mvrwirsi5asdt",
+          "word": "headcount",
+          "translation": "n. 员工人数；人员编制"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvry674f6jb4g",
+      "word": "supplement",
+      "phonetic": "/ˈsʌpləmənt/",
+      "audio": "",
+      "meaning": "n. 补充物；补品；增刊；附录；v. 补充；增补",
+      "dateAdded": "2026-10-28T10:04:05.390Z",
+      "sentences": [
+        {
+          "id": "mvry674fm90sd",
+          "text": "Many people take vitamin D supplements in winter.",
+          "translation": "很多人在冬天服用维生素 D 补充剂。",
+          "usageNote": "n. 补充剂；补品（常用复数 supplements）",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        },
+        {
+          "id": "mvry674fwk5vo",
+          "text": "The newspaper comes with a free weekend supplement.",
+          "translation": "这份报纸附赠周末增刊。",
+          "usageNote": "n. （报刊的）增刊；（书的）附录",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        },
+        {
+          "id": "mvry674fsdo5b",
+          "text": "She works part-time to supplement her income.",
+          "translation": "她做兼职来补贴收入。",
+          "usageNote": "v. supplement sth 补充；补贴某物",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        },
+        {
+          "id": "mvry674fc0c74",
+          "text": "He supplemented his diet with fresh fruit and vegetables.",
+          "translation": "他用新鲜水果和蔬菜来补充饮食。",
+          "usageNote": "v. supplement A with B 用 B 补充 A",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        },
+        {
+          "id": "mvry674fyzxnp",
+          "text": "She supplements her income by teaching on weekends.",
+          "translation": "她周末教课来贴补收入。",
+          "usageNote": "v. supplement A by doing sth 通过做某事来补充 A，by 后接动名词",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        },
+        {
+          "id": "mvry674fqak3p",
+          "text": "Classroom lessons are supplemented by online exercises.",
+          "translation": "课堂教学辅以在线练习。",
+          "usageNote": "v. be supplemented by sth 被动语态，由……补充；辅以……",
+          "dateAdded": "2026-10-28T10:04:05.390Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvry674f0zthj",
+          "word": "supplementary",
+          "translation": "adj. 补充的；追加的"
+        },
+        {
+          "id": "mvry674frz6rq",
+          "word": "supplemental",
+          "translation": "adj. 补充的；附加的"
+        },
+        {
+          "id": "mvry674fp67e6",
+          "word": "supplementation",
+          "translation": "n. 补充；增补"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvt5mdrbscxez",
+      "word": "disburse",
+      "phonetic": "/dɪˈsbɝs/",
+      "audio": "",
+      "meaning": "v. 支付；拨付；发放（款项）",
+      "dateAdded": "2026-10-29T06:20:23.974Z",
+      "sentences": [
+        {
+          "id": "mvt5mdrb83kbj",
+          "text": "The government will disburse the funds to local councils next month.",
+          "translation": "政府下个月将向各地方议会拨付这笔资金。",
+          "usageNote": "v. disburse sth (to sb) 向某人拨付/发放款项",
+          "dateAdded": "2026-10-29T06:20:23.974Z"
+        },
+        {
+          "id": "mvt5mdrb3ejpq",
+          "text": "The loan will be disbursed in three instalments.",
+          "translation": "这笔贷款将分三期发放。",
+          "usageNote": "v. be disbursed 被动语态，款项被发放；常与 in instalments / in full 搭配",
+          "dateAdded": "2026-10-29T06:20:23.974Z"
+        },
+        {
+          "id": "mvt5mdrbsf67r",
+          "text": "The finance team disbursed the payment as soon as the invoice was approved.",
+          "translation": "发票一经批准，财务团队就支付了这笔款项。",
+          "usageNote": "v. disburse a payment 支付款项（多用于正式的财务、合同语境）",
+          "dateAdded": "2026-10-29T06:20:23.974Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvt5mdrbmzdn2",
+          "word": "disbursement",
+          "translation": "n. 支付；拨款；支出款项"
+        },
+        {
+          "id": "mvt5mdrbnjfcs",
+          "word": "disbursed",
+          "translation": "adj. 已支付的；已发放的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvt5osftajwvq",
+      "word": "grant",
+      "phonetic": "/ɡrænt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/grant-us.mp3",
+      "meaning": "v. 授予；批准；准予；承认；n. 拨款；补助金",
+      "dateAdded": "2026-10-29T06:22:16.313Z",
+      "sentences": [
+        {
+          "id": "mvt5osft3bev4",
+          "text": "The government granted the company a licence to operate.",
+          "translation": "政府批准该公司获得经营许可。",
+          "usageNote": "v. grant sb sth / grant sth to sb 授予某人某物；批准",
+          "dateAdded": "2026-10-29T06:22:16.313Z"
+        },
+        {
+          "id": "mvt5osfthhj4i",
+          "text": "I grant that the plan has some risks, but it is still worth trying.",
+          "translation": "我承认这个计划有一些风险，但仍然值得一试。",
+          "usageNote": "v. grant that... 承认……（让步，引出后面的转折）",
+          "dateAdded": "2026-10-29T06:22:16.313Z"
+        },
+        {
+          "id": "mvt5osftjyz2h",
+          "text": "She was granted permission to leave early.",
+          "translation": "她获准提前离开。",
+          "usageNote": "v. be granted permission / approval / access 被准许；获得批准",
+          "dateAdded": "2026-10-29T06:22:16.313Z"
+        },
+        {
+          "id": "mvt5osfuk0kei",
+          "text": "The university received a research grant of $200,000.",
+          "translation": "这所大学获得了 20 万美元的研究经费。",
+          "usageNote": "n. 拨款；补助金（政府或机构提供，多用于研究、教育、项目）",
+          "dateAdded": "2026-10-29T06:22:16.313Z"
+        },
+        {
+          "id": "mvt5osfuglol8",
+          "text": "Don't take your good health for granted.",
+          "translation": "不要把健康当作理所当然。",
+          "usageNote": "take sth for granted 认为某事理所当然；不珍惜某物",
+          "dateAdded": "2026-10-29T06:22:16.313Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvt5osfu1t3s6",
+          "word": "grantee",
+          "translation": "n. 受赠人；被授予者"
+        },
+        {
+          "id": "mvt5osfursrmh",
+          "word": "grantor",
+          "translation": "n. 授予人；给予者"
+        },
+        {
+          "id": "mvt5osfupmdq3",
+          "word": "granted",
+          "translation": "adv. 诚然；固然（常作让步用语）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvt5vb4c6nf0v",
+      "word": "restore",
+      "phonetic": "/rɪˈstɔr/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/restore-us.mp3",
+      "meaning": "v. 恢复；修复；归还；使复原",
+      "dateAdded": "2026-10-29T06:27:20.460Z",
+      "sentences": [
+        {
+          "id": "mvt5vb4cenn9k",
+          "text": "The power was restored after two hours.",
+          "translation": "两小时后电力恢复了。",
+          "usageNote": "v. restore sth 恢复某物（秩序、供电、信心、服务等）",
+          "dateAdded": "2026-10-29T06:27:20.460Z"
+        },
+        {
+          "id": "mvt5vb4cq4nwv",
+          "text": "Workers are restoring the old temple to its original condition.",
+          "translation": "工人们正在把这座古庙修复到原貌。",
+          "usageNote": "v. restore sth to sth 使某物恢复到某种状态",
+          "dateAdded": "2026-10-29T06:27:20.460Z"
+        },
+        {
+          "id": "mvt5vb4cq2ong",
+          "text": "The police recovered the stolen painting and restored it to its owner.",
+          "translation": "警方找回了被盗的画作，并将它归还给失主。",
+          "usageNote": "v. restore sth to sb 把某物归还给某人",
+          "dateAdded": "2026-10-29T06:27:20.460Z"
+        },
+        {
+          "id": "mvt5vb4catvcv",
+          "text": "You can restore the system from yesterday's backup.",
+          "translation": "你可以用昨天的备份来恢复系统。",
+          "usageNote": "v. restore sth from sth 从某处恢复（数据、系统，常用于 IT 语境）",
+          "dateAdded": "2026-10-29T06:27:20.460Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvt5vb4ce4iw0",
+          "word": "restoration",
+          "translation": "n. 恢复；修复；复原"
+        },
+        {
+          "id": "mvt5vb4d3rcbu",
+          "word": "restorative",
+          "translation": "adj. 有恢复作用的；n. 补药"
+        },
+        {
+          "id": "mvt5vb4djw8io",
+          "word": "restorer",
+          "translation": "n. 修复者；修复剂"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvtludc7ovfu7",
+      "word": "operate",
+      "phonetic": "/ˈɑpɚˌeɪt/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/operate-us.mp3",
+      "meaning": "v. 操作；运转；经营；运营；动手术",
+      "dateAdded": "2026-10-29T13:54:30.534Z",
+      "sentences": [
+        {
+          "id": "mvtludc7grc5h",
+          "text": "Do you know how to operate this machine?",
+          "translation": "你知道怎么操作这台机器吗？",
+          "usageNote": "v. operate sth 操作、使用某物（机器、设备、系统）",
+          "dateAdded": "2026-10-29T13:54:30.534Z"
+        },
+        {
+          "id": "mvtludc777cyt",
+          "text": "The system has been operating normally since the update.",
+          "translation": "自从更新之后，系统一直运行正常。",
+          "usageNote": "v. （不及物）运转；运行；正常工作",
+          "dateAdded": "2026-10-29T13:54:30.534Z"
+        },
+        {
+          "id": "mvtludc7utxdq",
+          "text": "The company operates in more than twenty countries.",
+          "translation": "这家公司在二十多个国家开展业务。",
+          "usageNote": "v. operate in + 地点/领域 在某地/某领域经营",
+          "dateAdded": "2026-10-29T13:54:30.534Z"
+        },
+        {
+          "id": "mvtludc73sqwm",
+          "text": "She runs a small business that operates out of her garage.",
+          "translation": "她经营着一家以车库为基地的小公司。",
+          "usageNote": "v. operate out of + 地点 以某地为基地开展业务",
+          "dateAdded": "2026-10-29T13:54:30.534Z"
+        },
+        {
+          "id": "mvtludc7vj4e8",
+          "text": "The surgeon will operate on him tomorrow morning.",
+          "translation": "外科医生明天上午给他做手术。",
+          "usageNote": "v. operate on sb 给某人做手术",
+          "dateAdded": "2026-10-29T13:54:30.534Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvtludc7kjb51",
+          "word": "operation",
+          "translation": "n. 操作；运营；手术；行动"
+        },
+        {
+          "id": "mvtludc7m8cze",
+          "word": "operator",
+          "translation": "n. 操作员；运营商；接线员"
+        },
+        {
+          "id": "mvtludc7xp2x8",
+          "word": "operational",
+          "translation": "adj. 运营的；可使用的；操作上的"
+        },
+        {
+          "id": "mvtludc7yt5yu",
+          "word": "operative",
+          "translation": "adj. 起作用的；生效的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvtm1l4kvno69",
+      "word": "him",
+      "phonetic": "/hɪm/",
+      "audio": "",
+      "meaning": "pron. 他（宾格）",
+      "dateAdded": "2026-10-29T14:00:07.220Z",
+      "sentences": [
+        {
+          "id": "mvtm1l4lmjk0o",
+          "text": "I saw him at the station yesterday.",
+          "translation": "我昨天在车站见到他了。",
+          "usageNote": "作动词宾语",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        },
+        {
+          "id": "mvtm1l4lotiy3",
+          "text": "Can you send the report to him today?",
+          "translation": "你今天能把报告发给他吗？",
+          "usageNote": "作介词宾语（to / with / for him）",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvtm1l4l36in0",
+          "word": "he",
+          "translation": "pron. 他（主格）"
+        },
+        {
+          "id": "mvtm1l4ldy25a",
+          "word": "his",
+          "translation": "pron. 他的（物主代词）"
+        },
+        {
+          "id": "mvtm1l4lg8b2m",
+          "word": "himself",
+          "translation": "pron. 他自己（反身代词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvtm1l4ly78vm",
+      "word": "her",
+      "phonetic": "/hɝ/",
+      "audio": "",
+      "meaning": "pron. 她（宾格）；det. 她的（形容词性物主代词）",
+      "dateAdded": "2026-10-29T14:00:07.220Z",
+      "sentences": [
+        {
+          "id": "mvtm1l4ltsdet",
+          "text": "Can you give her the book?",
+          "translation": "你能把书给她吗？",
+          "usageNote": "作宾语（宾格）",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        },
+        {
+          "id": "mvtm1l4l66r7g",
+          "text": "Her presentation was very clear.",
+          "translation": "她的演讲非常清晰。",
+          "usageNote": "her + 名词，表示\"她的\"",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvtm1l4lrrcx4",
+          "word": "she",
+          "translation": "pron. 她（主格）"
+        },
+        {
+          "id": "mvtm1l4lajzv6",
+          "word": "hers",
+          "translation": "pron. 她的（名词性物主代词，单独使用）"
+        },
+        {
+          "id": "mvtm1l4llsswd",
+          "word": "herself",
+          "translation": "pron. 她自己（反身代词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvtm1l4ltqikn",
+      "word": "it",
+      "phonetic": "/ɪt/",
+      "audio": "",
+      "meaning": "pron. 它（主格和宾格同形）",
+      "dateAdded": "2026-10-29T14:00:07.220Z",
+      "sentences": [
+        {
+          "id": "mvtm1l4l8gz89",
+          "text": "Put it on the table.",
+          "translation": "把它放在桌子上。",
+          "usageNote": "作宾语（宾格）",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        },
+        {
+          "id": "mvtm1l4lp9n0t",
+          "text": "It works well after the update.",
+          "translation": "更新之后它运行得很好。",
+          "usageNote": "作主语（主格）",
+          "dateAdded": "2026-10-29T14:00:07.220Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvtm1l4lucx1g",
+          "word": "its",
+          "translation": "det. 它的（物主代词，注意没有撇号）"
+        },
+        {
+          "id": "mvtm1l4l9c8nm",
+          "word": "itself",
+          "translation": "pron. 它自己（反身代词）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvtmb1ccx89nw",
+      "word": "tight",
+      "phonetic": "/taɪt/",
+      "audio": "",
+      "meaning": "adj. 紧的；紧身的；严格的；紧张的；adv. 紧紧地",
+      "dateAdded": "2026-10-29T14:07:28.139Z",
+      "sentences": [
+        {
+          "id": "mvtmb1cc4rw54",
+          "text": "These shoes are too tight for me.",
+          "translation": "这双鞋我穿太紧了。",
+          "usageNote": "adj. 紧的；紧身的（衣物、鞋子等）",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cchrx4f",
+          "text": "Make sure the lid is screwed on tight.",
+          "translation": "确保盖子拧紧了。",
+          "usageNote": "adv. 紧紧地（常与 hold / screw / shut 等动词搭配，可与 tightly 互换）",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cc12v43",
+          "text": "We are working to a tight deadline this week.",
+          "translation": "我们这周的工期很紧。",
+          "usageNote": "adj. tight deadline / schedule 紧迫的截止日期 / 日程",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cc74n9y",
+          "text": "The government has introduced tighter controls on spending.",
+          "translation": "政府出台了更严格的支出管控。",
+          "usageNote": "adj. 严格的；严厉的（控制、管理、安全措施）",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cckyz0x",
+          "text": "Money is tight at the moment, so we can't hire anyone new.",
+          "translation": "目前资金紧张，所以我们不能再招新人。",
+          "usageNote": "adj. sth is tight 资金、预算紧张；手头拮据",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1ccggjck",
+          "text": "Hold tight, the bus is about to start.",
+          "translation": "抓紧了，公交车要开了。",
+          "usageNote": "hold tight 抓紧；坚持住",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cc07jrv",
+          "text": "The company has tightened its security after the data leak.",
+          "translation": "数据泄露之后，公司加强了安保措施。",
+          "usageNote": "衍生词 tighten：tighten security / controls 加强安保 / 管控",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cca6xay",
+          "text": "She held the child's hand tightly as they crossed the road.",
+          "translation": "过马路时她紧紧握着孩子的手。",
+          "usageNote": "衍生词 tightly：hold sth tightly 紧紧握住某物",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        },
+        {
+          "id": "mvtmb1cci3gui",
+          "text": "He felt a tightness in his chest before the presentation.",
+          "translation": "演讲之前他感到胸口发紧。",
+          "usageNote": "衍生词 tightness：a tightness in one's chest 胸口发紧",
+          "dateAdded": "2026-10-29T14:07:28.139Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvtmb1cc5t4df",
+          "word": "tighten",
+          "translation": "v. 拧紧；收紧；加强"
+        },
+        {
+          "id": "mvtmb1ccweicx",
+          "word": "tightly",
+          "translation": "adv. 紧紧地；牢固地"
+        },
+        {
+          "id": "mvtmb1ccy45hh",
+          "word": "tightness",
+          "translation": "n. 紧；紧绷；紧张"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvufwhfknksvq",
+      "word": "rectify",
+      "phonetic": "/ˈrɛktəˌfaɪ/",
+      "audio": "",
+      "meaning": "v. 纠正；改正；矫正；整流",
+      "dateAdded": "2026-10-30T03:55:57.632Z",
+      "sentences": [
+        {
+          "id": "mvufwhfkz91om",
+          "text": "The company moved quickly to rectify the error in the invoice.",
+          "translation": "公司迅速纠正了发票中的错误。",
+          "usageNote": "v. rectify sth 纠正某事（错误、问题、疏漏）",
+          "dateAdded": "2026-10-30T03:55:57.632Z"
+        },
+        {
+          "id": "mvufwhfk7xozi",
+          "text": "We need to rectify the situation before it gets worse.",
+          "translation": "我们需要在情况恶化之前加以补救。",
+          "usageNote": "v. rectify the situation / problem 扭转局面；解决问题",
+          "dateAdded": "2026-10-30T03:55:57.632Z"
+        },
+        {
+          "id": "mvufwhfk4r8yk",
+          "text": "The bug was rectified in the latest patch.",
+          "translation": "这个 bug 在最新的补丁中已被修复。",
+          "usageNote": "v. be rectified 被动语态，被纠正；被修复（多用于正式或技术语境）",
+          "dateAdded": "2026-10-30T03:55:57.632Z"
+        },
+        {
+          "id": "mvufwhfkjq7l1",
+          "text": "The contractor must rectify any defects within 30 days.",
+          "translation": "承包商必须在 30 天内整改所有缺陷。",
+          "usageNote": "v. rectify defects 整改缺陷（合同、工程语境常见）",
+          "dateAdded": "2026-10-30T03:55:57.632Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvufwhfk2ypb2",
+          "word": "rectification",
+          "translation": "n. 纠正；整改；矫正"
+        },
+        {
+          "id": "mvufwhfl199ps",
+          "word": "rectifiable",
+          "translation": "adj. 可纠正的；可补救的"
+        },
+        {
+          "id": "mvufwhflhy639",
+          "word": "rectifier",
+          "translation": "n. 整流器；纠正者"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvuhpx6af4esu",
+      "word": "accumulate",
+      "phonetic": "/əˈkjumjəˌleɪt/",
+      "audio": "",
+      "meaning": "v. 积累；积聚；堆积；逐渐增加",
+      "dateAdded": "2026-10-30T04:46:50.674Z",
+      "sentences": [
+        {
+          "id": "mvuhpx6aicqgt",
+          "text": "Dust had accumulated on the shelves over the years.",
+          "translation": "这些年来，架子上积了一层灰。",
+          "usageNote": "v. （不及物）逐渐积聚；堆积",
+          "dateAdded": "2026-10-30T04:46:50.674Z"
+        },
+        {
+          "id": "mvuhpx6aon1x8",
+          "text": "She has accumulated a great deal of experience in project management.",
+          "translation": "她在项目管理方面积累了丰富的经验。",
+          "usageNote": "v. accumulate sth 积累某物（经验、知识、财富、数据等）",
+          "dateAdded": "2026-10-30T04:46:50.674Z"
+        },
+        {
+          "id": "mvuhpx6a8p1xw",
+          "text": "Interest will accumulate on the unpaid balance.",
+          "translation": "未付余额会产生累计利息。",
+          "usageNote": "v. interest accumulates 利息累计；利息不断累积（金融语境）",
+          "dateAdded": "2026-10-30T04:46:50.674Z"
+        },
+        {
+          "id": "mvuhpx6aksszl",
+          "text": "Small errors can accumulate and cause serious problems later.",
+          "translation": "小错误会不断累积，之后造成严重问题。",
+          "usageNote": "v. errors / delays accumulate 错误 / 延误不断累积",
+          "dateAdded": "2026-10-30T04:46:50.674Z"
+        },
+        {
+          "id": "mvuhpx6apzzyw",
+          "text": "The company has accumulated debts of over two million dollars.",
+          "translation": "这家公司已累积了超过两百万美元的债务。",
+          "usageNote": "v. accumulate debts / losses 累积债务 / 亏损",
+          "dateAdded": "2026-10-30T04:46:50.674Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvuhpx6acjbqa",
+          "word": "accumulation",
+          "translation": "n. 积累；积聚；堆积物"
+        },
+        {
+          "id": "mvuhpx6a8rttz",
+          "word": "accumulative",
+          "translation": "adj. 累积的；渐增的"
+        },
+        {
+          "id": "mvuhpx6atfswa",
+          "word": "accumulator",
+          "translation": "n. 蓄电池；累加器"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvuhqwwhj2z5f",
+      "word": "recur",
+      "phonetic": "/rɪˈkɝ/",
+      "audio": "",
+      "meaning": "v. 复发；重现；再次发生；循环出现",
+      "dateAdded": "2026-10-30T04:47:36.976Z",
+      "sentences": [
+        {
+          "id": "mvuhqwwh0ies4",
+          "text": "The problem keeps recurring every few weeks.",
+          "translation": "这个问题每隔几周就会再次出现。",
+          "usageNote": "v. （不及物）反复出现；再次发生（问题、错误、症状）",
+          "dateAdded": "2026-10-30T04:47:36.976Z"
+        },
+        {
+          "id": "mvuhqwwh5cqtd",
+          "text": "If the symptoms recur, you should see a doctor.",
+          "translation": "如果症状复发，你应该去看医生。",
+          "usageNote": "v. symptoms recur 症状复发（医学语境）",
+          "dateAdded": "2026-10-30T04:47:36.976Z"
+        },
+        {
+          "id": "mvuhqwwh9m8as",
+          "text": "This theme recurs throughout the novel.",
+          "translation": "这个主题在整部小说中反复出现。",
+          "usageNote": "v. recur throughout sth 在整个过程中反复出现",
+          "dateAdded": "2026-10-30T04:47:36.976Z"
+        },
+        {
+          "id": "mvuhqwwhz4vl9",
+          "text": "We set up a recurring meeting every Monday morning.",
+          "translation": "我们设置了每周一上午的定期会议。",
+          "usageNote": "recurring 作定语：recurring meeting / payment 定期会议 / 定期付款",
+          "dateAdded": "2026-10-30T04:47:36.976Z"
+        },
+        {
+          "id": "mvuhqwwh7p7dz",
+          "text": "The team took steps to prevent the error from recurring.",
+          "translation": "团队采取措施防止这个错误再次发生。",
+          "usageNote": "v. prevent sth from recurring 防止某事再次发生",
+          "dateAdded": "2026-10-30T04:47:36.976Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvuhqwwh0jpbv",
+          "word": "recurrence",
+          "translation": "n. 复发；再次发生"
+        },
+        {
+          "id": "mvuhqwwhxt8zr",
+          "word": "recurrent",
+          "translation": "adj. 反复发生的；经常出现的"
+        },
+        {
+          "id": "mvuhqwwhcw7sv",
+          "word": "recurring",
+          "translation": "adj. 重复的；定期的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvuhrqvczrye2",
+      "word": "pattern",
+      "phonetic": "/ˈpætɚn/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/pattern-uk.mp3",
+      "meaning": "n. 模式；图案；规律；样式；v. 仿照；形成图案",
+      "dateAdded": "2026-10-30T04:48:15.816Z",
+      "sentences": [
+        {
+          "id": "mvuhrqvczbd5b",
+          "text": "The data shows a clear pattern of growth over the past year.",
+          "translation": "数据显示过去一年有明显的增长规律。",
+          "usageNote": "n. a pattern of sth 某事的规律、模式（行为、趋势、数据）",
+          "dateAdded": "2026-10-30T04:48:15.816Z"
+        },
+        {
+          "id": "mvuhrqvcv5dl6",
+          "text": "She wore a dress with a floral pattern.",
+          "translation": "她穿了一条花卉图案的连衣裙。",
+          "usageNote": "n. （布料、墙纸等的）图案；花样",
+          "dateAdded": "2026-10-30T04:48:15.816Z"
+        },
+        {
+          "id": "mvuhrqvcj9zn4",
+          "text": "We noticed a pattern in the way users interact with the app.",
+          "translation": "我们注意到用户使用这款应用的方式存在某种规律。",
+          "usageNote": "n. follow / break a pattern 遵循 / 打破某种模式",
+          "dateAdded": "2026-10-30T04:48:15.816Z"
+        },
+        {
+          "id": "mvuhrqvcizw7m",
+          "text": "Their approach was patterned on the successful European model.",
+          "translation": "他们的做法是仿照成功的欧洲模式制定的。",
+          "usageNote": "v. be patterned on / after sth 仿照某事物；以某事物为模板",
+          "dateAdded": "2026-10-30T04:48:15.816Z"
+        },
+        {
+          "id": "mvuhrqvci5oin",
+          "text": "Developers often use design patterns to solve common problems.",
+          "translation": "开发人员经常使用设计模式来解决常见问题。",
+          "usageNote": "n. design pattern 设计模式（IT 语境）",
+          "dateAdded": "2026-10-30T04:48:15.816Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvuhrqvc8qz12",
+          "word": "patterned",
+          "translation": "adj. 有图案的；有规律的"
+        },
+        {
+          "id": "mvuhrqvcfzmhg",
+          "word": "patterning",
+          "translation": "n. 图案形成；模式化"
+        },
+        {
+          "id": "mvuhrqvd02sk9",
+          "word": "pattern-matching",
+          "translation": "n. 模式匹配"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvupytsc06gkd",
+      "word": "settle",
+      "phonetic": "/ˈsɛtəl/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/settle-us.mp3",
+      "meaning": "v. 解决；安顿；定居；结算；使平静；下沉",
+      "dateAdded": "2026-10-30T08:37:43.116Z",
+      "sentences": [
+        {
+          "id": "mvupytsc8sp6m",
+          "text": "The two companies settled the dispute out of court.",
+          "translation": "两家公司通过庭外和解解决了争端。",
+          "usageNote": "v. settle a dispute / matter 解决争端 / 问题；和解",
+          "dateAdded": "2026-10-30T08:37:43.116Z"
+        },
+        {
+          "id": "mvupytsc1pxgq",
+          "text": "Please settle the invoice within 30 days.",
+          "translation": "请在 30 天内结清这张发票。",
+          "usageNote": "v. settle a bill / invoice / payment 结算账单 / 发票 / 付款",
+          "dateAdded": "2026-10-30T08:37:43.116Z"
+        },
+        {
+          "id": "mvupytscb1dx9",
+          "text": "After years of travelling, she finally settled in Singapore.",
+          "translation": "旅行多年之后，她终于在新加坡定居下来。",
+          "usageNote": "v. settle in / settle down 定居；安顿下来",
+          "dateAdded": "2026-10-30T08:37:43.116Z"
+        },
+        {
+          "id": "mvupytsc5punp",
+          "text": "We need to settle on a date for the final review.",
+          "translation": "我们需要为最终评审敲定一个日期。",
+          "usageNote": "v. settle on sth 选定；最终决定某事",
+          "dateAdded": "2026-10-30T08:37:43.116Z"
+        },
+        {
+          "id": "mvupytsczjvdw",
+          "text": "The dust settled slowly after the explosion.",
+          "translation": "爆炸之后，灰尘慢慢沉降下来。",
+          "usageNote": "v. （不及物）下沉；沉淀；落定",
+          "dateAdded": "2026-10-30T08:37:43.116Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvupytscs8ksf",
+          "word": "settlement",
+          "translation": "n. 解决；和解；结算；定居点"
+        },
+        {
+          "id": "mvupytsctsbyc",
+          "word": "settler",
+          "translation": "n. 定居者；移民"
+        },
+        {
+          "id": "mvupytsctyrzx",
+          "word": "settled",
+          "translation": "adj. 稳定的；固定的；已解决的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
     }
   ],
   "tombstones": {
@@ -8907,6 +10064,7 @@
     "mrhm0az8qqqlt": "2026-10-08T13:07:29.113Z",
     "mrhuhpqa3puae": "2026-10-19T14:07:12.594Z",
     "mroaox5jv6hbp": "2026-10-22T04:10:48.018Z",
-    "mrj3crarpw29v": "2026-10-22T04:11:40.339Z"
+    "mrj3crarpw29v": "2026-10-22T04:11:40.339Z",
+    "mvnlkrt0nika7": "2026-10-25T09:02:45.822Z"
   }
 }
