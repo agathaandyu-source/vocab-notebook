@@ -1223,14 +1223,14 @@
           <div class="field-row">
             <label for="bulk-input">粘贴固定格式的内容（可以一次粘贴多个单词）</label>
             <textarea id="bulk-input" rows="9" placeholder="单词: resilient
-含义: 有韧性的
+含义: adj. 有韧性的
 例句: She is a resilient person.
 翻译: 她是一个有韧性的人。
 用法: 形容人的性格
 衍生词: resilience | 韧性
 
 单词: ephemeral
-含义: 短暂的
+含义: adj. 短暂的
 例句: Fame can be ephemeral.
 翻译: 名声可能转瞬即逝。"></textarea>
           </div>
@@ -1874,9 +1874,17 @@ if ('speechSynthesis' in window) {
 function playWordAudio(entry, btn) {
   if (entry.audio) {
     if (currentAudio) currentAudio.pause();
-    currentAudio = new Audio(entry.audio);
-    currentAudio.playbackRate = speechRate;
-    currentAudio.play().catch(() => speak(entry.word));
+    const audio = new Audio(entry.audio);
+    currentAudio = audio;
+    audio.playbackRate = speechRate;
+    // If the recorded audio can't start (blocked host, slow network, bad file), fall back to the
+    // device voice instead of staying silent.
+    let started = false, fellBack = false;
+    const fallback = () => { if (started || fellBack) return; fellBack = true; try { audio.pause(); } catch (e) {} speak(entry.word); };
+    audio.addEventListener('playing', () => { started = true; });
+    audio.addEventListener('error', fallback);
+    setTimeout(fallback, 2500);
+    audio.play().catch(fallback);
   } else {
     speak(entry.word);
   }
@@ -2884,7 +2892,7 @@ const BULK_LABELS = {
 const BULK_FORMAT_PROMPT = `请把我刚学的单词，按下面的固定格式整理，放在一个代码块里，方便我复制粘贴：
 
 单词: （英文单词）
-含义: （中文含义）
+含义: （词性 + 中文含义，如 v. 选择；争取）
 例句: （英文例句）
 翻译: （这条例句的中文翻译）
 用法: （这条例句用的是哪个用法，可省略）
@@ -2892,8 +2900,9 @@ const BULK_FORMAT_PROMPT = `请把我刚学的单词，按下面的固定格式�
 
 规则：
 - 每个单词以「单词:」开头，不同单词之间空一行
+- 「含义:」里要写词性（n. / v. / adj. / adv. 等），放在中文意思前面；一个词有多个词性时，写成一行，用「；」隔开，如「含义: v. 选择；争取；n. 选择」
 - 一个单词可以有多条例句，每条例句后面紧跟它自己的「翻译:」和「用法:」
-- 衍生词可以有多行，每行一个，格式是「衍生词: resilience | 韧性」
+- 衍生词可以有多行，每行一个，格式是「衍生词: resilience | n. 韧性」
 - 除了代码块，不要输出别的格式符号`;
 
 function bulkLabelKey(label) {
