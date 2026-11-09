@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-10-31T10:50:32.183Z",
+  "exportedAt": "2026-11-09T15:15:11.652Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -144,13 +144,6 @@
           "dateAdded": "2026-07-12T15:03:34.026Z"
         },
         {
-          "id": "mrhxc1jmu2ftf",
-          "text": "probation period",
-          "translation": "试用期",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T15:04:07.378Z"
-        },
-        {
           "id": "mrhxeydp883or",
           "text": "Over a period of several months, we've observed the same issue recurring.",
           "translation": "在几个月的期间内，我们观察到同样的问题反复出现。",
@@ -163,6 +156,13 @@
           "translation": "对团队来说，这是一个令人兴奋的时期，因为有了新项目。",
           "usageNote": "",
           "dateAdded": "2026-07-12T15:08:33.706Z"
+        },
+        {
+          "id": "mrhxc1jmu2ftf",
+          "text": "probation period",
+          "translation": "试用期",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T15:04:07.378Z"
         }
       ],
       "derivedWords": [
@@ -1282,25 +1282,11 @@
       "dateAdded": "2026-07-12T10:15:59.541Z",
       "sentences": [
         {
-          "id": "mrhu9p5vye83f",
-          "text": "implemented",
-          "translation": "过去式",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:38:19.171Z"
-        },
-        {
           "id": "mrhuatrgv5171",
           "text": "We will implement the new authentication system next quarter.",
           "translation": "我们将在下季度实施新的身份验证系统",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:39:11.788Z"
-        },
-        {
-          "id": "mrhucqcprq2yq",
-          "text": "implementing",
-          "translation": "进行时",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:40:40.681Z"
         },
         {
           "id": "mrhudr3og58ig",
@@ -1310,18 +1296,32 @@
           "dateAdded": "2026-07-12T13:41:28.308Z"
         },
         {
-          "id": "mrhuxj5lapm4d",
-          "text": "implementation",
-          "translation": "实施 / 落地 名词",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:56:51.129Z"
-        },
-        {
           "id": "mrhvc5vyr7bxm",
           "text": "The changes will be implemented as per the approved CR.",
           "translation": "变更将按已批准的 CR 实施。  implemented as per是 按照…实施",
           "usageNote": "",
           "dateAdded": "2026-07-12T14:08:13.774Z"
+        },
+        {
+          "id": "mrhu9p5vye83f",
+          "text": "implemented",
+          "translation": "过去式",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:38:19.171Z"
+        },
+        {
+          "id": "mrhucqcprq2yq",
+          "text": "implementing",
+          "translation": "进行时",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:40:40.681Z"
+        },
+        {
+          "id": "mrhuxj5lapm4d",
+          "text": "implementation",
+          "translation": "实施 / 落地 名词",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:56:51.129Z"
         }
       ],
       "derivedWords": [
@@ -1437,18 +1437,18 @@
       "dateAdded": "2026-07-12T13:59:24.634Z",
       "sentences": [
         {
-          "id": "mrhv0tlmp5184",
-          "text": "approval",
-          "translation": "",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:59:24.634Z"
-        },
-        {
           "id": "msnd2shxeu21t",
           "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
           "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
           "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
           "dateAdded": "2026-08-10T15:03:22.821Z"
+        },
+        {
+          "id": "mrhv0tlmp5184",
+          "text": "approval",
+          "translation": "",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:59:24.634Z"
         }
       ],
       "derivedWords": [
@@ -1488,7 +1488,7 @@
       "word": "issue",
       "phonetic": "/ˈɪʃ(j)u/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/issue-us.mp3",
-      "meaning": "问题；议题；发行；发布；分发；发出",
+      "meaning": "问题",
       "dateAdded": "2026-07-12T14:02:29.514Z",
       "sentences": [
         {
@@ -2104,7 +2104,7 @@
       "word": "discrepancy",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
-      "meaning": "差异；不一致；矛盾；出入（尤指数字或记录之间的差距）",
+      "meaning": "差异",
       "dateAdded": "2026-07-13T10:39:53.941Z",
       "sentences": [
         {
@@ -2219,7 +2219,7 @@
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
-      "meaning": "看待",
+      "meaning": "v. / n.\t看待, 关注",
       "dateAdded": "2026-07-14T10:13:45.050Z",
       "sentences": [
         {
@@ -2553,9 +2553,16 @@
       "word": "Reproduce",
       "phonetic": "/ˌɹi.pɹoʊˈdus/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reproduce-us.mp3",
-      "meaning": "再产生一次 （步骤重现、问题重现）v. 复制；再现；繁殖；生育；",
+      "meaning": "再产生一次 （步骤重现、问题重现）",
       "dateAdded": "2026-07-20T13:15:13.328Z",
       "sentences": [
+        {
+          "id": "mrt8zvt4j1uq6",
+          "text": "We reproduced the bug",
+          "translation": "成功复现问题",
+          "usageNote": "",
+          "dateAdded": "2026-07-20T13:16:03.400Z"
+        },
         {
           "id": "mvuct3utcb5x5",
           "text": "The results of the experiment were hard to reproduce.",
@@ -2590,13 +2597,6 @@
           "translation": "未经许可，不得复制本出版物的任何部分。",
           "usageNote": "v. be reproduced 被动语态，被复制；被转载（版权声明常见句式）",
           "dateAdded": "2026-10-30T02:29:21.220Z"
-        },
-        {
-          "id": "mrt8zvt4j1uq6",
-          "text": "We reproduced the bug",
-          "translation": "成功复现问题",
-          "usageNote": "",
-          "dateAdded": "2026-07-20T13:16:03.400Z"
         }
       ],
       "derivedWords": [
@@ -3243,13 +3243,6 @@
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
-          "id": "mrz4l3ci2ecb8",
-          "text": "hide",
-          "translation": "做了藏这个动作",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T15:59:11.922Z"
-        },
-        {
           "id": "mrz4mh8ou00mo",
           "text": "The old code hid the exception silently.",
           "translation": "旧代码静默地掩盖了异常。",
@@ -3262,6 +3255,13 @@
           "translation": "bug 一直藏在旧配置里",
           "usageNote": "",
           "dateAdded": "2026-07-24T16:01:02.396Z"
+        },
+        {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "usageNote": "",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
         }
       ],
       "derivedWords": [
@@ -4861,43 +4861,6 @@
       "learnedAt": null
     },
     {
-      "id": "mt5h8c6esxcai",
-      "word": "decade",
-      "phonetic": "/dɛˈkeɪd/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-08-23T07:19:31.238Z",
-      "sentences": [
-        {
-          "id": "mt5hia61jr5rc",
-          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
-          "translation": "过去十年，政府 IT 基础设施转向云",
-          "usageNote": "over the past decade. 过去十年",
-          "dateAdded": "2026-08-23T07:27:15.193Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mt5hdow0y0q6h",
-          "word": "a decade ago",
-          "translation": "十年前"
-        },
-        {
-          "id": "mt5hetprccrzp",
-          "word": "The past decade",
-          "translation": "过去的十年"
-        },
-        {
-          "id": "mt5hf7dgqk07s",
-          "word": "for a decade",
-          "translation": "持续十年"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
       "id": "msekju3mosxqy",
       "word": "whole",
       "phonetic": "/hoʊl/",
@@ -4915,7 +4878,7 @@
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的；过渡性的；中期的；临时措施；中期（报告、结果）",
+      "meaning": "临时的",
       "dateAdded": "2026-08-23T12:12:27.078Z",
       "sentences": [
         {
@@ -5047,6 +5010,69 @@
           "id": "mvb4xcnam7zgx",
           "word": "vulnerabilities",
           "translation": "漏洞（复数）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "muv2linwhqdlw",
+      "word": "consolidate",
+      "phonetic": "/kənˈsɑlɪˌdeɪt/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-05T09:51:34.844Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "muw2cdb3cl9jr",
+      "word": "prompt",
+      "phonetic": "/prɑmpt/",
+      "audio": "",
+      "meaning": "提示",
+      "dateAdded": "2026-10-06T02:32:14.175Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mt5h8c6esxcai",
+      "word": "decade",
+      "phonetic": "/dɛˈkeɪd/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-08-23T07:19:31.238Z",
+      "sentences": [
+        {
+          "id": "mt5hia61jr5rc",
+          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
+          "translation": "过去十年，政府 IT 基础设施转向云",
+          "usageNote": "over the past decade. 过去十年",
+          "dateAdded": "2026-08-23T07:27:15.193Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt5hdow0y0q6h",
+          "word": "a decade ago",
+          "translation": "十年前"
+        },
+        {
+          "id": "mt5hetprccrzp",
+          "word": "The past decade",
+          "translation": "过去的十年"
+        },
+        {
+          "id": "mt5hf7dgqk07s",
+          "word": "for a decade",
+          "translation": "持续十年"
         }
       ],
       "review": null,
