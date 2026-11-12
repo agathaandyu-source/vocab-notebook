@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "exportedAt": "2026-11-09T15:15:11.652Z",
+  "exportedAt": "2026-11-12T04:02:09.772Z",
   "words": [
     {
       "id": "mrgcs6d8xqakh",
@@ -144,6 +144,13 @@
           "dateAdded": "2026-07-12T15:03:34.026Z"
         },
         {
+          "id": "mrhxc1jmu2ftf",
+          "text": "probation period",
+          "translation": "试用期",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T15:04:07.378Z"
+        },
+        {
           "id": "mrhxeydp883or",
           "text": "Over a period of several months, we've observed the same issue recurring.",
           "translation": "在几个月的期间内，我们观察到同样的问题反复出现。",
@@ -156,13 +163,6 @@
           "translation": "对团队来说，这是一个令人兴奋的时期，因为有了新项目。",
           "usageNote": "",
           "dateAdded": "2026-07-12T15:08:33.706Z"
-        },
-        {
-          "id": "mrhxc1jmu2ftf",
-          "text": "probation period",
-          "translation": "试用期",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T15:04:07.378Z"
         }
       ],
       "derivedWords": [
@@ -1282,32 +1282,18 @@
       "dateAdded": "2026-07-12T10:15:59.541Z",
       "sentences": [
         {
-          "id": "mrhuatrgv5171",
-          "text": "We will implement the new authentication system next quarter.",
-          "translation": "我们将在下季度实施新的身份验证系统",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:39:11.788Z"
-        },
-        {
-          "id": "mrhudr3og58ig",
-          "text": "The team is implementing the caching mechanism to improve performance.",
-          "translation": "团队正在实施缓存机制以提升性能",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T13:41:28.308Z"
-        },
-        {
-          "id": "mrhvc5vyr7bxm",
-          "text": "The changes will be implemented as per the approved CR.",
-          "translation": "变更将按已批准的 CR 实施。  implemented as per是 按照…实施",
-          "usageNote": "",
-          "dateAdded": "2026-07-12T14:08:13.774Z"
-        },
-        {
           "id": "mrhu9p5vye83f",
           "text": "implemented",
           "translation": "过去式",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:38:19.171Z"
+        },
+        {
+          "id": "mrhuatrgv5171",
+          "text": "We will implement the new authentication system next quarter.",
+          "translation": "我们将在下季度实施新的身份验证系统",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:39:11.788Z"
         },
         {
           "id": "mrhucqcprq2yq",
@@ -1317,11 +1303,25 @@
           "dateAdded": "2026-07-12T13:40:40.681Z"
         },
         {
+          "id": "mrhudr3og58ig",
+          "text": "The team is implementing the caching mechanism to improve performance.",
+          "translation": "团队正在实施缓存机制以提升性能",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T13:41:28.308Z"
+        },
+        {
           "id": "mrhuxj5lapm4d",
           "text": "implementation",
           "translation": "实施 / 落地 名词",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:56:51.129Z"
+        },
+        {
+          "id": "mrhvc5vyr7bxm",
+          "text": "The changes will be implemented as per the approved CR.",
+          "translation": "变更将按已批准的 CR 实施。  implemented as per是 按照…实施",
+          "usageNote": "",
+          "dateAdded": "2026-07-12T14:08:13.774Z"
         }
       ],
       "derivedWords": [
@@ -1437,18 +1437,18 @@
       "dateAdded": "2026-07-12T13:59:24.634Z",
       "sentences": [
         {
-          "id": "msnd2shxeu21t",
-          "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
-          "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
-          "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
-          "dateAdded": "2026-08-10T15:03:22.821Z"
-        },
-        {
           "id": "mrhv0tlmp5184",
           "text": "approval",
           "translation": "",
           "usageNote": "",
           "dateAdded": "2026-07-12T13:59:24.634Z"
+        },
+        {
+          "id": "msnd2shxeu21t",
+          "text": "Please note that the approval is for the proposed solution, including the data patch to correct the schema name and update/remove the invalid column mappings, as well as the Batch Job start date correction.",
+          "translation": "请注意，该批准涵盖了拟议的解决方案，其中包括用于更正架构名称及更新/移除无效列映射的数据补丁，以及针对批处理作业开始日期的更正。",
+          "usageNote": "The approval is for the proposed solution.审批是针对提出的解决方案的；the data patch to correct X and update/remove Y这里的 to 是不定式表目的；as well as\t额外补充 一项\t\"除了前面, 还有这个\", 前主后补",
+          "dateAdded": "2026-08-10T15:03:22.821Z"
         }
       ],
       "derivedWords": [
@@ -1488,7 +1488,7 @@
       "word": "issue",
       "phonetic": "/ˈɪʃ(j)u/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/issue-us.mp3",
-      "meaning": "问题",
+      "meaning": "问题；议题；发行；发布；分发；发出",
       "dateAdded": "2026-07-12T14:02:29.514Z",
       "sentences": [
         {
@@ -2104,7 +2104,7 @@
       "word": "discrepancy",
       "phonetic": "/dɪsˈkɹɛpənsi/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/discrepancy-us.mp3",
-      "meaning": "差异",
+      "meaning": "差异；不一致；矛盾；出入（尤指数字或记录之间的差距）",
       "dateAdded": "2026-07-13T10:39:53.941Z",
       "sentences": [
         {
@@ -2219,7 +2219,7 @@
       "word": "regard",
       "phonetic": "/ɹɪˈɡɑɹd/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/regard-us.mp3",
-      "meaning": "v. / n.\t看待, 关注",
+      "meaning": "看待",
       "dateAdded": "2026-07-14T10:13:45.050Z",
       "sentences": [
         {
@@ -2553,16 +2553,9 @@
       "word": "Reproduce",
       "phonetic": "/ˌɹi.pɹoʊˈdus/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reproduce-us.mp3",
-      "meaning": "再产生一次 （步骤重现、问题重现）",
+      "meaning": "再产生一次 （步骤重现、问题重现）v. 复制；再现；繁殖；生育；",
       "dateAdded": "2026-07-20T13:15:13.328Z",
       "sentences": [
-        {
-          "id": "mrt8zvt4j1uq6",
-          "text": "We reproduced the bug",
-          "translation": "成功复现问题",
-          "usageNote": "",
-          "dateAdded": "2026-07-20T13:16:03.400Z"
-        },
         {
           "id": "mvuct3utcb5x5",
           "text": "The results of the experiment were hard to reproduce.",
@@ -2597,6 +2590,13 @@
           "translation": "未经许可，不得复制本出版物的任何部分。",
           "usageNote": "v. be reproduced 被动语态，被复制；被转载（版权声明常见句式）",
           "dateAdded": "2026-10-30T02:29:21.220Z"
+        },
+        {
+          "id": "mrt8zvt4j1uq6",
+          "text": "We reproduced the bug",
+          "translation": "成功复现问题",
+          "usageNote": "",
+          "dateAdded": "2026-07-20T13:16:03.400Z"
         }
       ],
       "derivedWords": [
@@ -3243,6 +3243,13 @@
       "dateAdded": "2026-07-24T14:44:36.549Z",
       "sentences": [
         {
+          "id": "mrz4l3ci2ecb8",
+          "text": "hide",
+          "translation": "做了藏这个动作",
+          "usageNote": "",
+          "dateAdded": "2026-07-24T15:59:11.922Z"
+        },
+        {
           "id": "mrz4mh8ou00mo",
           "text": "The old code hid the exception silently.",
           "translation": "旧代码静默地掩盖了异常。",
@@ -3255,13 +3262,6 @@
           "translation": "bug 一直藏在旧配置里",
           "usageNote": "",
           "dateAdded": "2026-07-24T16:01:02.396Z"
-        },
-        {
-          "id": "mrz4l3ci2ecb8",
-          "text": "hide",
-          "translation": "做了藏这个动作",
-          "usageNote": "",
-          "dateAdded": "2026-07-24T15:59:11.922Z"
         }
       ],
       "derivedWords": [
@@ -4861,6 +4861,43 @@
       "learnedAt": null
     },
     {
+      "id": "mt5h8c6esxcai",
+      "word": "decade",
+      "phonetic": "/dɛˈkeɪd/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-08-23T07:19:31.238Z",
+      "sentences": [
+        {
+          "id": "mt5hia61jr5rc",
+          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
+          "translation": "过去十年，政府 IT 基础设施转向云",
+          "usageNote": "over the past decade. 过去十年",
+          "dateAdded": "2026-08-23T07:27:15.193Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mt5hdow0y0q6h",
+          "word": "a decade ago",
+          "translation": "十年前"
+        },
+        {
+          "id": "mt5hetprccrzp",
+          "word": "The past decade",
+          "translation": "过去的十年"
+        },
+        {
+          "id": "mt5hf7dgqk07s",
+          "word": "for a decade",
+          "translation": "持续十年"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
       "id": "msekju3mosxqy",
       "word": "whole",
       "phonetic": "/hoʊl/",
@@ -4878,7 +4915,7 @@
       "word": "interim",
       "phonetic": "/ˈɪntəɹɪm/",
       "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/interim-us.mp3",
-      "meaning": "临时的",
+      "meaning": "临时的；过渡性的；中期的；临时措施；中期（报告、结果）",
       "dateAdded": "2026-08-23T12:12:27.078Z",
       "sentences": [
         {
@@ -5010,69 +5047,6 @@
           "id": "mvb4xcnam7zgx",
           "word": "vulnerabilities",
           "translation": "漏洞（复数）"
-        }
-      ],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muv2linwhqdlw",
-      "word": "consolidate",
-      "phonetic": "/kənˈsɑlɪˌdeɪt/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-10-05T09:51:34.844Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "muw2cdb3cl9jr",
-      "word": "prompt",
-      "phonetic": "/prɑmpt/",
-      "audio": "",
-      "meaning": "提示",
-      "dateAdded": "2026-10-06T02:32:14.175Z",
-      "sentences": [],
-      "derivedWords": [],
-      "review": null,
-      "learned": false,
-      "learnedAt": null
-    },
-    {
-      "id": "mt5h8c6esxcai",
-      "word": "decade",
-      "phonetic": "/dɛˈkeɪd/",
-      "audio": "",
-      "meaning": "",
-      "dateAdded": "2026-08-23T07:19:31.238Z",
-      "sentences": [
-        {
-          "id": "mt5hia61jr5rc",
-          "text": "Over the past decade, government IT infrastructure has shifted to cloud.",
-          "translation": "过去十年，政府 IT 基础设施转向云",
-          "usageNote": "over the past decade. 过去十年",
-          "dateAdded": "2026-08-23T07:27:15.193Z"
-        }
-      ],
-      "derivedWords": [
-        {
-          "id": "mt5hdow0y0q6h",
-          "word": "a decade ago",
-          "translation": "十年前"
-        },
-        {
-          "id": "mt5hetprccrzp",
-          "word": "The past decade",
-          "translation": "过去的十年"
-        },
-        {
-          "id": "mt5hf7dgqk07s",
-          "word": "for a decade",
-          "translation": "持续十年"
         }
       ],
       "review": null,
@@ -10066,6 +10040,710 @@
           "id": "mvupytsctyrzx",
           "word": "settled",
           "translation": "adj. 稳定的；固定的；已解决的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvwa5ody6nl5t",
+      "word": "energy",
+      "phonetic": "/ˈɛnɚdʒi/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/energy-us.mp3",
+      "meaning": "n. 能量；精力；活力；能源",
+      "dateAdded": "2026-10-31T10:50:41.206Z",
+      "sentences": [
+        {
+          "id": "mvwa5ody63gsn",
+          "text": "She has a lot of energy and never seems tired.",
+          "translation": "她精力充沛，好像从不觉得累。",
+          "usageNote": "n. 精力；干劲（不可数）",
+          "dateAdded": "2026-10-31T10:50:41.206Z"
+        },
+        {
+          "id": "mvwa5odyzlu45",
+          "text": "Solar energy is a clean source of power.",
+          "translation": "太阳能是一种清洁能源。",
+          "usageNote": "n. 能源（常见搭配 renewable energy 可再生能源）",
+          "dateAdded": "2026-10-31T10:50:41.206Z"
+        },
+        {
+          "id": "mvwa5odyhwyvw",
+          "text": "Kinetic energy depends on mass and speed.",
+          "translation": "动能取决于质量和速度。",
+          "usageNote": "n. （物理）能量，如 kinetic energy 动能",
+          "dateAdded": "2026-10-31T10:50:41.206Z"
+        },
+        {
+          "id": "mvwa5ody8ex3s",
+          "text": "This energy drink gives you a quick boost.",
+          "translation": "这款能量饮料能让你迅速提神。",
+          "usageNote": "energy drink 能量饮料（广告里最常听到）",
+          "dateAdded": "2026-10-31T10:50:41.206Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvwa5ody51767",
+          "word": "energetic",
+          "translation": "adj. 精力充沛的；充满活力的"
+        },
+        {
+          "id": "mvwa5odyw4fi5",
+          "word": "energize",
+          "translation": "v. 给予能量；使有活力"
+        },
+        {
+          "id": "mvwa5ody15ttn",
+          "word": "energetically",
+          "translation": "adv. 精力充沛地；积极地"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvwe6n8sv4gcw",
+      "word": "reserve",
+      "phonetic": "/rɪˈzɝv/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reserve-us.mp3",
+      "meaning": "v. 预订；保留；储备；n. 储备；储备金；保留；矜持",
+      "dateAdded": "2026-10-31T12:43:24.844Z",
+      "sentences": [
+        {
+          "id": "mvwe6n8soukgp",
+          "text": "I reserved a table for two at seven o'clock.",
+          "translation": "我订了一张晚上七点的两人桌。",
+          "usageNote": "v. reserve sth 预订某物（座位、房间等）",
+          "dateAdded": "2026-10-31T12:43:24.844Z"
+        },
+        {
+          "id": "mvwe6n8sbrcy4",
+          "text": "The company keeps a cash reserve for emergencies.",
+          "translation": "公司留有一笔应急现金储备。",
+          "usageNote": "n. 储备；储备金（常见搭配 foreign exchange reserves 外汇储备）",
+          "dateAdded": "2026-10-31T12:43:24.844Z"
+        },
+        {
+          "id": "mvwe6n8syyh0x",
+          "text": "The right to change the plan is reserved by the committee.",
+          "translation": "委员会保留更改计划的权利。",
+          "usageNote": "v. be reserved for sb/sth 留给某人/某事；保留",
+          "dateAdded": "2026-10-31T12:43:24.844Z"
+        },
+        {
+          "id": "mvwe6n8s8gbm9",
+          "text": "She spoke with reserve and did not share her opinion.",
+          "translation": "她说话很谨慎，没有透露自己的看法。",
+          "usageNote": "n. 矜持；保留；含蓄（不可数）",
+          "dateAdded": "2026-10-31T12:43:24.844Z"
+        },
+        {
+          "id": "mvwe6n8s91hug",
+          "text": "He reserved his strength for the final lap.",
+          "translation": "他为最后一圈保存体力。",
+          "usageNote": "v. reserve sth for sth 留着某物用于某事",
+          "dateAdded": "2026-10-31T12:43:24.844Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvwe6n8scftz5",
+          "word": "reservation",
+          "translation": "n. 预订；保留；疑虑"
+        },
+        {
+          "id": "mvwe6n8tk5ehb",
+          "word": "reserved",
+          "translation": "adj. 预订的；保留的；矜持的"
+        },
+        {
+          "id": "mvwe6n8tgxkrv",
+          "word": "reservoir",
+          "translation": "n. 水库；储备"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mvwhrml2zqpgs",
+      "word": "engage",
+      "phonetic": "/ɛnˈɡeɪdʒ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/engage-us.mp3",
+      "meaning": "v. 吸引；参与；从事；雇用；与……交流；啮合；订婚",
+      "dateAdded": "2026-10-31T14:23:42.614Z",
+      "sentences": [
+        {
+          "id": "mvwhrml2zbcx6",
+          "text": "The teacher tried to engage the students with a short video.",
+          "translation": "老师试着用一段短视频来吸引学生。",
+          "usageNote": "v. engage sb 吸引（某人的注意力或兴趣）",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        },
+        {
+          "id": "mvwhrml2xs6sg",
+          "text": "She likes to engage in volunteer work on weekends.",
+          "translation": "她喜欢在周末参加志愿工作。",
+          "usageNote": "v. engage in sth 参与、从事某事",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        },
+        {
+          "id": "mvwhrml21vj3i",
+          "text": "We need to engage with local communities before starting the project.",
+          "translation": "项目开始前，我们需要和当地社区进行沟通互动。",
+          "usageNote": "v. engage with sb/sth 与某人交流；积极应对某事",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        },
+        {
+          "id": "mvwhrml2pq8xc",
+          "text": "The company engaged a consultant to review the system.",
+          "translation": "公司聘请了一位顾问来评审这个系统。",
+          "usageNote": "v. engage sb 聘请、雇用某人（较正式）",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        },
+        {
+          "id": "mvwhrml2ntaea",
+          "text": "The clutch engages when you press the pedal.",
+          "translation": "踩下踏板时离合器会啮合。",
+          "usageNote": "v. （机械）啮合、接合",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        },
+        {
+          "id": "mvwhrml261s1n",
+          "text": "They got engaged last summer.",
+          "translation": "他们去年夏天订婚了。",
+          "usageNote": "v. be/get engaged (to sb) （与某人）订婚",
+          "dateAdded": "2026-10-31T14:23:42.614Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mvwhrml3disvf",
+          "word": "engagement",
+          "translation": "n. 参与；约定；订婚；啮合"
+        },
+        {
+          "id": "mvwhrml3na53v",
+          "word": "engaged",
+          "translation": "adj. 忙碌的；已订婚的；占线的"
+        },
+        {
+          "id": "mvwhrml3n3qzy",
+          "word": "engaging",
+          "translation": "adj. 迷人的；吸引人的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mw01i3fizbl6d",
+      "word": "extranet",
+      "phonetic": "",
+      "audio": "",
+      "meaning": "n. 外联网；外部网络（企业内部网络对合作伙伴、客户等外部人员有限开放的部分）",
+      "dateAdded": "2026-11-03T01:59:28.734Z",
+      "sentences": [
+        {
+          "id": "mw01i3fitdpst",
+          "text": "The contractor logs in to the extranet to download the project documents.",
+          "translation": "承包商登录外联网下载项目文件。",
+          "usageNote": "n. 外联网，常指给承包商、供应商使用的授权门户",
+          "dateAdded": "2026-11-03T01:59:28.734Z"
+        },
+        {
+          "id": "mw01i3fio5gku",
+          "text": "Suppliers can check their order status through the company extranet.",
+          "translation": "供应商可以通过公司外联网查看订单状态。",
+          "usageNote": "through/on the extranet 通过/在外联网上",
+          "dateAdded": "2026-11-03T01:59:28.734Z"
+        },
+        {
+          "id": "mw01i3fi6pv0o",
+          "text": "Access to the extranet requires a valid username and password.",
+          "translation": "访问外联网需要有效的用户名和密码。",
+          "usageNote": "n. 强调需要授权才能访问，区别于公开的 internet",
+          "dateAdded": "2026-11-03T01:59:28.734Z"
+        },
+        {
+          "id": "mw01i3fiurnd1",
+          "text": "The agency set up an extranet to share drawings with its consultants.",
+          "translation": "该机构搭建了一个外联网，与顾问方共享图纸。",
+          "usageNote": "set up an extranet 搭建外联网",
+          "dateAdded": "2026-11-03T01:59:28.734Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mw01i3fia1g2i",
+          "word": "intranet",
+          "translation": "n. 内联网；企业内部网"
+        },
+        {
+          "id": "mw01i3fi61sfj",
+          "word": "internet",
+          "translation": "n. 互联网"
+        },
+        {
+          "id": "mw01i3fj7gyqw",
+          "word": "net",
+          "translation": "n. 网；网络"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mw01qm6eg2flt",
+      "word": "void",
+      "phonetic": "/vɔɪd/",
+      "audio": "",
+      "meaning": "v. 作废；撤销；使无效；adj. 无效的；空的；n. 空白；空虚",
+      "dateAdded": "2026-11-03T02:06:06.278Z",
+      "sentences": [
+        {
+          "id": "mw01qm6f1p0xa",
+          "text": "The bank voided the transaction before it settled.",
+          "translation": "银行在这笔交易结算前将其撤销了。",
+          "usageNote": "v. void a transaction/payment 撤销交易/付款（结算前取消，区别于 refund）",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        },
+        {
+          "id": "mw01qm6f3xtk2",
+          "text": "Please void the invoice and issue a new one.",
+          "translation": "请作废这张发票，重新开一张。",
+          "usageNote": "v. void an invoice 作废发票",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        },
+        {
+          "id": "mw01qm6fljsjh",
+          "text": "Write VOID across the check so no one can use it.",
+          "translation": "在支票上写上 VOID，这样没人能再使用它。",
+          "usageNote": "v. void a check 作废支票",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        },
+        {
+          "id": "mw01qm6fg7swx",
+          "text": "The contract was declared null and void.",
+          "translation": "这份合同被宣告无效。",
+          "usageNote": "adj. null and void 无效的（法律、合同常用）",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        },
+        {
+          "id": "mw01qm6f6ktl2",
+          "text": "The room felt like an empty void after he left.",
+          "translation": "他走后，房间像一片空洞的虚无。",
+          "usageNote": "n. 空白；空虚（常与 a void 连用）",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        },
+        {
+          "id": "mw01qm6fkih2u",
+          "text": "The seat is void of any marks.",
+          "translation": "这个座位上没有任何标记。",
+          "usageNote": "adj. be void of sth 缺乏、没有某物",
+          "dateAdded": "2026-11-03T02:06:06.278Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mw01qm6fw65r9",
+          "word": "voidable",
+          "translation": "adj. 可撤销的；可宣告无效的"
+        },
+        {
+          "id": "mw01qm6f9q8qc",
+          "word": "avoid",
+          "translation": "v. 避免；躲开"
+        },
+        {
+          "id": "mw01qm6f2mmlb",
+          "word": "devoid",
+          "translation": "adj. 缺乏的；完全没有的"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mw06rjbubc4cc",
+      "word": "whereby",
+      "phonetic": "/wɛrˈbaɪ/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/whereby-us.mp3",
+      "meaning": "adv. 借此；凭此；据此（引出规则、协议或方式）",
+      "dateAdded": "2026-11-03T04:26:47.321Z",
+      "sentences": [
+        {
+          "id": "mw06rjbuzc4ss",
+          "text": "The contract is an agreement whereby the supplier delivers goods every month.",
+          "translation": "这份合同是一项协议，据此供应商每月交付货物。",
+          "usageNote": "an agreement whereby... 一份协议，据此……（相当于 by which）",
+          "dateAdded": "2026-11-03T04:26:47.321Z"
+        },
+        {
+          "id": "mw06rjbupsybf",
+          "text": "We use a system whereby each task has one clear owner.",
+          "translation": "我们采用的制度是每项任务都有一位明确的负责人。",
+          "usageNote": "a system whereby... 一种制度/系统，借此……",
+          "dateAdded": "2026-11-03T04:26:47.321Z"
+        },
+        {
+          "id": "mw06rjbu4861m",
+          "text": "The government introduced a scheme whereby low-income families receive extra support.",
+          "translation": "政府推出了一项计划，据此低收入家庭可获得额外补助。",
+          "usageNote": "a scheme/policy/process whereby... 一项计划/政策/流程，借此……",
+          "dateAdded": "2026-11-03T04:26:47.321Z"
+        },
+        {
+          "id": "mw06rjbupwr5s",
+          "text": "There is a procedure whereby users can request a refund.",
+          "translation": "有一套流程，用户可以借此申请退款。",
+          "usageNote": "a procedure/method whereby... 一套程序/方法，凭此……（正式用语，多见于合同、标书、政策文件）",
+          "dateAdded": "2026-11-03T04:26:47.321Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mw06rjbuk0kp8",
+          "word": "whereas",
+          "translation": "conj. 然而；鉴于（合同开头常用）"
+        },
+        {
+          "id": "mw06rjbu5fva4",
+          "word": "wherein",
+          "translation": "adv. 在其中；在那方面"
+        },
+        {
+          "id": "mw06rjbusirb3",
+          "word": "thereby",
+          "translation": "adv. 因此；从而"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mw1oojntlxiuu",
+      "word": "reverse",
+      "phonetic": "/rɪˈvɝs/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/reverse-us.mp3",
+      "meaning": "v. 颠倒；倒转；倒车；撤销；推翻；adj. 相反的；反向的；n. 相反；背面；倒挡",
+      "dateAdded": "2026-11-04T05:36:07.049Z",
+      "sentences": [
+        {
+          "id": "mw1oojnu6u4so",
+          "text": "Please reverse the order of the list.",
+          "translation": "请把列表的顺序颠倒过来。",
+          "usageNote": "v. reverse sth 颠倒、反转某物",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        },
+        {
+          "id": "mw1oojnujoac4",
+          "text": "He reversed the car into the garage.",
+          "translation": "他把车倒进了车库。",
+          "usageNote": "v. 倒车（及物或不及物都可以）",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        },
+        {
+          "id": "mw1oojnu2cv1y",
+          "text": "The court reversed the earlier decision.",
+          "translation": "法院推翻了之前的裁决。",
+          "usageNote": "v. reverse a decision/ruling 推翻决定/裁决",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        },
+        {
+          "id": "mw1oojnugsbhv",
+          "text": "The bank reversed the payment after finding an error.",
+          "translation": "银行发现错误后将这笔付款冲回了。",
+          "usageNote": "v. reverse a payment/charge 冲正付款（会计、银行用语，区别于 void 和 refund）",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        },
+        {
+          "id": "mw1oojnuxi2v8",
+          "text": "The shop is in the reverse direction.",
+          "translation": "那家店在相反的方向。",
+          "usageNote": "adj. in the reverse direction/order 朝相反方向/按相反顺序",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        },
+        {
+          "id": "mw1oojnuzv9jx",
+          "text": "The reverse of the coin shows a bird.",
+          "translation": "硬币的背面印着一只鸟。",
+          "usageNote": "n. the reverse 相反；背面（in reverse 倒过来、反向）",
+          "dateAdded": "2026-11-04T05:36:07.049Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mw1oojnuq98kr",
+          "word": "reversal",
+          "translation": "n. 逆转；颠倒；撤销"
+        },
+        {
+          "id": "mw1oojnu04jw6",
+          "word": "reversible",
+          "translation": "adj. 可逆的；可撤销的；可两面穿的"
+        },
+        {
+          "id": "mw1oojnuua3d6",
+          "word": "reversely",
+          "translation": "adv. 相反地；颠倒地"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "muv2linwhqdlw",
+      "word": "consolidate",
+      "phonetic": "/kənˈsɑlɪˌdeɪt/",
+      "audio": "",
+      "meaning": "",
+      "dateAdded": "2026-10-05T09:51:34.844Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "muw2cdb3cl9jr",
+      "word": "prompt",
+      "phonetic": "/prɑmpt/",
+      "audio": "",
+      "meaning": "提示",
+      "dateAdded": "2026-10-06T02:32:14.175Z",
+      "sentences": [],
+      "derivedWords": [],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mwbg35n024ca0",
+      "word": "amend",
+      "phonetic": "/əˈmɛnd/",
+      "audio": "",
+      "meaning": "v. 修改；修订；修正；改正",
+      "dateAdded": "2026-11-11T01:33:13.932Z",
+      "sentences": [
+        {
+          "id": "mwbg35n09ikl5",
+          "text": "The committee voted to amend the contract.",
+          "translation": "委员会投票决定修改合同。",
+          "usageNote": "v. amend a contract/agreement 修改合同/协议（正式场合）",
+          "dateAdded": "2026-11-11T01:33:13.932Z"
+        },
+        {
+          "id": "mwbg35n02f9we",
+          "text": "Parliament amended the law last year.",
+          "translation": "议会去年修订了这部法律。",
+          "usageNote": "v. amend a law/bill/constitution 修订法律/法案/宪法",
+          "dateAdded": "2026-11-11T01:33:13.932Z"
+        },
+        {
+          "id": "mwbg35n0y9iup",
+          "text": "Please amend the figures in the report before sending it.",
+          "translation": "发送前请更正报告里的数字。",
+          "usageNote": "v. amend sth 更正、修改某物中的错误",
+          "dateAdded": "2026-11-11T01:33:13.932Z"
+        },
+        {
+          "id": "mwbg35n0lky2k",
+          "text": "He promised to amend his behaviour.",
+          "translation": "他保证改正自己的行为。",
+          "usageNote": "v. amend one's behaviour/ways 改过自新（较书面）",
+          "dateAdded": "2026-11-11T01:33:13.932Z"
+        },
+        {
+          "id": "mwbg35n0b78ed",
+          "text": "The tender document was amended after the clarification session.",
+          "translation": "标书在澄清会议后做了修订。",
+          "usageNote": "be amended 被修订（标书、合同文件里常见，addendum 或 amendment 常配合出现）",
+          "dateAdded": "2026-11-11T01:33:13.932Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mwbg35n03x2rn",
+          "word": "amendment",
+          "translation": "n. 修正案；修订；修改"
+        },
+        {
+          "id": "mwbg35n0z1koh",
+          "word": "amendable",
+          "translation": "adj. 可修改的"
+        },
+        {
+          "id": "mwbg35n0lxcd6",
+          "word": "emend",
+          "translation": "v. 校订；修订（文字，更书面）"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mwbg3lrhszxrv",
+      "word": "tick",
+      "phonetic": "/tɪk/",
+      "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/tick-us.mp3",
+      "meaning": "v. 打勾；（钟表）滴答响；n. 勾号；滴答声；一会儿；蜱虫",
+      "dateAdded": "2026-11-11T01:33:34.829Z",
+      "sentences": [
+        {
+          "id": "mwbg3lrht8wyv",
+          "text": "Please tick the box if you agree.",
+          "translation": "如果你同意，请在方框里打勾。",
+          "usageNote": "v. tick a box 在方框里打勾（英式；美式多用 check）",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        },
+        {
+          "id": "mwbg3lrhksk0g",
+          "text": "The clock ticked loudly in the quiet room.",
+          "translation": "安静的房间里，钟滴答作响。",
+          "usageNote": "v. （钟表）发出滴答声",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        },
+        {
+          "id": "mwbg3lrhy5027",
+          "text": "Put a tick next to each completed task.",
+          "translation": "在每个已完成的任务旁打个勾。",
+          "usageNote": "n. 勾号（✓）；a tick 一个勾",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        },
+        {
+          "id": "mwbg3lrhqbbkp",
+          "text": "I'll be back in a tick.",
+          "translation": "我马上就回来。",
+          "usageNote": "n. in a tick 一会儿、马上（英式口语）",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        },
+        {
+          "id": "mwbg3lrh1dg4i",
+          "text": "I'm not sure what makes him tick.",
+          "translation": "我不太明白他是什么样的人，是什么驱动着他。",
+          "usageNote": "v. what makes sb tick 某人的行为动机、性格特点",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        },
+        {
+          "id": "mwbg3lrhem8s3",
+          "text": "He found a tick on his dog after the walk.",
+          "translation": "散步后他在狗身上发现了一只蜱虫。",
+          "usageNote": "n. 蜱虫（寄生虫）",
+          "dateAdded": "2026-11-11T01:33:34.829Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mwbg3lrhi4vcx",
+          "word": "tick off",
+          "translation": "v. 打勾标记；（英式口语）责骂"
+        },
+        {
+          "id": "mwbg3lrhqz859",
+          "word": "ticker",
+          "translation": "n. 股票行情自动收录器；（口语）心脏"
+        },
+        {
+          "id": "mwbg3lrh6tc4z",
+          "word": "ticking",
+          "translation": "n. 滴答声"
+        }
+      ],
+      "review": null,
+      "learned": false,
+      "learnedAt": null
+    },
+    {
+      "id": "mwblr4ricpg5s",
+      "word": "release",
+      "phonetic": "/riˈlis/",
+      "audio": "",
+      "meaning": "v. 释放；放开；发布；公布；发行；解除（查封、扣押）；拨付；n. 释放；发布；新版本；新闻稿",
+      "dateAdded": "2026-11-11T04:11:50.622Z",
+      "sentences": [
+        {
+          "id": "mwblr4riku8yw",
+          "text": "The prisoner was released after two years.",
+          "translation": "这名囚犯两年后被释放了。",
+          "usageNote": "v. release sb 释放某人（also be released from sth 从某处获释）",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4risbveq",
+          "text": "The team will release the new version next Friday.",
+          "translation": "团队将在下周五发布新版本。",
+          "usageNote": "v. release a version/update/product 发布版本/更新/产品",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4rino2pa",
+          "text": "The company released a statement about the incident.",
+          "translation": "公司就这起事件发表了声明。",
+          "usageNote": "v. release a statement/report/figures 公布声明/报告/数据",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4ri6epqj",
+          "text": "The film was released in cinemas last month.",
+          "translation": "这部电影上个月上映了。",
+          "usageNote": "v. 发行、上映（电影、唱片、书）",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4rihw5sg",
+          "text": "Please send the press release to all media partners.",
+          "translation": "请把新闻稿发给所有媒体合作伙伴。",
+          "usageNote": "n. press release 新闻稿；n. release notes 发布说明",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4riuv9b1",
+          "text": "Payment will be released once the milestone is accepted.",
+          "translation": "里程碑验收通过后，款项将予以支付。",
+          "usageNote": "v. release payment/funds 拨付款项、放款（合同、项目管理常用）",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4riab083",
+          "text": "The court released the seizure of the company's bank account.",
+          "translation": "法院解除了对该公司银行账户的查封。",
+          "usageNote": "v. release the seizure of sth 解除对某物的查封（被动：The seizure was released 扣押已被解除）",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        },
+        {
+          "id": "mwblr4riv9pcn",
+          "text": "Customs released the seized goods to the owner.",
+          "translation": "海关把被扣押的货物放行还给了货主。",
+          "usageNote": "v. release seized goods 放行被扣押的货物（也可说 release sth from seizure）",
+          "dateAdded": "2026-11-11T04:11:50.622Z"
+        }
+      ],
+      "derivedWords": [
+        {
+          "id": "mwblr4rily2hq",
+          "word": "releasable",
+          "translation": "adj. 可释放的；可发布的"
+        },
+        {
+          "id": "mwblr4rj37oj7",
+          "word": "releaser",
+          "translation": "n. 释放者；发布者"
+        },
+        {
+          "id": "mwblr4rj535ki",
+          "word": "re-release",
+          "translation": "v. 重新发行；重新发布"
         }
       ],
       "review": null,
